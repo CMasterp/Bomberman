@@ -1,5 +1,5 @@
 <p align="center">
-    <a><img src="./img/bomberman.gif" alt="[002]"></a>
+    <a><img src="./img/INDIE_-_TRAILER.gif" alt="[002]"></a>
 </p>
 
 # Indie Studio - Time to go cross-platform
