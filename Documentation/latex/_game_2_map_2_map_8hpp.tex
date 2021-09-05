@@ -1,0 +1,142 @@
+\hypertarget{_game_2_map_2_map_8hpp}{}\doxysection{C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.guichard/\+Game/\+Map/\+Map.hpp File Reference}
+\label{_game_2_map_2_map_8hpp}\index{C:/Users/jonat/Documents/GitHub/B-\/YEP-\/400-\/LYN-\/4-\/1-\/indiestudio-\/lucas.guichard/Game/Map/Map.hpp@{C:/Users/jonat/Documents/GitHub/B-\/YEP-\/400-\/LYN-\/4-\/1-\/indiestudio-\/lucas.guichard/Game/Map/Map.hpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Map.\+inl\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game_1_1_map}{Game\+::\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_game}{Game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_a6d0652ae6ea6a5c4fef68baf139fd085}{BORDER}}~2
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_ac243bfa96aa2c28014159ff098bd2324}{EDGE}}~\textquotesingle{}E\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_a7f28de92e0d1726f683bb4df3f6415dd}{SOLID\+\_\+\+WALL}}~\textquotesingle{}W\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_ab80a0bdadfdb0f48602add81c9abfc6f}{BREAK\+\_\+\+WALL}}~\textquotesingle{}M\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_ae48f170084a4c2e566805bbc084afbed}{EMPTY\+\_\+\+SPACE}}~\textquotesingle{}$\ast$\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_ae27f0ceb7a4d24764ae67f609428ae87}{PLAYER\+\_\+\+ONE}}~\textquotesingle{}1\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_ac5dbf6c39273053d9c04cc9203619505}{PLAYER\+\_\+\+TWO}}~\textquotesingle{}2\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_a5d41f3077ba169fc36eff38dd649528a}{PLAYER\+\_\+\+THREE}}~\textquotesingle{}3\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_a63ca00fc44d4c9e0d9c5413e5e3d4392}{PLAYER\+\_\+\+FOUR}}~\textquotesingle{}4\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_aa6ee1a8b97b0f0538e668df592ae147e}{HUMAN}}~\textquotesingle{}H\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_ae35dafe6a1fee7a09c05d2155dc40a05}{ARTIFICIAL\+\_\+\+INTELLIGENCE}}~\textquotesingle{}A\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_a7c86acba33beb6765754c0d03cda97a1}{WALL\+\_\+\+PASS}}~\textquotesingle{}P\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_adfe5c8e430e7dbb9c334d36ee161bb59}{FIRE}}~\textquotesingle{}F\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_a39c55692328ff37a6302dddae69c9839}{SKATE}}~\textquotesingle{}S\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_game_2_map_2_map_8hpp_a4c33cf96ffcc71d1141ebeff84bce907}{BOMB\+\_\+\+UP}}~\textquotesingle{}B\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_ae35dafe6a1fee7a09c05d2155dc40a05}\label{_game_2_map_2_map_8hpp_ae35dafe6a1fee7a09c05d2155dc40a05}} 
+\index{Map.hpp@{Map.hpp}!ARTIFICIAL\_INTELLIGENCE@{ARTIFICIAL\_INTELLIGENCE}}
+\index{ARTIFICIAL\_INTELLIGENCE@{ARTIFICIAL\_INTELLIGENCE}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{ARTIFICIAL\_INTELLIGENCE}{ARTIFICIAL\_INTELLIGENCE}}
+{\footnotesize\ttfamily \#define ARTIFICIAL\+\_\+\+INTELLIGENCE~\textquotesingle{}A\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_a4c33cf96ffcc71d1141ebeff84bce907}\label{_game_2_map_2_map_8hpp_a4c33cf96ffcc71d1141ebeff84bce907}} 
+\index{Map.hpp@{Map.hpp}!BOMB\_UP@{BOMB\_UP}}
+\index{BOMB\_UP@{BOMB\_UP}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{BOMB\_UP}{BOMB\_UP}}
+{\footnotesize\ttfamily \#define BOMB\+\_\+\+UP~\textquotesingle{}B\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_a6d0652ae6ea6a5c4fef68baf139fd085}\label{_game_2_map_2_map_8hpp_a6d0652ae6ea6a5c4fef68baf139fd085}} 
+\index{Map.hpp@{Map.hpp}!BORDER@{BORDER}}
+\index{BORDER@{BORDER}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{BORDER}{BORDER}}
+{\footnotesize\ttfamily \#define BORDER~2}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_ab80a0bdadfdb0f48602add81c9abfc6f}\label{_game_2_map_2_map_8hpp_ab80a0bdadfdb0f48602add81c9abfc6f}} 
+\index{Map.hpp@{Map.hpp}!BREAK\_WALL@{BREAK\_WALL}}
+\index{BREAK\_WALL@{BREAK\_WALL}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{BREAK\_WALL}{BREAK\_WALL}}
+{\footnotesize\ttfamily \#define BREAK\+\_\+\+WALL~\textquotesingle{}M\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_ac243bfa96aa2c28014159ff098bd2324}\label{_game_2_map_2_map_8hpp_ac243bfa96aa2c28014159ff098bd2324}} 
+\index{Map.hpp@{Map.hpp}!EDGE@{EDGE}}
+\index{EDGE@{EDGE}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{EDGE}{EDGE}}
+{\footnotesize\ttfamily \#define EDGE~\textquotesingle{}E\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_ae48f170084a4c2e566805bbc084afbed}\label{_game_2_map_2_map_8hpp_ae48f170084a4c2e566805bbc084afbed}} 
+\index{Map.hpp@{Map.hpp}!EMPTY\_SPACE@{EMPTY\_SPACE}}
+\index{EMPTY\_SPACE@{EMPTY\_SPACE}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{EMPTY\_SPACE}{EMPTY\_SPACE}}
+{\footnotesize\ttfamily \#define EMPTY\+\_\+\+SPACE~\textquotesingle{}$\ast$\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_adfe5c8e430e7dbb9c334d36ee161bb59}\label{_game_2_map_2_map_8hpp_adfe5c8e430e7dbb9c334d36ee161bb59}} 
+\index{Map.hpp@{Map.hpp}!FIRE@{FIRE}}
+\index{FIRE@{FIRE}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{FIRE}{FIRE}}
+{\footnotesize\ttfamily \#define FIRE~\textquotesingle{}F\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_aa6ee1a8b97b0f0538e668df592ae147e}\label{_game_2_map_2_map_8hpp_aa6ee1a8b97b0f0538e668df592ae147e}} 
+\index{Map.hpp@{Map.hpp}!HUMAN@{HUMAN}}
+\index{HUMAN@{HUMAN}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{HUMAN}{HUMAN}}
+{\footnotesize\ttfamily \#define HUMAN~\textquotesingle{}H\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_a63ca00fc44d4c9e0d9c5413e5e3d4392}\label{_game_2_map_2_map_8hpp_a63ca00fc44d4c9e0d9c5413e5e3d4392}} 
+\index{Map.hpp@{Map.hpp}!PLAYER\_FOUR@{PLAYER\_FOUR}}
+\index{PLAYER\_FOUR@{PLAYER\_FOUR}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_FOUR}{PLAYER\_FOUR}}
+{\footnotesize\ttfamily \#define PLAYER\+\_\+\+FOUR~\textquotesingle{}4\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_ae27f0ceb7a4d24764ae67f609428ae87}\label{_game_2_map_2_map_8hpp_ae27f0ceb7a4d24764ae67f609428ae87}} 
+\index{Map.hpp@{Map.hpp}!PLAYER\_ONE@{PLAYER\_ONE}}
+\index{PLAYER\_ONE@{PLAYER\_ONE}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_ONE}{PLAYER\_ONE}}
+{\footnotesize\ttfamily \#define PLAYER\+\_\+\+ONE~\textquotesingle{}1\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_a5d41f3077ba169fc36eff38dd649528a}\label{_game_2_map_2_map_8hpp_a5d41f3077ba169fc36eff38dd649528a}} 
+\index{Map.hpp@{Map.hpp}!PLAYER\_THREE@{PLAYER\_THREE}}
+\index{PLAYER\_THREE@{PLAYER\_THREE}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_THREE}{PLAYER\_THREE}}
+{\footnotesize\ttfamily \#define PLAYER\+\_\+\+THREE~\textquotesingle{}3\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_ac5dbf6c39273053d9c04cc9203619505}\label{_game_2_map_2_map_8hpp_ac5dbf6c39273053d9c04cc9203619505}} 
+\index{Map.hpp@{Map.hpp}!PLAYER\_TWO@{PLAYER\_TWO}}
+\index{PLAYER\_TWO@{PLAYER\_TWO}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_TWO}{PLAYER\_TWO}}
+{\footnotesize\ttfamily \#define PLAYER\+\_\+\+TWO~\textquotesingle{}2\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_a39c55692328ff37a6302dddae69c9839}\label{_game_2_map_2_map_8hpp_a39c55692328ff37a6302dddae69c9839}} 
+\index{Map.hpp@{Map.hpp}!SKATE@{SKATE}}
+\index{SKATE@{SKATE}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{SKATE}{SKATE}}
+{\footnotesize\ttfamily \#define SKATE~\textquotesingle{}S\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_a7f28de92e0d1726f683bb4df3f6415dd}\label{_game_2_map_2_map_8hpp_a7f28de92e0d1726f683bb4df3f6415dd}} 
+\index{Map.hpp@{Map.hpp}!SOLID\_WALL@{SOLID\_WALL}}
+\index{SOLID\_WALL@{SOLID\_WALL}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{SOLID\_WALL}{SOLID\_WALL}}
+{\footnotesize\ttfamily \#define SOLID\+\_\+\+WALL~\textquotesingle{}W\textquotesingle{}}
+
+\mbox{\Hypertarget{_game_2_map_2_map_8hpp_a7c86acba33beb6765754c0d03cda97a1}\label{_game_2_map_2_map_8hpp_a7c86acba33beb6765754c0d03cda97a1}} 
+\index{Map.hpp@{Map.hpp}!WALL\_PASS@{WALL\_PASS}}
+\index{WALL\_PASS@{WALL\_PASS}!Map.hpp@{Map.hpp}}
+\doxysubsubsection{\texorpdfstring{WALL\_PASS}{WALL\_PASS}}
+{\footnotesize\ttfamily \#define WALL\+\_\+\+PASS~\textquotesingle{}P\textquotesingle{}}
+

@@ -1,0 +1,176 @@
+\hypertarget{class_raylib_1_1_keyboard}{}\doxysection{Raylib\+::Keyboard Class Reference}
+\label{class_raylib_1_1_keyboard}\index{Raylib::Keyboard@{Raylib::Keyboard}}
+
+
+{\ttfamily \#include $<$Keyboard.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_keyboard_af3be3d23ba854ae105bde7a58cb1d948}{Keyboard}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_keyboard}{Keyboard}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_keyboard_a73690d55ace36b415ec2f8dd1aa4213d}{$\sim$\+Keyboard}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_keyboard}{Keyboard}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_keyboard_a0cc72d6466fa2ac2396dcfdcbbedc5b3}{is\+Key\+Pressed}} (const size\+\_\+t \&key)
+\begin{DoxyCompactList}\small\item\em Detect if a key has been pressed once. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_keyboard_a97a8d2c0f72429d7a1668563cbac5b75}{is\+Key\+Down}} (const size\+\_\+t \&key)
+\begin{DoxyCompactList}\small\item\em Detect if a key is being pressed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_keyboard_aee46e3639d2a15ffd362bc86ba289bb6}{is\+Key\+Released}} (const size\+\_\+t \&key)
+\begin{DoxyCompactList}\small\item\em Detect if a key has been released once. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_keyboard_ac341364f35192e1ded7ecf89d2857fd5}{is\+Key\+Up}} (const size\+\_\+t \&key)
+\begin{DoxyCompactList}\small\item\em Detect if a key is NOT being pressed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_keyboard_ab925a98a7da390094a6822a300e79e83}{set\+Exit\+Key}} (const size\+\_\+t \&key)
+\begin{DoxyCompactList}\small\item\em Set a custom key to exit program (default is ESC) \end{DoxyCompactList}\item 
+static size\+\_\+t \mbox{\hyperlink{class_raylib_1_1_keyboard_afa1bcb86588614089dfcea0ddfb83e03}{get\+Key\+Pressed}} (void)
+\begin{DoxyCompactList}\small\item\em Get key pressed (keycode), call it multiple times for keys queued. \end{DoxyCompactList}\item 
+static size\+\_\+t \mbox{\hyperlink{class_raylib_1_1_keyboard_aacc320dc8f21ca61591c3c4742924d94}{get\+Char\+Pressed}} (void)
+\begin{DoxyCompactList}\small\item\em Get char pressed (unicode), call it multiple times for chars queued. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_af3be3d23ba854ae105bde7a58cb1d948}\label{class_raylib_1_1_keyboard_af3be3d23ba854ae105bde7a58cb1d948}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{Keyboard()}{Keyboard()}}
+{\footnotesize\ttfamily Raylib\+::\+Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_keyboard}{Keyboard}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_a73690d55ace36b415ec2f8dd1aa4213d}\label{class_raylib_1_1_keyboard_a73690d55ace36b415ec2f8dd1aa4213d}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!````~Keyboard@{$\sim$Keyboard}}
+\index{````~Keyboard@{$\sim$Keyboard}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{$\sim$Keyboard()}{~Keyboard()}}
+{\footnotesize\ttfamily Raylib\+::\+Keyboard\+::$\sim$\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_keyboard}{Keyboard}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_aacc320dc8f21ca61591c3c4742924d94}\label{class_raylib_1_1_keyboard_aacc320dc8f21ca61591c3c4742924d94}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!getCharPressed@{getCharPressed}}
+\index{getCharPressed@{getCharPressed}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{getCharPressed()}{getCharPressed()}}
+{\footnotesize\ttfamily size\+\_\+t Raylib\+::\+Keyboard\+::get\+Char\+Pressed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get char pressed (unicode), call it multiple times for chars queued. 
+
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_afa1bcb86588614089dfcea0ddfb83e03}\label{class_raylib_1_1_keyboard_afa1bcb86588614089dfcea0ddfb83e03}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!getKeyPressed@{getKeyPressed}}
+\index{getKeyPressed@{getKeyPressed}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{getKeyPressed()}{getKeyPressed()}}
+{\footnotesize\ttfamily size\+\_\+t Raylib\+::\+Keyboard\+::get\+Key\+Pressed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get key pressed (keycode), call it multiple times for keys queued. 
+
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_a97a8d2c0f72429d7a1668563cbac5b75}\label{class_raylib_1_1_keyboard_a97a8d2c0f72429d7a1668563cbac5b75}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!isKeyDown@{isKeyDown}}
+\index{isKeyDown@{isKeyDown}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{isKeyDown()}{isKeyDown()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Keyboard\+::is\+Key\+Down (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a key is being pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if key is being pressed, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_a0cc72d6466fa2ac2396dcfdcbbedc5b3}\label{class_raylib_1_1_keyboard_a0cc72d6466fa2ac2396dcfdcbbedc5b3}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Keyboard\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a key has been pressed once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if key has been pressed once, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_aee46e3639d2a15ffd362bc86ba289bb6}\label{class_raylib_1_1_keyboard_aee46e3639d2a15ffd362bc86ba289bb6}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!isKeyReleased@{isKeyReleased}}
+\index{isKeyReleased@{isKeyReleased}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{isKeyReleased()}{isKeyReleased()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Keyboard\+::is\+Key\+Released (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a key has been released once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if key has been released once, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_ac341364f35192e1ded7ecf89d2857fd5}\label{class_raylib_1_1_keyboard_ac341364f35192e1ded7ecf89d2857fd5}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!isKeyUp@{isKeyUp}}
+\index{isKeyUp@{isKeyUp}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{isKeyUp()}{isKeyUp()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Keyboard\+::is\+Key\+Up (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a key is NOT being pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if key is NOT being pressed, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_keyboard_ab925a98a7da390094a6822a300e79e83}\label{class_raylib_1_1_keyboard_ab925a98a7da390094a6822a300e79e83}} 
+\index{Raylib::Keyboard@{Raylib::Keyboard}!setExitKey@{setExitKey}}
+\index{setExitKey@{setExitKey}!Raylib::Keyboard@{Raylib::Keyboard}}
+\doxysubsubsection{\texorpdfstring{setExitKey()}{setExitKey()}}
+{\footnotesize\ttfamily void Raylib\+::\+Keyboard\+::set\+Exit\+Key (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set a custom key to exit program (default is ESC) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Keyboard/\mbox{\hyperlink{_keyboard_8hpp}{Keyboard.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Keyboard/\mbox{\hyperlink{_keyboard_8cpp}{Keyboard.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Keyboard/\mbox{\hyperlink{_keyboard_8inl}{Keyboard.\+inl}}\end{DoxyCompactItemize}

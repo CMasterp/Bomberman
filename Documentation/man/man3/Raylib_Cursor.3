@@ -1,0 +1,104 @@
+.TH "Raylib::Cursor" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Cursor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Cursor\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCursor\fP ()"
+.br
+.RI "Construct a new \fBCursor\fP object\&. "
+.ti -1c
+.RI "\fB~Cursor\fP ()"
+.br
+.RI "Destroy the \fBCursor\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBshowCursor\fP (void)"
+.br
+.RI "Shows cursor\&. "
+.ti -1c
+.RI "static void \fBhideCursor\fP (void)"
+.br
+.RI "Hides cursor\&. "
+.ti -1c
+.RI "static bool \fBisCursorHidden\fP (void)"
+.br
+.RI "Check if cursor is not visible\&. "
+.ti -1c
+.RI "static void \fBenableCursor\fP (void)"
+.br
+.RI "Enables cursor (unlock cursor) "
+.ti -1c
+.RI "static void \fBdisableCursor\fP (void)"
+.br
+.RI "Disables cursor (lock cursor) "
+.ti -1c
+.RI "static bool \fBisCursorOnScreen\fP (void)"
+.br
+.RI "Check if cursor is on the current screen\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Cursor::Cursor ()"
+
+.PP
+Construct a new \fBCursor\fP object\&. 
+.SS "Raylib::Cursor::~Cursor ()"
+
+.PP
+Destroy the \fBCursor\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Cursor::disableCursor (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Disables cursor (lock cursor) 
+.SS "void Raylib::Cursor::enableCursor (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Enables cursor (unlock cursor) 
+.SS "void Raylib::Cursor::hideCursor (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Hides cursor\&. 
+.SS "bool Raylib::Cursor::isCursorHidden (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if cursor is not visible\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "bool Raylib::Cursor::isCursorOnScreen (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if cursor is on the current screen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if cursor is on the current screen, false otherwise 
+.RE
+.PP
+
+.SS "void Raylib::Cursor::showCursor (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Shows cursor\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

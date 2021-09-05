@@ -1,0 +1,647 @@
+\hypertarget{class_raylib_1_1_image}{}\doxysection{Raylib\+::Image Class Reference}
+\label{class_raylib_1_1_image}\index{Raylib::Image@{Raylib::Image}}
+
+
+{\ttfamily \#include $<$Image.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_image_afaf3c27e3dad1073d631d471805fabfd}{Image}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image_a129f8ffb6914400e12e97e53948363c2}{Image}} (const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&image)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image_aca91b4e3fc7da656fd99fe408d2f0bf4}{Image}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image_ad6fdc584e03e1e97c4e708ebf33d9c32}{Image}} (const std\+::string \&file\+Name, const int \&width, const int \&height, const int \&format, const int \&header\+Size)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image_aca671547bcd9c1aa6ccd7193a51a197b}{$\sim$\+Image}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a9ed2c5420272eb69e0a85aed2b4d3245}{get\+CStruct}} (void) const
+\begin{DoxyCompactList}\small\item\em Getter of \mbox{\hyperlink{class_raylib_1_1_image}{Image}} structure (private attribute) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_ae542adf77f6a4925242a653ad123970f}{get\+Screen\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Get pixel data from screen buffer and return an \mbox{\hyperlink{class_raylib_1_1_image}{Image}} (screenshot) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_ac9baefcc3abba6e0377fd58c282261b8}{load\+Image}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Load image from file into CPU memory (RAM) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a326323b2cf621a86fdea5ec5a3ac93ee}{load\+Image\+Raw}} (const std\+::string \&file\+Name, const int \&width, const int \&height, const int \&format, const int \&header\+Size)
+\begin{DoxyCompactList}\small\item\em Load image from RAW file data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_aa62ffeb8ff823879a26a49e1faf0aa1c}{load\+Image\+Anim}} (const std\+::string \&file\+Name, int $\ast$frames)
+\begin{DoxyCompactList}\small\item\em Load image sequence from file (frames appended to image.\+data) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a27460e1dd3b0fbf8fc8c457f6d484969}{load\+Image\+From\+Memory}} (const std\+::string \&file\+Type, const std\+::string \&file\+Data, const int \&data\+Size)
+\begin{DoxyCompactList}\small\item\em Load image from memory buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_image_a5d8b1d331e39b7c70a2d08cc950d516f}{unload\+Image}} (void)
+\begin{DoxyCompactList}\small\item\em Unload image from CPU memory (RAM) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_raylib_1_1_image_a18e46273d51621f5c307fdc2357ad30b}{export\+Image}} (const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&image, const std\+::string \&file\+Name) const
+\begin{DoxyCompactList}\small\item\em Export image data to file, returns true on success. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_raylib_1_1_image_a3a886c6fa3bee6febeb844e0844fc884}{export\+Image\+As\+Code}} (const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&image, const std\+::string \&file\+Name) const
+\begin{DoxyCompactList}\small\item\em Export image as code file defining an array of bytes, returns true on success. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_raylib_1_1_image_aef1af6a1bea3b8843426d996fbcff794}{get\+Pixel\+Data\+Size}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the pixel data size of the image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \& \mbox{\hyperlink{class_raylib_1_1_image_a18f36724260a12e27e382f13bb886771}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&image)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_aa84ed9feb8c7a99307aba093ef6ddbf4}{get\+Texture\+Data}} (\+::\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture) const
+\begin{DoxyCompactList}\small\item\em Get pixel data from GPU texture and return an \mbox{\hyperlink{class_raylib_1_1_image}{Image}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a564ad317e3490bed55066e2be699ad60}{gen\+Image\+Color}} (int const \&width, int const \&height, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color)
+\begin{DoxyCompactList}\small\item\em Generate image\+: plain color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a23b4e9d0b807392c56b18e2f1db26441}{gen\+Image\+GradientV}} (int const \&width, int const \&height, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&top, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&bottom)
+\begin{DoxyCompactList}\small\item\em Generate image\+: vertical gradient. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a4ccb1d005ae0eea27c73b6e396bf0dba}{gen\+Image\+GradientH}} (int const \&width, int const \&height, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&left, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&right)
+\begin{DoxyCompactList}\small\item\em Generate image\+: horizontal gradient. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a5b855dc52d033561eb32d7c346d6c815}{gen\+Image\+Gradient\+Radial}} (int const \&width, int const \&height, float density, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} inner, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} outer)
+\begin{DoxyCompactList}\small\item\em Generate image\+: radial gradient. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_ab109658054b1a9b30b53d0e8ce43bdbc}{gen\+Image\+Checked}} (int const \&width, int const \&height, int const \&checksX, int const \&checksY, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} col1, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} col2)
+\begin{DoxyCompactList}\small\item\em Generate image\+: checked. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_aa7d1e900e40c2db42253fcfa23ca9d3c}{gen\+Image\+White\+Noise}} (int const \&width, int const \&height, float const \&factor)
+\begin{DoxyCompactList}\small\item\em Generate image\+: white noise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a3db708dabbf3878e067d5d31f53eb567}{gen\+Image\+Perlin\+Noise}} (int const \&width, int const \&height, int offsetX, int offsetY, float scale)
+\begin{DoxyCompactList}\small\item\em Generate image\+: perlin noise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a7c1a61f6d7d3bb0067599d65cafc2a00}{gen\+Image\+Cellular}} (int const \&width, int const \&height, int const \&tile\+Size)
+\begin{DoxyCompactList}\small\item\em Generate image\+: cellular algorithm. Bigger tile\+Size means bigger cells. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a6cc3862f8d0396f16b084f26b8b304e1}{image\+Copy}} (\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&image)
+\begin{DoxyCompactList}\small\item\em Create an image duplicate (useful for transformations) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_ab8c6489eddd90c24602ea6d2ac8a6bea}{image\+From\+Image}} (\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&image, \+::\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec)
+\begin{DoxyCompactList}\small\item\em Create an image from another image piece. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_ae7562e9b03ba0549d7b87a5b12e30a8a}{image\+Text}} (const char $\ast$text, int const \&font\+Size, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color)
+\begin{DoxyCompactList}\small\item\em Create an image from text (default font) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \mbox{\hyperlink{class_raylib_1_1_image_a65a579c4644a26f7f9de8cb29a690112}{image\+Text\+Ex}} (\mbox{\hyperlink{class_raylib_1_1_font}{Font}} const \&font, const char $\ast$text, float const \&font\+Size, float const \&spacing, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint)
+\begin{DoxyCompactList}\small\item\em Create an image from text (custom sprite font) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_image_afaf3c27e3dad1073d631d471805fabfd}\label{class_raylib_1_1_image_afaf3c27e3dad1073d631d471805fabfd}} 
+\index{Raylib::Image@{Raylib::Image}!Image@{Image}}
+\index{Image@{Image}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Image\+::\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_image_a129f8ffb6914400e12e97e53948363c2}\label{class_raylib_1_1_image_a129f8ffb6914400e12e97e53948363c2}} 
+\index{Raylib::Image@{Raylib::Image}!Image@{Image}}
+\index{Image@{Image}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Image\+::\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&}]{image }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_image_aca91b4e3fc7da656fd99fe408d2f0bf4}\label{class_raylib_1_1_image_aca91b4e3fc7da656fd99fe408d2f0bf4}} 
+\index{Raylib::Image@{Raylib::Image}!Image@{Image}}
+\index{Image@{Image}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Image\+::\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_image_ad6fdc584e03e1e97c4e708ebf33d9c32}\label{class_raylib_1_1_image_ad6fdc584e03e1e97c4e708ebf33d9c32}} 
+\index{Raylib::Image@{Raylib::Image}!Image@{Image}}
+\index{Image@{Image}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Image\+::\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{const int \&}]{width,  }\item[{const int \&}]{height,  }\item[{const int \&}]{format,  }\item[{const int \&}]{header\+Size }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A string \\
+\hline
+{\em width} & An int \\
+\hline
+{\em height} & An int \\
+\hline
+{\em format} & An int \\
+\hline
+{\em header\+Size} & An int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_image_aca671547bcd9c1aa6ccd7193a51a197b}\label{class_raylib_1_1_image_aca671547bcd9c1aa6ccd7193a51a197b}} 
+\index{Raylib::Image@{Raylib::Image}!````~Image@{$\sim$Image}}
+\index{````~Image@{$\sim$Image}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{$\sim$Image()}{~Image()}}
+{\footnotesize\ttfamily Raylib\+::\+Image\+::$\sim$\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_image}{Image}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_image_a18e46273d51621f5c307fdc2357ad30b}\label{class_raylib_1_1_image_a18e46273d51621f5c307fdc2357ad30b}} 
+\index{Raylib::Image@{Raylib::Image}!exportImage@{exportImage}}
+\index{exportImage@{exportImage}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{exportImage()}{exportImage()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Image\+::export\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&}]{image,  }\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Export image data to file, returns true on success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+{\em file\+Name} & A const std\+::string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a3a886c6fa3bee6febeb844e0844fc884}\label{class_raylib_1_1_image_a3a886c6fa3bee6febeb844e0844fc884}} 
+\index{Raylib::Image@{Raylib::Image}!exportImageAsCode@{exportImageAsCode}}
+\index{exportImageAsCode@{exportImageAsCode}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{exportImageAsCode()}{exportImageAsCode()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Image\+::export\+Image\+As\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&}]{image,  }\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Export image as code file defining an array of bytes, returns true on success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+{\em file\+Name} & A const std\+::string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a7c1a61f6d7d3bb0067599d65cafc2a00}\label{class_raylib_1_1_image_a7c1a61f6d7d3bb0067599d65cafc2a00}} 
+\index{Raylib::Image@{Raylib::Image}!genImageCellular@{genImageCellular}}
+\index{genImageCellular@{genImageCellular}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImageCellular()}{genImageCellular()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+Cellular (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{int const \&}]{tile\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: cellular algorithm. Bigger tile\+Size means bigger cells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em tile\+Size} & A const reference to an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_ab109658054b1a9b30b53d0e8ce43bdbc}\label{class_raylib_1_1_image_ab109658054b1a9b30b53d0e8ce43bdbc}} 
+\index{Raylib::Image@{Raylib::Image}!genImageChecked@{genImageChecked}}
+\index{genImageChecked@{genImageChecked}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImageChecked()}{genImageChecked()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+Checked (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{int const \&}]{checksX,  }\item[{int const \&}]{checksY,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}}}]{col1,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}}}]{col2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: checked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em checksX} & A const reference to an int \\
+\hline
+{\em checksY} & A const reference to an int \\
+\hline
+{\em col1} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em col2} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a564ad317e3490bed55066e2be699ad60}\label{class_raylib_1_1_image_a564ad317e3490bed55066e2be699ad60}} 
+\index{Raylib::Image@{Raylib::Image}!genImageColor@{genImageColor}}
+\index{genImageColor@{genImageColor}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImageColor()}{genImageColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+Color (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: plain color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em color} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a4ccb1d005ae0eea27c73b6e396bf0dba}\label{class_raylib_1_1_image_a4ccb1d005ae0eea27c73b6e396bf0dba}} 
+\index{Raylib::Image@{Raylib::Image}!genImageGradientH@{genImageGradientH}}
+\index{genImageGradientH@{genImageGradientH}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImageGradientH()}{genImageGradientH()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+GradientH (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{left,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: horizontal gradient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em left} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em right} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a5b855dc52d033561eb32d7c346d6c815}\label{class_raylib_1_1_image_a5b855dc52d033561eb32d7c346d6c815}} 
+\index{Raylib::Image@{Raylib::Image}!genImageGradientRadial@{genImageGradientRadial}}
+\index{genImageGradientRadial@{genImageGradientRadial}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImageGradientRadial()}{genImageGradientRadial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+Gradient\+Radial (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{float}]{density,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}}}]{inner,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}}}]{outer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: radial gradient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em inner} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em outer} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a23b4e9d0b807392c56b18e2f1db26441}\label{class_raylib_1_1_image_a23b4e9d0b807392c56b18e2f1db26441}} 
+\index{Raylib::Image@{Raylib::Image}!genImageGradientV@{genImageGradientV}}
+\index{genImageGradientV@{genImageGradientV}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImageGradientV()}{genImageGradientV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+GradientV (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{top,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{bottom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: vertical gradient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em top} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em bottom} & A const pointer to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a3db708dabbf3878e067d5d31f53eb567}\label{class_raylib_1_1_image_a3db708dabbf3878e067d5d31f53eb567}} 
+\index{Raylib::Image@{Raylib::Image}!genImagePerlinNoise@{genImagePerlinNoise}}
+\index{genImagePerlinNoise@{genImagePerlinNoise}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImagePerlinNoise()}{genImagePerlinNoise()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+Perlin\+Noise (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{int}]{offsetX,  }\item[{int}]{offsetY,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: perlin noise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em offsetX} & A const reference to an int \\
+\hline
+{\em offsetY} & A const reference to an int \\
+\hline
+{\em scale} & A const reference to a float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_aa7d1e900e40c2db42253fcfa23ca9d3c}\label{class_raylib_1_1_image_aa7d1e900e40c2db42253fcfa23ca9d3c}} 
+\index{Raylib::Image@{Raylib::Image}!genImageWhiteNoise@{genImageWhiteNoise}}
+\index{genImageWhiteNoise@{genImageWhiteNoise}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{genImageWhiteNoise()}{genImageWhiteNoise()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::gen\+Image\+White\+Noise (\begin{DoxyParamCaption}\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{float const \&}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate image\+: white noise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em factor} & A const reference to a float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a9ed2c5420272eb69e0a85aed2b4d3245}\label{class_raylib_1_1_image_a9ed2c5420272eb69e0a85aed2b4d3245}} 
+\index{Raylib::Image@{Raylib::Image}!getCStruct@{getCStruct}}
+\index{getCStruct@{getCStruct}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{getCStruct()}{getCStruct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Raylib\+::\+Image\+::get\+CStruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter of \mbox{\hyperlink{class_raylib_1_1_image}{Image}} structure (private attribute) 
+
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} C structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_aef1af6a1bea3b8843426d996fbcff794}\label{class_raylib_1_1_image_aef1af6a1bea3b8843426d996fbcff794}} 
+\index{Raylib::Image@{Raylib::Image}!getPixelDataSize@{getPixelDataSize}}
+\index{getPixelDataSize@{getPixelDataSize}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{getPixelDataSize()}{getPixelDataSize()}}
+{\footnotesize\ttfamily int Raylib\+::\+Image\+::get\+Pixel\+Data\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the pixel data size of the image. 
+
+\begin{DoxyReturn}{Returns}
+The pixel data size of the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_ae542adf77f6a4925242a653ad123970f}\label{class_raylib_1_1_image_ae542adf77f6a4925242a653ad123970f}} 
+\index{Raylib::Image@{Raylib::Image}!getScreenData@{getScreenData}}
+\index{getScreenData@{getScreenData}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{getScreenData()}{getScreenData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::get\+Screen\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get pixel data from screen buffer and return an \mbox{\hyperlink{class_raylib_1_1_image}{Image}} (screenshot) 
+
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_aa84ed9feb8c7a99307aba093ef6ddbf4}\label{class_raylib_1_1_image_aa84ed9feb8c7a99307aba093ef6ddbf4}} 
+\index{Raylib::Image@{Raylib::Image}!getTextureData@{getTextureData}}
+\index{getTextureData@{getTextureData}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{getTextureData()}{getTextureData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::get\+Texture\+Data (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get pixel data from GPU texture and return an \mbox{\hyperlink{class_raylib_1_1_image}{Image}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a6cc3862f8d0396f16b084f26b8b304e1}\label{class_raylib_1_1_image_a6cc3862f8d0396f16b084f26b8b304e1}} 
+\index{Raylib::Image@{Raylib::Image}!imageCopy@{imageCopy}}
+\index{imageCopy@{imageCopy}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{imageCopy()}{imageCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::image\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create an image duplicate (useful for transformations) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_ab8c6489eddd90c24602ea6d2ac8a6bea}\label{class_raylib_1_1_image_ab8c6489eddd90c24602ea6d2ac8a6bea}} 
+\index{Raylib::Image@{Raylib::Image}!imageFromImage@{imageFromImage}}
+\index{imageFromImage@{imageFromImage}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{imageFromImage()}{imageFromImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::image\+From\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&}]{image,  }\item[{\+::\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create an image from another image piece. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+{\em rec} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_ae7562e9b03ba0549d7b87a5b12e30a8a}\label{class_raylib_1_1_image_ae7562e9b03ba0549d7b87a5b12e30a8a}} 
+\index{Raylib::Image@{Raylib::Image}!imageText@{imageText}}
+\index{imageText@{imageText}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{imageText()}{imageText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::image\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text,  }\item[{int const \&}]{font\+Size,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create an image from text (default font) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & A const pointer to a char \\
+\hline
+{\em font\+Size} & A const reference to an int \\
+\hline
+{\em color} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a65a579c4644a26f7f9de8cb29a690112}\label{class_raylib_1_1_image_a65a579c4644a26f7f9de8cb29a690112}} 
+\index{Raylib::Image@{Raylib::Image}!imageTextEx@{imageTextEx}}
+\index{imageTextEx@{imageTextEx}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{imageTextEx()}{imageTextEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::image\+Text\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_font}{Font}} const \&}]{font,  }\item[{const char $\ast$}]{text,  }\item[{float const \&}]{font\+Size,  }\item[{float const \&}]{spacing,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create an image from text (custom sprite font) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_font}{Font}} \\
+\hline
+{\em text} & A const pointer to a char \\
+\hline
+{\em font\+Size} & A const pointer to a float \\
+\hline
+{\em spacing} & A const pointer to a float \\
+\hline
+{\em tint} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_ac9baefcc3abba6e0377fd58c282261b8}\label{class_raylib_1_1_image_ac9baefcc3abba6e0377fd58c282261b8}} 
+\index{Raylib::Image@{Raylib::Image}!loadImage@{loadImage}}
+\index{loadImage@{loadImage}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{loadImage()}{loadImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::load\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load image from file into CPU memory (RAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A const std\+::string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_aa62ffeb8ff823879a26a49e1faf0aa1c}\label{class_raylib_1_1_image_aa62ffeb8ff823879a26a49e1faf0aa1c}} 
+\index{Raylib::Image@{Raylib::Image}!loadImageAnim@{loadImageAnim}}
+\index{loadImageAnim@{loadImageAnim}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{loadImageAnim()}{loadImageAnim()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::load\+Image\+Anim (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{int $\ast$}]{frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load image sequence from file (frames appended to image.\+data) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A const std\+::string \\
+\hline
+{\em frames} & An int $\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a27460e1dd3b0fbf8fc8c457f6d484969}\label{class_raylib_1_1_image_a27460e1dd3b0fbf8fc8c457f6d484969}} 
+\index{Raylib::Image@{Raylib::Image}!loadImageFromMemory@{loadImageFromMemory}}
+\index{loadImageFromMemory@{loadImageFromMemory}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{loadImageFromMemory()}{loadImageFromMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::load\+Image\+From\+Memory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Type,  }\item[{const std\+::string \&}]{file\+Data,  }\item[{const int \&}]{data\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load image from memory buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Type} & A const std\+::string \\
+\hline
+{\em file\+Data} & A const unsigned std\+::string \\
+\hline
+{\em data\+Size} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a326323b2cf621a86fdea5ec5a3ac93ee}\label{class_raylib_1_1_image_a326323b2cf621a86fdea5ec5a3ac93ee}} 
+\index{Raylib::Image@{Raylib::Image}!loadImageRaw@{loadImageRaw}}
+\index{loadImageRaw@{loadImageRaw}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{loadImageRaw()}{loadImageRaw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} Raylib\+::\+Image\+::load\+Image\+Raw (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{const int \&}]{width,  }\item[{const int \&}]{height,  }\item[{const int \&}]{format,  }\item[{const int \&}]{header\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load image from RAW file data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A const std\+::string \\
+\hline
+{\em width} & An int \\
+\hline
+{\em height} & An int \\
+\hline
+{\em format} & An int \\
+\hline
+{\em header\+Size} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a18f36724260a12e27e382f13bb886771}\label{class_raylib_1_1_image_a18f36724260a12e27e382f13bb886771}} 
+\index{Raylib::Image@{Raylib::Image}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} \& Raylib\+::\+Image\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & A const reference to An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_image}{Image}} (\mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_image_a5d8b1d331e39b7c70a2d08cc950d516f}\label{class_raylib_1_1_image_a5d8b1d331e39b7c70a2d08cc950d516f}} 
+\index{Raylib::Image@{Raylib::Image}!unloadImage@{unloadImage}}
+\index{unloadImage@{unloadImage}!Raylib::Image@{Raylib::Image}}
+\doxysubsubsection{\texorpdfstring{unloadImage()}{unloadImage()}}
+{\footnotesize\ttfamily void Raylib\+::\+Image\+::unload\+Image (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unload image from CPU memory (RAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Image/\mbox{\hyperlink{_image_8hpp}{Image.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Image/\mbox{\hyperlink{_image_8cpp}{Image.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Image/\mbox{\hyperlink{_image_8inl}{Image.\+inl}}\end{DoxyCompactItemize}

@@ -1,0 +1,274 @@
+.TH "Raylib::Collision3D" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Collision3D
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Collision3D\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCollision3D\fP ()"
+.br
+.RI "Construct a new \fBCollision3D\fP object\&. "
+.ti -1c
+.RI "\fB~Collision3D\fP ()"
+.br
+.RI "Destroy the \fBCollision3D\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const \fBVector3\fP &center1, const float &radius1, const \fBVector3\fP &center2, const float &radius2)"
+.br
+.RI "Check if 2 spheres intersect\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const ::BoundingBox &box1, const ::BoundingBox &box)"
+.br
+.RI "Check if 2 spheres intersect\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const ::BoundingBox &box1, const \fBVector3\fP &center, const float &radius)"
+.br
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const ::Ray &ray, const \fBVector3\fP &center, const float &radius)"
+.br
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const ::Ray &ray, const \fBVector3\fP &center, const float &radius, \fBVector3\fP &collisionPoint)"
+.br
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const ::Ray &ray, const ::BoundingBox &box)"
+.br
+.ti -1c
+.RI "::RayHitInfo \fBgetCollisionRay\fP (const ::Ray &ray, const ::Mesh &mesh, const ::\fBMatrix\fP &transform)"
+.br
+.RI "Get the Collision Ray object\&. "
+.ti -1c
+.RI "::RayHitInfo \fBgetCollisionRay\fP (const ::Ray &ray, const ::Model &model)"
+.br
+.RI "Get the Collision Ray object\&. "
+.ti -1c
+.RI "::RayHitInfo \fBgetCollisionRay\fP (const ::Ray &ray, const \fBVector3\fP &\fBp1\fP, const \fBVector3\fP &\fBp2\fP, const \fBVector3\fP &\fBp3\fP)"
+.br
+.RI "Get the Collision Ray object\&. "
+.ti -1c
+.RI "::RayHitInfo \fBgetCollisionRay\fP (const ::Ray &ray, const float &groundHeight)"
+.br
+.RI "Get the Collision Ray object\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Collision3D::Collision3D ()"
+
+.PP
+Construct a new \fBCollision3D\fP object\&. 
+.SS "Raylib::Collision3D::~Collision3D ()"
+
+.PP
+Destroy the \fBCollision3D\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Raylib::Collision3D::checkCollision (const ::BoundingBox & box1, const ::BoundingBox & box)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if 2 spheres intersect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcenter\fP the circle's center position 
+.br
+\fIradius\fP the circle's radius 
+.br
+\fIrec\fP the rectangle 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangle and the circle intersect false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision3D::checkCollision (const ::BoundingBox & box1, const \fBVector3\fP & center, const float & radius)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP the point coordinates 
+.br
+\fIrec\fP the rectangle 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the point is on the rectangle false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision3D::checkCollision (const ::Ray & ray, const ::BoundingBox & box)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIstartPos1\fP the first lines's start position 
+.br
+\fIendPos1\fP the first lines's end position 
+.br
+\fIstartPos2\fP the second lines's start position 
+.br
+\fIendPos2\fP the second lines's end position 
+.br
+\fIcollisionPoint\fP the collision point pointer 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangle and the circle intersect false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision3D::checkCollision (const ::Ray & ray, const \fBVector3\fP & center, const float & radius)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP the point coordinates 
+.br
+\fIcenter\fP the circle's center position 
+.br
+\fIradius\fP the circle's radius 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangle and the circle intersect false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision3D::checkCollision (const ::Ray & ray, const \fBVector3\fP & center, const float & radius, \fBVector3\fP & collisionPoint)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP the point coordinates 
+.br
+\fIp1\fP the first triangle's point 
+.br
+\fIp2\fP the second trinagle's point 
+.br
+\fIp3\fP the third triangle's point 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangle and the circle intersect false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision3D::checkCollision (const \fBVector3\fP & center1, const float & radius1, const \fBVector3\fP & center2, const float & radius2)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if 2 spheres intersect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcenter1\fP the first circle's center position 
+.br
+\fIradius1\fP the first circle's radius 
+.br
+\fIcenter2\fP the second circle's center position 
+.br
+\fIradius2\fP the second circle's radius 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangles intersect, false otherwise 
+.RE
+.PP
+
+.SS "RayHitInfo Raylib::Collision3D::getCollisionRay (const ::Ray & ray, const ::Mesh & mesh, const ::\fBMatrix\fP & transform)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the Collision Ray object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIray\fP The ray 
+.br
+\fImesh\fP The mesh 
+.br
+\fItransform\fP The matrix transformation 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+RayHitInfo informations about the collision ray 
+.RE
+.PP
+
+.SS "RayHitInfo Raylib::Collision3D::getCollisionRay (const ::Ray & ray, const ::Model & model)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the Collision Ray object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIray\fP The ray 
+.br
+\fImodel\fP The 3D model 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+RayHitInfo informations about the collision ray 
+.RE
+.PP
+
+.SS "RayHitInfo Raylib::Collision3D::getCollisionRay (const ::Ray & ray, const float & groundHeight)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the Collision Ray object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIray\fP The ray 
+.br
+\fIgroundHeight\fP The ground height 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+RayHitInfo informations about the collision ray 
+.RE
+.PP
+
+.SS "RayHitInfo Raylib::Collision3D::getCollisionRay (const ::Ray & ray, const \fBVector3\fP & p1, const \fBVector3\fP & p2, const \fBVector3\fP & p3)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the Collision Ray object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIray\fP The ray 
+.br
+\fIp1\fP The first point 
+.br
+\fIp2\fP The second point 
+.br
+\fIp3\fP The thirst point 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+RayHitInfo informations about the collision ray 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

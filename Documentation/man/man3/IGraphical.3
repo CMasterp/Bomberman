@@ -1,0 +1,527 @@
+.TH "IGraphical" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IGraphical
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IGraphical\&.hpp>\fP
+.PP
+Inherited by \fBXRay\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBScene\fP { \fBMENU\fP, \fBGAME_MODE\fP, \fBHELP\fP, \fBSETTINGS\fP, \fBPLAYER_CHOICE\fP, \fBMAP_CHOICE\fP, \fBLOAD_GAME\fP, \fBIN_GAME\fP, \fBVICTORY\fP, \fBDEFEAT\fP, \fBEND_GAME\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IGraphical\fP (void)=default"
+.br
+.RI "Destroy the \fBIGraphical\fP object\&. "
+.ti -1c
+.RI "virtual bool \fBshouldCloseWindow\fP (void) const =0"
+.br
+.RI "Check if the window should be close\&. "
+.ti -1c
+.RI "virtual void \fBsetScores\fP (const std::vector< std::pair< std::string, std::string >> &scores)=0"
+.br
+.RI "This function sets the list of scores\&. First element of the pair is the username, the second is the score\&. "
+.ti -1c
+.RI "virtual void \fBsetBestScores\fP (const std::vector< std::pair< std::string, std::string >> &scores)=0"
+.br
+.RI "This function sets the list of bests scores\&. First element of the pair is the username, the second is the score\&. "
+.ti -1c
+.RI "virtual void \fBupdateGameInfos\fP (const std::vector< std::shared_ptr< \fBIEntity\fP >> &gameInfos)=0"
+.br
+.RI "This is called in a loop when the game is running\&. This vector contains entities that should be displayed in the game scene\&. "
+.ti -1c
+.RI "virtual void \fBsetPlayersStats\fP (const std::vector< std::vector< std::pair< std::string, std::string >>> &info)=0"
+.br
+.RI "This is called in a loop when the game is running\&. Sets the current informations about players and their stats\&. The first element of the pair is the category (e\&.g\&. Score), the second is the value (e\&.g\&. 200)\&. "
+.ti -1c
+.RI "virtual const std::vector< std::string > & \fBgetUserNames\fP (void) const =0"
+.br
+.RI "Get the User Names\&. "
+.ti -1c
+.RI "virtual void \fBsetUserNames\fP (const std::vector< std::string > &userNames)=0"
+.br
+.RI "Set the User Names\&. "
+.ti -1c
+.RI "virtual const std::vector< std::string > & \fBgetBackups\fP (void) const =0"
+.br
+.RI "Get the paths to all backups files\&. "
+.ti -1c
+.RI "virtual void \fBsetBackups\fP (const std::vector< std::string > &backups)=0"
+.br
+.RI "Get the paths to all backups files\&. "
+.ti -1c
+.RI "virtual \fBScene\fP \fBgetScene\fP (void) const =0"
+.br
+.RI "Returns the current scene\&. "
+.ti -1c
+.RI "virtual void \fBsetScene\fP (const \fBScene\fP &scene)=0"
+.br
+.RI "Set the current scene\&. "
+.ti -1c
+.RI "virtual void \fBcloseWindow\fP (void) const =0"
+.br
+.RI "Close window\&. "
+.ti -1c
+.RI "virtual void \fBbeginDrawing\fP (void) const =0"
+.br
+.RI "Set buffer to Draw textures\&. "
+.ti -1c
+.RI "virtual void \fBendDrawing\fP (void) const =0"
+.br
+.RI "Unset buffer to Draw textures\&. "
+.ti -1c
+.RI "virtual void \fBdisplay\fP (void)=0"
+.br
+.RI "This function must display the current scene\&. It is used in the game loop\&. "
+.ti -1c
+.RI "virtual void \fBsetMap\fP (std::vector< std::string > &map)=0"
+.br
+.RI "Set the Map\&. "
+.ti -1c
+.RI "virtual std::pair< size_t, size_t > \fBgetMapSizeAndType\fP ()=0"
+.br
+.RI "Get the size and type of Map\&. "
+.ti -1c
+.RI "virtual void \fBsetMapSize\fP (size_t size)=0"
+.br
+.RI "Set the size of Map\&. "
+.ti -1c
+.RI "virtual void \fBsetLoadFunc\fP (std::function< void(std::string)>)=0"
+.br
+.RI "Set pointer to Load Function\&. "
+.ti -1c
+.RI "virtual void \fBsetSaveFunc\fP (std::function< void(std::array< std::size_t, 9 >, std::vector< std::string >)>)=0"
+.br
+.RI "Set pointer to Save Function\&. "
+.ti -1c
+.RI "virtual void \fBsetSettingsFunc\fP (std::function< void(std::array< std::size_t, 9 >)>)=0"
+.br
+.RI "Set pointer to Settings Function\&. "
+.ti -1c
+.RI "virtual void \fBsetRestartFunc\fP (std::function< void()>)=0"
+.br
+.RI "Set the Restart Func\&. "
+.ti -1c
+.RI "virtual std::array< size_t, 9 > \fBgetGameSettings\fP ()=0"
+.br
+.RI "Get \fBGame\fP Settings\&. "
+.ti -1c
+.RI "virtual void \fBsetPlayerActionsFunc\fP (std::function< void(const size_t pos, const std::string action)>)=0"
+.br
+.RI "Set the Player Actions Func\&. "
+.ti -1c
+.RI "virtual void \fBsetGameSettings\fP (const std::array< size_t, 9 > &settings)=0"
+.br
+.ti -1c
+.RI "virtual std::vector< \fBCharDictionary\fP > \fBgetPlayersData\fP ()=0"
+.br
+.RI "Get the Players Data\&. "
+.ti -1c
+.RI "virtual std::vector< std::string > \fBgetPlayerControls\fP (void) const =0"
+.br
+.RI "Get the player controls\&. "
+.ti -1c
+.RI "virtual void \fBsetPlayerControls\fP (const std::vector< std::string > &playerControls)=0"
+.br
+.RI "Set the player controls\&. "
+.ti -1c
+.RI "virtual void \fBcameraShake\fP (void)=0"
+.br
+.RI "Shake the camera\&. "
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBIGraphical::Scene\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIMENU \fP\fP
+This scene is the main menu of our game\&. 
+.TP
+\fB\fIGAME_MODE \fP\fP
+This scene is the one used to choose the game mode\&. 
+.TP
+\fB\fIHELP \fP\fP
+This scene represents the HELP section, containing information such as how to play etc\&. 
+.TP
+\fB\fISETTINGS \fP\fP
+This scene represents the settings section\&. 
+.TP
+\fB\fIPLAYER_CHOICE \fP\fP
+This scene is the one used to choose the players and the different game parameters\&. 
+.TP
+\fB\fIMAP_CHOICE \fP\fP
+This scene is the one used to choose map, sets and time\&. 
+.TP
+\fB\fILOAD_GAME \fP\fP
+This scene is the one used to load a game backup\&. 
+.TP
+\fB\fIIN_GAME \fP\fP
+This is the scene where the game is in progress\&. 
+.TP
+\fB\fIVICTORY \fP\fP
+This is the scene where the display winner options\&. 
+.TP
+\fB\fIDEFEAT \fP\fP
+This is the scene where the display loser options\&. 
+.TP
+\fB\fIEND_GAME \fP\fP
+This scene represents the end of the game\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual IGraphical::~IGraphical (void)\fC [virtual]\fP, \fC [default]\fP"
+
+.PP
+Destroy the \fBIGraphical\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void IGraphical::beginDrawing (void) const\fC [pure virtual]\fP"
+
+.PP
+Set buffer to Draw textures\&. 
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::cameraShake (void)\fC [pure virtual]\fP"
+
+.PP
+Shake the camera\&. 
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::closeWindow (void) const\fC [pure virtual]\fP"
+
+.PP
+Close window\&. 
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::display (void)\fC [pure virtual]\fP"
+
+.PP
+This function must display the current scene\&. It is used in the game loop\&. 
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::endDrawing (void) const\fC [pure virtual]\fP"
+
+.PP
+Unset buffer to Draw textures\&. 
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual const std::vector<std::string>& IGraphical::getBackups (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the paths to all backups files\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of all the paths to backups files as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual std::array<size_t, 9> IGraphical::getGameSettings ()\fC [pure virtual]\fP"
+
+.PP
+Get \fBGame\fP Settings\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An array of 9 size_t 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual std::pair<size_t, size_t> IGraphical::getMapSizeAndType ()\fC [pure virtual]\fP"
+
+.PP
+Get the size and type of Map\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pair of size_t 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual std::vector<std::string> IGraphical::getPlayerControls (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the player controls\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector containing the player controls as a string 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual std::vector<\fBCharDictionary\fP> IGraphical::getPlayersData ()\fC [pure virtual]\fP"
+
+.PP
+Get the Players Data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<CharDictionary> containing players data 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual \fBScene\fP IGraphical::getScene (void) const\fC [pure virtual]\fP"
+
+.PP
+Returns the current scene\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The scene (MAIN_MENU, GAME, END_GAME\&.\&.\&.), the step where we are in the window 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual const std::vector<std::string>& IGraphical::getUserNames (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the User Names\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of all the users names as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setBackups (const std::vector< std::string > & backups)\fC [pure virtual]\fP"
+
+.PP
+Get the paths to all backups files\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbackups\fP A vector of all the paths to backups files as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setBestScores (const std::vector< std::pair< std::string, std::string >> & scores)\fC [pure virtual]\fP"
+
+.PP
+This function sets the list of bests scores\&. First element of the pair is the username, the second is the score\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscores\fP A vector of pair (username, score) 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setGameSettings (const std::array< size_t, 9 > & settings)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setLoadFunc (std::function< void(std::string)>)\fC [pure virtual]\fP"
+
+.PP
+Set pointer to Load Function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIloadFunc\fP A pointer to Load function in the core 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setMap (std::vector< std::string > & map)\fC [pure virtual]\fP"
+
+.PP
+Set the Map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImap\fP A const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setMapSize (size_t size)\fC [pure virtual]\fP"
+
+.PP
+Set the size of Map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsize\fP A size_t 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setPlayerActionsFunc (std::function< void(const size_t pos, const std::string action)>)\fC [pure virtual]\fP"
+
+.PP
+Set the Player Actions Func\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerActionsFunc\fP A pointer to function that manage all players actions in the game (left, right \&.\&.\&.) 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setPlayerControls (const std::vector< std::string > & playerControls)\fC [pure virtual]\fP"
+
+.PP
+Set the player controls\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerControls\fP A vector containing all the player controls as a string 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setPlayersStats (const std::vector< std::vector< std::pair< std::string, std::string >>> & info)\fC [pure virtual]\fP"
+
+.PP
+This is called in a loop when the game is running\&. Sets the current informations about players and their stats\&. The first element of the pair is the category (e\&.g\&. Score), the second is the value (e\&.g\&. 200)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinfo\fP A vector of a vector all the stats by player [Player -- (NameOfStat, Value)]\&.\&.\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setRestartFunc (std::function< void()>)\fC [pure virtual]\fP"
+
+.PP
+Set the Restart Func\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrestartFunc\fP A pointer to Restart function in the core 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setSaveFunc (std::function< void(std::array< std::size_t, 9 >, std::vector< std::string >)>)\fC [pure virtual]\fP"
+
+.PP
+Set pointer to Save Function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsaveFunc\fP A pointer to Save function in the core 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setScene (const \fBScene\fP & scene)\fC [pure virtual]\fP"
+
+.PP
+Set the current scene\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscene\fP The scene (MAIN_MENU, GAME, END_GAME\&.\&.\&.), the step where we are in the window 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setScores (const std::vector< std::pair< std::string, std::string >> & scores)\fC [pure virtual]\fP"
+
+.PP
+This function sets the list of scores\&. First element of the pair is the username, the second is the score\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscores\fP A vector of pair (username, score) 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setSettingsFunc (std::function< void(std::array< std::size_t, 9 >)>)\fC [pure virtual]\fP"
+
+.PP
+Set pointer to Settings Function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettingsFunc\fP A pointer to Settings function in the core 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::setUserNames (const std::vector< std::string > & userNames)\fC [pure virtual]\fP"
+
+.PP
+Set the User Names\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserNames\fP A vector containing all the users names 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual bool IGraphical::shouldCloseWindow (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if the window should be close\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the window should close and false otherwise 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+.SS "virtual void IGraphical::updateGameInfos (const std::vector< std::shared_ptr< \fBIEntity\fP >> & gameInfos)\fC [pure virtual]\fP"
+
+.PP
+This is called in a loop when the game is running\&. This vector contains entities that should be displayed in the game scene\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgameInfos\fP A vector of shared pointer that represent all the entities to display\&. Ex : Map, Score, UserInfo, Button 
+.RE
+.PP
+
+.PP
+Implemented in \fBXRay\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,158 @@
+\hypertarget{class_player_selector_1_1_player}{}\doxysection{Player\+Selector\+::Player Class Reference}
+\label{class_player_selector_1_1_player}\index{PlayerSelector::Player@{PlayerSelector::Player}}
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_selector_1_1_player_aadb96f915cb3901556e43235328162da}{Player}} (const std\+::string \&obj, const std\+::string \&texture, const float \&scalable, const int \&id\+Character, const std\+::string \&name, const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} \&color=\mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}(), const std\+::vector$<$ std\+::string $>$ \&animations=\{\})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_player_selector_1_1_player}{Player}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_selector_1_1_player_a082a1d2fe3021f8ac398c033f768ad7f}{$\sim$\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_player_selector_1_1_player}{Player}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_player_ab96e5ec8f5752e0070d65ea016593624}{draw}} (const float \&rotation, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&pos)
+\begin{DoxyCompactList}\small\item\em Display the character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_player_a3e6db8465938cbc1265167337a084905}{draw\+For\+Maps}} (const float \&rotation, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&pos)
+\begin{DoxyCompactList}\small\item\em Display the character on the map selector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_selector_1_1_player_a83256364c826a4a3d7559ba4a3ea89b6}{get\+Id}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the character\textquotesingle{}s Id. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{class_player_selector_1_1_player_a9f49a971124f399f4a0dac12a5de2eb4}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the Name. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} \mbox{\hyperlink{class_player_selector_1_1_player_aeb8ff016a615bd920e80c0404b75cc76}{get\+Char\+Dictionary}} () const
+\begin{DoxyCompactList}\small\item\em Get the Char Dictionary object. \end{DoxyCompactList}\item 
+std\+::pair$<$ Model, float $>$ \mbox{\hyperlink{class_player_selector_1_1_player_a0d94cf1b67f4e3ee88b4b4d3dca01169}{get\+Model}} () const
+\begin{DoxyCompactList}\small\item\em Get the Model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_player_aadb96f915cb3901556e43235328162da}\label{class_player_selector_1_1_player_aadb96f915cb3901556e43235328162da}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!Player@{Player}}
+\index{Player@{Player}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+Selector\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj,  }\item[{const std\+::string \&}]{texture,  }\item[{const float \&}]{scalable,  }\item[{const int \&}]{id\+Character,  }\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} \&}]{color = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}()},  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{animations = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_player_selector_1_1_player}{Player}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & model path \\
+\hline
+{\em texture} & texture path \\
+\hline
+{\em scalable} & scalable value \\
+\hline
+{\em id\+Character} & id of the character \\
+\hline
+{\em name} & name of the character \\
+\hline
+{\em color} & main color of the character \\
+\hline
+{\em animations} & strings vector of animations\textquotesingle{}path \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_player_a082a1d2fe3021f8ac398c033f768ad7f}\label{class_player_selector_1_1_player_a082a1d2fe3021f8ac398c033f768ad7f}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+Selector\+::\+Player\+::$\sim$\+Player (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_player_selector_1_1_player}{Player}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_player_ab96e5ec8f5752e0070d65ea016593624}\label{class_player_selector_1_1_player_ab96e5ec8f5752e0070d65ea016593624}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!draw@{draw}}
+\index{draw@{draw}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Player\+::draw (\begin{DoxyParamCaption}\item[{const float \&}]{rotation,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Display the character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & rotation value (if there\textquotesingle{}s not animations) \\
+\hline
+{\em pos} & position to display the character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_player_a3e6db8465938cbc1265167337a084905}\label{class_player_selector_1_1_player_a3e6db8465938cbc1265167337a084905}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!drawForMaps@{drawForMaps}}
+\index{drawForMaps@{drawForMaps}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{drawForMaps()}{drawForMaps()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Player\+::draw\+For\+Maps (\begin{DoxyParamCaption}\item[{const float \&}]{rotation,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Display the character on the map selector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & position to display the character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_player_aeb8ff016a615bd920e80c0404b75cc76}\label{class_player_selector_1_1_player_aeb8ff016a615bd920e80c0404b75cc76}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!getCharDictionary@{getCharDictionary}}
+\index{getCharDictionary@{getCharDictionary}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{getCharDictionary()}{getCharDictionary()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} Player\+Selector\+::\+Player\+::get\+Char\+Dictionary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Char Dictionary object. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_player_a83256364c826a4a3d7559ba4a3ea89b6}\label{class_player_selector_1_1_player_a83256364c826a4a3d7559ba4a3ea89b6}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!getId@{getId}}
+\index{getId@{getId}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Player\+Selector\+::\+Player\+::get\+Id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the character\textquotesingle{}s Id. 
+
+\begin{DoxyReturn}{Returns}
+the id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_player_a0d94cf1b67f4e3ee88b4b4d3dca01169}\label{class_player_selector_1_1_player_a0d94cf1b67f4e3ee88b4b4d3dca01169}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!getModel@{getModel}}
+\index{getModel@{getModel}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily std\+::pair$<$ Model, float $>$ Player\+Selector\+::\+Player\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Model. 
+
+\begin{DoxyReturn}{Returns}
+a pair of the Model and its scalable value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_player_a9f49a971124f399f4a0dac12a5de2eb4}\label{class_player_selector_1_1_player_a9f49a971124f399f4a0dac12a5de2eb4}} 
+\index{PlayerSelector::Player@{PlayerSelector::Player}!getName@{getName}}
+\index{getName@{getName}!PlayerSelector::Player@{PlayerSelector::Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string Player\+Selector\+::\+Player\+::get\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Name. 
+
+\begin{DoxyReturn}{Returns}
+the character\textquotesingle{}s name 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\+Player\+Selector/\mbox{\hyperlink{_lib_2_x_raylib_2_x_ray_2includes_2_player_selector_2_player_8hpp}{Player.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\+Player\+Selector/\mbox{\hyperlink{_lib_2_x_raylib_2_x_ray_2sources_2_player_selector_2_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+.TH "Game::MotionlessEntity" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::MotionlessEntity
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MotionlessEntity\&.hpp>\fP
+.PP
+Inherits \fBIEntity\fP\&.
+.PP
+Inherited by \fBGame::BreakableWall\fP\fC [virtual]\fP, \fBGame::Floor\fP\fC [virtual]\fP, and \fBGame::SolidWall\fP\fC [virtual]\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~MotionlessEntity\fP (void)"
+.br
+.RI "Destroy the Motionless Entity object\&. "
+.ti -1c
+.RI "virtual std::string \fBgetType\fP (void) const =0"
+.br
+.RI "Get the Type object\&. "
+.ti -1c
+.RI "\fBRaylib::Vector3\fP \fBgetPositions\fP (void) const"
+.br
+.RI "Get the Positions object\&. "
+.ti -1c
+.RI "void \fBsetPositions\fP (\fBRaylib::Vector3\fP &vector)"
+.br
+.RI "Set the Positions\&. "
+.ti -1c
+.RI "virtual void \fBdrawEntity\fP (void)=0"
+.br
+.RI "Draw Entity\&. "
+.ti -1c
+.RI "void \fBsetShouldDisplay\fP (const bool &shouldDisplay)"
+.br
+.RI "Set a boolean to know if this entity should be displayed\&. "
+.ti -1c
+.RI "bool \fBgetShouldDisplay\fP (void) const"
+.br
+.RI "Get a boolean to know if this entity should be displayed\&. "
+.ti -1c
+.RI "void \fBupdateAvailablePaths\fP (void)"
+.br
+.RI "Update the available textures paths\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMotionlessEntity\fP (void)=default"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "Model \fB_model\fP"
+.br
+.ti -1c
+.RI "\fBRaylib::Vector3\fP \fB_positions\fP {0, 0, 0}"
+.br
+.ti -1c
+.RI "std::vector< \fBRaylib::Texture\fP > \fB_textures\fP"
+.br
+.ti -1c
+.RI "bool \fB_shouldDisplay\fP = true"
+.br
+.ti -1c
+.RI "std::vector< std::string > \fB_available_paths\fP"
+.br
+.ti -1c
+.RI "float \fB_width\fP"
+.br
+.ti -1c
+.RI "float \fB_height\fP"
+.br
+.ti -1c
+.RI "float \fB_length\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual Game::MotionlessEntity::~MotionlessEntity (void)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Destroy the Motionless Entity object\&. 
+.SS "Game::MotionlessEntity::MotionlessEntity (void)\fC [protected]\fP, \fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Game::MotionlessEntity::drawEntity (void)\fC [pure virtual]\fP"
+
+.PP
+Draw Entity\&. 
+.PP
+Implements \fBIEntity\fP\&.
+.PP
+Implemented in \fBGame::Floor\fP, \fBGame::BreakableWall\fP, and \fBGame::SolidWall\fP\&.
+.SS "\fBRaylib::Vector3\fP Game::MotionlessEntity::getPositions (void) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Get the Positions object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBRaylib::Vector3\fP 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.SS "bool Game::MotionlessEntity::getShouldDisplay (void) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Get a boolean to know if this entity should be displayed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.SS "virtual std::string Game::MotionlessEntity::getType (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the Type object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A std::string 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.PP
+Implemented in \fBGame::Floor\fP, \fBGame::BreakableWall\fP, and \fBGame::SolidWall\fP\&.
+.SS "void Game::MotionlessEntity::setPositions (\fBRaylib::Vector3\fP & vector)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Set the Positions\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvector\fP A vector3 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.SS "void Game::MotionlessEntity::setShouldDisplay (const bool & shouldDisplay)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Set a boolean to know if this entity should be displayed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshouldDisplay\fP A boolean to know if this entity should be displayed 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.SS "void Game::MotionlessEntity::updateAvailablePaths (void)"
+
+.PP
+Update the available textures paths\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<std::string> Game::MotionlessEntity::_available_paths\fC [protected]\fP"
+
+.SS "float Game::MotionlessEntity::_height\fC [protected]\fP"
+
+.SS "float Game::MotionlessEntity::_length\fC [protected]\fP"
+
+.SS "Model Game::MotionlessEntity::_model\fC [protected]\fP"
+
+.SS "\fBRaylib::Vector3\fP Game::MotionlessEntity::_positions {0, 0, 0}\fC [protected]\fP"
+
+.SS "bool Game::MotionlessEntity::_shouldDisplay = true\fC [protected]\fP"
+
+.SS "std::vector<\fBRaylib::Texture\fP> Game::MotionlessEntity::_textures\fC [protected]\fP"
+
+.SS "float Game::MotionlessEntity::_width\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

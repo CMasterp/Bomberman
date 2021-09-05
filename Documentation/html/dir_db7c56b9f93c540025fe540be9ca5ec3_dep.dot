@@ -1,0 +1,34 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Game/Bomberman" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d0737b511e4d76754616ba34f4af7dff {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Game" fontname="Helvetica", fontsize="10", URL="dir_d0737b511e4d76754616ba34f4af7dff.html"]
+  dir_3983e2e5446a559ee781f02cac074507 [shape=box label="Powerups" URL="dir_3983e2e5446a559ee781f02cac074507.html"];
+  dir_44fd7a23d059996242338597753199f9 [shape=box label="Save" URL="dir_44fd7a23d059996242338597753199f9.html"];
+  dir_9030f6cffdd307243fd2a99926bb91cd [shape=box label="Bomb" URL="dir_9030f6cffdd307243fd2a99926bb91cd.html"];
+  dir_a05eeefbc7efbde09f343ff57ada0015 [shape=box label="AI" URL="dir_a05eeefbc7efbde09f343ff57ada0015.html"];
+  dir_b01aaa3e48a4ab66f809a94d7e5054f5 [shape=box label="MotionlessEntity" URL="dir_b01aaa3e48a4ab66f809a94d7e5054f5.html"];
+  dir_b3aeaea2fa62cd9725ceb19f813513a7 [shape=box label="Score" URL="dir_b3aeaea2fa62cd9725ceb19f813513a7.html"];
+  dir_f08bf7b4fcd6d84f2008a857bcdaf495 [shape=box label="Map" URL="dir_f08bf7b4fcd6d84f2008a857bcdaf495.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3 [shape=box, label="Bomberman", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_db7c56b9f93c540025fe540be9ca5ec3.html"];
+  }
+  dir_2e114b6c2ea195007f07f47d968e03e9 [shape=box label="Lib" fillcolor="white" style="filled" color="red" URL="dir_2e114b6c2ea195007f07f47d968e03e9.html"];
+  dir_65b0892c83f613d26dd8ae47df83a316 [shape=box label="Engine" fillcolor="white" style="filled" color="red" URL="dir_65b0892c83f613d26dd8ae47df83a316.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_2e114b6c2ea195007f07f47d968e03e9 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000014.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_3983e2e5446a559ee781f02cac074507 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000023.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_44fd7a23d059996242338597753199f9 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000024.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_65b0892c83f613d26dd8ae47df83a316 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000003.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_9030f6cffdd307243fd2a99926bb91cd [headlabel="1", labeldistance=1.5 headhref="dir_000011_000010.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_a05eeefbc7efbde09f343ff57ada0015 [headlabel="2", labeldistance=1.5 headhref="dir_000011_000008.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_b01aaa3e48a4ab66f809a94d7e5054f5 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000021.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_b3aeaea2fa62cd9725ceb19f813513a7 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000025.html"];
+  dir_db7c56b9f93c540025fe540be9ca5ec3->dir_f08bf7b4fcd6d84f2008a857bcdaf495 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000013.html"];
+  dir_44fd7a23d059996242338597753199f9->dir_2e114b6c2ea195007f07f47d968e03e9 [headlabel="1", labeldistance=1.5 headhref="dir_000024_000014.html"];
+  dir_44fd7a23d059996242338597753199f9->dir_f08bf7b4fcd6d84f2008a857bcdaf495 [headlabel="1", labeldistance=1.5 headhref="dir_000024_000013.html"];
+  dir_65b0892c83f613d26dd8ae47df83a316->dir_2e114b6c2ea195007f07f47d968e03e9 [headlabel="5", labeldistance=1.5 headhref="dir_000003_000014.html"];
+  dir_b01aaa3e48a4ab66f809a94d7e5054f5->dir_2e114b6c2ea195007f07f47d968e03e9 [headlabel="2", labeldistance=1.5 headhref="dir_000021_000014.html"];
+  dir_b01aaa3e48a4ab66f809a94d7e5054f5->dir_65b0892c83f613d26dd8ae47df83a316 [headlabel="1", labeldistance=1.5 headhref="dir_000021_000003.html"];
+  dir_2e114b6c2ea195007f07f47d968e03e9->dir_65b0892c83f613d26dd8ae47df83a316 [headlabel="28", labeldistance=1.5 headhref="dir_000014_000003.html"];
+  dir_a05eeefbc7efbde09f343ff57ada0015->dir_db7c56b9f93c540025fe540be9ca5ec3 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000011.html"];
+}

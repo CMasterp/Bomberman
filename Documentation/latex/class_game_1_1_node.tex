@@ -1,0 +1,102 @@
+\hypertarget{class_game_1_1_node}{}\doxysection{Game\+::Node Class Reference}
+\label{class_game_1_1_node}\index{Game::Node@{Game::Node}}
+
+
+{\ttfamily \#include $<$Astar.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_node_a49ec4b528c44365852ae91ce0b63939c}{Node}} (const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&positions, const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&parent\+Positions, const int \&g, const int \&h)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_node}{Node}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_node_adbb82c39ddc46fe9335e9fdc515099f4}{operator==}} (const \mbox{\hyperlink{class_game_1_1_point}{Point}} point)
+\begin{DoxyCompactList}\small\item\em Equal operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_point}{Point}} \mbox{\hyperlink{class_game_1_1_node_a5ab62f398cd7dd5c76f3c052b046d616}{\+\_\+positions}}
+\item 
+\mbox{\hyperlink{class_game_1_1_point}{Point}} \mbox{\hyperlink{class_game_1_1_node_aadd0deae89fca5b5ac434c3409776c5f}{\+\_\+parent\+Positions}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_node_ae7a0acd111ff178c767674caf9767a27}{\+\_\+g}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_node_a72d5a523d4097d8aa6f6830daff86717}{\+\_\+h}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_node_a49ec4b528c44365852ae91ce0b63939c}\label{class_game_1_1_node_a49ec4b528c44365852ae91ce0b63939c}} 
+\index{Game::Node@{Game::Node}!Node@{Node}}
+\index{Node@{Node}!Game::Node@{Game::Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily Game\+::\+Node\+::\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{positions,  }\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{parent\+Positions,  }\item[{const int \&}]{g,  }\item[{const int \&}]{h }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_node}{Node}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & The \mbox{\hyperlink{class_game_1_1_node}{Node}} positions \\
+\hline
+{\em parent\+Positions} & The node\textquotesingle{}s parent positions \\
+\hline
+{\em g} & The movement cost \\
+\hline
+{\em h} & The movement heuristic \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_node_adbb82c39ddc46fe9335e9fdc515099f4}\label{class_game_1_1_node_adbb82c39ddc46fe9335e9fdc515099f4}} 
+\index{Game::Node@{Game::Node}!operator==@{operator==}}
+\index{operator==@{operator==}!Game::Node@{Game::Node}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Game\+::\+Node\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equal operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \mbox{\hyperlink{class_game_1_1_point}{Point}} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the points are the same, false otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_node_ae7a0acd111ff178c767674caf9767a27}\label{class_game_1_1_node_ae7a0acd111ff178c767674caf9767a27}} 
+\index{Game::Node@{Game::Node}!\_g@{\_g}}
+\index{\_g@{\_g}!Game::Node@{Game::Node}}
+\doxysubsubsection{\texorpdfstring{\_g}{\_g}}
+{\footnotesize\ttfamily int Game\+::\+Node\+::\+\_\+g}
+
+\mbox{\Hypertarget{class_game_1_1_node_a72d5a523d4097d8aa6f6830daff86717}\label{class_game_1_1_node_a72d5a523d4097d8aa6f6830daff86717}} 
+\index{Game::Node@{Game::Node}!\_h@{\_h}}
+\index{\_h@{\_h}!Game::Node@{Game::Node}}
+\doxysubsubsection{\texorpdfstring{\_h}{\_h}}
+{\footnotesize\ttfamily int Game\+::\+Node\+::\+\_\+h}
+
+\mbox{\Hypertarget{class_game_1_1_node_aadd0deae89fca5b5ac434c3409776c5f}\label{class_game_1_1_node_aadd0deae89fca5b5ac434c3409776c5f}} 
+\index{Game::Node@{Game::Node}!\_parentPositions@{\_parentPositions}}
+\index{\_parentPositions@{\_parentPositions}!Game::Node@{Game::Node}}
+\doxysubsubsection{\texorpdfstring{\_parentPositions}{\_parentPositions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_point}{Point}} Game\+::\+Node\+::\+\_\+parent\+Positions}
+
+\mbox{\Hypertarget{class_game_1_1_node_a5ab62f398cd7dd5c76f3c052b046d616}\label{class_game_1_1_node_a5ab62f398cd7dd5c76f3c052b046d616}} 
+\index{Game::Node@{Game::Node}!\_positions@{\_positions}}
+\index{\_positions@{\_positions}!Game::Node@{Game::Node}}
+\doxysubsubsection{\texorpdfstring{\_positions}{\_positions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_point}{Point}} Game\+::\+Node\+::\+\_\+positions}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_astar_8hpp}{Astar.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_astar_8cpp}{Astar.\+cpp}}\end{DoxyCompactItemize}

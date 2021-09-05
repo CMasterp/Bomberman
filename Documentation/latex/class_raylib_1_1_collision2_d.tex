@@ -1,0 +1,243 @@
+\hypertarget{class_raylib_1_1_collision2_d}{}\doxysection{Raylib\+::Collision2D Class Reference}
+\label{class_raylib_1_1_collision2_d}\index{Raylib::Collision2D@{Raylib::Collision2D}}
+
+
+{\ttfamily \#include $<$Collision2\+D.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_collision2_d_af3154e3e5bbf0f31a9a762aead2a5118}{Collision2D}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_collision2_d}{Collision2D}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_collision2_d_a97ef17fa0dd583dc33f4267a5a0b1307}{$\sim$\+Collision2D}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_collision2_d}{Collision2D}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision2_d_ac567390614b181db1883ac00cdcf32d8}{check\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&rec1, const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&rec2)
+\begin{DoxyCompactList}\small\item\em Check if two rectangles intersect. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision2_d_a732dea1af8ff2764e59d7b6ef22b9595}{check\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&center1, const float \&radius1, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&center2, const float \&radius2)
+\begin{DoxyCompactList}\small\item\em Check if two circles intersect. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision2_d_a9def74d4d540c3264aa4b96054ffd3e7}{check\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&center, const float \&radius, const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&rec)
+\begin{DoxyCompactList}\small\item\em Check if a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} and a Circle intersect. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision2_d_ae3b988f9390a253aaa6d04efa5a92d34}{check\+Collision}} (\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&point, const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&rec)
+\begin{DoxyCompactList}\small\item\em Check if a Point and a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} intersect. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision2_d_acf1fb520f5f5b3163d170a0a9ac39a49}{check\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&point, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&center, const float \&radius)
+\begin{DoxyCompactList}\small\item\em Check if a Point and a Cercle intersect. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision2_d_a2cabb4b2326e6348c63359ffdbc6d71a}{check\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&point, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&\mbox{\hyperlink{_resources_8hpp_a95c96fee87f38fc423831b9c71167ef7a22e7954f0f67bd13c875ccac1d77835d}{p1}}, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&\mbox{\hyperlink{_resources_8hpp_a95c96fee87f38fc423831b9c71167ef7af023383ebe0126265f2dbaae87911cf9}{p2}}, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&\mbox{\hyperlink{_resources_8hpp_a95c96fee87f38fc423831b9c71167ef7a3bcef26740e2560f3054abda587cf43d}{p3}})
+\begin{DoxyCompactList}\small\item\em Check if a Point and Triangle. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision2_d_a39366e11d50a93733f14c6ec63ed40c5}{check\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&start\+Pos1, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&end\+Pos1, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&start\+Pos2, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&end\+Pos2, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&collision\+Point)
+\begin{DoxyCompactList}\small\item\em Check if 2 lines intersects and return the collision point. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \mbox{\hyperlink{class_raylib_1_1_collision2_d_acac001192b894420d26d983ecb289d6d}{get\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&rec1, const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&rec2)
+\begin{DoxyCompactList}\small\item\em Get the Collision Rec object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_af3154e3e5bbf0f31a9a762aead2a5118}\label{class_raylib_1_1_collision2_d_af3154e3e5bbf0f31a9a762aead2a5118}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!Collision2D@{Collision2D}}
+\index{Collision2D@{Collision2D}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{Collision2D()}{Collision2D()}}
+{\footnotesize\ttfamily Raylib\+::\+Collision2\+D\+::\+Collision2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_collision2_d}{Collision2D}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_a97ef17fa0dd583dc33f4267a5a0b1307}\label{class_raylib_1_1_collision2_d_a97ef17fa0dd583dc33f4267a5a0b1307}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!````~Collision2D@{$\sim$Collision2D}}
+\index{````~Collision2D@{$\sim$Collision2D}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Collision2D()}{~Collision2D()}}
+{\footnotesize\ttfamily Raylib\+::\+Collision2\+D\+::$\sim$\+Collision2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_collision2_d}{Collision2D}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_ac567390614b181db1883ac00cdcf32d8}\label{class_raylib_1_1_collision2_d_ac567390614b181db1883ac00cdcf32d8}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision2\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{rec1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{rec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if two rectangles intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec1} & the first rectangle \\
+\hline
+{\em rec2} & the second one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangles intersects false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_a9def74d4d540c3264aa4b96054ffd3e7}\label{class_raylib_1_1_collision2_d_a9def74d4d540c3264aa4b96054ffd3e7}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision2\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{center,  }\item[{const float \&}]{radius,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{rec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} and a Circle intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & the circle\textquotesingle{}s center position \\
+\hline
+{\em radius} & the circle\textquotesingle{}s radius \\
+\hline
+{\em rec} & the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangle and the circle intersect false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_a732dea1af8ff2764e59d7b6ef22b9595}\label{class_raylib_1_1_collision2_d_a732dea1af8ff2764e59d7b6ef22b9595}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision2\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{center1,  }\item[{const float \&}]{radius1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{center2,  }\item[{const float \&}]{radius2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if two circles intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center1} & the first circle\textquotesingle{}s center position \\
+\hline
+{\em radius1} & the first circle\textquotesingle{}s radius \\
+\hline
+{\em center2} & the second circle\textquotesingle{}s center position \\
+\hline
+{\em radius2} & the second circle\textquotesingle{}s radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangles intersect false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_acf1fb520f5f5b3163d170a0a9ac39a49}\label{class_raylib_1_1_collision2_d_acf1fb520f5f5b3163d170a0a9ac39a49}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision2\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{point,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{center,  }\item[{const float \&}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if a Point and a Cercle intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the point coordinates \\
+\hline
+{\em center} & the circle\textquotesingle{}s center position \\
+\hline
+{\em radius} & the circle\textquotesingle{}s radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the point is on the circle false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_a2cabb4b2326e6348c63359ffdbc6d71a}\label{class_raylib_1_1_collision2_d_a2cabb4b2326e6348c63359ffdbc6d71a}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision2\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{point,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{p1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{p2,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{p3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if a Point and Triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the point coordinates \\
+\hline
+{\em p1} & the first triangle\textquotesingle{}s point \\
+\hline
+{\em p2} & the second trinagle\textquotesingle{}s point \\
+\hline
+{\em p3} & the third triangle\textquotesingle{}s point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the point is on the trinagle false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_a39366e11d50a93733f14c6ec63ed40c5}\label{class_raylib_1_1_collision2_d_a39366e11d50a93733f14c6ec63ed40c5}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision2\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{start\+Pos1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{end\+Pos1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{start\+Pos2,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{end\+Pos2,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{collision\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if 2 lines intersects and return the collision point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos1} & the first lines\textquotesingle{}s start position \\
+\hline
+{\em end\+Pos1} & the first lines\textquotesingle{}s end position \\
+\hline
+{\em start\+Pos2} & the second lines\textquotesingle{}s start position \\
+\hline
+{\em end\+Pos2} & the second lines\textquotesingle{}s end position \\
+\hline
+{\em collision\+Point} & the collision point pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the two lines intersect false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_ae3b988f9390a253aaa6d04efa5a92d34}\label{class_raylib_1_1_collision2_d_ae3b988f9390a253aaa6d04efa5a92d34}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision2\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{point,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{rec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if a Point and a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the point coordinates \\
+\hline
+{\em rec} & the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the point is on the rectangle false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision2_d_acac001192b894420d26d983ecb289d6d}\label{class_raylib_1_1_collision2_d_acac001192b894420d26d983ecb289d6d}} 
+\index{Raylib::Collision2D@{Raylib::Collision2D}!getCollision@{getCollision}}
+\index{getCollision@{getCollision}!Raylib::Collision2D@{Raylib::Collision2D}}
+\doxysubsubsection{\texorpdfstring{getCollision()}{getCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} Raylib\+::\+Collision2\+D\+::get\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{rec1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{rec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Collision Rec object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec1} & the first rectangle \\
+\hline
+{\em rec2} & the second rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} corresponding the instersection zone 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Collision2\+D/\mbox{\hyperlink{_collision2_d_8hpp}{Collision2\+D.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Collision2\+D/\mbox{\hyperlink{_collision2_d_8cpp}{Collision2\+D.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Collision2\+D/\mbox{\hyperlink{_collision2_d_8inl}{Collision2\+D.\+inl}}\end{DoxyCompactItemize}

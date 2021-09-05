@@ -1,0 +1,13 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Lib/XRaylib/Raylib/Text" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_de334b3105e3c27a200be04983862f6f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Raylib" fontname="Helvetica", fontsize="10", URL="dir_de334b3105e3c27a200be04983862f6f.html"]
+  dir_04ae11eb1dc9e50af04680fcd1aacb7e [shape=box label="Color" URL="dir_04ae11eb1dc9e50af04680fcd1aacb7e.html"];
+  dir_39b9acb7467d09ddc7681ec8e61defec [shape=box, label="Text", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_39b9acb7467d09ddc7681ec8e61defec.html"];
+  }
+  dir_65b0892c83f613d26dd8ae47df83a316 [shape=box label="Engine" fillcolor="white" style="filled" color="red" URL="dir_65b0892c83f613d26dd8ae47df83a316.html"];
+  dir_39b9acb7467d09ddc7681ec8e61defec->dir_04ae11eb1dc9e50af04680fcd1aacb7e [headlabel="1", labeldistance=1.5 headhref="dir_000047_000032.html"];
+  dir_39b9acb7467d09ddc7681ec8e61defec->dir_65b0892c83f613d26dd8ae47df83a316 [headlabel="1", labeldistance=1.5 headhref="dir_000047_000003.html"];
+}

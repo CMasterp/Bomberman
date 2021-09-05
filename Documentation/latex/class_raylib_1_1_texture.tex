@@ -1,0 +1,554 @@
+\hypertarget{class_raylib_1_1_texture}{}\doxysection{Raylib\+::Texture Class Reference}
+\label{class_raylib_1_1_texture}\index{Raylib::Texture@{Raylib::Texture}}
+
+
+{\ttfamily \#include $<$Texture.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_texture_af1b708b4c5b8d20ef2ce13e6a2fa6e16}{Texture}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_texture_af4bc60b348a3e035008b9e0ca554f354}{Texture}} (const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&texture)=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_texture_ab0355e96207323f53d29f08d029de3fd}{Texture}} (const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&texture)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_texture_ab744510744bcc4ebf00e913640233514}{$\sim$\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \& \mbox{\hyperlink{class_raylib_1_1_texture_ac13bd71fc3dda66162d2cfcbfa9c5cc8}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&texture)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \mbox{\hyperlink{class_raylib_1_1_texture_af0568263efd75d87ac9ba7fd53ef5512}{get\+CStruct}} (void) const
+\begin{DoxyCompactList}\small\item\em Getter of \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} structure (private attribute) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a842c3f808563767e611042daa1270ffd}{set\+Shapes\+Texture}} (const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&texture, const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&source)
+\begin{DoxyCompactList}\small\item\em Set texture and rectangle to be used on shapes drawing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \& \mbox{\hyperlink{class_raylib_1_1_texture_ab26b3fb4e99e510bb31ac176618ad2e9}{load\+Texture}} (const std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em Load texture from file into GPU memory (VRAM) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \& \mbox{\hyperlink{class_raylib_1_1_texture_a6780d695d47669dbad5056517f95345c}{load\+Texture\+From\+Image}} (\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&image)
+\begin{DoxyCompactList}\small\item\em Load texture from image data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a24458d1d83af3ba5723279af89703967}{begin\+Texture\+Mode}} (\mbox{\hyperlink{class_raylib_1_1_render_texture}{Render\+Texture}} const \&target) const
+\begin{DoxyCompactList}\small\item\em Initializes render texture for drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a21dfafec0d293d88670c609d3d91f029}{end\+Texture\+Mode}} (void) const
+\begin{DoxyCompactList}\small\item\em Ends drawing to render texture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \mbox{\hyperlink{class_raylib_1_1_texture_ae722eb15083bb198e0a511cf86f5f29e}{load\+Texture\+Cubemap}} (\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&image, int const \&layout)
+\begin{DoxyCompactList}\small\item\em Load cubemap from image, multiple image cubemap layouts supported. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a6e9b72c212e64d507cabee59c94d6b49}{unload\+Texture}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture) const
+\begin{DoxyCompactList}\small\item\em Unload texture from GPU memory (VRAM) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a58006eff8e5e35c947981b16453cc6d8}{update\+Texture}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, const void $\ast$pixels) const
+\begin{DoxyCompactList}\small\item\em Update GPU texture with new data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_ada5f93c6678b34806c6f05cc93b8a3c1}{update\+Texture\+Rec}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec, const void $\ast$pixels) const
+\begin{DoxyCompactList}\small\item\em Update GPU texture rectangle with new data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a9eb71481581e2fcdee7bee8884ce450f}{gen\+Texture\+Mipmaps}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const $\ast$texture) const
+\begin{DoxyCompactList}\small\item\em Generate GPU mipmaps for a texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_aa7e5d5ef87860de47ae8e0fc74814348}{set\+Texture\+Filter}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, int const \&filter) const
+\begin{DoxyCompactList}\small\item\em Set texture scaling filter mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_ad227fa81809ef58aab5f020e8d699467}{set\+Texture\+Wrap}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, int const \&wrap) const
+\begin{DoxyCompactList}\small\item\em Set texture wrapping mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_aa5e0943afdbb46aafef3f1dd2d78ccee}{draw\+Texture}} (const int \&posX, const int \&posY, const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} with position XY. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_af50176a687fd6c1ef947594464d5986b}{draw\+TextureV}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&position, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint=\mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()) const
+\begin{DoxyCompactList}\small\item\em Draw a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} with position defined as \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a52f10af1b3034b0ab64c4d6c513e8272}{draw\+Texture}} (const float \&posX, const float \&posY, float const \&rotation, float const \&scale, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint=\mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()) const
+\begin{DoxyCompactList}\small\item\em Draw a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} with extended parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a780b72ece2614e19a7568021833fcb6f}{draw\+Texture\+Rec}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&source, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&position, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw a part of a texture defined by a rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a2b0abe52a5042a6549b54ffac111c33e}{draw\+Texture\+Quad}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&tiling, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&offset, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&quad, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw texture quad with tiling and offset parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a8ee59b503cfcbadabfcd88812bf7ea2d}{draw\+Texture\+Tiled}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&source, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&dest, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&origin, float const \&rotation, float const \&scale, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw part of a texture (defined by a rectangle) with rotation and scale tiled into dest. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a9b025de3275a5a9be9c345901a9cd1d1}{draw\+Texture\+Pro}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&source, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&dest, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&origin, float const \&rotation, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw a part of a texture defined by a rectangle with \textquotesingle{}pro\textquotesingle{} parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_a0af0e9c59d7705162d08d5f56ea73752}{draw\+Texture\+NPatch}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&texture, NPatch\+Info const \&n\+Patch\+Info, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&dest, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&origin, float const \&rotation, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&tint) const
+\begin{DoxyCompactList}\small\item\em Draws a texture (or part of it) that stretches or shrinks nicely. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_texture_abf56e2e1d442755812c208be341058d3}{draw\+Texture\+Poly}} (const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&texture, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&center, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&points, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&texcoords, const int \&points\+Count, const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw a textured polygon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_texture_af1b708b4c5b8d20ef2ce13e6a2fa6e16}\label{class_raylib_1_1_texture_af1b708b4c5b8d20ef2ce13e6a2fa6e16}} 
+\index{Raylib::Texture@{Raylib::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_texture_af4bc60b348a3e035008b9e0ca554f354}\label{class_raylib_1_1_texture_af4bc60b348a3e035008b9e0ca554f354}} 
+\index{Raylib::Texture@{Raylib::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_texture_ab0355e96207323f53d29f08d029de3fd}\label{class_raylib_1_1_texture_ab0355e96207323f53d29f08d029de3fd}} 
+\index{Raylib::Texture@{Raylib::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_texture_ab744510744bcc4ebf00e913640233514}\label{class_raylib_1_1_texture_ab744510744bcc4ebf00e913640233514}} 
+\index{Raylib::Texture@{Raylib::Texture}!````~Texture@{$\sim$Texture}}
+\index{````~Texture@{$\sim$Texture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{$\sim$Texture()}{~Texture()}}
+{\footnotesize\ttfamily Raylib\+::\+Texture\+::$\sim$\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a24458d1d83af3ba5723279af89703967}\label{class_raylib_1_1_texture_a24458d1d83af3ba5723279af89703967}} 
+\index{Raylib::Texture@{Raylib::Texture}!beginTextureMode@{beginTextureMode}}
+\index{beginTextureMode@{beginTextureMode}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{beginTextureMode()}{beginTextureMode()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::begin\+Texture\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_render_texture}{Render\+Texture}} const \&}]{target }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes render texture for drawing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & A const reference to the \mbox{\hyperlink{class_raylib_1_1_render_texture}{Render\+Texture}} Object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a52f10af1b3034b0ab64c4d6c513e8272}\label{class_raylib_1_1_texture_a52f10af1b3034b0ab64c4d6c513e8272}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTexture@{drawTexture}}
+\index{drawTexture@{drawTexture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTexture()}{drawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture (\begin{DoxyParamCaption}\item[{const float \&}]{posX,  }\item[{const float \&}]{posY,  }\item[{float const \&}]{rotation,  }\item[{float const \&}]{scale,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} with extended parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em position} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em rotation} & A const reference to a float \\
+\hline
+{\em scale} & A const reference to a float \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_aa5e0943afdbb46aafef3f1dd2d78ccee}\label{class_raylib_1_1_texture_aa5e0943afdbb46aafef3f1dd2d78ccee}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTexture@{drawTexture}}
+\index{drawTexture@{drawTexture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTexture()}{drawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture (\begin{DoxyParamCaption}\item[{const int \&}]{posX,  }\item[{const int \&}]{posY,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} with position XY. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & An int \\
+\hline
+{\em posY} & An int \\
+\hline
+{\em tint} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the texture -\/ \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a0af0e9c59d7705162d08d5f56ea73752}\label{class_raylib_1_1_texture_a0af0e9c59d7705162d08d5f56ea73752}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTextureNPatch@{drawTextureNPatch}}
+\index{drawTextureNPatch@{drawTextureNPatch}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTextureNPatch()}{drawTextureNPatch()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture\+NPatch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{NPatch\+Info const \&}]{n\+Patch\+Info,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{dest,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{origin,  }\item[{float const \&}]{rotation,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a texture (or part of it) that stretches or shrinks nicely. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em tiling} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em offset} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em quad} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the texture -\/ \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_abf56e2e1d442755812c208be341058d3}\label{class_raylib_1_1_texture_abf56e2e1d442755812c208be341058d3}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTexturePoly@{drawTexturePoly}}
+\index{drawTexturePoly@{drawTexturePoly}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTexturePoly()}{drawTexturePoly()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture\+Poly (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&}]{texture,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{center,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{points,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{texcoords,  }\item[{const int \&}]{points\+Count,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&}]{tint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a textured polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em tiling} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em offset} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em quad} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the texture -\/ \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a9b025de3275a5a9be9c345901a9cd1d1}\label{class_raylib_1_1_texture_a9b025de3275a5a9be9c345901a9cd1d1}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTexturePro@{drawTexturePro}}
+\index{drawTexturePro@{drawTexturePro}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTexturePro()}{drawTexturePro()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture\+Pro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{source,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{dest,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{origin,  }\item[{float const \&}]{rotation,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a part of a texture defined by a rectangle with \textquotesingle{}pro\textquotesingle{} parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em tiling} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em offset} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em quad} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the texture -\/ \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a2b0abe52a5042a6549b54ffac111c33e}\label{class_raylib_1_1_texture_a2b0abe52a5042a6549b54ffac111c33e}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTextureQuad@{drawTextureQuad}}
+\index{drawTextureQuad@{drawTextureQuad}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTextureQuad()}{drawTextureQuad()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture\+Quad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{tiling,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{offset,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{quad,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw texture quad with tiling and offset parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em tiling} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em offset} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em quad} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a780b72ece2614e19a7568021833fcb6f}\label{class_raylib_1_1_texture_a780b72ece2614e19a7568021833fcb6f}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTextureRec@{drawTextureRec}}
+\index{drawTextureRec@{drawTextureRec}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTextureRec()}{drawTextureRec()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{source,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{position,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a part of a texture defined by a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em position} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em rotation} & A const reference to a float \\
+\hline
+{\em scale} & A const reference to a float \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a8ee59b503cfcbadabfcd88812bf7ea2d}\label{class_raylib_1_1_texture_a8ee59b503cfcbadabfcd88812bf7ea2d}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTextureTiled@{drawTextureTiled}}
+\index{drawTextureTiled@{drawTextureTiled}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTextureTiled()}{drawTextureTiled()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+Texture\+Tiled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{source,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{dest,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{origin,  }\item[{float const \&}]{rotation,  }\item[{float const \&}]{scale,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw part of a texture (defined by a rectangle) with rotation and scale tiled into dest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em source} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em dest} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em origin} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em rotation} & A const reference to a float \\
+\hline
+{\em scale} & A const reference to a float \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_af50176a687fd6c1ef947594464d5986b}\label{class_raylib_1_1_texture_af50176a687fd6c1ef947594464d5986b}} 
+\index{Raylib::Texture@{Raylib::Texture}!drawTextureV@{drawTextureV}}
+\index{drawTextureV@{drawTextureV}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{drawTextureV()}{drawTextureV()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::draw\+TextureV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{position,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{tint = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Color\+::\+White}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} with position defined as \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em position} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em tint} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a21dfafec0d293d88670c609d3d91f029}\label{class_raylib_1_1_texture_a21dfafec0d293d88670c609d3d91f029}} 
+\index{Raylib::Texture@{Raylib::Texture}!endTextureMode@{endTextureMode}}
+\index{endTextureMode@{endTextureMode}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{endTextureMode()}{endTextureMode()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::end\+Texture\+Mode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ends drawing to render texture. 
+
+\mbox{\Hypertarget{class_raylib_1_1_texture_a9eb71481581e2fcdee7bee8884ce450f}\label{class_raylib_1_1_texture_a9eb71481581e2fcdee7bee8884ce450f}} 
+\index{Raylib::Texture@{Raylib::Texture}!genTextureMipmaps@{genTextureMipmaps}}
+\index{genTextureMipmaps@{genTextureMipmaps}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{genTextureMipmaps()}{genTextureMipmaps()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::gen\+Texture\+Mipmaps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const $\ast$}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate GPU mipmaps for a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_af0568263efd75d87ac9ba7fd53ef5512}\label{class_raylib_1_1_texture_af0568263efd75d87ac9ba7fd53ef5512}} 
+\index{Raylib::Texture@{Raylib::Texture}!getCStruct@{getCStruct}}
+\index{getCStruct@{getCStruct}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{getCStruct()}{getCStruct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} Raylib\+::\+Texture\+::get\+CStruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter of \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} structure (private attribute) 
+
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} C structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_ab26b3fb4e99e510bb31ac176618ad2e9}\label{class_raylib_1_1_texture_ab26b3fb4e99e510bb31ac176618ad2e9}} 
+\index{Raylib::Texture@{Raylib::Texture}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_texture}{Raylib\+::\+Texture}} \& Raylib\+::\+Texture\+::load\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load texture from file into GPU memory (VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A string that represents path to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the texture -\/ \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_ae722eb15083bb198e0a511cf86f5f29e}\label{class_raylib_1_1_texture_ae722eb15083bb198e0a511cf86f5f29e}} 
+\index{Raylib::Texture@{Raylib::Texture}!loadTextureCubemap@{loadTextureCubemap}}
+\index{loadTextureCubemap@{loadTextureCubemap}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{loadTextureCubemap()}{loadTextureCubemap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_texture}{Raylib\+::\+Texture}} Raylib\+::\+Texture\+::load\+Texture\+Cubemap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&}]{image,  }\item[{int const \&}]{layout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load cubemap from image, multiple image cubemap layouts supported. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & A const reference to the \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Object \\
+\hline
+{\em layout} & A const reference to an int \\
+\hline
+{\em texture} & A const reference to the \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} Object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a6780d695d47669dbad5056517f95345c}\label{class_raylib_1_1_texture_a6780d695d47669dbad5056517f95345c}} 
+\index{Raylib::Texture@{Raylib::Texture}!loadTextureFromImage@{loadTextureFromImage}}
+\index{loadTextureFromImage@{loadTextureFromImage}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{loadTextureFromImage()}{loadTextureFromImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_texture}{Raylib\+::\+Texture}} \& Raylib\+::\+Texture\+::load\+Texture\+From\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_image}{Image}} const \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load texture from image data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & A const reference to the \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the texture -\/ \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_ac13bd71fc3dda66162d2cfcbfa9c5cc8}\label{class_raylib_1_1_texture_ac13bd71fc3dda66162d2cfcbfa9c5cc8}} 
+\index{Raylib::Texture@{Raylib::Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_texture}{Raylib\+::\+Texture}} \& Raylib\+::\+Texture\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} (\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a842c3f808563767e611042daa1270ffd}\label{class_raylib_1_1_texture_a842c3f808563767e611042daa1270ffd}} 
+\index{Raylib::Texture@{Raylib::Texture}!setShapesTexture@{setShapesTexture}}
+\index{setShapesTexture@{setShapesTexture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{setShapesTexture()}{setShapesTexture()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::set\+Shapes\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \&}]{texture,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set texture and rectangle to be used on shapes drawing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} Object \\
+\hline
+{\em source} & A \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} Object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_aa7e5d5ef87860de47ae8e0fc74814348}\label{class_raylib_1_1_texture_aa7e5d5ef87860de47ae8e0fc74814348}} 
+\index{Raylib::Texture@{Raylib::Texture}!setTextureFilter@{setTextureFilter}}
+\index{setTextureFilter@{setTextureFilter}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{setTextureFilter()}{setTextureFilter()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::set\+Texture\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{int const \&}]{filter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set texture scaling filter mode. 
+
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_image}{Image}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_texture_ad227fa81809ef58aab5f020e8d699467}\label{class_raylib_1_1_texture_ad227fa81809ef58aab5f020e8d699467}} 
+\index{Raylib::Texture@{Raylib::Texture}!setTextureWrap@{setTextureWrap}}
+\index{setTextureWrap@{setTextureWrap}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{setTextureWrap()}{setTextureWrap()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::set\+Texture\+Wrap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{int const \&}]{wrap }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set texture wrapping mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const pointer to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em wrap} & A const reference to an int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a6e9b72c212e64d507cabee59c94d6b49}\label{class_raylib_1_1_texture_a6e9b72c212e64d507cabee59c94d6b49}} 
+\index{Raylib::Texture@{Raylib::Texture}!unloadTexture@{unloadTexture}}
+\index{unloadTexture@{unloadTexture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{unloadTexture()}{unloadTexture()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::unload\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unload texture from GPU memory (VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_a58006eff8e5e35c947981b16453cc6d8}\label{class_raylib_1_1_texture_a58006eff8e5e35c947981b16453cc6d8}} 
+\index{Raylib::Texture@{Raylib::Texture}!updateTexture@{updateTexture}}
+\index{updateTexture@{updateTexture}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{updateTexture()}{updateTexture()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::update\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{const void $\ast$}]{pixels }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update GPU texture with new data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+{\em pixels} & A const to a void $\ast$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_texture_ada5f93c6678b34806c6f05cc93b8a3c1}\label{class_raylib_1_1_texture_ada5f93c6678b34806c6f05cc93b8a3c1}} 
+\index{Raylib::Texture@{Raylib::Texture}!updateTextureRec@{updateTextureRec}}
+\index{updateTextureRec@{updateTextureRec}!Raylib::Texture@{Raylib::Texture}}
+\doxysubsubsection{\texorpdfstring{updateTextureRec()}{updateTextureRec()}}
+{\footnotesize\ttfamily void Raylib\+::\+Texture\+::update\+Texture\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec,  }\item[{const void $\ast$}]{pixels }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update GPU texture rectangle with new data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Texture/\mbox{\hyperlink{_texture_8hpp}{Texture.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Texture/\mbox{\hyperlink{_texture_8cpp}{Texture.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Texture/\mbox{\hyperlink{_texture_8inl}{Texture.\+inl}}\end{DoxyCompactItemize}

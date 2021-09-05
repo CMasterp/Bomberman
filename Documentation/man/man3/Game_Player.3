@@ -1,0 +1,314 @@
+.TH "Game::Player" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Player
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Player\&.hpp>\fP
+.PP
+Inherits \fBGame::Animated\fP\&.
+.PP
+Inherited by \fBGame::AI\fP\fC [virtual]\fP, and \fBGame::Human\fP\fC [virtual]\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP ()"
+.br
+.RI "Construct the \fBPlayer\fP object\&. "
+.ti -1c
+.RI "\fBPlayer\fP (const std::string &name, const \fBRaylib::Vector3\fP &positions, const size_t &kills, const size_t &brokenWalls, const std::array< int, 5 > &powerUps)"
+.br
+.RI "Construct the \fBPlayer\fP object (Copy Constructor) "
+.ti -1c
+.RI "\fBPlayer\fP (const std::string &name, const int &id, const \fBRaylib::Vector3\fP &positions, const std::string &obj_path, const std::string &texture_path, const std::vector< std::string > &animation_path={}, const float &scalable=0\&.6, const \fBRaylib::Color\fP color=\fBRaylib::Color::White\fP())"
+.br
+.RI "Construct a new \fBPlayer\fP object\&. "
+.ti -1c
+.RI "std::string \fBgetName\fP (void) const"
+.br
+.RI "Get the Name of the \fBPlayer\fP\&. "
+.ti -1c
+.RI "size_t \fBgetBrokenWalls\fP (void) const"
+.br
+.RI "Get Broken Walls by the \fBPlayer\fP\&. "
+.ti -1c
+.RI "size_t \fBgetKills\fP (void) const"
+.br
+.RI "Get Kills by the \fBPlayer\fP\&. "
+.ti -1c
+.RI "std::array< int, 5 > \fBgetPowerUps\fP (void) const"
+.br
+.RI "Get PowerUps gotten by the \fBPlayer\fP\&. "
+.ti -1c
+.RI "int \fBgetID\fP (void) const"
+.br
+.RI "Get the player ID\&. "
+.ti -1c
+.RI "bool \fBgetAlive\fP (void) const"
+.br
+.RI "Get if the player is dead or alive\&. "
+.ti -1c
+.RI "void \fBsetName\fP (const std::string &name)"
+.br
+.RI "Set the name of the player\&. "
+.ti -1c
+.RI "void \fBsetBrokenWalls\fP (const size_t &brokenWalls)"
+.br
+.RI "Set the broken walls number\&. "
+.ti -1c
+.RI "void \fBsetKills\fP (const size_t &kills)"
+.br
+.RI "Set the kills number\&. "
+.ti -1c
+.RI "void \fBsetPowerUps\fP (const std::array< int, 5 > &powerUps)"
+.br
+.RI "Set the powerUps of the player\&. "
+.ti -1c
+.RI "void \fBincreasePowerUps\fP (const int &id_power)"
+.br
+.RI "Set the powerUps of the player\&. "
+.ti -1c
+.RI "void \fBdecreasePowerUps\fP (const int &id_power)"
+.br
+.RI "Set the powerUps of the player\&. "
+.ti -1c
+.RI "void \fBsetID\fP (const int &ID)"
+.br
+.RI "Set the ID of the player\&. "
+.ti -1c
+.RI "void \fBsetAlive\fP (const bool &alive)"
+.br
+.RI "Set the player dead or alive\&. "
+.ti -1c
+.RI "virtual \fB~Player\fP (void)"
+.br
+.RI "Destroy the \fBPlayer\fP Entity object\&. "
+.ti -1c
+.RI "bool \fBdropBomb\fP (void)"
+.br
+.RI "Drop a bomb\&. "
+.ti -1c
+.RI "void \fBresetABomb\fP ()"
+.br
+.RI "Reset a bomb\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Player::Player ()"
+
+.PP
+Construct the \fBPlayer\fP object\&. 
+.SS "Game::Player::Player (const std::string & name, const \fBRaylib::Vector3\fP & positions, const size_t & kills, const size_t & brokenWalls, const std::array< int, 5 > & powerUps)"
+
+.PP
+Construct the \fBPlayer\fP object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP A const reference to a std::string 
+.br
+\fIposition\fP A const reference to a std::pair of float 
+.br
+\fIbrokenWalls\fP A const reference to a size_t 
+.br
+\fIkills\fP A const reference to a size_t 
+.br
+\fIpowerUps\fP A const reference to a std::array of 5 int 
+.RE
+.PP
+
+.SS "Game::Player::Player (const std::string & name, const int & id, const \fBRaylib::Vector3\fP & positions, const std::string & obj_path, const std::string & texture_path, const std::vector< std::string > & animation_path = \fC{}\fP, const float & scalable = \fC0\&.6\fP, const \fBRaylib::Color\fP color = \fC\fBRaylib::Color::White\fP()\fP)"
+
+.PP
+Construct a new \fBPlayer\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP the name of the character 
+.br
+\fIpositions\fP the 3D positions of the character 
+.br
+\fIobj_path\fP the model path 
+.br
+\fItexture_path\fP the texture path 
+.br
+\fIanimation_path\fP the animations paths 
+.RE
+.PP
+
+.SS "virtual Game::Player::~Player (void)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Destroy the \fBPlayer\fP Entity object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::Player::decreasePowerUps (const int & id_power)\fC [inline]\fP"
+
+.PP
+Set the powerUps of the player\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpowerUps\fP A const reference to an array of 5 int 
+.RE
+.PP
+
+.SS "bool Game::Player::dropBomb (void)\fC [inline]\fP"
+
+.PP
+Drop a bomb\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the player successfully drops a bomb, false otherwise 
+.RE
+.PP
+
+.SS "bool Game::Player::getAlive (void) const\fC [inline]\fP"
+
+.PP
+Get if the player is dead or alive\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool value, true if the player is alive, false if he's is dead 
+.RE
+.PP
+
+.SS "size_t Game::Player::getBrokenWalls (void) const\fC [inline]\fP"
+
+.PP
+Get Broken Walls by the \fBPlayer\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "int Game::Player::getID (void) const\fC [inline]\fP"
+
+.PP
+Get the player ID\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An int which represents the ID of the player 
+.RE
+.PP
+
+.SS "size_t Game::Player::getKills (void) const\fC [inline]\fP"
+
+.PP
+Get Kills by the \fBPlayer\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "std::string Game::Player::getName (void) const\fC [inline]\fP"
+
+.PP
+Get the Name of the \fBPlayer\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A string 
+.RE
+.PP
+
+.SS "std::array< int, 5 > Game::Player::getPowerUps (void) const\fC [inline]\fP"
+
+.PP
+Get PowerUps gotten by the \fBPlayer\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An Array of 5 static_cast<int> 
+.RE
+.PP
+
+.SS "void Game::Player::increasePowerUps (const int & id_power)\fC [inline]\fP"
+
+.PP
+Set the powerUps of the player\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpowerUps\fP A const reference to an array of 5 int 
+.RE
+.PP
+
+.SS "void Game::Player::resetABomb ()\fC [inline]\fP"
+
+.PP
+Reset a bomb\&. 
+.SS "void Game::Player::setAlive (const bool & alive)\fC [inline]\fP"
+
+.PP
+Set the player dead or alive\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIalive\fP a const reference to a bool value 
+.RE
+.PP
+
+.SS "void Game::Player::setBrokenWalls (const size_t & brokenWalls)\fC [inline]\fP"
+
+.PP
+Set the broken walls number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbrokenWalls\fP A const reference to a size_t 
+.RE
+.PP
+
+.SS "void Game::Player::setID (const int & ID)\fC [inline]\fP"
+
+.PP
+Set the ID of the player\&. 
+.SS "void Game::Player::setKills (const size_t & kills)\fC [inline]\fP"
+
+.PP
+Set the kills number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkills\fP A const reference to a size_t 
+.RE
+.PP
+
+.SS "void Game::Player::setName (const std::string & name)\fC [inline]\fP"
+
+.PP
+Set the name of the player\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP A const reference to a string 
+.RE
+.PP
+
+.SS "void Game::Player::setPowerUps (const std::array< int, 5 > & powerUps)\fC [inline]\fP"
+
+.PP
+Set the powerUps of the player\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpowerUps\fP A const reference to an array of 5 int 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

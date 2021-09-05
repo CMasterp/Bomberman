@@ -1,0 +1,212 @@
+\hypertarget{class_game_1_1_map}{}\doxysection{Game\+::Map Class Reference}
+\label{class_game_1_1_map}\index{Game::Map@{Game::Map}}
+
+
+{\ttfamily \#include $<$Map.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_map_a75ec5c18efc88fdb2ad2d537ed3fc373}{Map}} ()
+\begin{DoxyCompactList}\small\item\em Construct the \mbox{\hyperlink{class_game_1_1_map}{Map}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_map_aa5c08038327f5b364ae7b70a73a71d74}{Map}} (const size\+\_\+t \&width, const size\+\_\+t \&height, const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&players\+Number)
+\begin{DoxyCompactList}\small\item\em Construct the \mbox{\hyperlink{class_game_1_1_map}{Map}} object (Copy Constructor) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_map_af1a2c4a057d3868d8018a43e2930f0a2}{$\sim$\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_game_1_1_map}{Map}} object. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_game_1_1_map_a3bc6972119e4b180eb70d347b8914833}{get\+Width}} (void) const
+\begin{DoxyCompactList}\small\item\em Getter for map width. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_game_1_1_map_a4e8a488e0e8e728ab8b7f417d3c00d9d}{get\+Height}} (void) const
+\begin{DoxyCompactList}\small\item\em Getter for map height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_map_af055111827f36a0223a9e0e6a0856200}{set\+Width}} (const size\+\_\+t width)
+\begin{DoxyCompactList}\small\item\em Setter for map width. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_map_a6e4a7e5daa174b659b6db286f1615682}{set\+Height}} (const size\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Setter for map height. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_game_1_1_map_af19ff052a62410f27fddf79adbbfc731}{get\+Map}} (void) const
+\begin{DoxyCompactList}\small\item\em Getter for map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_map_a150143f7730b372136f82ba727400e14}{set\+Map}} (const std\+::vector$<$ std\+::string $>$ \&map)
+\begin{DoxyCompactList}\small\item\em Setter for map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_map_a87b92baf2dc561a0f861bba0cc8ff6e6}{dump}} (void) const
+\begin{DoxyCompactList}\small\item\em Dump the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_map_a0d41dfc34bc0893cb3777e0c4fcc0020}{set\+Players\+Areas}} (const size\+\_\+t \&area\+Size)
+\begin{DoxyCompactList}\small\item\em Set the Players Areas in the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_map}{Map}} \& \mbox{\hyperlink{class_game_1_1_map_a1556950a631f6ba4e98541fe8f27889b}{operator=}} (const \mbox{\hyperlink{class_game_1_1_map}{Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Overwritting of assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_map_a75ec5c18efc88fdb2ad2d537ed3fc373}\label{class_game_1_1_map_a75ec5c18efc88fdb2ad2d537ed3fc373}} 
+\index{Game::Map@{Game::Map}!Map@{Map}}
+\index{Map@{Map}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+::\+Map\+::\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct the \mbox{\hyperlink{class_game_1_1_map}{Map}} object. 
+
+\mbox{\Hypertarget{class_game_1_1_map_aa5c08038327f5b364ae7b70a73a71d74}\label{class_game_1_1_map_aa5c08038327f5b364ae7b70a73a71d74}} 
+\index{Game::Map@{Game::Map}!Map@{Map}}
+\index{Map@{Map}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+::\+Map\+::\+Map (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{width,  }\item[{const size\+\_\+t \&}]{height,  }\item[{const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&}]{players\+Number }\end{DoxyParamCaption})}
+
+
+
+Construct the \mbox{\hyperlink{class_game_1_1_map}{Map}} object (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the map \\
+\hline
+{\em height} & Height of the map \\
+\hline
+{\em players\+Number} & Number of players in the map (first\+: human number, second\+: \mbox{\hyperlink{class_game_1_1_a_i}{AI}} number) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_map_af1a2c4a057d3868d8018a43e2930f0a2}\label{class_game_1_1_map_af1a2c4a057d3868d8018a43e2930f0a2}} 
+\index{Game::Map@{Game::Map}!````~Map@{$\sim$Map}}
+\index{````~Map@{$\sim$Map}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{$\sim$Map()}{~Map()}}
+{\footnotesize\ttfamily Game\+::\+Map\+::$\sim$\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_game_1_1_map}{Map}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_map_a87b92baf2dc561a0f861bba0cc8ff6e6}\label{class_game_1_1_map_a87b92baf2dc561a0f861bba0cc8ff6e6}} 
+\index{Game::Map@{Game::Map}!dump@{dump}}
+\index{dump@{dump}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Game\+::\+Map\+::dump (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dump the map. 
+
+\mbox{\Hypertarget{class_game_1_1_map_a4e8a488e0e8e728ab8b7f417d3c00d9d}\label{class_game_1_1_map_a4e8a488e0e8e728ab8b7f417d3c00d9d}} 
+\index{Game::Map@{Game::Map}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily size\+\_\+t Game\+::\+Map\+::get\+Height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for map height. 
+
+\begin{DoxyReturn}{Returns}
+Height of the map (size\+\_\+t) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_map_af19ff052a62410f27fddf79adbbfc731}\label{class_game_1_1_map_af19ff052a62410f27fddf79adbbfc731}} 
+\index{Game::Map@{Game::Map}!getMap@{getMap}}
+\index{getMap@{getMap}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Game\+::\+Map\+::get\+Map (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for map. 
+
+\begin{DoxyReturn}{Returns}
+The map (a vector of vectors of chars) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_map_a3bc6972119e4b180eb70d347b8914833}\label{class_game_1_1_map_a3bc6972119e4b180eb70d347b8914833}} 
+\index{Game::Map@{Game::Map}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily size\+\_\+t Game\+::\+Map\+::get\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for map width. 
+
+\begin{DoxyReturn}{Returns}
+Width of the map (size\+\_\+t) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_map_a1556950a631f6ba4e98541fe8f27889b}\label{class_game_1_1_map_a1556950a631f6ba4e98541fe8f27889b}} 
+\index{Game::Map@{Game::Map}!operator=@{operator=}}
+\index{operator=@{operator=}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_map}{Game\+::\+Map}} \& Game\+::\+Map\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_1_1_map}{Map}} \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overwritting of assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_game_1_1_map}{Map}}\& A new map instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_map_a6e4a7e5daa174b659b6db286f1615682}\label{class_game_1_1_map_a6e4a7e5daa174b659b6db286f1615682}} 
+\index{Game::Map@{Game::Map}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void Game\+::\+Map\+::set\+Height (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for map height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & A const reference to an size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_map_a150143f7730b372136f82ba727400e14}\label{class_game_1_1_map_a150143f7730b372136f82ba727400e14}} 
+\index{Game::Map@{Game::Map}!setMap@{setMap}}
+\index{setMap@{setMap}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{setMap()}{setMap()}}
+{\footnotesize\ttfamily void Game\+::\+Map\+::set\+Map (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The new map (a vector of strings) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_map_a0d41dfc34bc0893cb3777e0c4fcc0020}\label{class_game_1_1_map_a0d41dfc34bc0893cb3777e0c4fcc0020}} 
+\index{Game::Map@{Game::Map}!setPlayersAreas@{setPlayersAreas}}
+\index{setPlayersAreas@{setPlayersAreas}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{setPlayersAreas()}{setPlayersAreas()}}
+{\footnotesize\ttfamily void Game\+::\+Map\+::set\+Players\+Areas (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{area\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Players Areas in the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em area\+Size} & A const reference to a size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_map_af055111827f36a0223a9e0e6a0856200}\label{class_game_1_1_map_af055111827f36a0223a9e0e6a0856200}} 
+\index{Game::Map@{Game::Map}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Game::Map@{Game::Map}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Game\+::\+Map\+::set\+Width (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for map width. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A const reference to an size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Map/\mbox{\hyperlink{_game_2_map_2_map_8hpp}{Map.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Map/\mbox{\hyperlink{_game_2_map_2_map_8cpp}{Map.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Map/\mbox{\hyperlink{_map_8inl}{Map.\+inl}}\end{DoxyCompactItemize}

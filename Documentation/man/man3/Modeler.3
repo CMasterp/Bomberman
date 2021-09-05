@@ -1,0 +1,165 @@
+.TH "Modeler" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Modeler
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Modeler\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBModeler\fP ()"
+.br
+.RI "Construct a new \fBModeler\fP object\&. "
+.ti -1c
+.RI "\fBModeler\fP (const std::string &obj_path, const std::string &texture_path, const \fBAnimator\fP &animation_path)"
+.br
+.RI "Construct a new \fBModeler\fP object\&. "
+.ti -1c
+.RI "\fBModeler\fP & \fBoperator=\fP (\fBModeler\fP model)"
+.br
+.ti -1c
+.RI "\fB~Modeler\fP ()"
+.br
+.RI "Destructor of \fBModeler\fP object\&. "
+.ti -1c
+.RI "void \fBmakeWalk\fP ()"
+.br
+.RI "Make a walk\&. "
+.ti -1c
+.RI "void \fBmakeBomb\fP ()"
+.br
+.RI "Make a bomb\&. "
+.ti -1c
+.RI "void \fBmakeEmote\fP ()"
+.br
+.RI "Make an Emote\&. "
+.ti -1c
+.RI "Model & \fBgetModel\fP ()"
+.br
+.RI "Get the Model\&. "
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.RI "Update\&. "
+.ti -1c
+.RI "std::string \fBgetObjPath\fP ()"
+.br
+.RI "Get the path to the object\&. "
+.ti -1c
+.RI "std::string \fBgetTexturePath\fP ()"
+.br
+.RI "Get the path to the texture\&. "
+.ti -1c
+.RI "\fBAnimator\fP \fBgetAnimationPath\fP ()"
+.br
+.RI "Get the path to the animation\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Modeler::Modeler ()"
+
+.PP
+Construct a new \fBModeler\fP object\&. 
+.SS "Modeler::Modeler (const std::string & obj_path, const std::string & texture_path, const \fBAnimator\fP & animation_path)"
+
+.PP
+Construct a new \fBModeler\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj_path\fP 
+.br
+\fItexture_path\fP 
+.br
+\fIanimation_path\fP 
+.RE
+.PP
+
+.SS "Modeler::~Modeler ()"
+
+.PP
+Destructor of \fBModeler\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAnimator\fP Modeler::getAnimationPath ()"
+
+.PP
+Get the path to the animation\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::string Path to the animation 
+.RE
+.PP
+
+.SS "Model & Modeler::getModel ()"
+
+.PP
+Get the Model\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Model 
+.RE
+.PP
+
+.SS "std::string Modeler::getObjPath ()"
+
+.PP
+Get the path to the object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::string Path to the object 
+.RE
+.PP
+
+.SS "std::string Modeler::getTexturePath ()"
+
+.PP
+Get the path to the texture\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::string Path to the texture 
+.RE
+.PP
+
+.SS "void Modeler::makeBomb ()"
+
+.PP
+Make a bomb\&. 
+.SS "void Modeler::makeEmote ()"
+
+.PP
+Make an Emote\&. 
+.SS "void Modeler::makeWalk ()"
+
+.PP
+Make a walk\&. 
+.SS "\fBModeler\fP & Modeler::operator= (\fBModeler\fP model)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fImodel\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Modeler::update (void)"
+
+.PP
+Update\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

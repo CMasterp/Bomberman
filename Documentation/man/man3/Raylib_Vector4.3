@@ -1,0 +1,162 @@
+.TH "Raylib::Vector4" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Vector4
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector4\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector4\fP (float \fBx\fP=0, float \fBy\fP=0, float \fBz\fP=0, float \fBw\fP=0)"
+.br
+.RI "Construct a new Vector 4 object\&. "
+.ti -1c
+.RI "\fBVector4\fP (const \fBVector4\fP &copy)=default"
+.br
+.RI "Construct a new Vector 4 object\&. "
+.ti -1c
+.RI "\fBVector4\fP (const ::\fBVector4\fP &vector)"
+.br
+.RI "Construct a new Vector 4 object\&. "
+.ti -1c
+.RI "\fB~Vector4\fP (void)"
+.br
+.RI "Destroy the Vector 4 object\&. "
+.ti -1c
+.RI "\fBVector4\fP \fBoperator=\fP (const \fBVector4\fP &copy)"
+.br
+.RI "Assign to a \fBVector4\fP from a \fBVector4\fP class instance\&. "
+.ti -1c
+.RI "\fBVector4\fP \fBoperator=\fP (const ::\fBVector4\fP &cvec)"
+.br
+.RI "Assign to a \fBVector4\fP from a \fBVector4\fP C \fBRaylib\fP structure instance\&. "
+.ti -1c
+.RI "::\fBVector4\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Get the \fBVector4\fP C \fBRaylib\fP structure instance\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBx\fP"
+.br
+.ti -1c
+.RI "float \fBy\fP"
+.br
+.ti -1c
+.RI "float \fBz\fP"
+.br
+.ti -1c
+.RI "float \fBw\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Vector4::Vector4 (float x = \fC0\fP, float y = \fC0\fP, float z = \fC0\fP, float w = \fC0\fP)"
+
+.PP
+Construct a new Vector 4 object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP x coordinate 
+.br
+\fIy\fP y coordinate 
+.br
+\fIz\fP z coordinate 
+.br
+\fIw\fP w coordinate 
+.RE
+.PP
+
+.SS "Raylib::Vector4::Vector4 (const \fBVector4\fP & copy)\fC [default]\fP"
+
+.PP
+Construct a new Vector 4 object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcopy\fP \fBVector4\fP class instance 
+.RE
+.PP
+
+.SS "Raylib::Vector4::Vector4 (const ::\fBVector4\fP & vector)"
+
+.PP
+Construct a new Vector 4 object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvector\fP \fBVector4\fP C \fBRaylib\fP strutcture instance 
+.RE
+.PP
+
+.SS "Raylib::Vector4::~Vector4 (void)"
+
+.PP
+Destroy the Vector 4 object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBVector4\fP Raylib::Vector4::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Get the \fBVector4\fP C \fBRaylib\fP structure instance\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector4\fP C \fBRaylib\fP structure instance 
+.RE
+.PP
+
+.SS "\fBVector4\fP Raylib::Vector4::operator= (const ::\fBVector4\fP & cvec)\fC [inline]\fP"
+
+.PP
+Assign to a \fBVector4\fP from a \fBVector4\fP C \fBRaylib\fP structure instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcvec\fP \fBVector4\fP C \fBRaylib\fP structure instance 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector4\fP 
+.RE
+.PP
+
+.SS "\fBVector4\fP Raylib::Vector4::operator= (const \fBVector4\fP & copy)\fC [inline]\fP"
+
+.PP
+Assign to a \fBVector4\fP from a \fBVector4\fP class instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcopy\fP \fBVector4\fP class instance 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector4\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "float Raylib::Vector4::w"
+
+.SS "float Raylib::Vector4::x"
+
+.SS "float Raylib::Vector4::y"
+
+.SS "float Raylib::Vector4::z"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

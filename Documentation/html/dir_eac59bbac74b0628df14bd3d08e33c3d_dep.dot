@@ -1,0 +1,14 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Lib/XRaylib/Raylib/Collision2D" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_de334b3105e3c27a200be04983862f6f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Raylib" fontname="Helvetica", fontsize="10", URL="dir_de334b3105e3c27a200be04983862f6f.html"]
+  dir_4fae295f01a2965dff9d34ef9d6f9183 [shape=box label="Rectangle" URL="dir_4fae295f01a2965dff9d34ef9d6f9183.html"];
+  dir_93fb1639309cce101efc82642960f385 [shape=box label="Vector2" URL="dir_93fb1639309cce101efc82642960f385.html"];
+  dir_eac59bbac74b0628df14bd3d08e33c3d [shape=box, label="Collision2D", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_eac59bbac74b0628df14bd3d08e33c3d.html"];
+  }
+  dir_4fae295f01a2965dff9d34ef9d6f9183->dir_93fb1639309cce101efc82642960f385 [headlabel="1", labeldistance=1.5 headhref="dir_000043_000050.html"];
+  dir_eac59bbac74b0628df14bd3d08e33c3d->dir_4fae295f01a2965dff9d34ef9d6f9183 [headlabel="1", labeldistance=1.5 headhref="dir_000030_000043.html"];
+  dir_eac59bbac74b0628df14bd3d08e33c3d->dir_93fb1639309cce101efc82642960f385 [headlabel="1", labeldistance=1.5 headhref="dir_000030_000050.html"];
+}

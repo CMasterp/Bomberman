@@ -1,0 +1,648 @@
+.TH "Game::Bomberman" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Bomberman
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Bomberman\&.hpp>\fP
+.PP
+Inherits \fBIGame\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBomberman\fP ()"
+.br
+.RI "Construct a new \fBBomberman\fP object\&. "
+.ti -1c
+.RI "\fB~Bomberman\fP () override"
+.br
+.RI "Destroy the \fBBomberman\fP object\&. "
+.ti -1c
+.RI "void \fBrestart\fP (void) override"
+.br
+.RI "Call this function to restart the entire game\&. The game must reset himself\&. "
+.ti -1c
+.RI "void \fBsaveGame\fP (std::array< std::size_t, 9 > settings, std::vector< std::string > playerControls) override"
+.br
+.RI "Call this function to save the game\&. "
+.ti -1c
+.RI "void \fBloadGame\fP (const std::string &backupFilePath) override"
+.br
+.RI "Call this function to load a game\&. "
+.ti -1c
+.RI "void \fBsetUserNames\fP (const std::vector< std::string > &userNames) override"
+.br
+.RI "Set the User Names\&. "
+.ti -1c
+.RI "void \fBsetSettings\fP (const std::array< std::size_t, 9 > &settings) override"
+.br
+.RI "Set the game settings\&. "
+.ti -1c
+.RI "std::array< std::size_t, 9 > \fBgetSettings\fP (void) const override"
+.br
+.RI "Get the game settings\&. "
+.ti -1c
+.RI "const std::vector< std::pair< std::string, std::string > > & \fBgetScores\fP (void) override"
+.br
+.RI "Getter for the score\&. "
+.ti -1c
+.RI "const std::vector< std::shared_ptr< \fBIEntity\fP > > & \fBgetEntities\fP (void) const override"
+.br
+.RI "Get the Entities\&. "
+.ti -1c
+.RI "const std::vector< std::vector< std::pair< std::string, std::string > > > & \fBgetPlayersStats\fP (void) override"
+.br
+.RI "Get the Players Stats\&. "
+.ti -1c
+.RI "void \fBrandomDropItem\fP (const \fBRaylib::Vector3\fP &pos)"
+.br
+.RI "Operates randomly a drop of an item when a block is break\&. "
+.ti -1c
+.RI "void \fBeraseEntitiesOnBomb\fP (const std::pair< int, int > &pos)"
+.br
+.RI "Erase all entities on the scope of a bomb explosion\&. "
+.ti -1c
+.RI "bool \fBplayerGotHit\fP (const std::pair< int, int > &pos, const float &posX, const float &posY) const"
+.br
+.RI "Check if a player is hit by a bomb\&. "
+.ti -1c
+.RI "void \fBsetCharOnRadius\fP (const char &c, const int &rad, std::pair< int, int > pos, \fBGame::Bomb\fP &bomb)"
+.br
+.ti -1c
+.RI "void \fBbombExplosion\fP (\fBGame::Bomb\fP &bomb, const size_t &index)"
+.br
+.RI "Manage the bomb explosion\&. "
+.ti -1c
+.RI "void \fBupdateGame\fP (void) override"
+.br
+.RI "updateGame function should be called in a loop\&. It's used to advance the game and update all logic\&. The game must manage time on it's own\&. "
+.ti -1c
+.RI "bool \fBisGameOver\fP (void) const override"
+.br
+.RI "Check if the game is over\&. "
+.ti -1c
+.RI "const std::string & \fBgetGameName\fP (void) const override"
+.br
+.RI "Get the name of the game\&. "
+.ti -1c
+.RI "void \fBinitEntities\fP ()"
+.br
+.RI "This function is to init all entities (_entites) "
+.ti -1c
+.RI "void \fBinitPlayersStats\fP ()"
+.br
+.RI "This function is to init all player(s) stats\&. "
+.ti -1c
+.RI "void \fBupdateEntities\fP ()"
+.br
+.RI "This function is to update state of all entities (_entites) "
+.ti -1c
+.RI "void \fBupdateScores\fP ()"
+.br
+.RI "This function is to update score(s) of player(s) "
+.ti -1c
+.RI "void \fBupdatePlayersStats\fP ()"
+.br
+.RI "This function is to update player(s) stats\&. "
+.ti -1c
+.RI "std::vector< std::string > & \fBgetMap\fP (const size_t &size) override"
+.br
+.RI "Get the \fBMap\fP\&. "
+.ti -1c
+.RI "std::vector< std::string > & \fBgetMap\fP () override"
+.br
+.RI "Get the \fBMap\fP\&. "
+.ti -1c
+.RI "const std::vector< std::string > & \fBgetUserNames\fP (void) const override"
+.br
+.RI "Get the User Names\&. "
+.ti -1c
+.RI "void \fBsetMapType\fP (const std::size_t &mapType) override"
+.br
+.RI "Set the \fBMap\fP Type\&. "
+.ti -1c
+.RI "const std::vector< std::string > & \fBgetPlayerControls\fP (void) const override"
+.br
+.RI "Get the player controls\&. "
+.ti -1c
+.RI "void \fBdoPlayerAction\fP (const size_t playerID, const std::string action) override"
+.br
+.RI "Do A player Action\&. "
+.ti -1c
+.RI "void \fBhandleIfPlayerIsNearAnItem\fP (\fBPlayer\fP &player)"
+.br
+.RI "Verify and update when a player is on an item\&. "
+.ti -1c
+.RI "void \fBdoDropBomb\fP (const size_t &playerID, std::pair< int, int > position)"
+.br
+.RI "drop bombs on command "
+.ti -1c
+.RI "\fBGame::Player\fP & \fBfindPlayer\fP (const size_t &id)"
+.br
+.RI "find the player "
+.ti -1c
+.RI "bool \fBcheckPlayerPosition\fP (const std::string action, \fBPlayer\fP &player)"
+.br
+.RI "check the current position of player "
+.ti -1c
+.RI "bool \fBcheckPlayerPositionPass\fP (const std::string action, const int &y, const int &x)"
+.br
+.RI "check if the current player position passes "
+.ti -1c
+.RI "void \fBupdateMap\fP (const std::pair< int, int > &playerPos, const int &y, const int &x)"
+.br
+.RI "updates the map "
+.ti -1c
+.RI "void \fBsetPlayers\fP (const std::vector< \fBCharDictionary\fP > &playersData) override"
+.br
+.RI "Set the current Players data\&. "
+.ti -1c
+.RI "void \fBsetPlayerShouldDisplay\fP (size_t position)"
+.br
+.RI "Set the display of the player\&. "
+.ti -1c
+.RI "void \fBrunAI\fP (void) override"
+.br
+.RI "Run the AIs\&. "
+.ti -1c
+.RI "template<typename T > std::vector< std::pair< int, int > > \fBgetEntitiesPositions\fP (void) const"
+.br
+.RI "Get positions of all the entities with a specific type\&. "
+.ti -1c
+.RI "template<typename T > std::vector< T * > \fBgetEntitiesData\fP (void) const"
+.br
+.RI "Get positions of all the entities with a specific type\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBplaceEntitiesOnMap\fP (const std::vector< std::pair< int, int >> &entitiesPos, const char &c) const"
+.br
+.RI "Place entities in the map\&. "
+.ti -1c
+.RI "bool \fBisCameraShaking\fP () override"
+.br
+.RI "Check if the camera should shake\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Bomberman::Bomberman (void)"
+
+.PP
+Construct a new \fBBomberman\fP object\&. 
+.SS "Game::Bomberman::~Bomberman (void)\fC [override]\fP"
+
+.PP
+Destroy the \fBBomberman\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::Bomberman::bombExplosion (\fBGame::Bomb\fP & bomb, const size_t & index)"
+
+.PP
+Manage the bomb explosion\&. 
+.SS "bool Game::Bomberman::checkPlayerPosition (const std::string action, \fBPlayer\fP & player)\fC [inline]\fP"
+
+.PP
+check the current position of player 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaction\fP 
+.br
+\fIplayer\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "bool Game::Bomberman::checkPlayerPositionPass (const std::string action, const int & y, const int & x)\fC [inline]\fP"
+
+.PP
+check if the current player position passes 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaction\fP 
+.br
+\fIy\fP 
+.br
+\fIx\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "void Game::Bomberman::doDropBomb (const size_t & playerID, std::pair< int, int > position)\fC [inline]\fP"
+
+.PP
+drop bombs on command 
+.SS "void Game::Bomberman::doPlayerAction (const size_t playerID, const std::string action)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Do A player Action\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerID\fP ID of the \fBPlayer\fP (\fBHuman\fP or \fBAI\fP) 
+.br
+\fIaction\fP Action in a string ['goEast', 'goNorth', 'goSouth', 'goWest', 'dropBomb'] 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::eraseEntitiesOnBomb (const std::pair< int, int > & pos)"
+
+.PP
+Erase all entities on the scope of a bomb explosion\&. 
+.SS "\fBGame::Player\fP & Game::Bomberman::findPlayer (const size_t & id)\fC [inline]\fP"
+
+.PP
+find the player 
+.SS "const std::vector< std::shared_ptr< \fBIEntity\fP > > & Game::Bomberman::getEntities (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the Entities\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Return all the game's entities to display in a const std::vector<std::shared_ptr<Thing>>& 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "template<typename T > std::vector< T * > Game::Bomberman::getEntitiesData (void) const"
+
+.PP
+Get positions of all the entities with a specific type\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<Game::Point> - A vector containing the required entities positions 
+.RE
+.PP
+
+.SS "template<typename T > std::vector< std::pair< int, int > > Game::Bomberman::getEntitiesPositions (void) const"
+
+.PP
+Get positions of all the entities with a specific type\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<Game::Point> - A vector containing the required entities positions 
+.RE
+.PP
+
+.SS "const std::string & Game::Bomberman::getGameName (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the name of the game\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Name of the game 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "std::vector< std::string > & Game::Bomberman::getMap ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the \fBMap\fP\&. 
+.PP
+Implements \fBIGame\fP\&.
+.SS "std::vector< std::string > & Game::Bomberman::getMap (const size_t & size)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the \fBMap\fP\&. 
+.PP
+Implements \fBIGame\fP\&.
+.SS "const std::vector< std::string > & Game::Bomberman::getPlayerControls (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the player controls\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector containing the player controls as a string 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "const std::vector< std::vector< std::pair< std::string, std::string > > > & Game::Bomberman::getPlayersStats (void)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the Players Stats\&. 
+.PP
+\fBReturns\fP
+.RS 4
+All the stats [PlayerName -- (NameOfStat, Value)] in a vector of vector 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "const std::vector< std::pair< std::string, std::string > > & Game::Bomberman::getScores (void)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Getter for the score\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A array of pair (\fBPlayer\fP, \fBScore\fP) of the current game 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "std::array< std::size_t, 9 > Game::Bomberman::getSettings (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the game settings\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An array of 9 size_t 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "const std::vector< std::string > & Game::Bomberman::getUserNames (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the User Names\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of all the users names as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::handleIfPlayerIsNearAnItem (\fBPlayer\fP & player)"
+
+.PP
+Verify and update when a player is on an item\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayer\fP the player 
+.RE
+.PP
+
+.SS "void Game::Bomberman::initEntities ()"
+
+.PP
+This function is to init all entities (_entites) 
+.SS "void Game::Bomberman::initPlayersStats ()"
+
+.PP
+This function is to init all player(s) stats\&. 
+.SS "bool Game::Bomberman::isCameraShaking ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the camera should shake\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if should 
+.PP
+false otherwise 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "bool Game::Bomberman::isGameOver (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the game is over\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate if the game is over 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::loadGame (const std::string & backupFilePath)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Call this function to load a game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbackupFilePath\fP Backup File Path 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "std::vector< std::string > Game::Bomberman::placeEntitiesOnMap (const std::vector< std::pair< int, int >> & entitiesPos, const char & c) const"
+
+.PP
+Place entities in the map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIentitiesPos\fP A vector of the required entities positions 
+.br
+\fIc\fP The character to place at entities slots 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<std::string> - The new map containing the entities representing by c 
+.RE
+.PP
+
+.SS "bool Game::Bomberman::playerGotHit (const std::pair< int, int > & pos, const float & posX, const float & posY) const"
+
+.PP
+Check if a player is hit by a bomb\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpos\fP position of the bomb 
+.br
+\fIposX\fP x position of the player 
+.br
+\fIposY\fP y position of the player 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the player is hit 
+.PP
+false otherwise 
+.RE
+.PP
+
+.SS "void Game::Bomberman::randomDropItem (const \fBRaylib::Vector3\fP & pos)"
+
+.PP
+Operates randomly a drop of an item when a block is break\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpos\fP position where to display the item 
+.RE
+.PP
+
+.SS "void Game::Bomberman::restart (void)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Call this function to restart the entire game\&. The game must reset himself\&. 
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::runAI (void)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Run the AIs\&. 
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::saveGame (std::array< std::size_t, 9 > settings, std::vector< std::string > playerControls)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Call this function to save the game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP Backup Container containing the settings 
+.br
+\fIplayerControls\fP Backup Container containing the player controls 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::setCharOnRadius (const char & c, const int & rad, std::pair< int, int > pos, \fBGame::Bomb\fP & bomb)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP character to set 
+.br
+\fIrad\fP reach of fire 
+.br
+\fIpos\fP position of the bomb 
+.RE
+.PP
+
+.SS "void Game::Bomberman::setMapType (const std::size_t & mapType)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the \fBMap\fP Type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImapType\fP A size_t 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::setPlayers (const std::vector< \fBCharDictionary\fP > & playersData)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the current Players data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayersData\fP Dictionary of the players' data 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::setPlayerShouldDisplay (size_t position)\fC [inline]\fP"
+
+.PP
+Set the display of the player\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP index 
+.RE
+.PP
+
+.SS "void Game::Bomberman::setSettings (const std::array< std::size_t, 9 > & settings)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the game settings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP An array of 9 size_t 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::setUserNames (const std::vector< std::string > & userNames)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the User Names\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserNames\fP A vector of all the users names as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::updateEntities ()"
+
+.PP
+This function is to update state of all entities (_entites) 
+.SS "void Game::Bomberman::updateGame (void)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+updateGame function should be called in a loop\&. It's used to advance the game and update all logic\&. The game must manage time on it's own\&. 
+.PP
+Implements \fBIGame\fP\&.
+.SS "void Game::Bomberman::updateMap (const std::pair< int, int > & playerPos, const int & y, const int & x)\fC [inline]\fP"
+
+.PP
+updates the map 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerPos\fP 
+.br
+\fIy\fP 
+.br
+\fIx\fP 
+.RE
+.PP
+
+.SS "void Game::Bomberman::updatePlayersStats ()"
+
+.PP
+This function is to update player(s) stats\&. 
+.SS "void Game::Bomberman::updateScores ()"
+
+.PP
+This function is to update score(s) of player(s) 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

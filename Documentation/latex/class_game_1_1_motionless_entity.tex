@@ -1,0 +1,256 @@
+\hypertarget{class_game_1_1_motionless_entity}{}\doxysection{Game\+::Motionless\+Entity Class Reference}
+\label{class_game_1_1_motionless_entity}\index{Game::MotionlessEntity@{Game::MotionlessEntity}}
+
+
+{\ttfamily \#include $<$Motionless\+Entity.\+hpp$>$}
+
+Inheritance diagram for Game\+::Motionless\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_1_1_motionless_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_game_1_1_motionless_entity_ab345abd7acb59e614c4a3fbfc75f7173}{$\sim$\+Motionless\+Entity}} (void)
+\begin{DoxyCompactList}\small\item\em Destroy the Motionless Entity object. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_game_1_1_motionless_entity_ac561e8e6150a671d7a3452d1fc076b72}{get\+Type}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \mbox{\hyperlink{class_game_1_1_motionless_entity_a09b349637872af500fa8f020c6e4a100}{get\+Positions}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the Positions object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_motionless_entity_ae3bc9c83db380a639b2815cea92c9595}{set\+Positions}} (\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&vector)
+\begin{DoxyCompactList}\small\item\em Set the Positions. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_1_1_motionless_entity_a44168822d294c91d5e533b961d371dbd}{draw\+Entity}} (void)=0
+\begin{DoxyCompactList}\small\item\em Draw Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_motionless_entity_a324999c240cd9a28e7b632afdff23fcb}{set\+Should\+Display}} (const bool \&should\+Display)
+\begin{DoxyCompactList}\small\item\em Set a boolean to know if this entity should be displayed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_motionless_entity_a01c1fb984a91f7fb5825ce9c6d4284a4}{get\+Should\+Display}} (void) const
+\begin{DoxyCompactList}\small\item\em Get a boolean to know if this entity should be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_motionless_entity_a8807ab69e5468028d0291ca3661a09d9}{update\+Available\+Paths}} (void)
+\begin{DoxyCompactList}\small\item\em Update the available textures paths. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_motionless_entity_a95998b4516c0c4d1e208dbd33a19e6af}{Motionless\+Entity}} (void)=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Model \mbox{\hyperlink{class_game_1_1_motionless_entity_a4ec29dc8db520105f4485ffd3e07cf4a}{\+\_\+model}}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \mbox{\hyperlink{class_game_1_1_motionless_entity_a1ac1e78dceb54da8ea2e92a45f2d0716}{\+\_\+positions}} \{0, 0, 0\}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_raylib_1_1_texture}{Raylib\+::\+Texture}} $>$ \mbox{\hyperlink{class_game_1_1_motionless_entity_acb7ab8841933a0dcb4bbe8c805b62069}{\+\_\+textures}}
+\item 
+bool \mbox{\hyperlink{class_game_1_1_motionless_entity_af0c783afa4aa378aa346505ba6a0f775}{\+\_\+should\+Display}} = true
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_game_1_1_motionless_entity_a5874805f98a04ca5c099f9d3fa6077fe}{\+\_\+available\+\_\+paths}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_motionless_entity_a909f9522fe8167a4eea4209b744e82e1}{\+\_\+width}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_motionless_entity_a15710b07a195b48ec9dd0720d4868bd5}{\+\_\+height}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_motionless_entity_ac581adf4fb0a6fd431f0996e7367f947}{\+\_\+length}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_ab345abd7acb59e614c4a3fbfc75f7173}\label{class_game_1_1_motionless_entity_ab345abd7acb59e614c4a3fbfc75f7173}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!````~MotionlessEntity@{$\sim$MotionlessEntity}}
+\index{````~MotionlessEntity@{$\sim$MotionlessEntity}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{$\sim$MotionlessEntity()}{~MotionlessEntity()}}
+{\footnotesize\ttfamily virtual Game\+::\+Motionless\+Entity\+::$\sim$\+Motionless\+Entity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the Motionless Entity object. 
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a95998b4516c0c4d1e208dbd33a19e6af}\label{class_game_1_1_motionless_entity_a95998b4516c0c4d1e208dbd33a19e6af}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!MotionlessEntity@{MotionlessEntity}}
+\index{MotionlessEntity@{MotionlessEntity}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{MotionlessEntity()}{MotionlessEntity()}}
+{\footnotesize\ttfamily Game\+::\+Motionless\+Entity\+::\+Motionless\+Entity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a44168822d294c91d5e533b961d371dbd}\label{class_game_1_1_motionless_entity_a44168822d294c91d5e533b961d371dbd}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!drawEntity@{drawEntity}}
+\index{drawEntity@{drawEntity}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{drawEntity()}{drawEntity()}}
+{\footnotesize\ttfamily virtual void Game\+::\+Motionless\+Entity\+::draw\+Entity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw Entity. 
+
+
+
+Implements \mbox{\hyperlink{class_i_entity_a37d57731ff65d299a5c92316347e3cfc}{IEntity}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_floor_a4d520aac62393f36476b53e9f9035213}{Game\+::\+Floor}}, \mbox{\hyperlink{class_game_1_1_breakable_wall_a5e416a26f367ba2d68e8bf56465d6135}{Game\+::\+Breakable\+Wall}}, and \mbox{\hyperlink{class_game_1_1_solid_wall_a5c9ed0eaac32d3457621713620c98ccc}{Game\+::\+Solid\+Wall}}.
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a09b349637872af500fa8f020c6e4a100}\label{class_game_1_1_motionless_entity_a09b349637872af500fa8f020c6e4a100}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!getPositions@{getPositions}}
+\index{getPositions@{getPositions}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{getPositions()}{getPositions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} Game\+::\+Motionless\+Entity\+::get\+Positions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Positions object. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_entity_aff5123b0cd33be2f7970e6d6fde58ec5}{IEntity}}.
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a01c1fb984a91f7fb5825ce9c6d4284a4}\label{class_game_1_1_motionless_entity_a01c1fb984a91f7fb5825ce9c6d4284a4}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!getShouldDisplay@{getShouldDisplay}}
+\index{getShouldDisplay@{getShouldDisplay}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{getShouldDisplay()}{getShouldDisplay()}}
+{\footnotesize\ttfamily bool Game\+::\+Motionless\+Entity\+::get\+Should\+Display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get a boolean to know if this entity should be displayed. 
+
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_entity_a43cfde8d8a3b908badc43c50bc0b0448}{IEntity}}.
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_ac561e8e6150a671d7a3452d1fc076b72}\label{class_game_1_1_motionless_entity_ac561e8e6150a671d7a3452d1fc076b72}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!getType@{getType}}
+\index{getType@{getType}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual std\+::string Game\+::\+Motionless\+Entity\+::get\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+A std\+::string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_entity_acf90d593003711ef619cf14624f60ccc}{IEntity}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_floor_ac30f3a8da34e7b37dfb9f9155334eb1a}{Game\+::\+Floor}}, \mbox{\hyperlink{class_game_1_1_breakable_wall_ac890cc67e84938a37667ce8ce6f1b210}{Game\+::\+Breakable\+Wall}}, and \mbox{\hyperlink{class_game_1_1_solid_wall_a90ea4587e5e5b590bb22f79853c97fb2}{Game\+::\+Solid\+Wall}}.
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_ae3bc9c83db380a639b2815cea92c9595}\label{class_game_1_1_motionless_entity_ae3bc9c83db380a639b2815cea92c9595}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!setPositions@{setPositions}}
+\index{setPositions@{setPositions}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{setPositions()}{setPositions()}}
+{\footnotesize\ttfamily void Game\+::\+Motionless\+Entity\+::set\+Positions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & A vector3 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_entity_aa70c149bf77cd12268471e0a7407ca65}{IEntity}}.
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a324999c240cd9a28e7b632afdff23fcb}\label{class_game_1_1_motionless_entity_a324999c240cd9a28e7b632afdff23fcb}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!setShouldDisplay@{setShouldDisplay}}
+\index{setShouldDisplay@{setShouldDisplay}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{setShouldDisplay()}{setShouldDisplay()}}
+{\footnotesize\ttfamily void Game\+::\+Motionless\+Entity\+::set\+Should\+Display (\begin{DoxyParamCaption}\item[{const bool \&}]{should\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set a boolean to know if this entity should be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\+Display} & A boolean to know if this entity should be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_entity_a2326e46dab3aa8bd2e0ce9c91a68f79c}{IEntity}}.
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a8807ab69e5468028d0291ca3661a09d9}\label{class_game_1_1_motionless_entity_a8807ab69e5468028d0291ca3661a09d9}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!updateAvailablePaths@{updateAvailablePaths}}
+\index{updateAvailablePaths@{updateAvailablePaths}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{updateAvailablePaths()}{updateAvailablePaths()}}
+{\footnotesize\ttfamily void Game\+::\+Motionless\+Entity\+::update\+Available\+Paths (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Update the available textures paths. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a5874805f98a04ca5c099f9d3fa6077fe}\label{class_game_1_1_motionless_entity_a5874805f98a04ca5c099f9d3fa6077fe}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_available\_paths@{\_available\_paths}}
+\index{\_available\_paths@{\_available\_paths}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_available\_paths}{\_available\_paths}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Game\+::\+Motionless\+Entity\+::\+\_\+available\+\_\+paths\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a15710b07a195b48ec9dd0720d4868bd5}\label{class_game_1_1_motionless_entity_a15710b07a195b48ec9dd0720d4868bd5}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_height@{\_height}}
+\index{\_height@{\_height}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_height}{\_height}}
+{\footnotesize\ttfamily float Game\+::\+Motionless\+Entity\+::\+\_\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_ac581adf4fb0a6fd431f0996e7367f947}\label{class_game_1_1_motionless_entity_ac581adf4fb0a6fd431f0996e7367f947}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_length@{\_length}}
+\index{\_length@{\_length}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_length}{\_length}}
+{\footnotesize\ttfamily float Game\+::\+Motionless\+Entity\+::\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a4ec29dc8db520105f4485ffd3e07cf4a}\label{class_game_1_1_motionless_entity_a4ec29dc8db520105f4485ffd3e07cf4a}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_model@{\_model}}
+\index{\_model@{\_model}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_model}{\_model}}
+{\footnotesize\ttfamily Model Game\+::\+Motionless\+Entity\+::\+\_\+model\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a1ac1e78dceb54da8ea2e92a45f2d0716}\label{class_game_1_1_motionless_entity_a1ac1e78dceb54da8ea2e92a45f2d0716}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_positions@{\_positions}}
+\index{\_positions@{\_positions}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_positions}{\_positions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} Game\+::\+Motionless\+Entity\+::\+\_\+positions \{0, 0, 0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_af0c783afa4aa378aa346505ba6a0f775}\label{class_game_1_1_motionless_entity_af0c783afa4aa378aa346505ba6a0f775}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_shouldDisplay@{\_shouldDisplay}}
+\index{\_shouldDisplay@{\_shouldDisplay}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_shouldDisplay}{\_shouldDisplay}}
+{\footnotesize\ttfamily bool Game\+::\+Motionless\+Entity\+::\+\_\+should\+Display = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_acb7ab8841933a0dcb4bbe8c805b62069}\label{class_game_1_1_motionless_entity_acb7ab8841933a0dcb4bbe8c805b62069}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_textures@{\_textures}}
+\index{\_textures@{\_textures}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_textures}{\_textures}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_raylib_1_1_texture}{Raylib\+::\+Texture}}$>$ Game\+::\+Motionless\+Entity\+::\+\_\+textures\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_motionless_entity_a909f9522fe8167a4eea4209b744e82e1}\label{class_game_1_1_motionless_entity_a909f9522fe8167a4eea4209b744e82e1}} 
+\index{Game::MotionlessEntity@{Game::MotionlessEntity}!\_width@{\_width}}
+\index{\_width@{\_width}!Game::MotionlessEntity@{Game::MotionlessEntity}}
+\doxysubsubsection{\texorpdfstring{\_width}{\_width}}
+{\footnotesize\ttfamily float Game\+::\+Motionless\+Entity\+::\+\_\+width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Motionless\+Entity/\mbox{\hyperlink{_motionless_entity_8hpp}{Motionless\+Entity.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Motionless\+Entity/\mbox{\hyperlink{_motionless_entity_8cpp}{Motionless\+Entity.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Motionless\+Entity/\mbox{\hyperlink{_motionless_entity_8inl}{Motionless\+Entity.\+inl}}\end{DoxyCompactItemize}

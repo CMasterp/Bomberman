@@ -1,0 +1,269 @@
+.TH "Raylib::Gamepad" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Gamepad
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Gamepad\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGamepad\fP ()"
+.br
+.RI "Construct a new \fBGamepad\fP object\&. "
+.ti -1c
+.RI "\fB~Gamepad\fP ()"
+.br
+.RI "Destroy the \fBGamepad\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBisGamepadAvailable\fP (const int &gamepad)"
+.br
+.RI "Detect if a gamepad is available\&. "
+.ti -1c
+.RI "static bool \fBisGamepadName\fP (const int &gamepad, const std::string &name)"
+.br
+.RI "Check gamepad name (if available) "
+.ti -1c
+.RI "static std::string \fBgetGamepadName\fP (const int &gamepad)"
+.br
+.RI "Return gamepad internal name id\&. "
+.ti -1c
+.RI "static bool \fBisGamepadButtonPressed\fP (const int &gamepad, const int &button)"
+.br
+.RI "Detect if a gamepad button has been pressed once\&. "
+.ti -1c
+.RI "static bool \fBisGamepadButtonDown\fP (const int &gamepad, const int &button)"
+.br
+.RI "Detect if a gamepad button is being pressed\&. "
+.ti -1c
+.RI "static bool \fBisGamepadButtonReleased\fP (const int &gamepad, const int &button)"
+.br
+.RI "Detect if a gamepad button has been released once\&. "
+.ti -1c
+.RI "static bool \fBisGamepadButtonUp\fP (const int &gamepad, const int &button)"
+.br
+.RI "Detect if a gamepad button is NOT being pressed\&. "
+.ti -1c
+.RI "static int \fBgetGamepadButtonPressed\fP (void)"
+.br
+.RI "Get the last gamepad button pressed\&. "
+.ti -1c
+.RI "static int \fBgetGamepadAxisCount\fP (const int &gamepad)"
+.br
+.RI "Return gamepad axis count for a gamepad\&. "
+.ti -1c
+.RI "static float \fBgetGamepadAxisMovement\fP (const int &gamepad, const int &axis)"
+.br
+.RI "Return axis movement value for a gamepad axis\&. "
+.ti -1c
+.RI "static int \fBsetGamepadMappings\fP (const std::string &mappings)"
+.br
+.RI "Set internal gamepad mappings (SDL_GameControllerDB) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Gamepad::Gamepad ()"
+
+.PP
+Construct a new \fBGamepad\fP object\&. 
+.SS "Raylib::Gamepad::~Gamepad ()"
+
+.PP
+Destroy the \fBGamepad\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "int Raylib::Gamepad::getGamepadAxisCount (const int & gamepad)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return gamepad axis count for a gamepad\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An int 
+.RE
+.PP
+
+.SS "float Raylib::Gamepad::getGamepadAxisMovement (const int & gamepad, const int & axis)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return axis movement value for a gamepad axis\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.br
+\fIaxis\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A float 
+.RE
+.PP
+
+.SS "int Raylib::Gamepad::getGamepadButtonPressed (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the last gamepad button pressed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An int 
+.RE
+.PP
+
+.SS "std::string Raylib::Gamepad::getGamepadName (const int & gamepad)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return gamepad internal name id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+const std::string 
+.RE
+.PP
+
+.SS "bool Raylib::Gamepad::isGamepadAvailable (const int & gamepad)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a gamepad is available\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if a gamepad is available, otherwise false 
+.RE
+.PP
+
+.SS "bool Raylib::Gamepad::isGamepadButtonDown (const int & gamepad, const int & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a gamepad button is being pressed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.br
+\fIbutton\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "bool Raylib::Gamepad::isGamepadButtonPressed (const int & gamepad, const int & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a gamepad button has been pressed once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.br
+\fIbutton\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "bool Raylib::Gamepad::isGamepadButtonReleased (const int & gamepad, const int & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a gamepad button has been released once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.br
+\fIbutton\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "bool Raylib::Gamepad::isGamepadButtonUp (const int & gamepad, const int & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a gamepad button is NOT being pressed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.br
+\fIbutton\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "bool Raylib::Gamepad::isGamepadName (const int & gamepad, const std::string & name)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check gamepad name (if available) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamepad\fP An int 
+.br
+\fIname\fP A string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "int Raylib::Gamepad::setGamepadMappings (const std::string & mappings)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set internal gamepad mappings (SDL_GameControllerDB) 
+.PP
+\fBParameters\fP
+.RS 4
+\fImappings\fP A string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An int 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

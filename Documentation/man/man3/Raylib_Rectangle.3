@@ -1,0 +1,376 @@
+.TH "Raylib::Rectangle" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Rectangle
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Rectangle\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRectangle\fP (float x=0, float y=0, float width=0, float height=0)"
+.br
+.RI "Construct a new \fBRectangle\fP object with parameters\&. "
+.ti -1c
+.RI "\fBRectangle\fP (::\fBRectangle\fP rec)"
+.br
+.RI "Construct a new \fBRectangle\fP object\&. "
+.ti -1c
+.RI "\fBRectangle\fP (\fBVector2\fP const &position, \fBVector2\fP const &size)"
+.br
+.RI "Construct a new \fBRectangle\fP object with parameters\&. "
+.ti -1c
+.RI "\fBRectangle\fP (\fBVector2\fP const &size)"
+.br
+.RI "Construct a new \fBRectangle\fP object with parameters\&. "
+.ti -1c
+.RI "\fBRectangle\fP & \fBoperator=\fP (const \fBRectangle\fP &rectangle)"
+.br
+.RI "Overload of '=' operator\&. "
+.ti -1c
+.RI "\fB~Rectangle\fP ()"
+.br
+.RI "Destroy the \fBRectangle\fP object\&. "
+.ti -1c
+.RI "::\fBRectangle\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Getter of \fBTexture\fP structure (private attribute) "
+.ti -1c
+.RI "void \fBdrawRectangleV\fP (const \fBVector2\fP &position, const \fBVector2\fP &size, const \fBColor\fP &color) const"
+.br
+.RI "Draw a color-filled rectangle (Vector version) "
+.ti -1c
+.RI "void \fBdrawRectanglePro\fP (\fBRectangle\fP const &rec, \fBVector2\fP const &origin, float const &rotation, \fBColor\fP const &color) const"
+.br
+.RI "Draw a color-filled rectangle with pro parameters\&. "
+.ti -1c
+.RI "void \fBdrawRectangleGradientV\fP (int const &posX, int const &posY, int const &width, int const &height, \fBColor\fP const &color1, \fBColor\fP const &color2) const"
+.br
+.RI "Draw a vertical-gradient-filled rectangle\&. "
+.ti -1c
+.RI "void \fBdrawRectangleGradientH\fP (int const &posX, int const &posY, int const &width, int const &height, \fBColor\fP const &color1, \fBColor\fP const &color2) const"
+.br
+.RI "Draw a horizontal-gradient-filled rectangle\&. "
+.ti -1c
+.RI "void \fBdrawRectangleGradientEx\fP (\fBRectangle\fP const &rec, \fBColor\fP const &col1, \fBColor\fP const &col2, \fBColor\fP const &col3, \fBColor\fP const &col4) const"
+.br
+.RI "Draw a gradient-filled rectangle with custom vertex colors\&. "
+.ti -1c
+.RI "void \fBdrawRectangleLinesEx\fP (\fBRectangle\fP const &rec, int const &lineThick, \fBColor\fP const &color) const"
+.br
+.RI "Draw rectangle outline with extended parameters\&. "
+.ti -1c
+.RI "void \fBdrawRectangleRounded\fP (\fBRectangle\fP const &rec, float const &roundness, int const &segments, \fBColor\fP const &color) const"
+.br
+.RI "Draw rectangle with rounded edges\&. "
+.ti -1c
+.RI "void \fBdrawRectangleRoundedLines\fP (\fBRectangle\fP const &rec, float const &roundness, int const &segments, int const &lineThick, \fBColor\fP const &color) const"
+.br
+.RI "Draw rectangle with rounded edges outline\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBdrawRectangle\fP (int const &posX, int const &posY, int const &width, int const &height, \fBColor\fP const &color)"
+.br
+.RI "Draw a color-filled rectangle\&. "
+.ti -1c
+.RI "static void \fBdrawRectangleRec\fP (\fBRectangle\fP const &rec, \fBColor\fP const &color)"
+.br
+.RI "Draw a color-filled rectangle\&. "
+.ti -1c
+.RI "static void \fBdrawRectangleLines\fP (int const &posX, int const &posY, int const &width, int const &height, \fBColor\fP const &color)"
+.br
+.RI "Draw rectangle outline\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Rectangle::Rectangle (float x = \fC0\fP, float y = \fC0\fP, float width = \fC0\fP, float height = \fC0\fP)"
+
+.PP
+Construct a new \fBRectangle\fP object with parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP Position X 
+.br
+\fIy\fP Position Y 
+.br
+\fIwidth\fP The width of the rectangle 
+.br
+\fIheight\fP The height of the rectangle 
+.RE
+.PP
+
+.SS "Raylib::Rectangle::Rectangle (::\fBRectangle\fP rec)"
+
+.PP
+Construct a new \fBRectangle\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec\fP C \fBRectangle\fP structure 
+.RE
+.PP
+
+.SS "Raylib::Rectangle::Rectangle (\fBVector2\fP const & position, \fBVector2\fP const & size)"
+
+.PP
+Construct a new \fBRectangle\fP object with parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP An const reference to the \fBVector2\fP 
+.br
+\fIsize\fP An const reference to the \fBVector2\fP 
+.RE
+.PP
+
+.SS "Raylib::Rectangle::Rectangle (\fBVector2\fP const & size)"
+
+.PP
+Construct a new \fBRectangle\fP object with parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsize\fP An const reference to the \fBVector2\fP 
+.RE
+.PP
+
+.SS "Raylib::Rectangle::~Rectangle ()"
+
+.PP
+Destroy the \fBRectangle\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Rectangle::drawRectangle (int const & posX, int const & posY, int const & width, int const & height, \fBColor\fP const & color)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Draw a color-filled rectangle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposX\fP A const reference to an int 
+.br
+\fIposY\fP A const reference to an int 
+.br
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleGradientEx (\fBRectangle\fP const & rec, \fBColor\fP const & col1, \fBColor\fP const & col2, \fBColor\fP const & col3, \fBColor\fP const & col4) const\fC [inline]\fP"
+
+.PP
+Draw a gradient-filled rectangle with custom vertex colors\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec\fP A const reference to a Class \fBRectangle\fP 
+.br
+\fIcol1\fP A const reference to Class \fBColor\fP 
+.br
+\fIcol2\fP A const reference to Class \fBColor\fP 
+.br
+\fIcol3\fP A const reference to Class \fBColor\fP 
+.br
+\fIcol4\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleGradientH (int const & posX, int const & posY, int const & width, int const & height, \fBColor\fP const & color1, \fBColor\fP const & color2) const\fC [inline]\fP"
+
+.PP
+Draw a horizontal-gradient-filled rectangle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposX\fP A const reference to an int 
+.br
+\fIposY\fP A const reference to an int 
+.br
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIcol1\fP A const reference to Class \fBColor\fP 
+.br
+\fIcol2\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleGradientV (int const & posX, int const & posY, int const & width, int const & height, \fBColor\fP const & color1, \fBColor\fP const & color2) const\fC [inline]\fP"
+
+.PP
+Draw a vertical-gradient-filled rectangle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposX\fP A const reference to an int 
+.br
+\fIposY\fP A const reference to an int 
+.br
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIcol1\fP A const reference to Class \fBColor\fP 
+.br
+\fIcol2\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleLines (int const & posX, int const & posY, int const & width, int const & height, \fBColor\fP const & color)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Draw rectangle outline\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposX\fP A const reference to an int 
+.br
+\fIposY\fP A const reference to an int 
+.br
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleLinesEx (\fBRectangle\fP const & rec, int const & lineThick, \fBColor\fP const & color) const\fC [inline]\fP"
+
+.PP
+Draw rectangle outline with extended parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec\fP A const reference to Class \fBRectangle\fP 
+.br
+\fIlineThick\fP A const reference to an int 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectanglePro (\fBRectangle\fP const & rec, \fBVector2\fP const & origin, float const & rotation, \fBColor\fP const & color) const\fC [inline]\fP"
+
+.PP
+Draw a color-filled rectangle with pro parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec\fP A const reference to a Class \fBRectangle\fP 
+.br
+\fIorgin\fP A const reference to a Class \fBVector2\fP 
+.br
+\fIrotation\fP A const reference to a float 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleRec (\fBRectangle\fP const & rec, \fBColor\fP const & color)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Draw a color-filled rectangle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec\fP A const reference to a Class \fBRectangle\fP 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleRounded (\fBRectangle\fP const & rec, float const & roundness, int const & segments, \fBColor\fP const & color) const\fC [inline]\fP"
+
+.PP
+Draw rectangle with rounded edges\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec\fP A const reference to Class \fBRectangle\fP 
+.br
+\fIroundness\fP A const reference to a float 
+.br
+\fIsegments\fP A const reference to an int 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleRoundedLines (\fBRectangle\fP const & rec, float const & roundness, int const & segments, int const & lineThick, \fBColor\fP const & color) const\fC [inline]\fP"
+
+.PP
+Draw rectangle with rounded edges outline\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec\fP A const reference to Class \fBRectangle\fP 
+.br
+\fIroundness\fP A const reference to a float 
+.br
+\fIsegments\fP A const reference to an int 
+.br
+\fIlineThick\fP A const reference to an int 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Rectangle::drawRectangleV (const \fBVector2\fP & position, const \fBVector2\fP & size, const \fBColor\fP & color) const\fC [inline]\fP"
+
+.PP
+Draw a color-filled rectangle (Vector version) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP A const reference to a Class \fBVector2\fP 
+.br
+\fIsize\fP A const reference to a Class \fBVector2\fP 
+.br
+\fIcolor\fP A const reference to Class \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRectangle\fP Raylib::Rectangle::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Getter of \fBTexture\fP structure (private attribute) 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBRectangle\fP C structure 
+.RE
+.PP
+
+.SS "\fBRaylib::Rectangle\fP & Raylib::Rectangle::operator= (const \fBRectangle\fP & rectangle)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrectangle\fP A const reference to a \fBRectangle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBRectangle\fP (\fBRectangle\fP &) 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

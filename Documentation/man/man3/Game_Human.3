@@ -1,0 +1,66 @@
+.TH "Game::Human" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Human
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Player\&.hpp>\fP
+.PP
+Inherits \fBGame::Player\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHuman\fP (const std::string &name, const int ID, const \fBRaylib::Vector3\fP &positions, const std::string &obj_path='resources/players/3D/Bombermans/white_tpose\&.glb', const std::string &texture_path='resources/players/3D/Bombermans/texture\&.png', const std::vector< std::string > &animation_path={}, const float &scalable=0\&.6, const \fBRaylib::Color\fP color=\fBRaylib::Color::White\fP())"
+.br
+.RI "Construct a new \fBPlayer\fP object\&. "
+.ti -1c
+.RI "std::string \fBgetType\fP () const override"
+.br
+.RI "Get the Type object\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Human::Human (const std::string & name, const int ID, const \fBRaylib::Vector3\fP & positions, const std::string & obj_path = \fC'resources/players/3D/Bombermans/white_tpose\&.glb'\fP, const std::string & texture_path = \fC'resources/players/3D/Bombermans/texture\&.png'\fP, const std::vector< std::string > & animation_path = \fC{}\fP, const float & scalable = \fC0\&.6\fP, const \fBRaylib::Color\fP color = \fC\fBRaylib::Color::White\fP()\fP)"
+
+.PP
+Construct a new \fBPlayer\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP the name of the character 
+.br
+\fIID\fP A const reference to a int 
+.br
+\fIpositions\fP the 3D positions of the character 
+.br
+\fIobj_path\fP the model path 
+.br
+\fItexture_path\fP the texture path 
+.br
+\fIanimation_path\fP the animations paths 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string Game::Human::getType (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the Type object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::string 
+.RE
+.PP
+
+.PP
+Implements \fBGame::Animated\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

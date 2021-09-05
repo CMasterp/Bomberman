@@ -1,0 +1,141 @@
+.TH "Game::Save" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Save
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Save\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSave\fP (const std::array< std::size_t, 9 > &settings, const std::vector< std::shared_ptr< \fBGame::Player\fP >> &players, const std::vector< std::string > &playerControls, const \fBGame::Map\fP &map)"
+.br
+.RI "Construct the \fBSave\fP object to create a backup file (Copy Constructor) "
+.ti -1c
+.RI "\fBSave\fP (const std::string &fileName)"
+.br
+.RI "Construct the \fBSave\fP object to read a backup file and load its content into an \fBIGame\fP object (Copy Constructor) "
+.ti -1c
+.RI "\fB~Save\fP ()"
+.br
+.RI "Destroy the \fBSave\fP object\&. "
+.ti -1c
+.RI "std::array< std::size_t, 9 > \fBgetSettings\fP (void) const"
+.br
+.RI "Get the Settings arrray from the backup file\&. "
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBGame::Player\fP > > \fBgetPlayers\fP (void) const"
+.br
+.RI "Get the Players from the backup file\&. "
+.ti -1c
+.RI "\fBGame::Map\fP \fBgetMap\fP (void) const"
+.br
+.RI "Get the \fBMap\fP from the backup file\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBgetUserNames\fP (void) const"
+.br
+.RI "Get the User Names\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBgetPlayerControls\fP (void) const"
+.br
+.RI "Get the player controls\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Save::Save (const std::array< std::size_t, 9 > & settings, const std::vector< std::shared_ptr< \fBGame::Player\fP >> & players, const std::vector< std::string > & playerControls, const \fBGame::Map\fP & map)"
+
+.PP
+Construct the \fBSave\fP object to create a backup file (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP Settings of the \fBGame\fP 
+.br
+\fIplayers\fP Players of the \fBGame\fP 
+.br
+\fIplayerControls\fP Controls of the players ('PLAYSTATION', 'XBOX', 'MOUSE', 'KEYBOARD') 
+.br
+\fImap\fP \fBMap\fP of the \fBGame\fP 
+.RE
+.PP
+
+.SS "Game::Save::Save (const std::string & fileName)"
+
+.PP
+Construct the \fBSave\fP object to read a backup file and load its content into an \fBIGame\fP object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A const reference to string (the backup file) 
+.RE
+.PP
+
+.SS "Game::Save::~Save ()"
+
+.PP
+Destroy the \fBSave\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGame::Map\fP Game::Save::getMap (void) const\fC [inline]\fP"
+
+.PP
+Get the \fBMap\fP from the backup file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBGame::Map\fP object 
+.RE
+.PP
+
+.SS "std::vector< std::string > Game::Save::getPlayerControls (void) const\fC [inline]\fP"
+
+.PP
+Get the player controls\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector containing the player controls as a string 
+.RE
+.PP
+
+.SS "std::vector< std::shared_ptr< \fBGame::Player\fP > > Game::Save::getPlayers (void) const\fC [inline]\fP"
+
+.PP
+Get the Players from the backup file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of players 
+.RE
+.PP
+
+.SS "std::array< std::size_t, 9 > Game::Save::getSettings (void) const\fC [inline]\fP"
+
+.PP
+Get the Settings arrray from the backup file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An std::array<std::size_t, 9> which represents the \fBGame\fP settings 
+.RE
+.PP
+
+.SS "std::vector< std::string > Game::Save::getUserNames (void) const\fC [inline]\fP"
+
+.PP
+Get the User Names\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector containing all the user names 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

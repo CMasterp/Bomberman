@@ -1,0 +1,1049 @@
+.TH "XRay" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+XRay
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <XRay\&.hpp>\fP
+.PP
+Inherits \fBIGraphical\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBXRay\fP (void)"
+.br
+.RI "Construct a new Ray Lib object\&. "
+.ti -1c
+.RI "\fB~XRay\fP (void) override"
+.br
+.RI "Destroy the Ray Lib object\&. "
+.ti -1c
+.RI "bool \fBshouldCloseWindow\fP (void) const override"
+.br
+.RI "Check if the window should be close\&. "
+.ti -1c
+.RI "void \fBsetScores\fP (const std::vector< std::pair< std::string, std::string >> &scores) override"
+.br
+.RI "This function sets the list of scores\&. First element of the pair is the username, the second is the score\&. "
+.ti -1c
+.RI "void \fBsetBestScores\fP (const std::vector< std::pair< std::string, std::string >> &scores) override"
+.br
+.RI "This function sets the list of bests scores\&. First element of the pair is the username, the second is the score\&. "
+.ti -1c
+.RI "void \fBupdateGameInfos\fP (const std::vector< std::shared_ptr< \fBIEntity\fP >> &gameInfos) override"
+.br
+.RI "This is called in a loop when the game is running\&. This vector contains entities that should be displayed in the game scene\&. "
+.ti -1c
+.RI "void \fBsetPlayersStats\fP (const std::vector< std::vector< std::pair< std::string, std::string >>> &info) override"
+.br
+.RI "This is called in a loop when the game is running\&. Sets the current informations about players and their stats\&. The first element of the pair is the category (e\&.g\&. Score), the second is the value (e\&.g\&. 200)\&. "
+.ti -1c
+.RI "const std::vector< std::string > & \fBgetUserNames\fP (void) const override"
+.br
+.RI "Get the User Names\&. "
+.ti -1c
+.RI "void \fBsetUserNames\fP (const std::vector< std::string > &userNames) override"
+.br
+.RI "Set the User Names\&. "
+.ti -1c
+.RI "\fBScene\fP \fBgetScene\fP (void) const override"
+.br
+.RI "Returns the current scene\&. "
+.ti -1c
+.RI "void \fBsetScene\fP (const \fBScene\fP &scene) override"
+.br
+.RI "Set the current scene\&. "
+.ti -1c
+.RI "const std::vector< std::string > & \fBgetBackups\fP (void) const override"
+.br
+.RI "Get the paths to all backups files\&. "
+.ti -1c
+.RI "void \fBsetBackups\fP (const std::vector< std::string > &) override"
+.br
+.RI "Get the paths to all backups files\&. "
+.ti -1c
+.RI "void \fBbeginDrawing\fP (void) const override"
+.br
+.RI "Set buffer to Draw textures\&. "
+.ti -1c
+.RI "void \fBbeginDrawing\fP (const bool &mustBeClear) const"
+.br
+.RI "Set buffer to Draw textures clear A boolean to know if he should clear\&. "
+.ti -1c
+.RI "void \fBendDrawing\fP (void) const override"
+.br
+.RI "Unset buffer to Draw textures\&. "
+.ti -1c
+.RI "void \fBcloseWindow\fP (void) const override"
+.br
+.RI "Close window\&. "
+.ti -1c
+.RI "void \fBsetMap\fP (std::vector< std::string > &map) override"
+.br
+.RI "Set the Map\&. "
+.ti -1c
+.RI "std::pair< size_t, size_t > \fBgetMapSizeAndType\fP () override"
+.br
+.RI "Get Map Size and Type\&. "
+.ti -1c
+.RI "void \fBsetMapSize\fP (size_t size) override"
+.br
+.RI "Set the size of Map\&. "
+.ti -1c
+.RI "std::array< size_t, 9 > \fBgetGameSettings\fP () override"
+.br
+.RI "Get \fBGame\fP Settings\&. "
+.ti -1c
+.RI "template<typename T > bool \fBmouseIsInBox\fP (const std::vector< T > &box) const"
+.br
+.RI "Return true if the mouse is in the region and false otherwise\&. "
+.ti -1c
+.RI "template<typename T > std::vector< T > \fBcreateBox\fP (const T &upperLeftCorner, const T &upperRightCorner, const T &lowerLeftCorner, const T &lowerRightCorner) const"
+.br
+.RI "Return a size_t vector contains the four corners values of a box\&. "
+.ti -1c
+.RI "void \fBupdateTransitionManager\fP (\fBScene\fP toFadeOut, \fBScene\fP toFadeIn)"
+.br
+.RI "Update Transition Manager\&. "
+.ti -1c
+.RI "void \fBfadeThisScene\fP (\fBScene\fP toFade)"
+.br
+.RI "This function do fadeIn or fadeOut for a scene in relation to transition manager\&. "
+.ti -1c
+.RI "void \fBdisplayMenuScene\fP (void)"
+.br
+.RI "Display Main Menu\&. "
+.ti -1c
+.RI "void \fBdisplayGameModeScene\fP (void)"
+.br
+.RI "Display Play Scene\&. "
+.ti -1c
+.RI "void \fBdisplayHowToPlayScene\fP (void)"
+.br
+.RI "Display How to play Scene\&. "
+.ti -1c
+.RI "void \fBdisplaySettingsScene\fP (void)"
+.br
+.RI "Display Settings Scene\&. "
+.ti -1c
+.RI "void \fBchangeMusicVolume\fP (void)"
+.br
+.RI "Change the volume of all the music\&. "
+.ti -1c
+.RI "void \fBchangeSfxVolume\fP (void)"
+.br
+.RI "Change the volume of all the sfx\&. "
+.ti -1c
+.RI "void \fBquitGame\fP (void)"
+.br
+.RI "Quit program\&. "
+.ti -1c
+.RI "void \fBdisplayLoadGameScene\fP (void)"
+.br
+.RI "Display Settings Scene\&. "
+.ti -1c
+.RI "void \fBdisplayPlayerChoiceScene\fP (void)"
+.br
+.RI "Scene for Modes\&. "
+.ti -1c
+.RI "void \fBdisplayInGameScene\fP (void)"
+.br
+.RI "Scene for \fBGame\fP\&. "
+.ti -1c
+.RI "void \fBdisplayMapChoiceScene\fP (void)"
+.br
+.RI "Scene for Maps\&. "
+.ti -1c
+.RI "void \fBdisplayStudio\fP (void)"
+.br
+.RI "Display Intro Scene\&. "
+.ti -1c
+.RI "void \fBdisplayTeamPresentation\fP (void)"
+.br
+.RI "Display A intro Scene\&. "
+.ti -1c
+.RI "void \fBgoToAnotherScene\fP (void)"
+.br
+.RI "Go to Another Scene\&. "
+.ti -1c
+.RI "void \fBgoToAnotherSceneFromVictory\fP (void)"
+.br
+.RI "Go to Another Scene\&. "
+.ti -1c
+.RI "void \fBgoToAnotherSceneFromDefeat\fP (void)"
+.br
+.RI "Go to Another Scene\&. "
+.ti -1c
+.RI "void \fBdisplayCinematic\fP (const \fBCinematic\fP &cinematic)"
+.br
+.RI "Display specific cinematic\&. "
+.ti -1c
+.RI "void \fBdisplayCinematic\fP (const std::string &cinematicPathDirectory, const size_t &hideSkip=0, const size_t &gap=0, const bool &clearOrNot=true, const int &posX=0)"
+.br
+.RI "Display a specific cinematic\&. "
+.ti -1c
+.RI "void \fBdisplay\fP (void) override"
+.br
+.RI "This function must display the current scene\&. It is used in the game loop\&. "
+.ti -1c
+.RI "void \fBmanageNextOrPrev\fP (void)"
+.br
+.RI "This function manages the click on the different previous and next buttons\&. "
+.ti -1c
+.RI "void \fBaddPlayer\fP (void)"
+.br
+.RI "Adds a new player to the board, if the limit is not exceeded\&. "
+.ti -1c
+.RI "void \fBremovePlayer\fP (const std::vector< std::pair< int, int >> &removeButtons)"
+.br
+.RI "Remove the player of the board\&. "
+.ti -1c
+.RI "void \fBdisplayMouse\fP (void) const"
+.br
+.RI "This function display the mouse\&. "
+.ti -1c
+.RI "void \fBsetResources\fP (void)"
+.br
+.RI "Set the Resources\&. "
+.ti -1c
+.RI "void \fBsetAudioResources\fP (void)"
+.br
+.RI "Set the Audio\&. "
+.ti -1c
+.RI "void \fBplayMusic\fP (\fBMusicResources\fP music)"
+.br
+.RI "Function that start a music and call \fBplayAndUpdateMusic()\fP in a thread\&. "
+.ti -1c
+.RI "void \fBplayAndUpdateMusic\fP (\fBMusicResources\fP music)"
+.br
+.RI "Play a music in a thread, dont call this function only use it with \fBplayMusic(MusicResources music)\fP "
+.ti -1c
+.RI "void \fBdisplayGameSettings\fP (void)"
+.br
+.RI "Display \fBGame\fP Settings\&. "
+.ti -1c
+.RI "void \fBdetectPlayerInput\fP (void)"
+.br
+.RI "Detect New \fBInput\fP\&. "
+.ti -1c
+.RI "void \fBdisplayBack\fP (void)"
+.br
+.RI "Diplay Background Parallax\&. "
+.ti -1c
+.RI "void \fBdisplayPauseScene\fP (void)"
+.br
+.RI "Display Pause Button and pause panel\&. "
+.ti -1c
+.RI "void \fBloadThisBackup\fP (const std::string &_pathToBackupFile)"
+.br
+.RI "Load a game\&. "
+.ti -1c
+.RI "void \fBcheckEndScenario\fP (void)"
+.br
+.RI "Check End Scenario of the game\&. "
+.ti -1c
+.RI "void \fBdisplayVictoryScene\fP (void)"
+.br
+.RI "Display Victory Scene\&. "
+.ti -1c
+.RI "void \fBdisplayDefeatScene\fP (void)"
+.br
+.RI "Display Defeat Scene\&. "
+.ti -1c
+.RI "void \fBdisplayPlayersPanels\fP (std::vector< std::pair< size_t, size_t >> &_panelPos)"
+.br
+.RI "Display Players Panels in the scene InGame\&. "
+.ti -1c
+.RI "void \fBdisplayCardsSettings\fP (std::vector< std::pair< int, int >> &removeButtons, int *x)"
+.br
+.RI "This function displays all cards and their parameters\&. "
+.ti -1c
+.RI "size_t \fBcountFilesDirectory\fP (const std::filesystem::path &path) const"
+.br
+.RI "This function counts the number of files in a specific directory\&. "
+.ti -1c
+.RI "void \fBsetTextBox\fP (std::vector< bool > &mouseOnText, std::vector< \fBRaylib::Rectangle\fP > &textBox)"
+.br
+.RI "Initialize all the containers that refer to the boxes of the pseudos\&. "
+.ti -1c
+.RI "void \fBupdateTextBox\fP (std::vector< bool > &mouseOnText, const std::vector< \fBRaylib::Rectangle\fP > &textBox)"
+.br
+.RI "Update all the containers that refer to the boxes of the pseudos\&. "
+.ti -1c
+.RI "void \fBsetLoadFunc\fP (std::function< void(std::string)>) override"
+.br
+.RI "Set pointer to Load Function\&. "
+.ti -1c
+.RI "void \fBsetSaveFunc\fP (std::function< void(std::array< std::size_t, 9 >, std::vector< std::string >)>) override"
+.br
+.RI "Set pointer to Save Function\&. "
+.ti -1c
+.RI "void \fBsetRestartFunc\fP (std::function< void()>) override"
+.br
+.RI "Set the Restart Func\&. "
+.ti -1c
+.RI "void \fBsetSettingsFunc\fP (std::function< void(std::array< std::size_t, 9 >)>) override"
+.br
+.RI "Set pointer to Settings Function\&. "
+.ti -1c
+.RI "void \fBsetPlayerActionsFunc\fP (std::function< void(const size_t pos, const std::string action)>) override"
+.br
+.RI "Set the Player Actions Func\&. "
+.ti -1c
+.RI "void \fBcheckClickOnMapChoiceScene\fP (void)"
+.br
+.RI "Check Click on MapChoiceScene\&. "
+.ti -1c
+.RI "void \fBmanagePlayersActions\fP (void)"
+.br
+.RI "Manage Players Actions\&. "
+.ti -1c
+.RI "void \fBresetAll\fP (void)"
+.br
+.RI "Reset All attributes\&. "
+.ti -1c
+.RI "std::string \fBgetTimeInFormat\fP (void)"
+.br
+.RI "Get time in good format from clock and return in minutes and second\&. "
+.ti -1c
+.RI "void \fBdrawPlayersHead\fP (size_t i, size_t x, size_t y)"
+.br
+.RI "Draw Players Head\&. "
+.ti -1c
+.RI "std::vector< \fBCharDictionary\fP > \fBgetPlayersData\fP () override"
+.br
+.RI "Get players Data to the \fBGame\fP\&. "
+.ti -1c
+.RI "void \fBsetGameSettings\fP (const std::array< size_t, 9 > &settings) override"
+.br
+.RI "Set \fBGame\fP Settings\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBgetPlayerControls\fP (void) const override"
+.br
+.RI "Get the player controls\&. "
+.ti -1c
+.RI "void \fBsetPlayerControls\fP (const std::vector< std::string > &playerControls) override"
+.br
+.RI "Set the player controls\&. "
+.ti -1c
+.RI "void \fBcameraShake\fP () override"
+.br
+.RI "Shake the camera\&. "
+.ti -1c
+.RI "void \fBdisplayEndScores\fP ()"
+.br
+.RI "Displaying the scores in end scenes\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "XRay::XRay (void)"
+
+.PP
+Construct a new Ray Lib object\&. 
+.SS "XRay::~XRay (void)\fC [override]\fP"
+
+.PP
+Destroy the Ray Lib object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void XRay::addPlayer (void)"
+
+.PP
+Adds a new player to the board, if the limit is not exceeded\&. 
+.SS "void XRay::beginDrawing (const bool & mustBeClear) const\fC [inline]\fP"
+
+.PP
+Set buffer to Draw textures clear A boolean to know if he should clear\&. 
+.SS "void XRay::beginDrawing (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set buffer to Draw textures\&. 
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::cameraShake (void)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Shake the camera\&. 
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::changeMusicVolume (void)"
+
+.PP
+Change the volume of all the music\&. 
+.SS "void XRay::changeSfxVolume (void)"
+
+.PP
+Change the volume of all the sfx\&. 
+.SS "void XRay::checkClickOnMapChoiceScene (void)"
+
+.PP
+Check Click on MapChoiceScene\&. 
+.SS "void XRay::checkEndScenario (void)"
+
+.PP
+Check End Scenario of the game\&. 
+.SS "void XRay::closeWindow (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Close window\&. 
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "size_t XRay::countFilesDirectory (const std::filesystem::path & path) const\fC [inline]\fP"
+
+.PP
+This function counts the number of files in a specific directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP A filesystem path related to a directory 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Number of files (size_t) 
+.RE
+.PP
+
+.SS "template<typename T > std::vector< T > XRay::createBox (const T & upperLeftCorner, const T & upperRightCorner, const T & lowerLeftCorner, const T & lowerRightCorner) const\fC [inline]\fP"
+
+.PP
+Return a size_t vector contains the four corners values of a box\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbox\fP size_t represents upperLeftCorner 
+.br
+\fIbox\fP size_t represents upperRightCorner 
+.br
+\fIbox\fP size_t represents lowerLeftCorner 
+.br
+\fIbox\fP size_t represents lowerRightCorner 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+size_t vector 
+.RE
+.PP
+
+.SS "void XRay::detectPlayerInput (void)"
+
+.PP
+Detect New \fBInput\fP\&. 
+.SS "void XRay::display (void)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+This function must display the current scene\&. It is used in the game loop\&. 
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::displayBack (void)"
+
+.PP
+Diplay Background Parallax\&. 
+.SS "void XRay::displayCardsSettings (std::vector< std::pair< int, int >> & removeButtons, int * x)"
+
+.PP
+This function displays all cards and their parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIremoveButtons\fP A vector of all remove buttons coordinates 
+.br
+\fInextButtons\fP A vector of all next buttons coordinates 
+.br
+\fIprevButtons\fP A vector of all previous buttons coordinates 
+.br
+\fIx\fP A pointer to an int that represents the x coordinate of the last displayed card 
+.RE
+.PP
+
+.SS "void XRay::displayCinematic (const \fBCinematic\fP & cinematic)"
+
+.PP
+Display specific cinematic\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcinematic\fP Cinematic enum type, representing specific cinematic 
+.RE
+.PP
+
+.SS "void XRay::displayCinematic (const std::string & cinematicPathDirectory, const size_t & hideSkip = \fC0\fP, const size_t & gap = \fC0\fP, const bool & clearOrNot = \fCtrue\fP, const int & posX = \fC0\fP)"
+
+.PP
+Display a specific cinematic\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcinematicPathDirectory\fP A string related to the specific cinematic directory 
+.br
+\fIhideSkip\fP A size_t corresponding to the cinematic frame when you must hide the skip button 
+.br
+\fIgap\fP Duration between each frame 
+.br
+\fIclearOrNot\fP Boolean to kwow if screen should be clear or not 
+.br
+\fIposX\fP Pos X of frame 
+.RE
+.PP
+
+.SS "void XRay::displayDefeatScene (void)"
+
+.PP
+Display Defeat Scene\&. 
+.SS "void XRay::displayEndScores ()\fC [inline]\fP"
+
+.PP
+Displaying the scores in end scenes\&. 
+.SS "void XRay::displayGameModeScene (void)"
+
+.PP
+Display Play Scene\&. 
+.SS "void XRay::displayGameSettings (void)"
+
+.PP
+Display \fBGame\fP Settings\&. 
+.SS "void XRay::displayHowToPlayScene (void)"
+
+.PP
+Display How to play Scene\&. 
+.SS "void XRay::displayInGameScene (void)"
+
+.PP
+Scene for \fBGame\fP\&. 
+.SS "void XRay::displayLoadGameScene (void)"
+
+.PP
+Display Settings Scene\&. 
+.SS "void XRay::displayMapChoiceScene (void)"
+
+.PP
+Scene for Maps\&. 
+.SS "void XRay::displayMenuScene (void)"
+
+.PP
+Display Main Menu\&. 
+.SS "void XRay::displayMouse (void) const\fC [inline]\fP"
+
+.PP
+This function display the mouse\&. 
+.SS "void XRay::displayPauseScene (void)"
+
+.PP
+Display Pause Button and pause panel\&. 
+.SS "void XRay::displayPlayerChoiceScene (void)"
+
+.PP
+Scene for Modes\&. 
+.SS "void XRay::displayPlayersPanels (std::vector< std::pair< size_t, size_t >> & _panelPos)"
+
+.PP
+Display Players Panels in the scene InGame\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI_panelPos\fP Position of all Panels in a vector of pair (x, y) 
+.RE
+.PP
+
+.SS "void XRay::displaySettingsScene (void)"
+
+.PP
+Display Settings Scene\&. Draw scene
+.SS "void XRay::displayStudio (void)"
+
+.PP
+Display Intro Scene\&. 
+.SS "void XRay::displayTeamPresentation (void)"
+
+.PP
+Display A intro Scene\&. 
+.SS "void XRay::displayVictoryScene (void)"
+
+.PP
+Display Victory Scene\&. 
+.SS "void XRay::drawPlayersHead (size_t i, size_t x, size_t y)"
+
+.PP
+Draw Players Head\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIi\fP A size_t 
+.br
+\fIx\fP A size_t 
+.br
+\fIy\fP A size_t 
+.RE
+.PP
+
+.SS "void XRay::endDrawing (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Unset buffer to Draw textures\&. 
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::fadeThisScene (\fBScene\fP toFade)"
+
+.PP
+This function do fadeIn or fadeOut for a scene in relation to transition manager\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItoFade\fP Scene to fade 
+.RE
+.PP
+
+.SS "const std::vector< std::string > & XRay::getBackups (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the paths to all backups files\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of all the paths to backups files as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "std::array< size_t, 9 > XRay::getGameSettings ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get \fBGame\fP Settings\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An array of 9 size_t 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "std::pair< size_t, size_t > XRay::getMapSizeAndType ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get Map Size and Type\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pair of size_t 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "std::vector< std::string > XRay::getPlayerControls (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the player controls\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector containing the player controls as a string 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "std::vector< \fBCharDictionary\fP > XRay::getPlayersData ()\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get players Data to the \fBGame\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<PlayerData> represents all the players data 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "\fBIGraphical::Scene\fP XRay::getScene (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Returns the current scene\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The scene (MAIN_MENU, GAME, END_GAME), the step where we are in the window 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "std::string XRay::getTimeInFormat (void)"
+
+.PP
+Get time in good format from clock and return in minutes and second\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Time in format (MIN : SECOND) 
+.RE
+.PP
+
+.SS "const std::vector< std::string > & XRay::getUserNames (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the User Names\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of all the user names as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::goToAnotherScene (void)"
+
+.PP
+Go to Another Scene\&. 
+.SS "void XRay::goToAnotherSceneFromDefeat (void)"
+
+.PP
+Go to Another Scene\&. 
+.SS "void XRay::goToAnotherSceneFromVictory (void)"
+
+.PP
+Go to Another Scene\&. 
+.SS "void XRay::loadThisBackup (const std::string & _pathToBackupFile)"
+
+.PP
+Load a game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI_pathToBackupFile\fP A string that represents path to backup fiel 
+.RE
+.PP
+
+.SS "void XRay::manageNextOrPrev (void)"
+
+.PP
+This function manages the click on the different previous and next buttons\&. 
+.SS "void XRay::managePlayersActions (void)"
+
+.PP
+Manage Players Actions\&. 
+.SS "template<typename T > bool XRay::mouseIsInBox (const std::vector< T > & box) const\fC [inline]\fP"
+
+.PP
+Return true if the mouse is in the region and false otherwise\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbox\fP Vector contains Box positions 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "void XRay::playAndUpdateMusic (\fBMusicResources\fP music)"
+
+.PP
+Play a music in a thread, dont call this function only use it with \fBplayMusic(MusicResources music)\fP 
+.SS "void XRay::playMusic (\fBMusicResources\fP music)"
+
+.PP
+Function that start a music and call \fBplayAndUpdateMusic()\fP in a thread\&. 
+.SS "void XRay::quitGame (void)"
+
+.PP
+Quit program\&. 
+.SS "void XRay::removePlayer (const std::vector< std::pair< int, int >> & removeButtons)"
+
+.PP
+Remove the player of the board\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIremoveButtons\fP A vector of all remove buttons coordinates 
+.RE
+.PP
+
+.SS "void XRay::resetAll (void)\fC [inline]\fP"
+
+.PP
+Reset All attributes\&. 
+.SS "void XRay::setAudioResources (void)"
+
+.PP
+Set the Audio\&. 
+.SS "void XRay::setBackups (const std::vector< std::string > & backups)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the paths to all backups files\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIA\fP vector of all the paths to backups files as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setBestScores (const std::vector< std::pair< std::string, std::string >> & scores)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+This function sets the list of bests scores\&. First element of the pair is the username, the second is the score\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscores\fP A vector of pair (username, score) 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setGameSettings (const std::array< size_t, 9 > & settings)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set \fBGame\fP Settings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP An array of 9 size_t 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setLoadFunc (std::function< void(std::string)> pointerToFunc)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set pointer to Load Function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIloadFunc\fP A pointer to Load function in the core 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setMap (std::vector< std::string > & map)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the Map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImap\fP A const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setMapSize (size_t size)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the size of Map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsize\fP A size_t 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setPlayerActionsFunc (std::function< void(const size_t pos, const std::string action)> playerActionsFunc)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the Player Actions Func\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerActionsFunc\fP A pointer to function that manage all players actions in the game (left, right \&.\&.\&.) 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setPlayerControls (const std::vector< std::string > & playerControls)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the player controls\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerControls\fP A vector containing all the player controls as a string 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setPlayersStats (const std::vector< std::vector< std::pair< std::string, std::string >>> & info)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+This is called in a loop when the game is running\&. Sets the current informations about players and their stats\&. The first element of the pair is the category (e\&.g\&. Score), the second is the value (e\&.g\&. 200)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinfo\fP A vector of vector of all the stats [Player -- (NameOfStat, Value)]\&.\&.\&. 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setResources (void)"
+
+.PP
+Set the Resources\&. 
+.SS "void XRay::setRestartFunc (std::function< void()> pointerToFunc)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the Restart Func\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrestartFunc\fP A pointer to Restart function in the core 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setSaveFunc (std::function< void(std::array< std::size_t, 9 >, std::vector< std::string >)> pointerToFunc)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set pointer to Save Function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsaveFunc\fP A pointer to Save function in the core 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setScene (const \fBScene\fP & scene)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the current scene\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscene\fP The scene (MAIN_MENU, GAME, END_GAME), the step where we are in the window 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setScores (const std::vector< std::pair< std::string, std::string >> & scores)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+This function sets the list of scores\&. First element of the pair is the username, the second is the score\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscores\fP A vector of pair (username, score) 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setSettingsFunc (std::function< void(std::array< std::size_t, 9 >)> pointerToFunc)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set pointer to Settings Function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettingsFunc\fP A pointer to Settings function in the core 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::setTextBox (std::vector< bool > & mouseOnText, std::vector< \fBRaylib::Rectangle\fP > & textBox)"
+
+.PP
+Initialize all the containers that refer to the boxes of the pseudos\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImouseOnText\fP A vector of boolean that represents if mouse is on box to position n with n < mouseOnText\&.size() 
+.br
+\fItextBox\fP A vector of rectangle that represents the boxes of the pseudos 
+.RE
+.PP
+
+.SS "void XRay::setUserNames (const std::vector< std::string > & userNames)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the User Names\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserNames\fP A vector containing all the user names 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "bool XRay::shouldCloseWindow (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the window should be close\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the window should close and false otherwise 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::updateGameInfos (const std::vector< std::shared_ptr< \fBIEntity\fP >> & gameInfos)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+This is called in a loop when the game is running\&. This vector contains entities that should be displayed in the game scene\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgameInfos\fP A vector of shared pointer that represent all the entities to display\&. Ex : Map, Score, UserInfo, Button 
+.RE
+.PP
+
+.PP
+Implements \fBIGraphical\fP\&.
+.SS "void XRay::updateTextBox (std::vector< bool > & mouseOnText, const std::vector< \fBRaylib::Rectangle\fP > & textBox)"
+
+.PP
+Update all the containers that refer to the boxes of the pseudos\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImouseOnText\fP A vector of boolean that represents if mouse is on box to position n with n < mouseOnText\&.size() 
+.br
+\fItextBox\fP A vector of rectangle that represents the boxes of the pseudos 
+.RE
+.PP
+
+.SS "void XRay::updateTransitionManager (\fBScene\fP toFadeOut, \fBScene\fP toFadeIn)"
+
+.PP
+Update Transition Manager\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItoFadeOut\fP Scene to fade out 
+.br
+\fItoFadeIn\fP Scene to fade in 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

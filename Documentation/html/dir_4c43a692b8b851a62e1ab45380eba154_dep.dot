@@ -1,0 +1,17 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Lib/XRaylib/Raylib/Image" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_de334b3105e3c27a200be04983862f6f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Raylib" fontname="Helvetica", fontsize="10", URL="dir_de334b3105e3c27a200be04983862f6f.html"]
+  dir_04ae11eb1dc9e50af04680fcd1aacb7e [shape=box label="Color" URL="dir_04ae11eb1dc9e50af04680fcd1aacb7e.html"];
+  dir_4fae295f01a2965dff9d34ef9d6f9183 [shape=box label="Rectangle" URL="dir_4fae295f01a2965dff9d34ef9d6f9183.html"];
+  dir_656373ca76ccc6d30fb490662f00e3e2 [shape=box label="Font" URL="dir_656373ca76ccc6d30fb490662f00e3e2.html"];
+  dir_4c43a692b8b851a62e1ab45380eba154 [shape=box, label="Image", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4c43a692b8b851a62e1ab45380eba154.html"];
+  }
+  dir_4fae295f01a2965dff9d34ef9d6f9183->dir_04ae11eb1dc9e50af04680fcd1aacb7e [headlabel="1", labeldistance=1.5 headhref="dir_000043_000032.html"];
+  dir_4fae295f01a2965dff9d34ef9d6f9183->dir_4c43a692b8b851a62e1ab45380eba154 [headlabel="1", labeldistance=1.5 headhref="dir_000043_000038.html"];
+  dir_4c43a692b8b851a62e1ab45380eba154->dir_04ae11eb1dc9e50af04680fcd1aacb7e [headlabel="1", labeldistance=1.5 headhref="dir_000038_000032.html"];
+  dir_4c43a692b8b851a62e1ab45380eba154->dir_4fae295f01a2965dff9d34ef9d6f9183 [headlabel="1", labeldistance=1.5 headhref="dir_000038_000043.html"];
+  dir_4c43a692b8b851a62e1ab45380eba154->dir_656373ca76ccc6d30fb490662f00e3e2 [headlabel="1", labeldistance=1.5 headhref="dir_000038_000036.html"];
+}

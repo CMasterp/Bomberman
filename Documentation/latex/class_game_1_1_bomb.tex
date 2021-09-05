@@ -1,0 +1,202 @@
+\hypertarget{class_game_1_1_bomb}{}\doxysection{Game\+::Bomb Class Reference}
+\label{class_game_1_1_bomb}\index{Game::Bomb@{Game::Bomb}}
+
+
+{\ttfamily \#include $<$Bomb.\+hpp$>$}
+
+Inheritance diagram for Game\+::Bomb\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_1_1_bomb}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_bomb_abe153d3859380a59a99756e783dc80f1}{Bomb}} (const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&positions, const int \&fire, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$$>$ \&players, std\+::function$<$ void(size\+\_\+t)$>$ function, \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} \&player)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_bomb}{Bomb}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_bomb_a3051c3f27b493246f425c896b8684750}{$\sim$\+Bomb}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_game_1_1_bomb}{Bomb}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_game_1_1_bomb_a275a8f1bc8cb89a71546b28d35d85696}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_bomb_aaaa58c0ae8003aaf903f663a0b947852}{make\+Explode}} ()
+\begin{DoxyCompactList}\small\item\em Make the bomb explose. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_bomb_a26ebeb18d49cc099324b21564746b6f4}{is\+Exploding}} ()
+\begin{DoxyCompactList}\small\item\em check if bomb is exploding \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_bomb_a8d9d84c6e9d4da9861abb178152e1ee4}{has\+Explode}} ()
+\begin{DoxyCompactList}\small\item\em check if bomb has exploded \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomb_a05756cd633eb29fd9b46c2181d4ff466}{draw\+Entity}} () override
+\begin{DoxyCompactList}\small\item\em draw the bomb entity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomb_a41a964e77451bdf9a099703c3f11f456}{update}} ()
+\begin{DoxyCompactList}\small\item\em update the bom status \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomb_a6efc17476d88f3660fc3b17f077efb12}{set\+Bombzone}} (std\+::vector$<$ std\+::string $>$ map)
+\begin{DoxyCompactList}\small\item\em Set the Bombzone object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomb_a60f05a00256ac4cc08d1badc3330a3e8}{set\+Players}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$$>$ players)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_game_1_1_player}{Player}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomb_aa43c100b9cbeb4eccb9b34ff8927ce55}{increase\+Player\+Wall}} ()
+\begin{DoxyCompactList}\small\item\em Increase the walls breaked value to the player owner of the bomb. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_bomb_abe153d3859380a59a99756e783dc80f1}\label{class_game_1_1_bomb_abe153d3859380a59a99756e783dc80f1}} 
+\index{Game::Bomb@{Game::Bomb}!Bomb@{Bomb}}
+\index{Bomb@{Bomb}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{Bomb()}{Bomb()}}
+{\footnotesize\ttfamily Game\+::\+Bomb\+::\+Bomb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{positions,  }\item[{const int \&}]{fire,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$$>$ \&}]{players,  }\item[{std\+::function$<$ void(size\+\_\+t)$>$}]{function,  }\item[{\mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_bomb}{Bomb}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & \\
+\hline
+{\em fire} & \\
+\hline
+{\em players} & \\
+\hline
+{\em function} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomb_a3051c3f27b493246f425c896b8684750}\label{class_game_1_1_bomb_a3051c3f27b493246f425c896b8684750}} 
+\index{Game::Bomb@{Game::Bomb}!````~Bomb@{$\sim$Bomb}}
+\index{````~Bomb@{$\sim$Bomb}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bomb()}{~Bomb()}}
+{\footnotesize\ttfamily Game\+::\+Bomb\+::$\sim$\+Bomb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_game_1_1_bomb}{Bomb}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_bomb_a05756cd633eb29fd9b46c2181d4ff466}\label{class_game_1_1_bomb_a05756cd633eb29fd9b46c2181d4ff466}} 
+\index{Game::Bomb@{Game::Bomb}!drawEntity@{drawEntity}}
+\index{drawEntity@{drawEntity}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{drawEntity()}{drawEntity()}}
+{\footnotesize\ttfamily void Game\+::\+Bomb\+::draw\+Entity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw the bomb entity 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_animated_ad25ceed647cd9c7a543c8bd7b141b429}{Game\+::\+Animated}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomb_a275a8f1bc8cb89a71546b28d35d85696}\label{class_game_1_1_bomb_a275a8f1bc8cb89a71546b28d35d85696}} 
+\index{Game::Bomb@{Game::Bomb}!getType@{getType}}
+\index{getType@{getType}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Game\+::\+Bomb\+::get\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+A std\+::string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_1_1_animated_a493ed93ff93248750daddae3e8d9864e}{Game\+::\+Animated}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomb_a8d9d84c6e9d4da9861abb178152e1ee4}\label{class_game_1_1_bomb_a8d9d84c6e9d4da9861abb178152e1ee4}} 
+\index{Game::Bomb@{Game::Bomb}!hasExplode@{hasExplode}}
+\index{hasExplode@{hasExplode}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{hasExplode()}{hasExplode()}}
+{\footnotesize\ttfamily bool Game\+::\+Bomb\+::has\+Explode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check if bomb has exploded 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomb_aa43c100b9cbeb4eccb9b34ff8927ce55}\label{class_game_1_1_bomb_aa43c100b9cbeb4eccb9b34ff8927ce55}} 
+\index{Game::Bomb@{Game::Bomb}!increasePlayerWall@{increasePlayerWall}}
+\index{increasePlayerWall@{increasePlayerWall}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{increasePlayerWall()}{increasePlayerWall()}}
+{\footnotesize\ttfamily void Game\+::\+Bomb\+::increase\+Player\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increase the walls breaked value to the player owner of the bomb. 
+
+\mbox{\Hypertarget{class_game_1_1_bomb_a26ebeb18d49cc099324b21564746b6f4}\label{class_game_1_1_bomb_a26ebeb18d49cc099324b21564746b6f4}} 
+\index{Game::Bomb@{Game::Bomb}!isExploding@{isExploding}}
+\index{isExploding@{isExploding}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{isExploding()}{isExploding()}}
+{\footnotesize\ttfamily bool Game\+::\+Bomb\+::is\+Exploding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check if bomb is exploding 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomb_aaaa58c0ae8003aaf903f663a0b947852}\label{class_game_1_1_bomb_aaaa58c0ae8003aaf903f663a0b947852}} 
+\index{Game::Bomb@{Game::Bomb}!makeExplode@{makeExplode}}
+\index{makeExplode@{makeExplode}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{makeExplode()}{makeExplode()}}
+{\footnotesize\ttfamily int Game\+::\+Bomb\+::make\+Explode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Make the bomb explose. 
+
+\mbox{\Hypertarget{class_game_1_1_bomb_a6efc17476d88f3660fc3b17f077efb12}\label{class_game_1_1_bomb_a6efc17476d88f3660fc3b17f077efb12}} 
+\index{Game::Bomb@{Game::Bomb}!setBombzone@{setBombzone}}
+\index{setBombzone@{setBombzone}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{setBombzone()}{setBombzone()}}
+{\footnotesize\ttfamily void Game\+::\+Bomb\+::set\+Bombzone (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Bombzone object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomb_a60f05a00256ac4cc08d1badc3330a3e8}\label{class_game_1_1_bomb_a60f05a00256ac4cc08d1badc3330a3e8}} 
+\index{Game::Bomb@{Game::Bomb}!setPlayers@{setPlayers}}
+\index{setPlayers@{setPlayers}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{setPlayers()}{setPlayers()}}
+{\footnotesize\ttfamily void Game\+::\+Bomb\+::set\+Players (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$$>$}]{players }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the \mbox{\hyperlink{class_game_1_1_player}{Player}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & A vector of shared\+\_\+ptr of Players \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomb_a41a964e77451bdf9a099703c3f11f456}\label{class_game_1_1_bomb_a41a964e77451bdf9a099703c3f11f456}} 
+\index{Game::Bomb@{Game::Bomb}!update@{update}}
+\index{update@{update}!Game::Bomb@{Game::Bomb}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::\+Bomb\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+update the bom status 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Bomb/\mbox{\hyperlink{_bomb_8hpp}{Bomb.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Bomb/\mbox{\hyperlink{_bomb_8cpp}{Bomb.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Bomb/\mbox{\hyperlink{_bomb_8inl}{Bomb.\+inl}}\end{DoxyCompactItemize}

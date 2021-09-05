@@ -1,0 +1,341 @@
+\hypertarget{class_raylib_1_1_shader}{}\doxysection{Raylib\+::Shader Class Reference}
+\label{class_raylib_1_1_shader}\index{Raylib::Shader@{Raylib::Shader}}
+
+
+{\ttfamily \#include $<$Shader.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_shader_af07757e06f238947211e7efe7db55a62}{Shader}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_shader_a098b81c02658021111e75a196495d7f2}{$\sim$\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_shader_a293b82da2c84ec6674f863f2c09b5a3f}{Shader}} (\+::\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object (Copy Constructor) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_shader_a729767861a7f16727707be3302be0f9e}{Shader}} (const std\+::string \&vs\+File\+Name, const std\+::string \&fs\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object (Copy Constructor) \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \mbox{\hyperlink{class_raylib_1_1_shader_a0119b20413cde4fe182efd3b2716c486}{get\+CStruct}} (void) const
+\begin{DoxyCompactList}\small\item\em Get C Structure for \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} Class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \& \mbox{\hyperlink{class_raylib_1_1_shader_ae7400af0be7998f7f55c45ea855dc52b}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \&shader)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_shader_a8cea445653117b7dbb44fa5a410eb7e1}{begin\+Shader\+Mode}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader) const
+\begin{DoxyCompactList}\small\item\em Begin custom shader drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_shader_ab3d214aefd8ed225ffe4876b5f863799}{end\+Shader\+Mode}} (void) const
+\begin{DoxyCompactList}\small\item\em End custom shader drawing (use default shader) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \mbox{\hyperlink{class_raylib_1_1_shader_a6e09dec37e2b2c97fd0bb4996fb6f7a9}{load\+Shader}} (const char $\ast$vs\+File\+Name, const char $\ast$fs\+File\+Name) const
+\begin{DoxyCompactList}\small\item\em Load shader from files and bind default locations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \mbox{\hyperlink{class_raylib_1_1_shader_a57edd410b59253cfe25668813664b842}{load\+Shader\+From\+Memory}} (const char $\ast$vs\+Code, const char $\ast$fs\+Code) const
+\begin{DoxyCompactList}\small\item\em Load shader from code strings and bind default locations. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_raylib_1_1_shader_ac631d8674810a7be407cef1ed8df4c74}{get\+Shader\+Location}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader, const char $\ast$uniform\+Name) const
+\begin{DoxyCompactList}\small\item\em Get shader uniform location. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_raylib_1_1_shader_a51ebf42d118cd871040036fbaab87a0c}{get\+Shader\+Location\+Attrib}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader, const char $\ast$attrib\+Name) const
+\begin{DoxyCompactList}\small\item\em Get shader attribute location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_shader_a57b4c7f4c483a7ffe849c601b61f5c1a}{set\+Shader\+Value}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader, int const \&loc\+Index, const void $\ast$value, int const \&uniform\+Type) const
+\begin{DoxyCompactList}\small\item\em Set shader uniform value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_shader_ad9dd03209111910663e9ad3d81367a0e}{set\+Shader\+ValueV}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader, int const \&loc\+Index, const void $\ast$value, int const \&uniform\+Type, int const \&count) const
+\begin{DoxyCompactList}\small\item\em Set shader uniform value vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_shader_a1f7ef8cdd3a0115023dcd87ebc1ccb5e}{set\+Shader\+Value\+Matrix}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader, int const \&loc\+Index, \mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} const \&mat) const
+\begin{DoxyCompactList}\small\item\em Set shader uniform value (matrix 4x4) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_shader_a1afd210a994c159a5714e0c9f61dea32}{set\+Shader\+Value\+Texture}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&shader, int const \&loc\+Index, Texture2D const \&texture) const
+\begin{DoxyCompactList}\small\item\em Set shader uniform value for texture (sampler2d) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_shader_abb7c0f431fc09758d486531362523396}{unload\+Shader}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} shader) const
+\begin{DoxyCompactList}\small\item\em Unload shader from GPU memory (VRAM) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_shader_af07757e06f238947211e7efe7db55a62}\label{class_raylib_1_1_shader_af07757e06f238947211e7efe7db55a62}} 
+\index{Raylib::Shader@{Raylib::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_shader_a098b81c02658021111e75a196495d7f2}\label{class_raylib_1_1_shader_a098b81c02658021111e75a196495d7f2}} 
+\index{Raylib::Shader@{Raylib::Shader}!````~Shader@{$\sim$Shader}}
+\index{````~Shader@{$\sim$Shader}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{$\sim$Shader()}{~Shader()}}
+{\footnotesize\ttfamily Raylib\+::\+Shader\+::$\sim$\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_shader_a293b82da2c84ec6674f863f2c09b5a3f}\label{class_raylib_1_1_shader_a293b82da2c84ec6674f863f2c09b5a3f}} 
+\index{Raylib::Shader@{Raylib::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}}} & A \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} C Structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a729767861a7f16727707be3302be0f9e}\label{class_raylib_1_1_shader_a729767861a7f16727707be3302be0f9e}} 
+\index{Raylib::Shader@{Raylib::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vs\+File\+Name,  }\item[{const std\+::string \&}]{fs\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} object (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vs\+File\+Name} & A const reference to a char $\ast$ \\
+\hline
+{\em fs\+File\+Name} & A const reference to a char $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a8cea445653117b7dbb44fa5a410eb7e1}\label{class_raylib_1_1_shader_a8cea445653117b7dbb44fa5a410eb7e1}} 
+\index{Raylib::Shader@{Raylib::Shader}!beginShaderMode@{beginShaderMode}}
+\index{beginShaderMode@{beginShaderMode}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{beginShaderMode()}{beginShaderMode()}}
+{\footnotesize\ttfamily void Raylib\+::\+Shader\+::begin\+Shader\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Begin custom shader drawing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_shader_ab3d214aefd8ed225ffe4876b5f863799}\label{class_raylib_1_1_shader_ab3d214aefd8ed225ffe4876b5f863799}} 
+\index{Raylib::Shader@{Raylib::Shader}!endShaderMode@{endShaderMode}}
+\index{endShaderMode@{endShaderMode}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{endShaderMode()}{endShaderMode()}}
+{\footnotesize\ttfamily void Raylib\+::\+Shader\+::end\+Shader\+Mode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+End custom shader drawing (use default shader) 
+
+\mbox{\Hypertarget{class_raylib_1_1_shader_a0119b20413cde4fe182efd3b2716c486}\label{class_raylib_1_1_shader_a0119b20413cde4fe182efd3b2716c486}} 
+\index{Raylib::Shader@{Raylib::Shader}!getCStruct@{getCStruct}}
+\index{getCStruct@{getCStruct}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{getCStruct()}{getCStruct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} Raylib\+::\+Shader\+::get\+CStruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get C Structure for \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} Class. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} C Structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_shader_ac631d8674810a7be407cef1ed8df4c74}\label{class_raylib_1_1_shader_ac631d8674810a7be407cef1ed8df4c74}} 
+\index{Raylib::Shader@{Raylib::Shader}!getShaderLocation@{getShaderLocation}}
+\index{getShaderLocation@{getShaderLocation}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{getShaderLocation()}{getShaderLocation()}}
+{\footnotesize\ttfamily int Raylib\+::\+Shader\+::get\+Shader\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader,  }\item[{const char $\ast$}]{uniform\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get shader uniform location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+{\em uniform\+Name} & A const reference to a char $\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a51ebf42d118cd871040036fbaab87a0c}\label{class_raylib_1_1_shader_a51ebf42d118cd871040036fbaab87a0c}} 
+\index{Raylib::Shader@{Raylib::Shader}!getShaderLocationAttrib@{getShaderLocationAttrib}}
+\index{getShaderLocationAttrib@{getShaderLocationAttrib}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{getShaderLocationAttrib()}{getShaderLocationAttrib()}}
+{\footnotesize\ttfamily int Raylib\+::\+Shader\+::get\+Shader\+Location\+Attrib (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader,  }\item[{const char $\ast$}]{attrib\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get shader attribute location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+{\em uniform\+Name} & A const reference to a char $\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a6e09dec37e2b2c97fd0bb4996fb6f7a9}\label{class_raylib_1_1_shader_a6e09dec37e2b2c97fd0bb4996fb6f7a9}} 
+\index{Raylib::Shader@{Raylib::Shader}!loadShader@{loadShader}}
+\index{loadShader@{loadShader}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{loadShader()}{loadShader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_shader}{Raylib\+::\+Shader}} Raylib\+::\+Shader\+::load\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vs\+File\+Name,  }\item[{const char $\ast$}]{fs\+File\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load shader from files and bind default locations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vs\+File\+Name} & A const reference to a char $\ast$ \\
+\hline
+{\em fs\+File\+Name} & A const reference to a char $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a57edd410b59253cfe25668813664b842}\label{class_raylib_1_1_shader_a57edd410b59253cfe25668813664b842}} 
+\index{Raylib::Shader@{Raylib::Shader}!loadShaderFromMemory@{loadShaderFromMemory}}
+\index{loadShaderFromMemory@{loadShaderFromMemory}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{loadShaderFromMemory()}{loadShaderFromMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_shader}{Raylib\+::\+Shader}} Raylib\+::\+Shader\+::load\+Shader\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vs\+Code,  }\item[{const char $\ast$}]{fs\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load shader from code strings and bind default locations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vs\+Code} & A const reference to a char $\ast$ \\
+\hline
+{\em fs\+Code} & A const reference to a char $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_shader_ae7400af0be7998f7f55c45ea855dc52b}\label{class_raylib_1_1_shader_ae7400af0be7998f7f55c45ea855dc52b}} 
+\index{Raylib::Shader@{Raylib::Shader}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_shader}{Raylib\+::\+Shader}} \& Raylib\+::\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} (\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \&) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a57b4c7f4c483a7ffe849c601b61f5c1a}\label{class_raylib_1_1_shader_a57b4c7f4c483a7ffe849c601b61f5c1a}} 
+\index{Raylib::Shader@{Raylib::Shader}!setShaderValue@{setShaderValue}}
+\index{setShaderValue@{setShaderValue}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{setShaderValue()}{setShaderValue()}}
+{\footnotesize\ttfamily void Raylib\+::\+Shader\+::set\+Shader\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader,  }\item[{int const \&}]{loc\+Index,  }\item[{const void $\ast$}]{value,  }\item[{int const \&}]{uniform\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set shader uniform value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+{\em loc\+Index} & A const reference to an int \\
+\hline
+{\em value} & A const Void $\ast$ \\
+\hline
+{\em uniform\+Type} & A const reference to an int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a1f7ef8cdd3a0115023dcd87ebc1ccb5e}\label{class_raylib_1_1_shader_a1f7ef8cdd3a0115023dcd87ebc1ccb5e}} 
+\index{Raylib::Shader@{Raylib::Shader}!setShaderValueMatrix@{setShaderValueMatrix}}
+\index{setShaderValueMatrix@{setShaderValueMatrix}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{setShaderValueMatrix()}{setShaderValueMatrix()}}
+{\footnotesize\ttfamily void Raylib\+::\+Shader\+::set\+Shader\+Value\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader,  }\item[{int const \&}]{loc\+Index,  }\item[{\mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} const \&}]{mat }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set shader uniform value (matrix 4x4) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+{\em loc\+Index} & A const reference to an int \\
+\hline
+{\em mat} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_shader_a1afd210a994c159a5714e0c9f61dea32}\label{class_raylib_1_1_shader_a1afd210a994c159a5714e0c9f61dea32}} 
+\index{Raylib::Shader@{Raylib::Shader}!setShaderValueTexture@{setShaderValueTexture}}
+\index{setShaderValueTexture@{setShaderValueTexture}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{setShaderValueTexture()}{setShaderValueTexture()}}
+{\footnotesize\ttfamily void Raylib\+::\+Shader\+::set\+Shader\+Value\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader,  }\item[{int const \&}]{loc\+Index,  }\item[{Texture2D const \&}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set shader uniform value for texture (sampler2d) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+{\em loc\+Index} & A const reference to an int \\
+\hline
+{\em texture} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_shader_ad9dd03209111910663e9ad3d81367a0e}\label{class_raylib_1_1_shader_ad9dd03209111910663e9ad3d81367a0e}} 
+\index{Raylib::Shader@{Raylib::Shader}!setShaderValueV@{setShaderValueV}}
+\index{setShaderValueV@{setShaderValueV}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{setShaderValueV()}{setShaderValueV()}}
+{\footnotesize\ttfamily void Raylib\+::\+Shader\+::set\+Shader\+ValueV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} const \&}]{shader,  }\item[{int const \&}]{loc\+Index,  }\item[{const void $\ast$}]{value,  }\item[{int const \&}]{uniform\+Type,  }\item[{int const \&}]{count }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set shader uniform value vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+{\em loc\+Index} & A const reference to an int \\
+\hline
+{\em value} & A const Void $\ast$ \\
+\hline
+{\em uniform\+Type} & A const reference to an int \\
+\hline
+{\em count} & A const reference to an int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_shader_abb7c0f431fc09758d486531362523396}\label{class_raylib_1_1_shader_abb7c0f431fc09758d486531362523396}} 
+\index{Raylib::Shader@{Raylib::Shader}!unloadShader@{unloadShader}}
+\index{unloadShader@{unloadShader}!Raylib::Shader@{Raylib::Shader}}
+\doxysubsubsection{\texorpdfstring{unloadShader()}{unloadShader()}}
+{\footnotesize\ttfamily void Raylib\+::\+Shader\+::unload\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_shader}{Shader}}}]{shader }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unload shader from GPU memory (VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_shader}{Shader}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Shader/\mbox{\hyperlink{_shader_8hpp}{Shader.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Shader/\mbox{\hyperlink{_shader_8cpp}{Shader.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Shader/\mbox{\hyperlink{_shader_8inl}{Shader.\+inl}}\end{DoxyCompactItemize}

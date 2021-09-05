@@ -1,0 +1,88 @@
+.TH "Raylib::Audio" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Audio
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Audio\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAudio\fP ()"
+.br
+.RI "\fBAudio\fP device management functions\&. "
+.ti -1c
+.RI "\fB~Audio\fP ()"
+.br
+.RI "Destroy the \fBAudio\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBinitAudioDevice\fP (void)"
+.br
+.RI "Initialize audio device and context\&. "
+.ti -1c
+.RI "static void \fBcloseAudioDevice\fP (void)"
+.br
+.RI "close the audio device and context "
+.ti -1c
+.RI "static bool \fBisAudioDeviceReady\fP (void)"
+.br
+.RI "Check if audio device has been initialized successfully\&. "
+.ti -1c
+.RI "static void \fBsetMasterVolume\fP (float volume)"
+.br
+.RI "Set master volume (listener) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Audio::Audio (void)"
+
+.PP
+\fBAudio\fP device management functions\&. Construct a new \fBAudio\fP object 
+.SS "Raylib::Audio::~Audio (void)"
+
+.PP
+Destroy the \fBAudio\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Audio::closeAudioDevice (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+close the audio device and context 
+.SS "void Raylib::Audio::initAudioDevice (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Initialize audio device and context\&. 
+.SS "bool Raylib::Audio::isAudioDeviceReady (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if audio device has been initialized successfully\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true when succesfull, false otherwise 
+.RE
+.PP
+
+.SS "void Raylib::Audio::setMasterVolume (float volume)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set master volume (listener) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvolume\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

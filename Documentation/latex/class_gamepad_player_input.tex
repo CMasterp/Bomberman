@@ -1,0 +1,189 @@
+\hypertarget{class_gamepad_player_input}{}\doxysection{Gamepad\+Player\+Input Class Reference}
+\label{class_gamepad_player_input}\index{GamepadPlayerInput@{GamepadPlayerInput}}
+
+
+{\ttfamily \#include $<$Gamepad\+Player\+Input.\+hpp$>$}
+
+Inheritance diagram for Gamepad\+Player\+Input\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gamepad_player_input}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gamepad_player_input_a504f6fc0199ad6ccacdc9904a7888666}{Gamepad\+Player\+Input}} (size\+\_\+t pos=0)
+\begin{DoxyCompactList}\small\item\em Construct a new Gamepad Player \mbox{\hyperlink{class_input}{Input}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gamepad_player_input_adaa3fc4afb325a01aac73102a4f8d6fb}{$\sim$\+Gamepad\+Player\+Input}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_gamepad_player_input}{Gamepad\+Player\+Input}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_player_input_a3afd10cd246b5c54b4bbd211dbaf4390}{should\+Go\+To\+East}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to east. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_player_input_ab5ca17c5a2032fd7d76ad5fcb4a64f63}{should\+Go\+To\+West}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to west. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_player_input_a94ca6b37d8b78e06f0ded7746bd47bcf}{should\+Go\+To\+North}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to north. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_player_input_a078be3ace8fbf85ea89e7fb7faf917b0}{should\+Go\+To\+South}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to south. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_player_input_a12536d9d424b741c0cf50aadfc3b4493}{should\+Change\+To\+Prev}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if should change to prev. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_player_input_a0e4265b9a97ee1bc7455c6d845f43446}{should\+Change\+To\+Next}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if should change to next. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamepad_player_input_ae4eda6cd351a0d8f444dd9aa1dc8f187}{should\+Simulate\+AClick}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if should simulate a click for actions like drop, choose ... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gamepad_player_input_a504f6fc0199ad6ccacdc9904a7888666}\label{class_gamepad_player_input_a504f6fc0199ad6ccacdc9904a7888666}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!GamepadPlayerInput@{GamepadPlayerInput}}
+\index{GamepadPlayerInput@{GamepadPlayerInput}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{GamepadPlayerInput()}{GamepadPlayerInput()}}
+{\footnotesize\ttfamily Gamepad\+Player\+Input\+::\+Gamepad\+Player\+Input (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{pos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a new Gamepad Player \mbox{\hyperlink{class_input}{Input}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Number of gamepad \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gamepad_player_input_adaa3fc4afb325a01aac73102a4f8d6fb}\label{class_gamepad_player_input_adaa3fc4afb325a01aac73102a4f8d6fb}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!````~GamepadPlayerInput@{$\sim$GamepadPlayerInput}}
+\index{````~GamepadPlayerInput@{$\sim$GamepadPlayerInput}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{$\sim$GamepadPlayerInput()}{~GamepadPlayerInput()}}
+{\footnotesize\ttfamily Gamepad\+Player\+Input\+::$\sim$\+Gamepad\+Player\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_gamepad_player_input}{Gamepad\+Player\+Input}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gamepad_player_input_a0e4265b9a97ee1bc7455c6d845f43446}\label{class_gamepad_player_input_a0e4265b9a97ee1bc7455c6d845f43446}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!shouldChangeToNext@{shouldChangeToNext}}
+\index{shouldChangeToNext@{shouldChangeToNext}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldChangeToNext()}{shouldChangeToNext()}}
+{\footnotesize\ttfamily bool Gamepad\+Player\+Input\+::should\+Change\+To\+Next (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if should change to next. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a7f169fb8157a8cb959d50007e1d1b783}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_gamepad_player_input_a12536d9d424b741c0cf50aadfc3b4493}\label{class_gamepad_player_input_a12536d9d424b741c0cf50aadfc3b4493}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!shouldChangeToPrev@{shouldChangeToPrev}}
+\index{shouldChangeToPrev@{shouldChangeToPrev}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldChangeToPrev()}{shouldChangeToPrev()}}
+{\footnotesize\ttfamily bool Gamepad\+Player\+Input\+::should\+Change\+To\+Prev (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if should change to prev. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a346de02cb5a257fe82c8b693a8a02724}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_gamepad_player_input_a3afd10cd246b5c54b4bbd211dbaf4390}\label{class_gamepad_player_input_a3afd10cd246b5c54b4bbd211dbaf4390}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!shouldGoToEast@{shouldGoToEast}}
+\index{shouldGoToEast@{shouldGoToEast}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToEast()}{shouldGoToEast()}}
+{\footnotesize\ttfamily bool Gamepad\+Player\+Input\+::should\+Go\+To\+East (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to east. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a3769e7dd9469bc6d735de49e73aa1060}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_gamepad_player_input_a94ca6b37d8b78e06f0ded7746bd47bcf}\label{class_gamepad_player_input_a94ca6b37d8b78e06f0ded7746bd47bcf}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!shouldGoToNorth@{shouldGoToNorth}}
+\index{shouldGoToNorth@{shouldGoToNorth}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToNorth()}{shouldGoToNorth()}}
+{\footnotesize\ttfamily bool Gamepad\+Player\+Input\+::should\+Go\+To\+North (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to north. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a54aea169356f01c41f9a27bc5bc06c74}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_gamepad_player_input_a078be3ace8fbf85ea89e7fb7faf917b0}\label{class_gamepad_player_input_a078be3ace8fbf85ea89e7fb7faf917b0}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!shouldGoToSouth@{shouldGoToSouth}}
+\index{shouldGoToSouth@{shouldGoToSouth}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToSouth()}{shouldGoToSouth()}}
+{\footnotesize\ttfamily bool Gamepad\+Player\+Input\+::should\+Go\+To\+South (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to south. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_aa277dcaf76bc650d2594ed8c9ef12edf}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_gamepad_player_input_ab5ca17c5a2032fd7d76ad5fcb4a64f63}\label{class_gamepad_player_input_ab5ca17c5a2032fd7d76ad5fcb4a64f63}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!shouldGoToWest@{shouldGoToWest}}
+\index{shouldGoToWest@{shouldGoToWest}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToWest()}{shouldGoToWest()}}
+{\footnotesize\ttfamily bool Gamepad\+Player\+Input\+::should\+Go\+To\+West (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to west. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_aeab21dac1a6775ef4f0b6e7fc107dbc3}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_gamepad_player_input_ae4eda6cd351a0d8f444dd9aa1dc8f187}\label{class_gamepad_player_input_ae4eda6cd351a0d8f444dd9aa1dc8f187}} 
+\index{GamepadPlayerInput@{GamepadPlayerInput}!shouldSimulateAClick@{shouldSimulateAClick}}
+\index{shouldSimulateAClick@{shouldSimulateAClick}!GamepadPlayerInput@{GamepadPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldSimulateAClick()}{shouldSimulateAClick()}}
+{\footnotesize\ttfamily bool Gamepad\+Player\+Input\+::should\+Simulate\+AClick (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if should simulate a click for actions like drop, choose ... 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a2ec422a190942e07ee91ee004af1ed41}{IPlayer\+Input}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\mbox{\hyperlink{_gamepad_player_input_8hpp}{Gamepad\+Player\+Input.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_gamepad_player_input_8cpp}{Gamepad\+Player\+Input.\+cpp}}\end{DoxyCompactItemize}

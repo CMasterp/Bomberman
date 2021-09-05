@@ -1,0 +1,109 @@
+\hypertarget{_game_2_player_2_player_8hpp}{}\doxysection{C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.guichard/\+Game/\+Player/\+Player.hpp File Reference}
+\label{_game_2_player_2_player_8hpp}\index{C:/Users/jonat/Documents/GitHub/B-\/YEP-\/400-\/LYN-\/4-\/1-\/indiestudio-\/lucas.guichard/Game/Player/Player.hpp@{C:/Users/jonat/Documents/GitHub/B-\/YEP-\/400-\/LYN-\/4-\/1-\/indiestudio-\/lucas.guichard/Game/Player/Player.hpp}}
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include \char`\"{}Animated/\+Animated.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Player.\+inl\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}}
+\item 
+class \mbox{\hyperlink{class_game_1_1_human}{Game\+::\+Human}}
+\item 
+class \mbox{\hyperlink{class_game_1_1_a_i}{Game\+::\+AI}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_game}{Game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bd}{Powerups}} \{ \newline
+\mbox{\hyperlink{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdadee8ca02e7c7d89ef8626395b15af4f6}{P\+\_\+\+SKATE}}
+, \mbox{\hyperlink{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdaed74421ad4b69285b491c49d96df69c3}{P\+\_\+\+BOMB}}
+, \mbox{\hyperlink{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bda6f4dc0c4e96583f4c08a7a603928819c}{P\+\_\+\+PASS}}
+, \mbox{\hyperlink{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdafb339dd9cafd2364716fd96f313ad68a}{P\+\_\+\+FIRE}}
+, \newline
+\mbox{\hyperlink{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bda7b4b38724fed2c9d5426b7e7811b9c45}{P\+\_\+\+LIFE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_game_2_player_2_player_8hpp_af127b4fedbcbbf4f0e1b156957c01b7a}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Display Player content. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{_game_2_player_2_player_8hpp_a98199b06bacb4a421aa2ce1ab4b352e8}{operator$<$$<$}} (std\+::ostream \&os, const std\+::vector$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $\ast$ $>$ \&objs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bd}\label{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bd}} 
+\index{Player.hpp@{Player.hpp}!Powerups@{Powerups}}
+\index{Powerups@{Powerups}!Player.hpp@{Player.hpp}}
+\doxysubsubsection{\texorpdfstring{Powerups}{Powerups}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bd}{Powerups}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\_SKATE@{P\_SKATE}!Player.hpp@{Player.hpp}}\index{Player.hpp@{Player.hpp}!P\_SKATE@{P\_SKATE}}}\mbox{\Hypertarget{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdadee8ca02e7c7d89ef8626395b15af4f6}\label{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdadee8ca02e7c7d89ef8626395b15af4f6}} 
+P\+\_\+\+SKATE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\_BOMB@{P\_BOMB}!Player.hpp@{Player.hpp}}\index{Player.hpp@{Player.hpp}!P\_BOMB@{P\_BOMB}}}\mbox{\Hypertarget{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdaed74421ad4b69285b491c49d96df69c3}\label{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdaed74421ad4b69285b491c49d96df69c3}} 
+P\+\_\+\+BOMB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\_PASS@{P\_PASS}!Player.hpp@{Player.hpp}}\index{Player.hpp@{Player.hpp}!P\_PASS@{P\_PASS}}}\mbox{\Hypertarget{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bda6f4dc0c4e96583f4c08a7a603928819c}\label{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bda6f4dc0c4e96583f4c08a7a603928819c}} 
+P\+\_\+\+PASS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\_FIRE@{P\_FIRE}!Player.hpp@{Player.hpp}}\index{Player.hpp@{Player.hpp}!P\_FIRE@{P\_FIRE}}}\mbox{\Hypertarget{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdafb339dd9cafd2364716fd96f313ad68a}\label{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bdafb339dd9cafd2364716fd96f313ad68a}} 
+P\+\_\+\+FIRE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\_LIFE@{P\_LIFE}!Player.hpp@{Player.hpp}}\index{Player.hpp@{Player.hpp}!P\_LIFE@{P\_LIFE}}}\mbox{\Hypertarget{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bda7b4b38724fed2c9d5426b7e7811b9c45}\label{_game_2_player_2_player_8hpp_a680a20d40344dc7864472467d12e28bda7b4b38724fed2c9d5426b7e7811b9c45}} 
+P\+\_\+\+LIFE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_game_2_player_2_player_8hpp_af127b4fedbcbbf4f0e1b156957c01b7a}\label{_game_2_player_2_player_8hpp_af127b4fedbcbbf4f0e1b156957c01b7a}} 
+\index{Player.hpp@{Player.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Player.hpp@{Player.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Display Player content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & ostream (std\+::cout) \\
+\hline
+{\em obj} & the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& (std\+::cout) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_2_player_2_player_8hpp_a98199b06bacb4a421aa2ce1ab4b352e8}\label{_game_2_player_2_player_8hpp_a98199b06bacb4a421aa2ce1ab4b352e8}} 
+\index{Player.hpp@{Player.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Player.hpp@{Player.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $\ast$ $>$ \&}]{objs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & ostream (std\+::cout) \\
+\hline
+{\em objs} & the players \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& (std\+::cout) 
+\end{DoxyReturn}

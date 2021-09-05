@@ -1,0 +1,89 @@
+.TH "Raylib::Drawing" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Drawing
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Drawing\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDrawing\fP ()"
+.br
+.RI "Construct a new \fBDrawing\fP object\&. "
+.ti -1c
+.RI "\fB~Drawing\fP ()"
+.br
+.RI "Destroy the \fBDrawing\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBclearBackground\fP (const \fBColor\fP &color)"
+.br
+.RI "Set background color (framebuffer clear color) "
+.ti -1c
+.RI "static void \fBbeginDrawing\fP (void)"
+.br
+.RI "Setup canvas (framebuffer) to start drawing\&. "
+.ti -1c
+.RI "static void \fBendDrawing\fP (void)"
+.br
+.RI "End canvas drawing and swap buffers (double buffering) "
+.ti -1c
+.RI "static void \fBdrawCubeTexture\fP (Texture2D texture, \fBVector3\fP position, float width, float height, float length, \fBColor\fP color)"
+.br
+.RI "Draw cube textured\&. "
+.ti -1c
+.RI "static void \fBdrawSphere\fP (\fBVector3\fP centerPos, float radius, \fBColor\fP color)"
+.br
+.RI "Draw sphere\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Drawing::Drawing ()"
+
+.PP
+Construct a new \fBDrawing\fP object\&. 
+.SS "Raylib::Drawing::~Drawing ()"
+
+.PP
+Destroy the \fBDrawing\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Drawing::beginDrawing (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Setup canvas (framebuffer) to start drawing\&. 
+.SS "void Raylib::Drawing::clearBackground (const \fBColor\fP & color)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set background color (framebuffer clear color) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP A \fBColor\fP Object 
+.RE
+.PP
+
+.SS "void Raylib::Drawing::drawCubeTexture (Texture2D texture, \fBVector3\fP position, float width, float height, float length, \fBColor\fP color)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Draw cube textured\&. 
+.SS "void Raylib::Drawing::drawSphere (\fBVector3\fP centerPos, float radius, \fBColor\fP color)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Draw sphere\&. 
+.SS "void Raylib::Drawing::endDrawing (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+End canvas drawing and swap buffers (double buffering) 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

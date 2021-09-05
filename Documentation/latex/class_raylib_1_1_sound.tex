@@ -1,0 +1,250 @@
+\hypertarget{class_raylib_1_1_sound}{}\doxysection{Raylib\+::Sound Class Reference}
+\label{class_raylib_1_1_sound}\index{Raylib::Sound@{Raylib::Sound}}
+
+
+{\ttfamily \#include $<$Sound.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_sound_a6b6e4481a64c7b6f805a228bfc0b65f2}{Sound}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound_a806e99b01d5d10fda53bec9990a212f0}{$\sim$\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound_a4fe39ffa5a3592f7003ae830e75597cf}{Sound}} (const \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \&vec)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound_a3bf1f2eff7cc61fa41b20c3cb244420f}{Sound}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_a75d4bccaa3897132e49ada409580bd71}{update}} (const void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Update sound buffer with new data, assuming it\textquotesingle{}s the same sample count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_sound_aca80e62b42c1c054835de2b80e986b24}{unload}} (void) const
+\begin{DoxyCompactList}\small\item\em Unload sound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_a8476395c2c89167c02701fe75248653b}{play}} (void)
+\begin{DoxyCompactList}\small\item\em Play a sound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_afeab6dbb8f7b5a7bbd7424255b703dcb}{stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stop playing a sound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_aee3149c65b71865c73a979ea887acc20}{pause}} (void)
+\begin{DoxyCompactList}\small\item\em Pause a sound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_aa22b87acfe3d76869320577fb0d3f3c5}{resume}} (void)
+\begin{DoxyCompactList}\small\item\em Resume a paused sound. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_raylib_1_1_sound_a55d2348850de2b61f257059da4cb6817}{is\+Playing}} (void) const
+\begin{DoxyCompactList}\small\item\em Check if a sound is currently playing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_a3f840c37385fb82ac647748a03bb1942}{set\+Volume}} (const float \&volume)
+\begin{DoxyCompactList}\small\item\em Set volume for a sound (1.\+0 is max level) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_a2e332976588f3510243abfaf2006e584}{set\+Pitch}} (const float \&pitch)
+\begin{DoxyCompactList}\small\item\em Set pitch for a sound (1.\+0 is base level) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \& \mbox{\hyperlink{class_raylib_1_1_sound_a42ae5d3bcc3ab389a3c754d31aa31b94}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \&sound)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a6b6e4481a64c7b6f805a228bfc0b65f2}\label{class_raylib_1_1_sound_a6b6e4481a64c7b6f805a228bfc0b65f2}} 
+\index{Raylib::Sound@{Raylib::Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{Sound()}{Sound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Sound\+::\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_sound_a806e99b01d5d10fda53bec9990a212f0}\label{class_raylib_1_1_sound_a806e99b01d5d10fda53bec9990a212f0}} 
+\index{Raylib::Sound@{Raylib::Sound}!````~Sound@{$\sim$Sound}}
+\index{````~Sound@{$\sim$Sound}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sound()}{~Sound()}}
+{\footnotesize\ttfamily Raylib\+::\+Sound\+::$\sim$\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_sound_a4fe39ffa5a3592f7003ae830e75597cf}\label{class_raylib_1_1_sound_a4fe39ffa5a3592f7003ae830e75597cf}} 
+\index{Raylib::Sound@{Raylib::Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{Sound()}{Sound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Sound\+::\+Sound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & A \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} Object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a3bf1f2eff7cc61fa41b20c3cb244420f}\label{class_raylib_1_1_sound_a3bf1f2eff7cc61fa41b20c3cb244420f}} 
+\index{Raylib::Sound@{Raylib::Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{Sound()}{Sound()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Raylib\+::\+Sound\+::\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A string path to sound \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a55d2348850de2b61f257059da4cb6817}\label{class_raylib_1_1_sound_a55d2348850de2b61f257059da4cb6817}} 
+\index{Raylib::Sound@{Raylib::Sound}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Sound\+::is\+Playing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if a sound is currently playing. 
+
+\begin{DoxyReturn}{Returns}
+A boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a42ae5d3bcc3ab389a3c754d31aa31b94}\label{class_raylib_1_1_sound_a42ae5d3bcc3ab389a3c754d31aa31b94}} 
+\index{Raylib::Sound@{Raylib::Sound}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \&}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} (\mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} \&) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_aee3149c65b71865c73a979ea887acc20}\label{class_raylib_1_1_sound_aee3149c65b71865c73a979ea887acc20}} 
+\index{Raylib::Sound@{Raylib::Sound}!pause@{pause}}
+\index{pause@{pause}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::pause (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pause a sound. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a8476395c2c89167c02701fe75248653b}\label{class_raylib_1_1_sound_a8476395c2c89167c02701fe75248653b}} 
+\index{Raylib::Sound@{Raylib::Sound}!play@{play}}
+\index{play@{play}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::play (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Play a sound. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_aa22b87acfe3d76869320577fb0d3f3c5}\label{class_raylib_1_1_sound_aa22b87acfe3d76869320577fb0d3f3c5}} 
+\index{Raylib::Sound@{Raylib::Sound}!resume@{resume}}
+\index{resume@{resume}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::resume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resume a paused sound. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a2e332976588f3510243abfaf2006e584}\label{class_raylib_1_1_sound_a2e332976588f3510243abfaf2006e584}} 
+\index{Raylib::Sound@{Raylib::Sound}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::set\+Pitch (\begin{DoxyParamCaption}\item[{const float \&}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set pitch for a sound (1.\+0 is base level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & A float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a3f840c37385fb82ac647748a03bb1942}\label{class_raylib_1_1_sound_a3f840c37385fb82ac647748a03bb1942}} 
+\index{Raylib::Sound@{Raylib::Sound}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::set\+Volume (\begin{DoxyParamCaption}\item[{const float \&}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set volume for a sound (1.\+0 is max level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & A float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_afeab6dbb8f7b5a7bbd7424255b703dcb}\label{class_raylib_1_1_sound_afeab6dbb8f7b5a7bbd7424255b703dcb}} 
+\index{Raylib::Sound@{Raylib::Sound}!stop@{stop}}
+\index{stop@{stop}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stop playing a sound. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_aca80e62b42c1c054835de2b80e986b24}\label{class_raylib_1_1_sound_aca80e62b42c1c054835de2b80e986b24}} 
+\index{Raylib::Sound@{Raylib::Sound}!unload@{unload}}
+\index{unload@{unload}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily void Raylib\+::\+Sound\+::unload (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unload sound. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_sound_a75d4bccaa3897132e49ada409580bd71}\label{class_raylib_1_1_sound_a75d4bccaa3897132e49ada409580bd71}} 
+\index{Raylib::Sound@{Raylib::Sound}!update@{update}}
+\index{update@{update}!Raylib::Sound@{Raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_sound}{Raylib\+::\+Sound}} \& Raylib\+::\+Sound\+::update (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update sound buffer with new data, assuming it\textquotesingle{}s the same sample count. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A const pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_sound}{Sound}} object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Sound/\mbox{\hyperlink{_sound_8hpp}{Sound.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Sound/\mbox{\hyperlink{_sound_8cpp}{Sound.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Sound/\mbox{\hyperlink{_sound_8inl}{Sound.\+inl}}\end{DoxyCompactItemize}

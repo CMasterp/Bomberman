@@ -1,0 +1,127 @@
+.TH "IEntity" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IEntity
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IEntity\&.hpp>\fP
+.PP
+Inherited by \fBGame::Animated\fP, and \fBGame::MotionlessEntity\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IEntity\fP ()"
+.br
+.RI "Destroy the \fBIEntity\fP object\&. "
+.ti -1c
+.RI "virtual std::string \fBgetType\fP () const =0"
+.br
+.RI "Get the Type object\&. "
+.ti -1c
+.RI "virtual \fBRaylib::Vector3\fP \fBgetPositions\fP () const =0"
+.br
+.RI "Get the Positions object\&. "
+.ti -1c
+.RI "virtual void \fBsetPositions\fP (\fBRaylib::Vector3\fP &vector)=0"
+.br
+.RI "Set the Positions\&. "
+.ti -1c
+.RI "virtual void \fBdrawEntity\fP ()=0"
+.br
+.RI "Draw Entity\&. "
+.ti -1c
+.RI "virtual void \fBsetShouldDisplay\fP (const bool &shouldDisplay)=0"
+.br
+.RI "Set a boolean to know if this entity should be displayed\&. "
+.ti -1c
+.RI "virtual bool \fBgetShouldDisplay\fP () const =0"
+.br
+.RI "Get a boolean to know if this entity should be displayed\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual IEntity::~IEntity ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Destroy the \fBIEntity\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void IEntity::drawEntity ()\fC [pure virtual]\fP"
+
+.PP
+Draw Entity\&. 
+.PP
+Implemented in \fBGame::MotionlessEntity\fP, \fBGame::Floor\fP, \fBGame::BreakableWall\fP, \fBGame::SolidWall\fP, \fBGame::Bomb\fP, and \fBGame::Animated\fP\&.
+.SS "virtual \fBRaylib::Vector3\fP IEntity::getPositions () const\fC [pure virtual]\fP"
+
+.PP
+Get the Positions object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBRaylib::Vector3\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Animated\fP, and \fBGame::MotionlessEntity\fP\&.
+.SS "virtual bool IEntity::getShouldDisplay () const\fC [pure virtual]\fP"
+
+.PP
+Get a boolean to know if this entity should be displayed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Animated\fP, and \fBGame::MotionlessEntity\fP\&.
+.SS "virtual std::string IEntity::getType () const\fC [pure virtual]\fP"
+
+.PP
+Get the Type object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A std::string 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Floor\fP, \fBGame::BreakableWall\fP, \fBGame::SolidWall\fP, \fBGame::MotionlessEntity\fP, \fBGame::Animated\fP, \fBGame::Powerups\fP, \fBGame::AI\fP, \fBGame::Human\fP, and \fBGame::Bomb\fP\&.
+.SS "virtual void IEntity::setPositions (\fBRaylib::Vector3\fP & vector)\fC [pure virtual]\fP"
+
+.PP
+Set the Positions\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvector\fP A vector3 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::MotionlessEntity\fP, and \fBGame::Animated\fP\&.
+.SS "virtual void IEntity::setShouldDisplay (const bool & shouldDisplay)\fC [pure virtual]\fP"
+
+.PP
+Set a boolean to know if this entity should be displayed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshouldDisplay\fP A boolean to know if this entity should be displayed 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Animated\fP, and \fBGame::MotionlessEntity\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

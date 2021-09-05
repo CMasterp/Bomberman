@@ -1,0 +1,166 @@
+.TH "GamepadPlayerInput" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GamepadPlayerInput
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GamepadPlayerInput\&.hpp>\fP
+.PP
+Inherits \fBIPlayerInput\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGamepadPlayerInput\fP (size_t pos=0)"
+.br
+.RI "Construct a new Gamepad Player \fBInput\fP object\&. "
+.ti -1c
+.RI "\fB~GamepadPlayerInput\fP () override"
+.br
+.RI "Destroy the \fBGamepadPlayerInput\fP object\&. "
+.ti -1c
+.RI "bool \fBshouldGoToEast\fP (void) const override"
+.br
+.RI "Check if the player should go to east\&. "
+.ti -1c
+.RI "bool \fBshouldGoToWest\fP (void) const override"
+.br
+.RI "Check if the player should go to west\&. "
+.ti -1c
+.RI "bool \fBshouldGoToNorth\fP (void) const override"
+.br
+.RI "Check if the player should go to north\&. "
+.ti -1c
+.RI "bool \fBshouldGoToSouth\fP (void) const override"
+.br
+.RI "Check if the player should go to south\&. "
+.ti -1c
+.RI "bool \fBshouldChangeToPrev\fP (void) const override"
+.br
+.RI "Check if should change to prev\&. "
+.ti -1c
+.RI "bool \fBshouldChangeToNext\fP (void) const override"
+.br
+.RI "Check if should change to next\&. "
+.ti -1c
+.RI "bool \fBshouldSimulateAClick\fP (void) const override"
+.br
+.RI "Check if should simulate a click for actions like drop, choose \&.\&.\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GamepadPlayerInput::GamepadPlayerInput (size_t pos = \fC0\fP)"
+
+.PP
+Construct a new Gamepad Player \fBInput\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpos\fP Number of gamepad 
+.RE
+.PP
+
+.SS "GamepadPlayerInput::~GamepadPlayerInput ()\fC [override]\fP"
+
+.PP
+Destroy the \fBGamepadPlayerInput\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool GamepadPlayerInput::shouldChangeToNext (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if should change to next\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool GamepadPlayerInput::shouldChangeToPrev (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if should change to prev\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool GamepadPlayerInput::shouldGoToEast (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to east\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool GamepadPlayerInput::shouldGoToNorth (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to north\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool GamepadPlayerInput::shouldGoToSouth (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to south\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool GamepadPlayerInput::shouldGoToWest (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to west\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool GamepadPlayerInput::shouldSimulateAClick (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if should simulate a click for actions like drop, choose \&.\&.\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

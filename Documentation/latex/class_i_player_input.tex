@@ -1,0 +1,171 @@
+\hypertarget{class_i_player_input}{}\doxysection{IPlayer\+Input Class Reference}
+\label{class_i_player_input}\index{IPlayerInput@{IPlayerInput}}
+
+
+{\ttfamily \#include $<$IPlayer\+Input.\+hpp$>$}
+
+Inheritance diagram for IPlayer\+Input\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_player_input}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_player_input_aa572d120de9f208a0f7d2a168a28eab5}{$\sim$\+IPlayer\+Input}} (void)=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_i_player_input}{IPlayer\+Input}} object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_player_input_a3769e7dd9469bc6d735de49e73aa1060}{should\+Go\+To\+East}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if the player should go to east. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_player_input_aeab21dac1a6775ef4f0b6e7fc107dbc3}{should\+Go\+To\+West}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if the player should go to west. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_player_input_a54aea169356f01c41f9a27bc5bc06c74}{should\+Go\+To\+North}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if the player should go to north. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_player_input_aa277dcaf76bc650d2594ed8c9ef12edf}{should\+Go\+To\+South}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if the player should go to south. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_player_input_a346de02cb5a257fe82c8b693a8a02724}{should\+Change\+To\+Prev}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if should change to prev. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_player_input_a7f169fb8157a8cb959d50007e1d1b783}{should\+Change\+To\+Next}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if should change to next. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_player_input_a2ec422a190942e07ee91ee004af1ed41}{should\+Simulate\+AClick}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if should simulate a click for actions like drop, choose ... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_player_input_aa572d120de9f208a0f7d2a168a28eab5}\label{class_i_player_input_aa572d120de9f208a0f7d2a168a28eab5}} 
+\index{IPlayerInput@{IPlayerInput}!````~IPlayerInput@{$\sim$IPlayerInput}}
+\index{````~IPlayerInput@{$\sim$IPlayerInput}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{$\sim$IPlayerInput()}{~IPlayerInput()}}
+{\footnotesize\ttfamily virtual IPlayer\+Input\+::$\sim$\+IPlayer\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_i_player_input}{IPlayer\+Input}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_player_input_a7f169fb8157a8cb959d50007e1d1b783}\label{class_i_player_input_a7f169fb8157a8cb959d50007e1d1b783}} 
+\index{IPlayerInput@{IPlayerInput}!shouldChangeToNext@{shouldChangeToNext}}
+\index{shouldChangeToNext@{shouldChangeToNext}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldChangeToNext()}{shouldChangeToNext()}}
+{\footnotesize\ttfamily virtual bool IPlayer\+Input\+::should\+Change\+To\+Next (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if should change to next. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mouse_player_input_a01fd437f63e3de293ef8d622dd767be1}{Mouse\+Player\+Input}}, \mbox{\hyperlink{class_keyboard_player_input_a7cfb1409d6f8ced7e17b3b781fc9a152}{Keyboard\+Player\+Input}}, and \mbox{\hyperlink{class_gamepad_player_input_a0e4265b9a97ee1bc7455c6d845f43446}{Gamepad\+Player\+Input}}.
+
+\mbox{\Hypertarget{class_i_player_input_a346de02cb5a257fe82c8b693a8a02724}\label{class_i_player_input_a346de02cb5a257fe82c8b693a8a02724}} 
+\index{IPlayerInput@{IPlayerInput}!shouldChangeToPrev@{shouldChangeToPrev}}
+\index{shouldChangeToPrev@{shouldChangeToPrev}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldChangeToPrev()}{shouldChangeToPrev()}}
+{\footnotesize\ttfamily virtual bool IPlayer\+Input\+::should\+Change\+To\+Prev (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if should change to prev. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mouse_player_input_a98e08c0fee2ed4ab349ec999c6e65632}{Mouse\+Player\+Input}}, \mbox{\hyperlink{class_keyboard_player_input_afe81773d5dd997dbb2e5d6ac692cc5d1}{Keyboard\+Player\+Input}}, and \mbox{\hyperlink{class_gamepad_player_input_a12536d9d424b741c0cf50aadfc3b4493}{Gamepad\+Player\+Input}}.
+
+\mbox{\Hypertarget{class_i_player_input_a3769e7dd9469bc6d735de49e73aa1060}\label{class_i_player_input_a3769e7dd9469bc6d735de49e73aa1060}} 
+\index{IPlayerInput@{IPlayerInput}!shouldGoToEast@{shouldGoToEast}}
+\index{shouldGoToEast@{shouldGoToEast}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToEast()}{shouldGoToEast()}}
+{\footnotesize\ttfamily virtual bool IPlayer\+Input\+::should\+Go\+To\+East (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the player should go to east. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mouse_player_input_a6755c7dcbaa16d7350610a58bcd39ec5}{Mouse\+Player\+Input}}, \mbox{\hyperlink{class_keyboard_player_input_aea9eefc0df32fd461cfe1a65b49ce0fc}{Keyboard\+Player\+Input}}, and \mbox{\hyperlink{class_gamepad_player_input_a3afd10cd246b5c54b4bbd211dbaf4390}{Gamepad\+Player\+Input}}.
+
+\mbox{\Hypertarget{class_i_player_input_a54aea169356f01c41f9a27bc5bc06c74}\label{class_i_player_input_a54aea169356f01c41f9a27bc5bc06c74}} 
+\index{IPlayerInput@{IPlayerInput}!shouldGoToNorth@{shouldGoToNorth}}
+\index{shouldGoToNorth@{shouldGoToNorth}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToNorth()}{shouldGoToNorth()}}
+{\footnotesize\ttfamily virtual bool IPlayer\+Input\+::should\+Go\+To\+North (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the player should go to north. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mouse_player_input_aa814a8ca9a70929a9026f20f9f6c777c}{Mouse\+Player\+Input}}, \mbox{\hyperlink{class_keyboard_player_input_afa6854461ea384d1f8f83f5623e141da}{Keyboard\+Player\+Input}}, and \mbox{\hyperlink{class_gamepad_player_input_a94ca6b37d8b78e06f0ded7746bd47bcf}{Gamepad\+Player\+Input}}.
+
+\mbox{\Hypertarget{class_i_player_input_aa277dcaf76bc650d2594ed8c9ef12edf}\label{class_i_player_input_aa277dcaf76bc650d2594ed8c9ef12edf}} 
+\index{IPlayerInput@{IPlayerInput}!shouldGoToSouth@{shouldGoToSouth}}
+\index{shouldGoToSouth@{shouldGoToSouth}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToSouth()}{shouldGoToSouth()}}
+{\footnotesize\ttfamily virtual bool IPlayer\+Input\+::should\+Go\+To\+South (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the player should go to south. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mouse_player_input_af5c56c714056db3bf73370175eff41e6}{Mouse\+Player\+Input}}, \mbox{\hyperlink{class_keyboard_player_input_a94db3006e46d5f2568702be59ba0d24e}{Keyboard\+Player\+Input}}, and \mbox{\hyperlink{class_gamepad_player_input_a078be3ace8fbf85ea89e7fb7faf917b0}{Gamepad\+Player\+Input}}.
+
+\mbox{\Hypertarget{class_i_player_input_aeab21dac1a6775ef4f0b6e7fc107dbc3}\label{class_i_player_input_aeab21dac1a6775ef4f0b6e7fc107dbc3}} 
+\index{IPlayerInput@{IPlayerInput}!shouldGoToWest@{shouldGoToWest}}
+\index{shouldGoToWest@{shouldGoToWest}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToWest()}{shouldGoToWest()}}
+{\footnotesize\ttfamily virtual bool IPlayer\+Input\+::should\+Go\+To\+West (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the player should go to west. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mouse_player_input_af97efcea2035b160c59156c81f3672bc}{Mouse\+Player\+Input}}, \mbox{\hyperlink{class_keyboard_player_input_a9e11aea5e96ebe667bea37879d1aa7c9}{Keyboard\+Player\+Input}}, and \mbox{\hyperlink{class_gamepad_player_input_ab5ca17c5a2032fd7d76ad5fcb4a64f63}{Gamepad\+Player\+Input}}.
+
+\mbox{\Hypertarget{class_i_player_input_a2ec422a190942e07ee91ee004af1ed41}\label{class_i_player_input_a2ec422a190942e07ee91ee004af1ed41}} 
+\index{IPlayerInput@{IPlayerInput}!shouldSimulateAClick@{shouldSimulateAClick}}
+\index{shouldSimulateAClick@{shouldSimulateAClick}!IPlayerInput@{IPlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldSimulateAClick()}{shouldSimulateAClick()}}
+{\footnotesize\ttfamily virtual bool IPlayer\+Input\+::should\+Simulate\+AClick (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if should simulate a click for actions like drop, choose ... 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mouse_player_input_ae71a394de686f0c3f7e844ea670fb29a}{Mouse\+Player\+Input}}, \mbox{\hyperlink{class_keyboard_player_input_a47b1ea10935d5befbb4f99bb9ee2b51c}{Keyboard\+Player\+Input}}, and \mbox{\hyperlink{class_gamepad_player_input_ae4eda6cd351a0d8f444dd9aa1dc8f187}{Gamepad\+Player\+Input}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\mbox{\hyperlink{_i_player_input_8hpp}{IPlayer\+Input.\+hpp}}\end{DoxyCompactItemize}

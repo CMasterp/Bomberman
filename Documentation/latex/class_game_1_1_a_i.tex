@@ -1,0 +1,74 @@
+\hypertarget{class_game_1_1_a_i}{}\doxysection{Game\+::AI Class Reference}
+\label{class_game_1_1_a_i}\index{Game::AI@{Game::AI}}
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+Inheritance diagram for Game\+::AI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_game_1_1_a_i}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_a_i_a3c3008be5bc01c059a4f545c3bd45ba0}{AI}} (const std\+::string \&name, const int ID, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&positions, const std\+::string \&obj\+\_\+path=\char`\"{}resources/players/3D/Bombermans/white\+\_\+tpose.\+glb\char`\"{}, const std\+::string \&texture\+\_\+path=\char`\"{}resources/players/3D/Bombermans/texture.\+png\char`\"{}, const std\+::vector$<$ std\+::string $>$ \&animation\+\_\+path=\{\}, const float \&scalable=0.\+6, const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} color=\mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}())
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_player}{Player}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_game_1_1_a_i_a0254c1cdaaa2e355c21091878808cdf5}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_a_i_a3c3008be5bc01c059a4f545c3bd45ba0}\label{class_game_1_1_a_i_a3c3008be5bc01c059a4f545c3bd45ba0}} 
+\index{Game::AI@{Game::AI}!AI@{AI}}
+\index{AI@{AI}!Game::AI@{Game::AI}}
+\doxysubsubsection{\texorpdfstring{AI()}{AI()}}
+{\footnotesize\ttfamily Game\+::\+AI\+::\+AI (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int}]{ID,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{positions,  }\item[{const std\+::string \&}]{obj\+\_\+path = {\ttfamily \char`\"{}resources/players/3D/Bombermans/white\+\_\+tpose.glb\char`\"{}},  }\item[{const std\+::string \&}]{texture\+\_\+path = {\ttfamily \char`\"{}resources/players/3D/Bombermans/texture.png\char`\"{}},  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{animation\+\_\+path = {\ttfamily \{\}},  }\item[{const float \&}]{scalable = {\ttfamily 0.6},  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}}}]{color = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}()} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_player}{Player}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the character \\
+\hline
+{\em ID} & A const reference to a int \\
+\hline
+{\em positions} & the 3D positions of the character \\
+\hline
+{\em obj\+\_\+path} & the model path \\
+\hline
+{\em texture\+\_\+path} & the texture path \\
+\hline
+{\em animation\+\_\+path} & the animations paths \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_a_i_a0254c1cdaaa2e355c21091878808cdf5}\label{class_game_1_1_a_i_a0254c1cdaaa2e355c21091878808cdf5}} 
+\index{Game::AI@{Game::AI}!getType@{getType}}
+\index{getType@{getType}!Game::AI@{Game::AI}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Game\+::\+AI\+::get\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_1_1_animated_a493ed93ff93248750daddae3e8d9864e}{Game\+::\+Animated}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Player/\mbox{\hyperlink{_game_2_player_2_player_8hpp}{Player.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Player/\mbox{\hyperlink{_game_2_player_2_player_8cpp}{Player.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Player/\mbox{\hyperlink{_player_8inl}{Player.\+inl}}\end{DoxyCompactItemize}

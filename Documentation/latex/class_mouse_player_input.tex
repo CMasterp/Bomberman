@@ -1,0 +1,184 @@
+\hypertarget{class_mouse_player_input}{}\doxysection{Mouse\+Player\+Input Class Reference}
+\label{class_mouse_player_input}\index{MousePlayerInput@{MousePlayerInput}}
+
+
+{\ttfamily \#include $<$Mouse\+Player\+Input.\+hpp$>$}
+
+Inheritance diagram for Mouse\+Player\+Input\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mouse_player_input}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mouse_player_input_a60e32d5a1cbaa00731805cc4fb36ec10}{Mouse\+Player\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_mouse_player_input}{Mouse\+Player\+Input}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mouse_player_input_a7e82e41360f1266b1cb90be2bffd46fa}{$\sim$\+Mouse\+Player\+Input}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_mouse_player_input}{Mouse\+Player\+Input}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mouse_player_input_a6755c7dcbaa16d7350610a58bcd39ec5}{should\+Go\+To\+East}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to east. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mouse_player_input_af97efcea2035b160c59156c81f3672bc}{should\+Go\+To\+West}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to west. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mouse_player_input_aa814a8ca9a70929a9026f20f9f6c777c}{should\+Go\+To\+North}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to north. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mouse_player_input_af5c56c714056db3bf73370175eff41e6}{should\+Go\+To\+South}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the player should go to south. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mouse_player_input_a98e08c0fee2ed4ab349ec999c6e65632}{should\+Change\+To\+Prev}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if should change to prev. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mouse_player_input_a01fd437f63e3de293ef8d622dd767be1}{should\+Change\+To\+Next}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if should change to next. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mouse_player_input_ae71a394de686f0c3f7e844ea670fb29a}{should\+Simulate\+AClick}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if should simulate a click for actions like drop, choose ... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mouse_player_input_a60e32d5a1cbaa00731805cc4fb36ec10}\label{class_mouse_player_input_a60e32d5a1cbaa00731805cc4fb36ec10}} 
+\index{MousePlayerInput@{MousePlayerInput}!MousePlayerInput@{MousePlayerInput}}
+\index{MousePlayerInput@{MousePlayerInput}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{MousePlayerInput()}{MousePlayerInput()}}
+{\footnotesize\ttfamily Mouse\+Player\+Input\+::\+Mouse\+Player\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_mouse_player_input}{Mouse\+Player\+Input}} object. 
+
+\mbox{\Hypertarget{class_mouse_player_input_a7e82e41360f1266b1cb90be2bffd46fa}\label{class_mouse_player_input_a7e82e41360f1266b1cb90be2bffd46fa}} 
+\index{MousePlayerInput@{MousePlayerInput}!````~MousePlayerInput@{$\sim$MousePlayerInput}}
+\index{````~MousePlayerInput@{$\sim$MousePlayerInput}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{$\sim$MousePlayerInput()}{~MousePlayerInput()}}
+{\footnotesize\ttfamily Mouse\+Player\+Input\+::$\sim$\+Mouse\+Player\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_mouse_player_input}{Mouse\+Player\+Input}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mouse_player_input_a01fd437f63e3de293ef8d622dd767be1}\label{class_mouse_player_input_a01fd437f63e3de293ef8d622dd767be1}} 
+\index{MousePlayerInput@{MousePlayerInput}!shouldChangeToNext@{shouldChangeToNext}}
+\index{shouldChangeToNext@{shouldChangeToNext}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldChangeToNext()}{shouldChangeToNext()}}
+{\footnotesize\ttfamily bool Mouse\+Player\+Input\+::should\+Change\+To\+Next (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if should change to next. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a7f169fb8157a8cb959d50007e1d1b783}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_mouse_player_input_a98e08c0fee2ed4ab349ec999c6e65632}\label{class_mouse_player_input_a98e08c0fee2ed4ab349ec999c6e65632}} 
+\index{MousePlayerInput@{MousePlayerInput}!shouldChangeToPrev@{shouldChangeToPrev}}
+\index{shouldChangeToPrev@{shouldChangeToPrev}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldChangeToPrev()}{shouldChangeToPrev()}}
+{\footnotesize\ttfamily bool Mouse\+Player\+Input\+::should\+Change\+To\+Prev (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if should change to prev. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a346de02cb5a257fe82c8b693a8a02724}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_mouse_player_input_a6755c7dcbaa16d7350610a58bcd39ec5}\label{class_mouse_player_input_a6755c7dcbaa16d7350610a58bcd39ec5}} 
+\index{MousePlayerInput@{MousePlayerInput}!shouldGoToEast@{shouldGoToEast}}
+\index{shouldGoToEast@{shouldGoToEast}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToEast()}{shouldGoToEast()}}
+{\footnotesize\ttfamily bool Mouse\+Player\+Input\+::should\+Go\+To\+East (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to east. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a3769e7dd9469bc6d735de49e73aa1060}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_mouse_player_input_aa814a8ca9a70929a9026f20f9f6c777c}\label{class_mouse_player_input_aa814a8ca9a70929a9026f20f9f6c777c}} 
+\index{MousePlayerInput@{MousePlayerInput}!shouldGoToNorth@{shouldGoToNorth}}
+\index{shouldGoToNorth@{shouldGoToNorth}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToNorth()}{shouldGoToNorth()}}
+{\footnotesize\ttfamily bool Mouse\+Player\+Input\+::should\+Go\+To\+North (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to north. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a54aea169356f01c41f9a27bc5bc06c74}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_mouse_player_input_af5c56c714056db3bf73370175eff41e6}\label{class_mouse_player_input_af5c56c714056db3bf73370175eff41e6}} 
+\index{MousePlayerInput@{MousePlayerInput}!shouldGoToSouth@{shouldGoToSouth}}
+\index{shouldGoToSouth@{shouldGoToSouth}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToSouth()}{shouldGoToSouth()}}
+{\footnotesize\ttfamily bool Mouse\+Player\+Input\+::should\+Go\+To\+South (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to south. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_aa277dcaf76bc650d2594ed8c9ef12edf}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_mouse_player_input_af97efcea2035b160c59156c81f3672bc}\label{class_mouse_player_input_af97efcea2035b160c59156c81f3672bc}} 
+\index{MousePlayerInput@{MousePlayerInput}!shouldGoToWest@{shouldGoToWest}}
+\index{shouldGoToWest@{shouldGoToWest}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldGoToWest()}{shouldGoToWest()}}
+{\footnotesize\ttfamily bool Mouse\+Player\+Input\+::should\+Go\+To\+West (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the player should go to west. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_aeab21dac1a6775ef4f0b6e7fc107dbc3}{IPlayer\+Input}}.
+
+\mbox{\Hypertarget{class_mouse_player_input_ae71a394de686f0c3f7e844ea670fb29a}\label{class_mouse_player_input_ae71a394de686f0c3f7e844ea670fb29a}} 
+\index{MousePlayerInput@{MousePlayerInput}!shouldSimulateAClick@{shouldSimulateAClick}}
+\index{shouldSimulateAClick@{shouldSimulateAClick}!MousePlayerInput@{MousePlayerInput}}
+\doxysubsubsection{\texorpdfstring{shouldSimulateAClick()}{shouldSimulateAClick()}}
+{\footnotesize\ttfamily bool Mouse\+Player\+Input\+::should\+Simulate\+AClick (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if should simulate a click for actions like drop, choose ... 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate that 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_player_input_a2ec422a190942e07ee91ee004af1ed41}{IPlayer\+Input}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\mbox{\hyperlink{_mouse_player_input_8hpp}{Mouse\+Player\+Input.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_mouse_player_input_8cpp}{Mouse\+Player\+Input.\+cpp}}\end{DoxyCompactItemize}

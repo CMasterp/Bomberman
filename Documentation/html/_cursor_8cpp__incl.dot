@@ -1,0 +1,17 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Lib/XRaylib/Raylib/Cursor/Cursor.cpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Documents/GitHub/B\l-YEP-400-LYN-4-1-indiestudio\l-lucas.guichard/Lib/XRaylib\l/Raylib/Cursor/Cursor.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Cursor.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cursor_8hpp.html",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="raylib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Cursor.inl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cursor_8inl.html",tooltip=" "];
+}

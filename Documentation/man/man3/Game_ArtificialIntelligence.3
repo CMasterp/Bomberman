@@ -1,0 +1,53 @@
+.TH "Game::ArtificialIntelligence" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::ArtificialIntelligence
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ArtificialIntelligence\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArtificialIntelligence\fP (std::function< void(const size_t pos, const std::string action)> playerActionsFunc, const std::vector< \fBAI\fP > &AIs, std::vector< std::shared_ptr< \fBIEntity\fP >> entities, const std::vector< std::string > &map, const size_t &level)"
+.br
+.RI "Construct a new \fBArtificialIntelligence\fP object\&. "
+.ti -1c
+.RI "void \fBrun\fP (void) const"
+.br
+.RI "Run the \fBAI\fP algorithm\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::ArtificialIntelligence::ArtificialIntelligence (std::function< void(const size_t pos, const std::string action)> playerActionsFunc, const std::vector< \fBAI\fP > & AIs, std::vector< std::shared_ptr< \fBIEntity\fP >> entities, const std::vector< std::string > & map, const size_t & level)"
+
+.PP
+Construct a new \fBArtificialIntelligence\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerActionsFunc\fP A pointer to function that manage all players actions in the game (left, right\&.\&.\&.) 
+.br
+\fIAIs\fP A vector of \fBAI\fP objects 
+.br
+\fIentities\fP A vector of targets entities objects 
+.br
+\fImap\fP The game map 
+.br
+\fIlevel\fP The \fBAI\fP level 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::ArtificialIntelligence::run (void) const"
+
+.PP
+Run the \fBAI\fP algorithm\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

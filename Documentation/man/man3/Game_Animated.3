@@ -1,0 +1,278 @@
+.TH "Game::Animated" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Animated
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Animated\&.hpp>\fP
+.PP
+Inherits \fBIEntity\fP\&.
+.PP
+Inherited by \fBGame::Bomb\fP, \fBGame::Player\fP, and \fBGame::Powerups\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAnimated\fP (const \fBRaylib::Vector3\fP &positions, const std::string &obj_path, const std::string &texture_path, const std::vector< std::string > &animation_path={}, const float &scalable=0\&.6, const \fBRaylib::Color\fP color=\fBRaylib::Color::White\fP())"
+.br
+.RI "Construct a new \fBAnimated\fP object\&. "
+.ti -1c
+.RI "virtual \fB~Animated\fP (void)"
+.br
+.RI "Destroy the \fBAnimated\fP Entity object\&. "
+.ti -1c
+.RI "\fBRaylib::Vector3\fP \fBgetPositions\fP (void) const override"
+.br
+.RI "Get the \fBAnimated\fP positions\&. "
+.ti -1c
+.RI "virtual std::string \fBgetType\fP () const override=0"
+.br
+.RI "Get the Type object\&. "
+.ti -1c
+.RI "float \fBgetScalable\fP (void) const"
+.br
+.RI "Get player scalability\&. "
+.ti -1c
+.RI "void \fBsetScalable\fP (const float &scalable)"
+.br
+.RI "Set player scalability\&. "
+.ti -1c
+.RI "void \fBsetPositions\fP (\fBRaylib::Vector3\fP &positions) override"
+.br
+.RI "Set the Positions\&. "
+.ti -1c
+.RI "void \fBdrawEntity\fP () override"
+.br
+.RI "Draw Entity\&. "
+.ti -1c
+.RI "void \fBsetShouldDisplay\fP (const bool &shouldDisplay) override"
+.br
+.RI "Set a boolean to know if this entity should be displayed\&. "
+.ti -1c
+.RI "bool \fBgetShouldDisplay\fP (void) const override"
+.br
+.RI "Get a boolean to know if this entity should be displayed\&. "
+.ti -1c
+.RI "void \fBsetModel\fP (const std::string &model)"
+.br
+.RI "Set a animated model\&. "
+.ti -1c
+.RI "void \fBsetColor\fP (const \fBRaylib::Color\fP &color)"
+.br
+.RI "Set player color\&. "
+.ti -1c
+.RI "void \fBsetColor\fP (const std::string &color)"
+.br
+.RI "Set player color\&. "
+.ti -1c
+.RI "void \fBmove\fP (const std::string &direction, const int &speed)"
+.br
+.RI "move position "
+.ti -1c
+.RI "std::pair< int, int > \fBgetPositions2D\fP ()"
+.br
+.RI "get position in 2d "
+.ti -1c
+.RI "void \fBsetRotation\fP (const float &rotation)"
+.br
+.RI "Set the Rotation of the \fBAnimated\fP\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Animated::Animated (const \fBRaylib::Vector3\fP & positions, const std::string & obj_path, const std::string & texture_path, const std::vector< std::string > & animation_path = \fC{}\fP, const float & scalable = \fC0\&.6\fP, const \fBRaylib::Color\fP color = \fC\fBRaylib::Color::White\fP()\fP)"
+
+.PP
+Construct a new \fBAnimated\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpositions\fP the \fBAnimated\fP Object positions 
+.br
+\fIobj_path\fP the model path 
+.br
+\fItexture_path\fP the texture path 
+.br
+\fIanimation_path\fP the animation path 
+.br
+\fIscalable\fP the scalable value 
+.br
+\fIcolor\fP the color 
+.RE
+.PP
+
+.SS "virtual Game::Animated::~Animated (void)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Destroy the \fBAnimated\fP Entity object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::Animated::drawEntity (void)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Draw Entity\&. 
+.PP
+Implements \fBIEntity\fP\&.
+.PP
+Reimplemented in \fBGame::Bomb\fP\&.
+.SS "\fBRaylib::Vector3\fP Game::Animated::getPositions (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the \fBAnimated\fP positions\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBRaylib::Vector3\fP 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.SS "std::pair< int, int > Game::Animated::getPositions2D ()"
+
+.PP
+get position in 2d 
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<int, int> 
+.RE
+.PP
+
+.SS "float Game::Animated::getScalable (void) const\fC [inline]\fP"
+
+.PP
+Get player scalability\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A float 
+.RE
+.PP
+
+.SS "bool Game::Animated::getShouldDisplay (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get a boolean to know if this entity should be displayed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.SS "virtual std::string Game::Animated::getType () const\fC [override]\fP, \fC [pure virtual]\fP"
+
+.PP
+Get the Type object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A std::string 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.PP
+Implemented in \fBGame::Powerups\fP, \fBGame::AI\fP, \fBGame::Human\fP, and \fBGame::Bomb\fP\&.
+.SS "void Game::Animated::move (const std::string & direction, const int & speed)"
+
+.PP
+move position 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdirection\fP 
+.RE
+.PP
+
+.SS "void Game::Animated::setColor (const \fBRaylib::Color\fP & color)\fC [inline]\fP"
+
+.PP
+Set player color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP A const reference to a \fBRaylib::Color\fP 
+.RE
+.PP
+
+.SS "void Game::Animated::setColor (const std::string & color)\fC [inline]\fP"
+
+.PP
+Set player color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP A const reference to a string 
+.RE
+.PP
+
+.SS "void Game::Animated::setModel (const std::string & model)"
+
+.PP
+Set a animated model\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImodel\fP A const reference to a string describing the player name 
+.RE
+.PP
+
+.SS "void Game::Animated::setPositions (\fBRaylib::Vector3\fP & positions)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set the Positions\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpositions\fP A vector3 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+.SS "void Game::Animated::setRotation (const float & rotation)\fC [inline]\fP"
+
+.PP
+Set the Rotation of the \fBAnimated\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrotation\fP 
+.RE
+.PP
+
+.SS "void Game::Animated::setScalable (const float & scalable)\fC [inline]\fP"
+
+.PP
+Set player scalability\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscalable\fP A float 
+.RE
+.PP
+
+.SS "void Game::Animated::setShouldDisplay (const bool & shouldDisplay)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Set a boolean to know if this entity should be displayed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshouldDisplay\fP A boolean to know if this entity should be displayed 
+.RE
+.PP
+
+.PP
+Implements \fBIEntity\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

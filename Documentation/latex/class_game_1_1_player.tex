@@ -1,0 +1,350 @@
+\hypertarget{class_game_1_1_player}{}\doxysection{Game\+::Player Class Reference}
+\label{class_game_1_1_player}\index{Game::Player@{Game::Player}}
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+Inheritance diagram for Game\+::Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_game_1_1_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_player_a8bf8a66824088cea97a9b379f34ffe37}{Player}} ()
+\begin{DoxyCompactList}\small\item\em Construct the \mbox{\hyperlink{class_game_1_1_player}{Player}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_player_acc5febda7f7e0d3e099147ea0a465be4}{Player}} (const std\+::string \&name, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&positions, const size\+\_\+t \&kills, const size\+\_\+t \&broken\+Walls, const std\+::array$<$ int, 5 $>$ \&power\+Ups)
+\begin{DoxyCompactList}\small\item\em Construct the \mbox{\hyperlink{class_game_1_1_player}{Player}} object (Copy Constructor) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_player_af0d55046506ab92e18850abd5e3405de}{Player}} (const std\+::string \&name, const int \&id, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&positions, const std\+::string \&obj\+\_\+path, const std\+::string \&texture\+\_\+path, const std\+::vector$<$ std\+::string $>$ \&animation\+\_\+path=\{\}, const float \&scalable=0.\+6, const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} color=\mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}())
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_player}{Player}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_game_1_1_player_ae2abf8db34cc0421e361d4063e318ae9}{get\+Name}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the Name of the \mbox{\hyperlink{class_game_1_1_player}{Player}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_game_1_1_player_a09eb990d56a931eb98eb285b3e540200}{get\+Broken\+Walls}} (void) const
+\begin{DoxyCompactList}\small\item\em Get Broken Walls by the \mbox{\hyperlink{class_game_1_1_player}{Player}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_game_1_1_player_a5321b3251ea6120be9af44969bcb1cef}{get\+Kills}} (void) const
+\begin{DoxyCompactList}\small\item\em Get Kills by the \mbox{\hyperlink{class_game_1_1_player}{Player}}. \end{DoxyCompactList}\item 
+std\+::array$<$ int, 5 $>$ \mbox{\hyperlink{class_game_1_1_player_aeea09c7929a743946c8a0b70cfff601b}{get\+Power\+Ups}} (void) const
+\begin{DoxyCompactList}\small\item\em Get Power\+Ups gotten by the \mbox{\hyperlink{class_game_1_1_player}{Player}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_player_a46374674245b392159d82e2ec2409295}{get\+ID}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the player ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_player_a141f99b1b75c5b1d042953b4d35902fd}{get\+Alive}} (void) const
+\begin{DoxyCompactList}\small\item\em Get if the player is dead or alive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_a22779a8fb98afa617d29a6a386ea1427}{set\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Set the name of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_a9b7e03159405b20598ff3193e774a410}{set\+Broken\+Walls}} (const size\+\_\+t \&broken\+Walls)
+\begin{DoxyCompactList}\small\item\em Set the broken walls number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_a2feadd47a328f5a731ce6dcdf0103e21}{set\+Kills}} (const size\+\_\+t \&kills)
+\begin{DoxyCompactList}\small\item\em Set the kills number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_af187c3bd44c82c613b85a1953178bdc7}{set\+Power\+Ups}} (const std\+::array$<$ int, 5 $>$ \&power\+Ups)
+\begin{DoxyCompactList}\small\item\em Set the power\+Ups of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_a630f5653d1275a23e7bf9dd0cd24b525}{increase\+Power\+Ups}} (const int \&id\+\_\+power)
+\begin{DoxyCompactList}\small\item\em Set the power\+Ups of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_aca4d02b571a8ba222b604773a651925d}{decrease\+Power\+Ups}} (const int \&id\+\_\+power)
+\begin{DoxyCompactList}\small\item\em Set the power\+Ups of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_a440adb5b4975cd0777b59850ab1dbdf9}{set\+ID}} (const int \&ID)
+\begin{DoxyCompactList}\small\item\em Set the ID of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_ae726677888035ed30c1345ec92e014cb}{set\+Alive}} (const bool \&alive)
+\begin{DoxyCompactList}\small\item\em Set the player dead or alive. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_1_1_player_a4ab6f80677b16c7ee2a46ab3ae5d8233}{$\sim$\+Player}} (void)
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_game_1_1_player}{Player}} Entity object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_player_a97f63d50c58d5a01b3b7b7d248bd17af}{drop\+Bomb}} (void)
+\begin{DoxyCompactList}\small\item\em Drop a bomb. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_player_a96ddbaef7c4b4fcc8154910412243174}{reset\+ABomb}} ()
+\begin{DoxyCompactList}\small\item\em Reset a bomb. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_player_a8bf8a66824088cea97a9b379f34ffe37}\label{class_game_1_1_player_a8bf8a66824088cea97a9b379f34ffe37}} 
+\index{Game::Player@{Game::Player}!Player@{Player}}
+\index{Player@{Player}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Game\+::\+Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct the \mbox{\hyperlink{class_game_1_1_player}{Player}} object. 
+
+\mbox{\Hypertarget{class_game_1_1_player_acc5febda7f7e0d3e099147ea0a465be4}\label{class_game_1_1_player_acc5febda7f7e0d3e099147ea0a465be4}} 
+\index{Game::Player@{Game::Player}!Player@{Player}}
+\index{Player@{Player}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Game\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{positions,  }\item[{const size\+\_\+t \&}]{kills,  }\item[{const size\+\_\+t \&}]{broken\+Walls,  }\item[{const std\+::array$<$ int, 5 $>$ \&}]{power\+Ups }\end{DoxyParamCaption})}
+
+
+
+Construct the \mbox{\hyperlink{class_game_1_1_player}{Player}} object (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A const reference to a std\+::string \\
+\hline
+{\em position} & A const reference to a std\+::pair of float \\
+\hline
+{\em broken\+Walls} & A const reference to a size\+\_\+t \\
+\hline
+{\em kills} & A const reference to a size\+\_\+t \\
+\hline
+{\em power\+Ups} & A const reference to a std\+::array of 5 int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_af0d55046506ab92e18850abd5e3405de}\label{class_game_1_1_player_af0d55046506ab92e18850abd5e3405de}} 
+\index{Game::Player@{Game::Player}!Player@{Player}}
+\index{Player@{Player}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Game\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int \&}]{id,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{positions,  }\item[{const std\+::string \&}]{obj\+\_\+path,  }\item[{const std\+::string \&}]{texture\+\_\+path,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{animation\+\_\+path = {\ttfamily \{\}},  }\item[{const float \&}]{scalable = {\ttfamily 0.6},  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}}}]{color = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}()} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_player}{Player}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the character \\
+\hline
+{\em positions} & the 3D positions of the character \\
+\hline
+{\em obj\+\_\+path} & the model path \\
+\hline
+{\em texture\+\_\+path} & the texture path \\
+\hline
+{\em animation\+\_\+path} & the animations paths \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_a4ab6f80677b16c7ee2a46ab3ae5d8233}\label{class_game_1_1_player_a4ab6f80677b16c7ee2a46ab3ae5d8233}} 
+\index{Game::Player@{Game::Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily virtual Game\+::\+Player\+::$\sim$\+Player (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_game_1_1_player}{Player}} Entity object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_player_aca4d02b571a8ba222b604773a651925d}\label{class_game_1_1_player_aca4d02b571a8ba222b604773a651925d}} 
+\index{Game::Player@{Game::Player}!decreasePowerUps@{decreasePowerUps}}
+\index{decreasePowerUps@{decreasePowerUps}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{decreasePowerUps()}{decreasePowerUps()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::decrease\+Power\+Ups (\begin{DoxyParamCaption}\item[{const int \&}]{id\+\_\+power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the power\+Ups of the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em power\+Ups} & A const reference to an array of 5 int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_a97f63d50c58d5a01b3b7b7d248bd17af}\label{class_game_1_1_player_a97f63d50c58d5a01b3b7b7d248bd17af}} 
+\index{Game::Player@{Game::Player}!dropBomb@{dropBomb}}
+\index{dropBomb@{dropBomb}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{dropBomb()}{dropBomb()}}
+{\footnotesize\ttfamily bool Game\+::\+Player\+::drop\+Bomb (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Drop a bomb. 
+
+\begin{DoxyReturn}{Returns}
+true if the player successfully drops a bomb, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_player_a141f99b1b75c5b1d042953b4d35902fd}\label{class_game_1_1_player_a141f99b1b75c5b1d042953b4d35902fd}} 
+\index{Game::Player@{Game::Player}!getAlive@{getAlive}}
+\index{getAlive@{getAlive}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{getAlive()}{getAlive()}}
+{\footnotesize\ttfamily bool Game\+::\+Player\+::get\+Alive (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get if the player is dead or alive. 
+
+\begin{DoxyReturn}{Returns}
+bool value, true if the player is alive, false if he\textquotesingle{}s is dead 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_player_a09eb990d56a931eb98eb285b3e540200}\label{class_game_1_1_player_a09eb990d56a931eb98eb285b3e540200}} 
+\index{Game::Player@{Game::Player}!getBrokenWalls@{getBrokenWalls}}
+\index{getBrokenWalls@{getBrokenWalls}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{getBrokenWalls()}{getBrokenWalls()}}
+{\footnotesize\ttfamily size\+\_\+t Game\+::\+Player\+::get\+Broken\+Walls (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Broken Walls by the \mbox{\hyperlink{class_game_1_1_player}{Player}}. 
+
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_player_a46374674245b392159d82e2ec2409295}\label{class_game_1_1_player_a46374674245b392159d82e2ec2409295}} 
+\index{Game::Player@{Game::Player}!getID@{getID}}
+\index{getID@{getID}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily int Game\+::\+Player\+::get\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the player ID. 
+
+\begin{DoxyReturn}{Returns}
+An int which represents the ID of the player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_player_a5321b3251ea6120be9af44969bcb1cef}\label{class_game_1_1_player_a5321b3251ea6120be9af44969bcb1cef}} 
+\index{Game::Player@{Game::Player}!getKills@{getKills}}
+\index{getKills@{getKills}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{getKills()}{getKills()}}
+{\footnotesize\ttfamily size\+\_\+t Game\+::\+Player\+::get\+Kills (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Kills by the \mbox{\hyperlink{class_game_1_1_player}{Player}}. 
+
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_player_ae2abf8db34cc0421e361d4063e318ae9}\label{class_game_1_1_player_ae2abf8db34cc0421e361d4063e318ae9}} 
+\index{Game::Player@{Game::Player}!getName@{getName}}
+\index{getName@{getName}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Game\+::\+Player\+::get\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Name of the \mbox{\hyperlink{class_game_1_1_player}{Player}}. 
+
+\begin{DoxyReturn}{Returns}
+A string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_player_aeea09c7929a743946c8a0b70cfff601b}\label{class_game_1_1_player_aeea09c7929a743946c8a0b70cfff601b}} 
+\index{Game::Player@{Game::Player}!getPowerUps@{getPowerUps}}
+\index{getPowerUps@{getPowerUps}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{getPowerUps()}{getPowerUps()}}
+{\footnotesize\ttfamily std\+::array$<$ int, 5 $>$ Game\+::\+Player\+::get\+Power\+Ups (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Power\+Ups gotten by the \mbox{\hyperlink{class_game_1_1_player}{Player}}. 
+
+\begin{DoxyReturn}{Returns}
+An Array of 5 static\+\_\+cast$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_player_a630f5653d1275a23e7bf9dd0cd24b525}\label{class_game_1_1_player_a630f5653d1275a23e7bf9dd0cd24b525}} 
+\index{Game::Player@{Game::Player}!increasePowerUps@{increasePowerUps}}
+\index{increasePowerUps@{increasePowerUps}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{increasePowerUps()}{increasePowerUps()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::increase\+Power\+Ups (\begin{DoxyParamCaption}\item[{const int \&}]{id\+\_\+power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the power\+Ups of the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em power\+Ups} & A const reference to an array of 5 int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_a96ddbaef7c4b4fcc8154910412243174}\label{class_game_1_1_player_a96ddbaef7c4b4fcc8154910412243174}} 
+\index{Game::Player@{Game::Player}!resetABomb@{resetABomb}}
+\index{resetABomb@{resetABomb}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{resetABomb()}{resetABomb()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::reset\+ABomb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset a bomb. 
+
+\mbox{\Hypertarget{class_game_1_1_player_ae726677888035ed30c1345ec92e014cb}\label{class_game_1_1_player_ae726677888035ed30c1345ec92e014cb}} 
+\index{Game::Player@{Game::Player}!setAlive@{setAlive}}
+\index{setAlive@{setAlive}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{setAlive()}{setAlive()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::set\+Alive (\begin{DoxyParamCaption}\item[{const bool \&}]{alive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the player dead or alive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alive} & a const reference to a bool value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_a9b7e03159405b20598ff3193e774a410}\label{class_game_1_1_player_a9b7e03159405b20598ff3193e774a410}} 
+\index{Game::Player@{Game::Player}!setBrokenWalls@{setBrokenWalls}}
+\index{setBrokenWalls@{setBrokenWalls}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{setBrokenWalls()}{setBrokenWalls()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::set\+Broken\+Walls (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{broken\+Walls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the broken walls number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em broken\+Walls} & A const reference to a size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_a440adb5b4975cd0777b59850ab1dbdf9}\label{class_game_1_1_player_a440adb5b4975cd0777b59850ab1dbdf9}} 
+\index{Game::Player@{Game::Player}!setID@{setID}}
+\index{setID@{setID}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::set\+ID (\begin{DoxyParamCaption}\item[{const int \&}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the ID of the player. 
+
+\mbox{\Hypertarget{class_game_1_1_player_a2feadd47a328f5a731ce6dcdf0103e21}\label{class_game_1_1_player_a2feadd47a328f5a731ce6dcdf0103e21}} 
+\index{Game::Player@{Game::Player}!setKills@{setKills}}
+\index{setKills@{setKills}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{setKills()}{setKills()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::set\+Kills (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{kills }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the kills number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kills} & A const reference to a size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_a22779a8fb98afa617d29a6a386ea1427}\label{class_game_1_1_player_a22779a8fb98afa617d29a6a386ea1427}} 
+\index{Game::Player@{Game::Player}!setName@{setName}}
+\index{setName@{setName}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A const reference to a string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_player_af187c3bd44c82c613b85a1953178bdc7}\label{class_game_1_1_player_af187c3bd44c82c613b85a1953178bdc7}} 
+\index{Game::Player@{Game::Player}!setPowerUps@{setPowerUps}}
+\index{setPowerUps@{setPowerUps}!Game::Player@{Game::Player}}
+\doxysubsubsection{\texorpdfstring{setPowerUps()}{setPowerUps()}}
+{\footnotesize\ttfamily void Game\+::\+Player\+::set\+Power\+Ups (\begin{DoxyParamCaption}\item[{const std\+::array$<$ int, 5 $>$ \&}]{power\+Ups }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the power\+Ups of the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em power\+Ups} & A const reference to an array of 5 int \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Player/\mbox{\hyperlink{_game_2_player_2_player_8hpp}{Player.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Player/\mbox{\hyperlink{_game_2_player_2_player_8cpp}{Player.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Player/\mbox{\hyperlink{_player_8inl}{Player.\+inl}}\end{DoxyCompactItemize}

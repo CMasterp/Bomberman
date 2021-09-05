@@ -1,0 +1,25 @@
+var class_i_game =
+[
+    [ "~IGame", "class_i_game.html#ac4df169b47b4a4a61d8d2ab1099eac6f", null ],
+    [ "doPlayerAction", "class_i_game.html#aa0d53c99cfc9d2d34e8a62d88f5846e8", null ],
+    [ "getEntities", "class_i_game.html#ac8bb3be057f6861636f6a189c7336608", null ],
+    [ "getGameName", "class_i_game.html#a56640a0f7b914d0d08bab29963b320ec", null ],
+    [ "getMap", "class_i_game.html#a6a2ecc221fb5f92f732f328dae947e17", null ],
+    [ "getMap", "class_i_game.html#a6bec9a136275ae3abd6d492084421b6d", null ],
+    [ "getPlayerControls", "class_i_game.html#a94d5b4a6f5f8a1b4ebd06b0f9b5fb794", null ],
+    [ "getPlayersStats", "class_i_game.html#acee1ba61297246b82ad408a9e18cdb39", null ],
+    [ "getScores", "class_i_game.html#a44c87c259e5e5a733bd615a5dd395a52", null ],
+    [ "getSettings", "class_i_game.html#a9dae299d7e44243549096bdae11197d8", null ],
+    [ "getUserNames", "class_i_game.html#a541d8a81360939df8626547854e6fcaa", null ],
+    [ "isCameraShaking", "class_i_game.html#ae22940c148455971b1d725047c3d31f3", null ],
+    [ "isGameOver", "class_i_game.html#a9ee8daeeca3248f781e1a0ddcc264ef6", null ],
+    [ "loadGame", "class_i_game.html#a34c5db84317c11ad514fcf57f9a67a32", null ],
+    [ "restart", "class_i_game.html#ab28060e6da41d8e549304a7b613b21f7", null ],
+    [ "runAI", "class_i_game.html#a5cc0658c9fb840b263378512d9301dbe", null ],
+    [ "saveGame", "class_i_game.html#a082935cf063b3c543459343d3c2069a5", null ],
+    [ "setMapType", "class_i_game.html#a7fc5862a33d3e0220c46d2c7775962e1", null ],
+    [ "setPlayers", "class_i_game.html#a2cd16a7333134e2e7d4f6a3b71b2c239", null ],
+    [ "setSettings", "class_i_game.html#a697091d869f621d00b7d615a806ff5fc", null ],
+    [ "setUserNames", "class_i_game.html#af1e186e856a529ac2b5484a00acf5450", null ],
+    [ "updateGame", "class_i_game.html#a1eab4e6befb35b00d92500bc92327388", null ]
+];

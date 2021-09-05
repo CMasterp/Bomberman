@@ -1,0 +1,175 @@
+.TH "Raylib::Camera2D" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Camera2D
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Camera2D\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCamera2D\fP ()"
+.br
+.RI "Construct a new \fBCamera2D\fP object\&. "
+.ti -1c
+.RI "\fB~Camera2D\fP ()"
+.br
+.RI "Destroy the \fBCamera2D\fP object\&. "
+.ti -1c
+.RI "\fBCamera2D\fP (::\fBCamera2D\fP const &camera)"
+.br
+.RI "Construct a new \fBCamera2D\fP object (Copy Constructor) "
+.ti -1c
+.RI "::\fBCamera2D\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Get C Structure for \fBCamera2D\fP Class\&. "
+.ti -1c
+.RI "void \fBbeginMode2D\fP (\fBRaylib::Camera2D\fP const &camera) const"
+.br
+.RI "Initialize 2D mode with custom camera (2D) "
+.ti -1c
+.RI "void \fBEndMode2D\fP (void) const"
+.br
+.RI "Ends 2D mode with custom camera\&. "
+.ti -1c
+.RI "::\fBMatrix\fP \fBgetCameraMatrix2D\fP (\fBRaylib::Camera2D\fP const &camera) const"
+.br
+.RI "Returns camera 2d transform matrix\&. "
+.ti -1c
+.RI "::\fBVector2\fP \fBgetWorldToScreen2D\fP (::\fBVector2\fP const &position, \fBRaylib::Camera2D\fP const &camera) const"
+.br
+.RI "Returns the screen space position for a 2d camera world space position\&. "
+.ti -1c
+.RI "::\fBVector2\fP \fBgetScreenToWorld2D\fP (::\fBVector2\fP const &position, \fBRaylib::Camera2D\fP const &camera) const"
+.br
+.RI "Returns the world space position for a 2d camera screen space position\&. "
+.ti -1c
+.RI "\fBCamera2D\fP & \fBoperator=\fP (const \fBCamera2D\fP &camera)"
+.br
+.RI "Overload of '=' operator\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Camera2D::Camera2D ()"
+
+.PP
+Construct a new \fBCamera2D\fP object\&. 
+.SS "Raylib::Camera2D::~Camera2D ()"
+
+.PP
+Destroy the \fBCamera2D\fP object\&. 
+.SS "Raylib::Camera2D::Camera2D (::\fBCamera2D\fP const & camera)"
+
+.PP
+Construct a new \fBCamera2D\fP object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBCamera2D\fP\fP A \fBCamera2D\fP C Structure 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Camera2D::beginMode2D (\fBRaylib::Camera2D\fP const & camera) const\fC [inline]\fP"
+
+.PP
+Initialize 2D mode with custom camera (2D) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBCamera2D\fP\fP A \fBCamera2D\fP structure 
+.RE
+.PP
+
+.SS "void Raylib::Camera2D::EndMode2D (void) const\fC [inline]\fP"
+
+.PP
+Ends 2D mode with custom camera\&. 
+.SS "\fBMatrix\fP Raylib::Camera2D::getCameraMatrix2D (\fBRaylib::Camera2D\fP const & camera) const\fC [inline]\fP"
+
+.PP
+Returns camera 2d transform matrix\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBCamera2D\fP\fP A \fBCamera2D\fP structure 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBMatrix\fP 
+.RE
+.PP
+
+.SS "\fBCamera2D\fP Raylib::Camera2D::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Get C Structure for \fBCamera2D\fP Class\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBCamera2D\fP C Structure 
+.RE
+.PP
+
+.SS "\fBVector2\fP Raylib::Camera2D::getScreenToWorld2D (::\fBVector2\fP const & position, \fBRaylib::Camera2D\fP const & camera) const\fC [inline]\fP"
+
+.PP
+Returns the world space position for a 2d camera screen space position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP A \fBVector2\fP structure 
+.br
+\fI\fBCamera2D\fP\fP A \fBCamera2D\fP structure 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBVector2\fP 
+.RE
+.PP
+
+.SS "\fBVector2\fP Raylib::Camera2D::getWorldToScreen2D (::\fBVector2\fP const & position, \fBRaylib::Camera2D\fP const & camera) const\fC [inline]\fP"
+
+.PP
+Returns the screen space position for a 2d camera world space position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP A \fBVector2\fP structure 
+.br
+\fI\fBCamera2D\fP\fP A \fBCamera2D\fP structure 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBVector2\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Camera2D\fP & Raylib::Camera2D::operator= (const \fBCamera2D\fP & camera)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamera\fP A const reference to a \fBCamera2D\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBCamera2D\fP (\fBCamera2D\fP &) 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

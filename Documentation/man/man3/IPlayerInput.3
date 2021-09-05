@@ -1,0 +1,151 @@
+.TH "IPlayerInput" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IPlayerInput
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IPlayerInput\&.hpp>\fP
+.PP
+Inherited by \fBGamepadPlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBMousePlayerInput\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IPlayerInput\fP (void)=default"
+.br
+.RI "Destroy the \fBIPlayerInput\fP object\&. "
+.ti -1c
+.RI "virtual bool \fBshouldGoToEast\fP (void) const =0"
+.br
+.RI "Check if the player should go to east\&. "
+.ti -1c
+.RI "virtual bool \fBshouldGoToWest\fP (void) const =0"
+.br
+.RI "Check if the player should go to west\&. "
+.ti -1c
+.RI "virtual bool \fBshouldGoToNorth\fP (void) const =0"
+.br
+.RI "Check if the player should go to north\&. "
+.ti -1c
+.RI "virtual bool \fBshouldGoToSouth\fP (void) const =0"
+.br
+.RI "Check if the player should go to south\&. "
+.ti -1c
+.RI "virtual bool \fBshouldChangeToPrev\fP (void) const =0"
+.br
+.RI "Check if should change to prev\&. "
+.ti -1c
+.RI "virtual bool \fBshouldChangeToNext\fP (void) const =0"
+.br
+.RI "Check if should change to next\&. "
+.ti -1c
+.RI "virtual bool \fBshouldSimulateAClick\fP (void) const =0"
+.br
+.RI "Check if should simulate a click for actions like drop, choose \&.\&.\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual IPlayerInput::~IPlayerInput (void)\fC [virtual]\fP, \fC [default]\fP"
+
+.PP
+Destroy the \fBIPlayerInput\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool IPlayerInput::shouldChangeToNext (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if should change to next\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implemented in \fBMousePlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBGamepadPlayerInput\fP\&.
+.SS "virtual bool IPlayerInput::shouldChangeToPrev (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if should change to prev\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implemented in \fBMousePlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBGamepadPlayerInput\fP\&.
+.SS "virtual bool IPlayerInput::shouldGoToEast (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if the player should go to east\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implemented in \fBMousePlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBGamepadPlayerInput\fP\&.
+.SS "virtual bool IPlayerInput::shouldGoToNorth (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if the player should go to north\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implemented in \fBMousePlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBGamepadPlayerInput\fP\&.
+.SS "virtual bool IPlayerInput::shouldGoToSouth (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if the player should go to south\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implemented in \fBMousePlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBGamepadPlayerInput\fP\&.
+.SS "virtual bool IPlayerInput::shouldGoToWest (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if the player should go to west\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implemented in \fBMousePlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBGamepadPlayerInput\fP\&.
+.SS "virtual bool IPlayerInput::shouldSimulateAClick (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if should simulate a click for actions like drop, choose \&.\&.\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implemented in \fBMousePlayerInput\fP, \fBKeyboardPlayerInput\fP, and \fBGamepadPlayerInput\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

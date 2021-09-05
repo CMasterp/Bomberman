@@ -1,0 +1,167 @@
+.TH "Raylib::Keyboard" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Keyboard
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Keyboard\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBKeyboard\fP ()"
+.br
+.RI "Construct a new \fBKeyboard\fP object\&. "
+.ti -1c
+.RI "\fB~Keyboard\fP ()"
+.br
+.RI "Destroy the \fBKeyboard\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBisKeyPressed\fP (const size_t &key)"
+.br
+.RI "Detect if a key has been pressed once\&. "
+.ti -1c
+.RI "static bool \fBisKeyDown\fP (const size_t &key)"
+.br
+.RI "Detect if a key is being pressed\&. "
+.ti -1c
+.RI "static bool \fBisKeyReleased\fP (const size_t &key)"
+.br
+.RI "Detect if a key has been released once\&. "
+.ti -1c
+.RI "static bool \fBisKeyUp\fP (const size_t &key)"
+.br
+.RI "Detect if a key is NOT being pressed\&. "
+.ti -1c
+.RI "static void \fBsetExitKey\fP (const size_t &key)"
+.br
+.RI "Set a custom key to exit program (default is ESC) "
+.ti -1c
+.RI "static size_t \fBgetKeyPressed\fP (void)"
+.br
+.RI "Get key pressed (keycode), call it multiple times for keys queued\&. "
+.ti -1c
+.RI "static size_t \fBgetCharPressed\fP (void)"
+.br
+.RI "Get char pressed (unicode), call it multiple times for chars queued\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Keyboard::Keyboard ()"
+
+.PP
+Construct a new \fBKeyboard\fP object\&. 
+.SS "Raylib::Keyboard::~Keyboard ()"
+
+.PP
+Destroy the \fBKeyboard\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "size_t Raylib::Keyboard::getCharPressed (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get char pressed (unicode), call it multiple times for chars queued\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "size_t Raylib::Keyboard::getKeyPressed (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get key pressed (keycode), call it multiple times for keys queued\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "bool Raylib::Keyboard::isKeyDown (const size_t & key)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a key is being pressed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if key is being pressed, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Keyboard::isKeyPressed (const size_t & key)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a key has been pressed once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if key has been pressed once, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Keyboard::isKeyReleased (const size_t & key)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a key has been released once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if key has been released once, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Keyboard::isKeyUp (const size_t & key)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a key is NOT being pressed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if key is NOT being pressed, false otherwise 
+.RE
+.PP
+
+.SS "void Raylib::Keyboard::setExitKey (const size_t & key)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set a custom key to exit program (default is ESC) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A size_t 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

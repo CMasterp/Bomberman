@@ -1,0 +1,159 @@
+.TH "MousePlayerInput" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MousePlayerInput
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MousePlayerInput\&.hpp>\fP
+.PP
+Inherits \fBIPlayerInput\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMousePlayerInput\fP ()"
+.br
+.RI "Construct a new \fBMousePlayerInput\fP object\&. "
+.ti -1c
+.RI "\fB~MousePlayerInput\fP () override"
+.br
+.RI "Destroy the \fBMousePlayerInput\fP object\&. "
+.ti -1c
+.RI "bool \fBshouldGoToEast\fP (void) const override"
+.br
+.RI "Check if the player should go to east\&. "
+.ti -1c
+.RI "bool \fBshouldGoToWest\fP (void) const override"
+.br
+.RI "Check if the player should go to west\&. "
+.ti -1c
+.RI "bool \fBshouldGoToNorth\fP (void) const override"
+.br
+.RI "Check if the player should go to north\&. "
+.ti -1c
+.RI "bool \fBshouldGoToSouth\fP (void) const override"
+.br
+.RI "Check if the player should go to south\&. "
+.ti -1c
+.RI "bool \fBshouldChangeToPrev\fP (void) const override"
+.br
+.RI "Check if should change to prev\&. "
+.ti -1c
+.RI "bool \fBshouldChangeToNext\fP (void) const override"
+.br
+.RI "Check if should change to next\&. "
+.ti -1c
+.RI "bool \fBshouldSimulateAClick\fP (void) const override"
+.br
+.RI "Check if should simulate a click for actions like drop, choose \&.\&.\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MousePlayerInput::MousePlayerInput ()"
+
+.PP
+Construct a new \fBMousePlayerInput\fP object\&. 
+.SS "MousePlayerInput::~MousePlayerInput ()\fC [override]\fP"
+
+.PP
+Destroy the \fBMousePlayerInput\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool MousePlayerInput::shouldChangeToNext (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if should change to next\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool MousePlayerInput::shouldChangeToPrev (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if should change to prev\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool MousePlayerInput::shouldGoToEast (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to east\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool MousePlayerInput::shouldGoToNorth (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to north\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool MousePlayerInput::shouldGoToSouth (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to south\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool MousePlayerInput::shouldGoToWest (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if the player should go to west\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+.SS "bool MousePlayerInput::shouldSimulateAClick (void) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if should simulate a click for actions like drop, choose \&.\&.\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate that 
+.RE
+.PP
+
+.PP
+Implements \fBIPlayerInput\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

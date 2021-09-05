@@ -1,0 +1,277 @@
+\hypertarget{class_raylib_1_1_collision3_d}{}\doxysection{Raylib\+::Collision3D Class Reference}
+\label{class_raylib_1_1_collision3_d}\index{Raylib::Collision3D@{Raylib::Collision3D}}
+
+
+{\ttfamily \#include $<$Collision3\+D.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_collision3_d_a779b84350e992f3154c6f885b182a304}{Collision3D}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_collision3_d}{Collision3D}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_collision3_d_a2a5a70a1d51eefc248a8eacd2a59ef3f}{$\sim$\+Collision3D}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_collision3_d}{Collision3D}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision3_d_ae9e4badfe30f1f8977c98530bcc20b35}{check\+Collision}} (const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&center1, const float \&radius1, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&center2, const float \&radius2)
+\begin{DoxyCompactList}\small\item\em Check if 2 spheres intersect. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision3_d_a9bd587fcd77cd7207bb3d66fcbd28930}{check\+Collision}} (const \+::Bounding\+Box \&box1, const \+::Bounding\+Box \&box)
+\begin{DoxyCompactList}\small\item\em Check if 2 spheres intersect. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision3_d_af599e8254ab34d101fa801f3b955b930}{check\+Collision}} (const \+::Bounding\+Box \&box1, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&center, const float \&radius)
+\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision3_d_adb866befb1647def3022370d455f643d}{check\+Collision}} (const \+::Ray \&ray, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&center, const float \&radius)
+\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision3_d_abbcb63eb58bd8972912cd71d0096f288}{check\+Collision}} (const \+::Ray \&ray, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&center, const float \&radius, \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&collision\+Point)
+\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_collision3_d_a01fed92ae62eb69e3e834d6782806dee}{check\+Collision}} (const \+::Ray \&ray, const \+::Bounding\+Box \&box)
+\item 
+\+::Ray\+Hit\+Info \mbox{\hyperlink{class_raylib_1_1_collision3_d_ad3109b820f5036f77f574655710582fd}{get\+Collision\+Ray}} (const \+::Ray \&ray, const \+::Mesh \&mesh, const \+::\mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} \&transform)
+\begin{DoxyCompactList}\small\item\em Get the Collision Ray object. \end{DoxyCompactList}\item 
+\+::Ray\+Hit\+Info \mbox{\hyperlink{class_raylib_1_1_collision3_d_a9ddc75b62e7ab46d290785a1c9ff69ec}{get\+Collision\+Ray}} (const \+::Ray \&ray, const \+::Model \&model)
+\begin{DoxyCompactList}\small\item\em Get the Collision Ray object. \end{DoxyCompactList}\item 
+\+::Ray\+Hit\+Info \mbox{\hyperlink{class_raylib_1_1_collision3_d_af7da54257e49056241319b032626d7ee}{get\+Collision\+Ray}} (const \+::Ray \&ray, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{_resources_8hpp_a95c96fee87f38fc423831b9c71167ef7a22e7954f0f67bd13c875ccac1d77835d}{p1}}, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{_resources_8hpp_a95c96fee87f38fc423831b9c71167ef7af023383ebe0126265f2dbaae87911cf9}{p2}}, const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{_resources_8hpp_a95c96fee87f38fc423831b9c71167ef7a3bcef26740e2560f3054abda587cf43d}{p3}})
+\begin{DoxyCompactList}\small\item\em Get the Collision Ray object. \end{DoxyCompactList}\item 
+\+::Ray\+Hit\+Info \mbox{\hyperlink{class_raylib_1_1_collision3_d_ae3f10cc4854e4366efe3606c2fea3127}{get\+Collision\+Ray}} (const \+::Ray \&ray, const float \&ground\+Height)
+\begin{DoxyCompactList}\small\item\em Get the Collision Ray object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_a779b84350e992f3154c6f885b182a304}\label{class_raylib_1_1_collision3_d_a779b84350e992f3154c6f885b182a304}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!Collision3D@{Collision3D}}
+\index{Collision3D@{Collision3D}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{Collision3D()}{Collision3D()}}
+{\footnotesize\ttfamily Raylib\+::\+Collision3\+D\+::\+Collision3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_collision3_d}{Collision3D}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_a2a5a70a1d51eefc248a8eacd2a59ef3f}\label{class_raylib_1_1_collision3_d_a2a5a70a1d51eefc248a8eacd2a59ef3f}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!````~Collision3D@{$\sim$Collision3D}}
+\index{````~Collision3D@{$\sim$Collision3D}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Collision3D()}{~Collision3D()}}
+{\footnotesize\ttfamily Raylib\+::\+Collision3\+D\+::$\sim$\+Collision3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_collision3_d}{Collision3D}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_a9bd587fcd77cd7207bb3d66fcbd28930}\label{class_raylib_1_1_collision3_d_a9bd587fcd77cd7207bb3d66fcbd28930}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision3\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \+::Bounding\+Box \&}]{box1,  }\item[{const \+::Bounding\+Box \&}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if 2 spheres intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & the circle\textquotesingle{}s center position \\
+\hline
+{\em radius} & the circle\textquotesingle{}s radius \\
+\hline
+{\em rec} & the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangle and the circle intersect false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_af599e8254ab34d101fa801f3b955b930}\label{class_raylib_1_1_collision3_d_af599e8254ab34d101fa801f3b955b930}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision3\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \+::Bounding\+Box \&}]{box1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{center,  }\item[{const float \&}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the point coordinates \\
+\hline
+{\em rec} & the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the point is on the rectangle false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_a01fed92ae62eb69e3e834d6782806dee}\label{class_raylib_1_1_collision3_d_a01fed92ae62eb69e3e834d6782806dee}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision3\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \+::Ray \&}]{ray,  }\item[{const \+::Bounding\+Box \&}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos1} & the first lines\textquotesingle{}s start position \\
+\hline
+{\em end\+Pos1} & the first lines\textquotesingle{}s end position \\
+\hline
+{\em start\+Pos2} & the second lines\textquotesingle{}s start position \\
+\hline
+{\em end\+Pos2} & the second lines\textquotesingle{}s end position \\
+\hline
+{\em collision\+Point} & the collision point pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangle and the circle intersect false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_adb866befb1647def3022370d455f643d}\label{class_raylib_1_1_collision3_d_adb866befb1647def3022370d455f643d}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision3\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \+::Ray \&}]{ray,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{center,  }\item[{const float \&}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the point coordinates \\
+\hline
+{\em center} & the circle\textquotesingle{}s center position \\
+\hline
+{\em radius} & the circle\textquotesingle{}s radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangle and the circle intersect false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_abbcb63eb58bd8972912cd71d0096f288}\label{class_raylib_1_1_collision3_d_abbcb63eb58bd8972912cd71d0096f288}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision3\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \+::Ray \&}]{ray,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{center,  }\item[{const float \&}]{radius,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{collision\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the point coordinates \\
+\hline
+{\em p1} & the first triangle\textquotesingle{}s point \\
+\hline
+{\em p2} & the second trinagle\textquotesingle{}s point \\
+\hline
+{\em p3} & the third triangle\textquotesingle{}s point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangle and the circle intersect false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_ae9e4badfe30f1f8977c98530bcc20b35}\label{class_raylib_1_1_collision3_d_ae9e4badfe30f1f8977c98530bcc20b35}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily bool Raylib\+::\+Collision3\+D\+::check\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{center1,  }\item[{const float \&}]{radius1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{center2,  }\item[{const float \&}]{radius2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if 2 spheres intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center1} & the first circle\textquotesingle{}s center position \\
+\hline
+{\em radius1} & the first circle\textquotesingle{}s radius \\
+\hline
+{\em center2} & the second circle\textquotesingle{}s center position \\
+\hline
+{\em radius2} & the second circle\textquotesingle{}s radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the rectangles intersect, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_ad3109b820f5036f77f574655710582fd}\label{class_raylib_1_1_collision3_d_ad3109b820f5036f77f574655710582fd}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!getCollisionRay@{getCollisionRay}}
+\index{getCollisionRay@{getCollisionRay}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{getCollisionRay()}{getCollisionRay()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Ray\+Hit\+Info Raylib\+::\+Collision3\+D\+::get\+Collision\+Ray (\begin{DoxyParamCaption}\item[{const \+::Ray \&}]{ray,  }\item[{const \+::Mesh \&}]{mesh,  }\item[{const \+::\mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} \&}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Collision Ray object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray \\
+\hline
+{\em mesh} & The mesh \\
+\hline
+{\em transform} & The matrix transformation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ray\+Hit\+Info informations about the collision ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_a9ddc75b62e7ab46d290785a1c9ff69ec}\label{class_raylib_1_1_collision3_d_a9ddc75b62e7ab46d290785a1c9ff69ec}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!getCollisionRay@{getCollisionRay}}
+\index{getCollisionRay@{getCollisionRay}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{getCollisionRay()}{getCollisionRay()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Ray\+Hit\+Info Raylib\+::\+Collision3\+D\+::get\+Collision\+Ray (\begin{DoxyParamCaption}\item[{const \+::Ray \&}]{ray,  }\item[{const \+::Model \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Collision Ray object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray \\
+\hline
+{\em model} & The 3D model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ray\+Hit\+Info informations about the collision ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_ae3f10cc4854e4366efe3606c2fea3127}\label{class_raylib_1_1_collision3_d_ae3f10cc4854e4366efe3606c2fea3127}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!getCollisionRay@{getCollisionRay}}
+\index{getCollisionRay@{getCollisionRay}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{getCollisionRay()}{getCollisionRay()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Ray\+Hit\+Info Raylib\+::\+Collision3\+D\+::get\+Collision\+Ray (\begin{DoxyParamCaption}\item[{const \+::Ray \&}]{ray,  }\item[{const float \&}]{ground\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Collision Ray object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray \\
+\hline
+{\em ground\+Height} & The ground height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ray\+Hit\+Info informations about the collision ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_collision3_d_af7da54257e49056241319b032626d7ee}\label{class_raylib_1_1_collision3_d_af7da54257e49056241319b032626d7ee}} 
+\index{Raylib::Collision3D@{Raylib::Collision3D}!getCollisionRay@{getCollisionRay}}
+\index{getCollisionRay@{getCollisionRay}!Raylib::Collision3D@{Raylib::Collision3D}}
+\doxysubsubsection{\texorpdfstring{getCollisionRay()}{getCollisionRay()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Ray\+Hit\+Info Raylib\+::\+Collision3\+D\+::get\+Collision\+Ray (\begin{DoxyParamCaption}\item[{const \+::Ray \&}]{ray,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{p1,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{p2,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{p3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the Collision Ray object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray \\
+\hline
+{\em p1} & The first point \\
+\hline
+{\em p2} & The second point \\
+\hline
+{\em p3} & The thirst point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ray\+Hit\+Info informations about the collision ray 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Collision3\+D/\mbox{\hyperlink{_collision3_d_8hpp}{Collision3\+D.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Collision3\+D/\mbox{\hyperlink{_collision3_d_8cpp}{Collision3\+D.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Collision3\+D/\mbox{\hyperlink{_collision3_d_8inl}{Collision3\+D.\+inl}}\end{DoxyCompactItemize}

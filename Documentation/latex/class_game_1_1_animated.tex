@@ -1,0 +1,322 @@
+\hypertarget{class_game_1_1_animated}{}\doxysection{Game\+::Animated Class Reference}
+\label{class_game_1_1_animated}\index{Game::Animated@{Game::Animated}}
+
+
+{\ttfamily \#include $<$Animated.\+hpp$>$}
+
+Inheritance diagram for Game\+::Animated\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.456141cm]{class_game_1_1_animated}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_animated_a7679767ef8e3b6743c9e3db9c6fff336}{Animated}} (const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&positions, const std\+::string \&obj\+\_\+path, const std\+::string \&texture\+\_\+path, const std\+::vector$<$ std\+::string $>$ \&animation\+\_\+path=\{\}, const float \&scalable=0.\+6, const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} color=\mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}())
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_animated}{Animated}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_1_1_animated_a6cc70af1cea7cee901d78cdb3f82ab0a}{$\sim$\+Animated}} (void)
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_game_1_1_animated}{Animated}} Entity object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \mbox{\hyperlink{class_game_1_1_animated_a8b58362a15756cb5d86267fa1974ffac}{get\+Positions}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_game_1_1_animated}{Animated}} positions. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_game_1_1_animated_a493ed93ff93248750daddae3e8d9864e}{get\+Type}} () const override=0
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_game_1_1_animated_a7cbeeb77c72a0bdd2b54f50e663e85c7}{get\+Scalable}} (void) const
+\begin{DoxyCompactList}\small\item\em Get player scalability. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_a4d00d7887119bb8f81946a64b4e110bc}{set\+Scalable}} (const float \&scalable)
+\begin{DoxyCompactList}\small\item\em Set player scalability. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_af7093a0ce46dc9cc528bb5852d58a344}{set\+Positions}} (\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&positions) override
+\begin{DoxyCompactList}\small\item\em Set the Positions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_ad25ceed647cd9c7a543c8bd7b141b429}{draw\+Entity}} () override
+\begin{DoxyCompactList}\small\item\em Draw Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_a4b134c488248c8c3c9b5569ea72e7ba4}{set\+Should\+Display}} (const bool \&should\+Display) override
+\begin{DoxyCompactList}\small\item\em Set a boolean to know if this entity should be displayed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_animated_a7e75abf118a2dfbac85281b827552fa2}{get\+Should\+Display}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get a boolean to know if this entity should be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_a7941566a3efc17e84aa13925551b7ce9}{set\+Model}} (const std\+::string \&model)
+\begin{DoxyCompactList}\small\item\em Set a animated model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_a4736dcf83d91d558ecaaf8a21f7c7a88}{set\+Color}} (const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Set player color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_afd9f541fcca9ea86c307baede280c037}{set\+Color}} (const std\+::string \&color)
+\begin{DoxyCompactList}\small\item\em Set player color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_a4558798cbb7c45cbcf440410e51d2ab5}{move}} (const std\+::string \&direction, const int \&speed)
+\begin{DoxyCompactList}\small\item\em move position \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{class_game_1_1_animated_a378d1e96496d73ac1ed98aa387df00e6}{get\+Positions2D}} ()
+\begin{DoxyCompactList}\small\item\em get position in 2d \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_animated_ac531cb9e49d40f539938ba7897bc663f}{set\+Rotation}} (const float \&rotation)
+\begin{DoxyCompactList}\small\item\em Set the Rotation of the \mbox{\hyperlink{class_game_1_1_animated}{Animated}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_animated_a7679767ef8e3b6743c9e3db9c6fff336}\label{class_game_1_1_animated_a7679767ef8e3b6743c9e3db9c6fff336}} 
+\index{Game::Animated@{Game::Animated}!Animated@{Animated}}
+\index{Animated@{Animated}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{Animated()}{Animated()}}
+{\footnotesize\ttfamily Game\+::\+Animated\+::\+Animated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{positions,  }\item[{const std\+::string \&}]{obj\+\_\+path,  }\item[{const std\+::string \&}]{texture\+\_\+path,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{animation\+\_\+path = {\ttfamily \{\}},  }\item[{const float \&}]{scalable = {\ttfamily 0.6},  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}}}]{color = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{Raylib\+::\+Color\+::\+White}}()} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_animated}{Animated}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & the \mbox{\hyperlink{class_game_1_1_animated}{Animated}} Object positions \\
+\hline
+{\em obj\+\_\+path} & the model path \\
+\hline
+{\em texture\+\_\+path} & the texture path \\
+\hline
+{\em animation\+\_\+path} & the animation path \\
+\hline
+{\em scalable} & the scalable value \\
+\hline
+{\em color} & the color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_animated_a6cc70af1cea7cee901d78cdb3f82ab0a}\label{class_game_1_1_animated_a6cc70af1cea7cee901d78cdb3f82ab0a}} 
+\index{Game::Animated@{Game::Animated}!````~Animated@{$\sim$Animated}}
+\index{````~Animated@{$\sim$Animated}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{$\sim$Animated()}{~Animated()}}
+{\footnotesize\ttfamily virtual Game\+::\+Animated\+::$\sim$\+Animated (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_game_1_1_animated}{Animated}} Entity object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_animated_ad25ceed647cd9c7a543c8bd7b141b429}\label{class_game_1_1_animated_ad25ceed647cd9c7a543c8bd7b141b429}} 
+\index{Game::Animated@{Game::Animated}!drawEntity@{drawEntity}}
+\index{drawEntity@{drawEntity}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{drawEntity()}{drawEntity()}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::draw\+Entity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw Entity. 
+
+
+
+Implements \mbox{\hyperlink{class_i_entity_a37d57731ff65d299a5c92316347e3cfc}{IEntity}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_bomb_a05756cd633eb29fd9b46c2181d4ff466}{Game\+::\+Bomb}}.
+
+\mbox{\Hypertarget{class_game_1_1_animated_a8b58362a15756cb5d86267fa1974ffac}\label{class_game_1_1_animated_a8b58362a15756cb5d86267fa1974ffac}} 
+\index{Game::Animated@{Game::Animated}!getPositions@{getPositions}}
+\index{getPositions@{getPositions}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{getPositions()}{getPositions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} Game\+::\+Animated\+::get\+Positions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{class_game_1_1_animated}{Animated}} positions. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_entity_aff5123b0cd33be2f7970e6d6fde58ec5}{IEntity}}.
+
+\mbox{\Hypertarget{class_game_1_1_animated_a378d1e96496d73ac1ed98aa387df00e6}\label{class_game_1_1_animated_a378d1e96496d73ac1ed98aa387df00e6}} 
+\index{Game::Animated@{Game::Animated}!getPositions2D@{getPositions2D}}
+\index{getPositions2D@{getPositions2D}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{getPositions2D()}{getPositions2D()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Game\+::\+Animated\+::get\+Positions2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get position in 2d 
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$int, int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_animated_a7cbeeb77c72a0bdd2b54f50e663e85c7}\label{class_game_1_1_animated_a7cbeeb77c72a0bdd2b54f50e663e85c7}} 
+\index{Game::Animated@{Game::Animated}!getScalable@{getScalable}}
+\index{getScalable@{getScalable}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{getScalable()}{getScalable()}}
+{\footnotesize\ttfamily float Game\+::\+Animated\+::get\+Scalable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get player scalability. 
+
+\begin{DoxyReturn}{Returns}
+A float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_animated_a7e75abf118a2dfbac85281b827552fa2}\label{class_game_1_1_animated_a7e75abf118a2dfbac85281b827552fa2}} 
+\index{Game::Animated@{Game::Animated}!getShouldDisplay@{getShouldDisplay}}
+\index{getShouldDisplay@{getShouldDisplay}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{getShouldDisplay()}{getShouldDisplay()}}
+{\footnotesize\ttfamily bool Game\+::\+Animated\+::get\+Should\+Display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a boolean to know if this entity should be displayed. 
+
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_entity_a43cfde8d8a3b908badc43c50bc0b0448}{IEntity}}.
+
+\mbox{\Hypertarget{class_game_1_1_animated_a493ed93ff93248750daddae3e8d9864e}\label{class_game_1_1_animated_a493ed93ff93248750daddae3e8d9864e}} 
+\index{Game::Animated@{Game::Animated}!getType@{getType}}
+\index{getType@{getType}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual std\+::string Game\+::\+Animated\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+A std\+::string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_entity_acf90d593003711ef619cf14624f60ccc}{IEntity}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_powerups_adc1a068206878d22121c91f07690bc22}{Game\+::\+Powerups}}, \mbox{\hyperlink{class_game_1_1_a_i_a0254c1cdaaa2e355c21091878808cdf5}{Game\+::\+AI}}, \mbox{\hyperlink{class_game_1_1_human_aa213c8f258f467531019e2042845018e}{Game\+::\+Human}}, and \mbox{\hyperlink{class_game_1_1_bomb_a275a8f1bc8cb89a71546b28d35d85696}{Game\+::\+Bomb}}.
+
+\mbox{\Hypertarget{class_game_1_1_animated_a4558798cbb7c45cbcf440410e51d2ab5}\label{class_game_1_1_animated_a4558798cbb7c45cbcf440410e51d2ab5}} 
+\index{Game::Animated@{Game::Animated}!move@{move}}
+\index{move@{move}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::move (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{direction,  }\item[{const int \&}]{speed }\end{DoxyParamCaption})}
+
+
+
+move position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_animated_a4736dcf83d91d558ecaaf8a21f7c7a88}\label{class_game_1_1_animated_a4736dcf83d91d558ecaaf8a21f7c7a88}} 
+\index{Game::Animated@{Game::Animated}!setColor@{setColor}}
+\index{setColor@{setColor}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set player color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_animated_afd9f541fcca9ea86c307baede280c037}\label{class_game_1_1_animated_afd9f541fcca9ea86c307baede280c037}} 
+\index{Game::Animated@{Game::Animated}!setColor@{setColor}}
+\index{setColor@{setColor}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::set\+Color (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set player color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A const reference to a string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_animated_a7941566a3efc17e84aa13925551b7ce9}\label{class_game_1_1_animated_a7941566a3efc17e84aa13925551b7ce9}} 
+\index{Game::Animated@{Game::Animated}!setModel@{setModel}}
+\index{setModel@{setModel}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::set\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{model }\end{DoxyParamCaption})}
+
+
+
+Set a animated model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & A const reference to a string describing the player name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_animated_af7093a0ce46dc9cc528bb5852d58a344}\label{class_game_1_1_animated_af7093a0ce46dc9cc528bb5852d58a344}} 
+\index{Game::Animated@{Game::Animated}!setPositions@{setPositions}}
+\index{setPositions@{setPositions}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{setPositions()}{setPositions()}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::set\+Positions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{positions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the Positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & A vector3 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_entity_aa70c149bf77cd12268471e0a7407ca65}{IEntity}}.
+
+\mbox{\Hypertarget{class_game_1_1_animated_ac531cb9e49d40f539938ba7897bc663f}\label{class_game_1_1_animated_ac531cb9e49d40f539938ba7897bc663f}} 
+\index{Game::Animated@{Game::Animated}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const float \&}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Rotation of the \mbox{\hyperlink{class_game_1_1_animated}{Animated}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_animated_a4d00d7887119bb8f81946a64b4e110bc}\label{class_game_1_1_animated_a4d00d7887119bb8f81946a64b4e110bc}} 
+\index{Game::Animated@{Game::Animated}!setScalable@{setScalable}}
+\index{setScalable@{setScalable}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{setScalable()}{setScalable()}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::set\+Scalable (\begin{DoxyParamCaption}\item[{const float \&}]{scalable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set player scalability. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalable} & A float \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_animated_a4b134c488248c8c3c9b5569ea72e7ba4}\label{class_game_1_1_animated_a4b134c488248c8c3c9b5569ea72e7ba4}} 
+\index{Game::Animated@{Game::Animated}!setShouldDisplay@{setShouldDisplay}}
+\index{setShouldDisplay@{setShouldDisplay}!Game::Animated@{Game::Animated}}
+\doxysubsubsection{\texorpdfstring{setShouldDisplay()}{setShouldDisplay()}}
+{\footnotesize\ttfamily void Game\+::\+Animated\+::set\+Should\+Display (\begin{DoxyParamCaption}\item[{const bool \&}]{should\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set a boolean to know if this entity should be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\+Display} & A boolean to know if this entity should be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_entity_a2326e46dab3aa8bd2e0ce9c91a68f79c}{IEntity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Animated/\mbox{\hyperlink{_animated_8hpp}{Animated.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Animated/\mbox{\hyperlink{_animated_8cpp}{Animated.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Animated/\mbox{\hyperlink{_animated_8inl}{Animated.\+inl}}\end{DoxyCompactItemize}

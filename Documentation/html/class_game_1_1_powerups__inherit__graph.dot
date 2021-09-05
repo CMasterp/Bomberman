@@ -1,0 +1,21 @@
+digraph "Game::Powerups"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Game::Powerups",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Game::Animated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_1_1_animated.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="IEntity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_entity.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Game::BombUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_1_1_bomb_up.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Game::Fire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_1_1_fire.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Game::Life",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_1_1_life.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Game::Pass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_1_1_pass.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Game::Speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_1_1_speed.html",tooltip=" "];
+}

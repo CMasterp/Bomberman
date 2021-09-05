@@ -1,0 +1,238 @@
+.TH "Raylib::Sound" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Sound
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sound\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSound\fP ()"
+.br
+.RI "Construct a new \fBSound\fP object\&. "
+.ti -1c
+.RI "\fB~Sound\fP ()"
+.br
+.RI "Destroy the \fBSound\fP object\&. "
+.ti -1c
+.RI "\fBSound\fP (const \fBSound\fP &vec)"
+.br
+.RI "Construct a new \fBSound\fP object\&. "
+.ti -1c
+.RI "\fBSound\fP (const std::string &fileName)"
+.br
+.RI "Construct a new \fBSound\fP object\&. "
+.ti -1c
+.RI "\fBSound\fP & \fBupdate\fP (const void *data)"
+.br
+.RI "Update sound buffer with new data, assuming it's the same sample count\&. "
+.ti -1c
+.RI "void \fBunload\fP (void) const"
+.br
+.RI "Unload sound\&. "
+.ti -1c
+.RI "\fBSound\fP & \fBplay\fP (void)"
+.br
+.RI "Play a sound\&. "
+.ti -1c
+.RI "\fBSound\fP & \fBstop\fP (void)"
+.br
+.RI "Stop playing a sound\&. "
+.ti -1c
+.RI "\fBSound\fP & \fBpause\fP (void)"
+.br
+.RI "Pause a sound\&. "
+.ti -1c
+.RI "\fBSound\fP & \fBresume\fP (void)"
+.br
+.RI "Resume a paused sound\&. "
+.ti -1c
+.RI "bool \fBisPlaying\fP (void) const"
+.br
+.RI "Check if a sound is currently playing\&. "
+.ti -1c
+.RI "\fBSound\fP & \fBsetVolume\fP (const float &volume)"
+.br
+.RI "Set volume for a sound (1\&.0 is max level) "
+.ti -1c
+.RI "\fBSound\fP & \fBsetPitch\fP (const float &pitch)"
+.br
+.RI "Set pitch for a sound (1\&.0 is base level) "
+.ti -1c
+.RI "\fBSound\fP & \fBoperator=\fP (const \fBSound\fP &sound)"
+.br
+.RI "Overload of '=' operator\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Sound::Sound ()"
+
+.PP
+Construct a new \fBSound\fP object\&. 
+.SS "Raylib::Sound::~Sound ()"
+
+.PP
+Destroy the \fBSound\fP object\&. 
+.SS "Raylib::Sound::Sound (const \fBSound\fP & vec)"
+
+.PP
+Construct a new \fBSound\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvec\fP A \fBSound\fP Object 
+.RE
+.PP
+
+.SS "Raylib::Sound::Sound (const std::string & fileName)"
+
+.PP
+Construct a new \fBSound\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A string path to sound 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Raylib::Sound::isPlaying (void) const\fC [inline]\fP"
+
+.PP
+Check if a sound is currently playing\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A boolean 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::operator= (const \fBSound\fP & sound)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsound\fP A const reference to a \fBSound\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBSound\fP (\fBSound\fP &) 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::pause (void)\fC [inline]\fP"
+
+.PP
+Pause a sound\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::play (void)\fC [inline]\fP"
+
+.PP
+Play a sound\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::resume (void)\fC [inline]\fP"
+
+.PP
+Resume a paused sound\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::setPitch (const float & pitch)\fC [inline]\fP"
+
+.PP
+Set pitch for a sound (1\&.0 is base level) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpitch\fP A float 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::setVolume (const float & volume)\fC [inline]\fP"
+
+.PP
+Set volume for a sound (1\&.0 is max level) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvolume\fP A float 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::stop (void)\fC [inline]\fP"
+
+.PP
+Stop playing a sound\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+.SS "void Raylib::Sound::unload (void) const\fC [inline]\fP"
+
+.PP
+Unload sound\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Sound\fP & Raylib::Sound::update (const void * data)\fC [inline]\fP"
+
+.PP
+Update sound buffer with new data, assuming it's the same sample count\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP A const pointer 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBSound\fP object 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

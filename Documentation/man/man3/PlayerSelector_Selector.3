@@ -1,0 +1,309 @@
+.TH "PlayerSelector::Selector" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerSelector::Selector
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Selector\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSelector\fP ()"
+.br
+.RI "Construct a new \fBSelector\fP object\&. "
+.ti -1c
+.RI "\fB~Selector\fP ()"
+.br
+.RI "Destroy the \fBSelector\fP object\&. "
+.ti -1c
+.RI "void \fBtoggleModsAvailable\fP ()"
+.br
+.RI "Toggle Mods Available\&. "
+.ti -1c
+.RI "bool \fBisModsAvailable\fP ()"
+.br
+.RI "Check if mods are available\&. "
+.ti -1c
+.RI "void \fBfirstLoad\fP ()"
+.br
+.RI "Load for the first time a character\&. "
+.ti -1c
+.RI "void \fBload\fP ()"
+.br
+.RI "Add a character\&. "
+.ti -1c
+.RI "void \fBunload\fP (const int &id)"
+.br
+.RI "Remove a character\&. "
+.ti -1c
+.RI "std::vector< std::pair< Model, float > > \fBgetModels\fP () const"
+.br
+.RI "Get characters Models\&. "
+.ti -1c
+.RI "std::vector< Texture2D > \fBgetBlocTextures\fP () const"
+.br
+.RI "Get the Bloc Textures object\&. "
+.ti -1c
+.RI "void \fBunloadAll\fP ()"
+.br
+.RI "Remove all characters\&. "
+.ti -1c
+.RI "void \fBdrawPlayers\fP ()"
+.br
+.RI "Display all the players\&. "
+.ti -1c
+.RI "void \fBinitMaps\fP (std::vector< std::string > asciiMap)"
+.br
+.RI "Init the 3D maps from the Ascii one\&. "
+.ti -1c
+.RI "void \fBdrawMaps\fP ()"
+.br
+.RI "Display the 3D map\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBgetMap\fP () const"
+.br
+.RI "Get the Ascii \fBMap\fP\&. "
+.ti -1c
+.RI "void \fBendMaps\fP ()"
+.br
+.RI "Unload map\&. "
+.ti -1c
+.RI "void \fBnextMap\fP ()"
+.br
+.RI "Select the next map textures\&. "
+.ti -1c
+.RI "void \fBprevMap\fP ()"
+.br
+.RI "Select the previous map textures\&. "
+.ti -1c
+.RI "void \fBnext\fP (const int &player)"
+.br
+.RI "Select the next character\&. "
+.ti -1c
+.RI "void \fBprev\fP (const int &player)"
+.br
+.RI "Select the next character\&. "
+.ti -1c
+.RI "size_t \fBgetMapType\fP () const"
+.br
+.RI "Get the \fBMap\fP Type\&. "
+.ti -1c
+.RI "std::vector< \fBCharDictionary\fP > \fBgetPlayerData\fP () const"
+.br
+.ti -1c
+.RI "\fBPlayerSelector::Player\fP & \fBoperator[]\fP (const int &index)"
+.br
+.ti -1c
+.RI "const \fBPlayerSelector::Player\fP & \fBoperator[]\fP (const int &index) const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBRaylib::Vector3\fP > \fBPOS\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PlayerSelector::Selector::Selector ()"
+
+.PP
+Construct a new \fBSelector\fP object\&. 
+.SS "PlayerSelector::Selector::~Selector ()"
+
+.PP
+Destroy the \fBSelector\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void PlayerSelector::Selector::drawMaps ()"
+
+.PP
+Display the 3D map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIasciiMap\fP a new ascii map 
+.RE
+.PP
+
+.SS "void PlayerSelector::Selector::drawPlayers ()"
+
+.PP
+Display all the players\&. 
+.SS "void PlayerSelector::Selector::endMaps ()"
+
+.PP
+Unload map\&. 
+.SS "void PlayerSelector::Selector::firstLoad ()"
+
+.PP
+Load for the first time a character\&. 
+.SS "std::vector< Texture2D > PlayerSelector::Selector::getBlocTextures () const"
+
+.PP
+Get the Bloc Textures object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+a vector of textures 
+.RE
+.PP
+
+.SS "std::vector< std::string > PlayerSelector::Selector::getMap (void) const"
+
+.PP
+Get the Ascii \fBMap\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+the ascii map 
+.RE
+.PP
+
+.SS "size_t PlayerSelector::Selector::getMapType () const"
+
+.PP
+Get the \fBMap\fP Type\&. 
+.PP
+\fBReturns\fP
+.RS 4
+map type (Floor, Wall, or Box) 
+.RE
+.PP
+
+.SS "std::vector< std::pair< Model, float > > PlayerSelector::Selector::getModels () const"
+
+.PP
+Get characters Models\&. 
+.PP
+\fBReturns\fP
+.RS 4
+a vector of pairs of Model withe their scalable value 
+.RE
+.PP
+
+.SS "std::vector< \fBCharDictionary\fP > PlayerSelector::Selector::getPlayerData () const"
+//TODO: DOC 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "void PlayerSelector::Selector::initMaps (std::vector< std::string > asciiMap)"
+
+.PP
+Init the 3D maps from the Ascii one\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIasciiMap\fP the ascii map 
+.RE
+.PP
+
+.SS "bool PlayerSelector::Selector::isModsAvailable ()"
+
+.PP
+Check if mods are available\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if mods are available 
+.PP
+false otherwise 
+.RE
+.PP
+
+.SS "void PlayerSelector::Selector::load ()"
+
+.PP
+Add a character\&. 
+.SS "void PlayerSelector::Selector::next (const int & player)"
+
+.PP
+Select the next character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayer\fP id of player who want to change the character 
+.RE
+.PP
+
+.SS "void PlayerSelector::Selector::nextMap ()"
+
+.PP
+Select the next map textures\&. 
+.SS "\fBPlayerSelector::Player\fP & PlayerSelector::Selector::operator[] (const int & index)"
+//TODO: DOC 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "const \fBPlayerSelector::Player\fP & PlayerSelector::Selector::operator[] (const int & index) const"
+//TODO: DOC 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "void PlayerSelector::Selector::prev (const int & player)"
+
+.PP
+Select the next character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayer\fP id of player who want to change the character 
+.RE
+.PP
+
+.SS "void PlayerSelector::Selector::prevMap ()"
+
+.PP
+Select the previous map textures\&. 
+.SS "void PlayerSelector::Selector::toggleModsAvailable ()"
+
+.PP
+Toggle Mods Available\&. 
+.SS "void PlayerSelector::Selector::unload (const int & id)"
+
+.PP
+Remove a character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP character's id to remove 
+.RE
+.PP
+
+.SS "void PlayerSelector::Selector::unloadAll ()"
+
+.PP
+Remove all characters\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBRaylib::Vector3\fP> PlayerSelector::Selector::POS"
+//TODO: DOC 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,157 @@
+.TH "Raylib::Font" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Font
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Font\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFont\fP ()"
+.br
+.RI "Construct a new \fBFont\fP object\&. "
+.ti -1c
+.RI "\fB~Font\fP ()"
+.br
+.RI "Destroy the \fBFont\fP object\&. "
+.ti -1c
+.RI "\fBFont\fP (const \fBFont\fP &font)"
+.br
+.RI "Construct a new \fBFont\fP object\&. "
+.ti -1c
+.RI "\fBFont\fP (const std::string &fileName)"
+.br
+.RI "Construct a new \fBFont\fP object\&. "
+.ti -1c
+.RI "\fBFont\fP (const std::string &fileName, const int &fontSize, int *fontChars, const int &charCount)"
+.br
+.RI "Construct a new \fBFont\fP object\&. "
+.ti -1c
+.RI "\fBFont\fP (const std::string &fileType, const std::string &fileData, const int &dataSize, const int &fontSize, int *fontChars, const int &charsCount)"
+.br
+.RI "Construct a new \fBFont\fP object\&. "
+.ti -1c
+.RI "::\fBFont\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Getter of \fBFont\fP structure (private attribute) "
+.ti -1c
+.RI "void \fBunload\fP (void) const"
+.br
+.RI "Unload \fBFont\fP\&. "
+.ti -1c
+.RI "\fBFont\fP & \fBoperator=\fP (const \fBFont\fP &font)"
+.br
+.RI "Overload of '=' operator\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Font::Font ()"
+
+.PP
+Construct a new \fBFont\fP object\&. 
+.SS "Raylib::Font::~Font ()"
+
+.PP
+Destroy the \fBFont\fP object\&. 
+.SS "Raylib::Font::Font (const \fBFont\fP & font)"
+
+.PP
+Construct a new \fBFont\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfont\fP A \fBFont\fP 
+.RE
+.PP
+
+.SS "Raylib::Font::Font (const std::string & fileName)"
+
+.PP
+Construct a new \fBFont\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP Name of file 
+.RE
+.PP
+
+.SS "Raylib::Font::Font (const std::string & fileName, const int & fontSize, int * fontChars, const int & charCount)"
+
+.PP
+Construct a new \fBFont\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP Name of file 
+.br
+\fIfontSize\fP An int 
+.br
+\fIfontChars\fP An int * 
+.br
+\fIcharCount\fP An int 
+.RE
+.PP
+
+.SS "Raylib::Font::Font (const std::string & fileType, const std::string & fileData, const int & dataSize, const int & fontSize, int * fontChars, const int & charsCount)"
+
+.PP
+Construct a new \fBFont\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileType\fP A string 
+.br
+\fIfileData\fP A string 
+.br
+\fIdataSize\fP An int 
+.br
+\fIfontSize\fP An int 
+.br
+\fIfontChars\fP An int * 
+.br
+\fIcharsCount\fP An int 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFont\fP Raylib::Font::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Getter of \fBFont\fP structure (private attribute) 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBFont\fP C structure 
+.RE
+.PP
+
+.SS "\fBRaylib::Font\fP & Raylib::Font::operator= (const \fBFont\fP & font)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfont\fP A const reference to a \fBFont\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBFont\fP (\fBFont\fP &) 
+.RE
+.PP
+
+.SS "void Raylib::Font::unload (void) const\fC [inline]\fP"
+
+.PP
+Unload \fBFont\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

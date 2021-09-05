@@ -1,0 +1,135 @@
+.TH "Game::Point" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Point
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Astar\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP (const int &x=0, const int &y=0)"
+.br
+.RI "Construct a new \fBPoint\fP object\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBPoint\fP &point)"
+.br
+.RI "Equal operator\&. "
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBPoint\fP &point)"
+.br
+.RI "Unequal operator\&. "
+.ti -1c
+.RI "\fBPoint\fP \fBoperator+\fP (const \fBPoint\fP &point)"
+.br
+.RI "Add operator\&. "
+.ti -1c
+.RI "\fBPoint\fP & \fBoperator=\fP (const \fBPoint\fP &point)"
+.br
+.RI "Assign operator\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fB_x\fP"
+.br
+.ti -1c
+.RI "int \fB_y\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Point::Point (const int & x = \fC0\fP, const int & y = \fC0\fP)"
+
+.PP
+Construct a new \fBPoint\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP The abscissa coordinate 
+.br
+\fIy\fP The ordinate coordinate 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Game::Point::operator!= (const \fBPoint\fP & point)\fC [inline]\fP"
+
+.PP
+Unequal operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP \fBPoint\fP to compare 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the points are the different, false otherwise 
+.RE
+.PP
+
+.SS "\fBPoint\fP Game::Point::operator+ (const \fBPoint\fP & point)\fC [inline]\fP"
+
+.PP
+Add operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP \fBPoint\fP to add 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A new point with addition positions 
+.RE
+.PP
+
+.SS "\fBPoint\fP& Game::Point::operator= (const \fBPoint\fP & point)\fC [inline]\fP"
+
+.PP
+Assign operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP \fBPoint\fP to assign 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the assign point Object 
+.RE
+.PP
+
+.SS "bool Game::Point::operator== (const \fBPoint\fP & point)\fC [inline]\fP"
+
+.PP
+Equal operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP \fBPoint\fP to compare 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the points are the same, false otherwise 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int Game::Point::_x"
+
+.SS "int Game::Point::_y"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

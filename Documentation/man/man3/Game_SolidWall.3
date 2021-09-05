@@ -1,0 +1,75 @@
+.TH "Game::SolidWall" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::SolidWall
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MotionlessEntity\&.hpp>\fP
+.PP
+Inherits \fBGame::MotionlessEntity\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSolidWall\fP (\fBRaylib::Vector3\fP positions={0, 0, 0}, size_t mapType=0, float width=1\&.0f, float height=1\&.0f, float length=1\&.0f)"
+.br
+.RI "Construct a new Solid Wall\&. "
+.ti -1c
+.RI "std::string \fBgetType\fP (void) const override"
+.br
+.RI "Get the Type of the object\&. "
+.ti -1c
+.RI "void \fBdrawEntity\fP (void) override"
+.br
+.RI "Draw Entity\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::SolidWall::SolidWall (\fBRaylib::Vector3\fP positions = \fC{0, 0, 0}\fP, size_t mapType = \fC0\fP, float width = \fC1\&.0f\fP, float height = \fC1\&.0f\fP, float length = \fC1\&.0f\fP)"
+
+.PP
+Construct a new Solid Wall\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpositions\fP A vector3, {0, 0, 0} as default value 
+.br
+\fImapType\fP A size_t, 0 as default value 
+.br
+\fIwidth\fP A float, 1\&.0f as default value 
+.br
+\fIheight\fP A float, 1\&.0f as default value 
+.br
+\fIlength\fP A float, 1\&.0f as default value 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::SolidWall::drawEntity (void)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Draw Entity\&. 
+.PP
+Implements \fBGame::MotionlessEntity\fP\&.
+.SS "std::string Game::SolidWall::getType (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the Type of the object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A std::string 
+.RE
+.PP
+
+.PP
+Implements \fBGame::MotionlessEntity\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

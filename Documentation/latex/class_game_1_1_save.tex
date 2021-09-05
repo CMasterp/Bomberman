@@ -1,0 +1,149 @@
+\hypertarget{class_game_1_1_save}{}\doxysection{Game\+::Save Class Reference}
+\label{class_game_1_1_save}\index{Game::Save@{Game::Save}}
+
+
+{\ttfamily \#include $<$Save.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_save_aa9249ca93e1365afe7ec3cccba42392f}{Save}} (const std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \&settings, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$$>$ \&players, const std\+::vector$<$ std\+::string $>$ \&player\+Controls, const \mbox{\hyperlink{class_game_1_1_map}{Game\+::\+Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Construct the \mbox{\hyperlink{class_game_1_1_save}{Save}} object to create a backup file (Copy Constructor) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_save_a9874900002c817558ef790b65185566b}{Save}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Construct the \mbox{\hyperlink{class_game_1_1_save}{Save}} object to read a backup file and load its content into an \mbox{\hyperlink{class_i_game}{IGame}} object (Copy Constructor) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_save_a142352328d215a39f876449ea9eea4d3}{$\sim$\+Save}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_game_1_1_save}{Save}} object. \end{DoxyCompactList}\item 
+std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \mbox{\hyperlink{class_game_1_1_save_a6dbfe74b1eb675292d781c7c0ebbbe1c}{get\+Settings}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the Settings arrray from the backup file. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$ $>$ \mbox{\hyperlink{class_game_1_1_save_aff762e9ef33673a959e8ed5ba04787ce}{get\+Players}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the Players from the backup file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_map}{Game\+::\+Map}} \mbox{\hyperlink{class_game_1_1_save_a46958356558a05a24608cee8388689a8}{get\+Map}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_game_1_1_map}{Map}} from the backup file. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_game_1_1_save_a5954c71b96333541138dae0ad6349dc7}{get\+User\+Names}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the User Names. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_game_1_1_save_a94b0b6d15e13b3b1b2e8f5828c9dc065}{get\+Player\+Controls}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the player controls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_save_aa9249ca93e1365afe7ec3cccba42392f}\label{class_game_1_1_save_aa9249ca93e1365afe7ec3cccba42392f}} 
+\index{Game::Save@{Game::Save}!Save@{Save}}
+\index{Save@{Save}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+::\+Save\+::\+Save (\begin{DoxyParamCaption}\item[{const std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \&}]{settings,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$$>$ \&}]{players,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{player\+Controls,  }\item[{const \mbox{\hyperlink{class_game_1_1_map}{Game\+::\+Map}} \&}]{map }\end{DoxyParamCaption})}
+
+
+
+Construct the \mbox{\hyperlink{class_game_1_1_save}{Save}} object to create a backup file (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & Settings of the \mbox{\hyperlink{namespace_game}{Game}} \\
+\hline
+{\em players} & Players of the \mbox{\hyperlink{namespace_game}{Game}} \\
+\hline
+{\em player\+Controls} & Controls of the players (\char`\"{}\+PLAYSTATION\char`\"{}, \char`\"{}\+XBOX\char`\"{}, \char`\"{}\+MOUSE\char`\"{}, \char`\"{}\+KEYBOARD\char`\"{}) \\
+\hline
+{\em map} & \mbox{\hyperlink{class_game_1_1_map}{Map}} of the \mbox{\hyperlink{namespace_game}{Game}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_save_a9874900002c817558ef790b65185566b}\label{class_game_1_1_save_a9874900002c817558ef790b65185566b}} 
+\index{Game::Save@{Game::Save}!Save@{Save}}
+\index{Save@{Save}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+::\+Save\+::\+Save (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct the \mbox{\hyperlink{class_game_1_1_save}{Save}} object to read a backup file and load its content into an \mbox{\hyperlink{class_i_game}{IGame}} object (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A const reference to string (the backup file) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_save_a142352328d215a39f876449ea9eea4d3}\label{class_game_1_1_save_a142352328d215a39f876449ea9eea4d3}} 
+\index{Game::Save@{Game::Save}!````~Save@{$\sim$Save}}
+\index{````~Save@{$\sim$Save}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{$\sim$Save()}{~Save()}}
+{\footnotesize\ttfamily Game\+::\+Save\+::$\sim$\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_game_1_1_save}{Save}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_save_a46958356558a05a24608cee8388689a8}\label{class_game_1_1_save_a46958356558a05a24608cee8388689a8}} 
+\index{Game::Save@{Game::Save}!getMap@{getMap}}
+\index{getMap@{getMap}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_map}{Game\+::\+Map}} Game\+::\+Save\+::get\+Map (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \mbox{\hyperlink{class_game_1_1_map}{Map}} from the backup file. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_game_1_1_map}{Game\+::\+Map}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_save_a94b0b6d15e13b3b1b2e8f5828c9dc065}\label{class_game_1_1_save_a94b0b6d15e13b3b1b2e8f5828c9dc065}} 
+\index{Game::Save@{Game::Save}!getPlayerControls@{getPlayerControls}}
+\index{getPlayerControls@{getPlayerControls}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{getPlayerControls()}{getPlayerControls()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Game\+::\+Save\+::get\+Player\+Controls (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the player controls. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the player controls as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_save_aff762e9ef33673a959e8ed5ba04787ce}\label{class_game_1_1_save_aff762e9ef33673a959e8ed5ba04787ce}} 
+\index{Game::Save@{Game::Save}!getPlayers@{getPlayers}}
+\index{getPlayers@{getPlayers}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{getPlayers()}{getPlayers()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} $>$ $>$ Game\+::\+Save\+::get\+Players (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Players from the backup file. 
+
+\begin{DoxyReturn}{Returns}
+A vector of players 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_save_a6dbfe74b1eb675292d781c7c0ebbbe1c}\label{class_game_1_1_save_a6dbfe74b1eb675292d781c7c0ebbbe1c}} 
+\index{Game::Save@{Game::Save}!getSettings@{getSettings}}
+\index{getSettings@{getSettings}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{getSettings()}{getSettings()}}
+{\footnotesize\ttfamily std\+::array$<$ std\+::size\+\_\+t, 9 $>$ Game\+::\+Save\+::get\+Settings (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Settings arrray from the backup file. 
+
+\begin{DoxyReturn}{Returns}
+An std\+::array$<$std\+::size\+\_\+t, 9$>$ which represents the \mbox{\hyperlink{namespace_game}{Game}} settings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_save_a5954c71b96333541138dae0ad6349dc7}\label{class_game_1_1_save_a5954c71b96333541138dae0ad6349dc7}} 
+\index{Game::Save@{Game::Save}!getUserNames@{getUserNames}}
+\index{getUserNames@{getUserNames}!Game::Save@{Game::Save}}
+\doxysubsubsection{\texorpdfstring{getUserNames()}{getUserNames()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Game\+::\+Save\+::get\+User\+Names (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the User Names. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing all the user names 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Save/\mbox{\hyperlink{_save_8hpp}{Save.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Save/\mbox{\hyperlink{_save_8cpp}{Save.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Save/\mbox{\hyperlink{_save_8inl}{Save.\+inl}}\end{DoxyCompactItemize}

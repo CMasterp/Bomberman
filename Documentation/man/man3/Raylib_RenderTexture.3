@@ -1,0 +1,133 @@
+.TH "Raylib::RenderTexture" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::RenderTexture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RenderTexture\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRenderTexture\fP ()"
+.br
+.RI "Construct a new \fBRenderTexture\fP object\&. "
+.ti -1c
+.RI "\fB~RenderTexture\fP ()"
+.br
+.RI "Construct a new \fBRenderTexture\fP object\&. "
+.ti -1c
+.RI "\fBRenderTexture\fP & \fBoperator=\fP (const \fBRenderTexture\fP &rendertexture)"
+.br
+.RI "Overload of '=' operator\&. "
+.ti -1c
+.RI "::\fBRenderTexture\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Getter of \fBRenderTexture\fP structure (private attribute) "
+.ti -1c
+.RI "void \fBBeginTextureMode\fP (\fBRenderTexture\fP target) const"
+.br
+.RI "Initializes render texture for drawing\&. "
+.ti -1c
+.RI "void \fBEndTextureMode\fP (void) const"
+.br
+.RI "Ends drawing to render texture\&. "
+.ti -1c
+.RI "\fBRenderTexture\fP \fBloadRenderTexture\fP (int const &width, int const &height)"
+.br
+.RI "Load texture for rendering (framebuffer) "
+.ti -1c
+.RI "void \fBunloadRenderTexture\fP (\fBRenderTexture\fP const &target) const"
+.br
+.RI "Unload render texture from GPU memory (VRAM) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::RenderTexture::RenderTexture ()"
+
+.PP
+Construct a new \fBRenderTexture\fP object\&. 
+.SS "Raylib::RenderTexture::~RenderTexture ()"
+
+.PP
+Construct a new \fBRenderTexture\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::RenderTexture::BeginTextureMode (\fBRenderTexture\fP target) const\fC [inline]\fP"
+
+.PP
+Initializes render texture for drawing\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItarget\fP A const reference to Class \fBRenderTexture\fP 
+.RE
+.PP
+
+.SS "void Raylib::RenderTexture::EndTextureMode (void) const\fC [inline]\fP"
+
+.PP
+Ends drawing to render texture\&. 
+.SS "\fBRenderTexture\fP Raylib::RenderTexture::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Getter of \fBRenderTexture\fP structure (private attribute) 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBRenderTexture\fP C structure 
+.RE
+.PP
+
+.SS "\fBRaylib::RenderTexture\fP Raylib::RenderTexture::loadRenderTexture (int const & width, int const & height)\fC [inline]\fP"
+
+.PP
+Load texture for rendering (framebuffer) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBRenderTexture\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::RenderTexture\fP & Raylib::RenderTexture::operator= (const \fBRenderTexture\fP & rendertexture)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImusic\fP A const reference to a \fBRenderTexture\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBRenderTexture\fP (\fBTexture\fP &) 
+.RE
+.PP
+
+.SS "void Raylib::RenderTexture::unloadRenderTexture (\fBRenderTexture\fP const & target) const\fC [inline]\fP"
+
+.PP
+Unload render texture from GPU memory (VRAM) 
+.PP
+\fBParameters\fP
+.RS 4
+\fItarget\fP A const reference to a \fBRenderTexture\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,13 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Game/Score" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d0737b511e4d76754616ba34f4af7dff {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Game" fontname="Helvetica", fontsize="10", URL="dir_d0737b511e4d76754616ba34f4af7dff.html"]
+  dir_66d32f5e759dcff9da7287695feea5d4 [shape=box label="includes" URL="dir_66d32f5e759dcff9da7287695feea5d4.html"];
+  dir_e53576c873d71856046d12927cb9f65a [shape=box label="Player" URL="dir_e53576c873d71856046d12927cb9f65a.html"];
+  dir_b3aeaea2fa62cd9725ceb19f813513a7 [shape=box, label="Score", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b3aeaea2fa62cd9725ceb19f813513a7.html"];
+  }
+  dir_b3aeaea2fa62cd9725ceb19f813513a7->dir_66d32f5e759dcff9da7287695feea5d4 [headlabel="1", labeldistance=1.5 headhref="dir_000025_000012.html"];
+  dir_b3aeaea2fa62cd9725ceb19f813513a7->dir_e53576c873d71856046d12927cb9f65a [headlabel="1", labeldistance=1.5 headhref="dir_000025_000022.html"];
+}

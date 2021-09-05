@@ -1,0 +1,510 @@
+.TH "Raylib::Texture" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Texture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Texture\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTexture\fP (const std::string &fileName)"
+.br
+.RI "Construct a new \fBTexture\fP object\&. "
+.ti -1c
+.RI "\fBTexture\fP (const \fBTexture\fP &texture)=default"
+.br
+.RI "Construct a new \fBTexture\fP object\&. "
+.ti -1c
+.RI "\fBTexture\fP (const \fBImage\fP &texture)"
+.br
+.RI "Construct a new \fBTexture\fP object\&. "
+.ti -1c
+.RI "\fB~Texture\fP ()"
+.br
+.RI "Destroy the \fBTexture\fP object\&. "
+.ti -1c
+.RI "\fBTexture\fP & \fBoperator=\fP (const \fBTexture\fP &texture)"
+.br
+.RI "Overload of '=' operator\&. "
+.ti -1c
+.RI "::\fBTexture\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Getter of \fBTexture\fP structure (private attribute) "
+.ti -1c
+.RI "void \fBsetShapesTexture\fP (const \fBTexture\fP &texture, const \fBRectangle\fP &source)"
+.br
+.RI "Set texture and rectangle to be used on shapes drawing\&. "
+.ti -1c
+.RI "\fBTexture\fP & \fBloadTexture\fP (const std::string fileName)"
+.br
+.RI "Load texture from file into GPU memory (VRAM) "
+.ti -1c
+.RI "\fBTexture\fP & \fBloadTextureFromImage\fP (\fBImage\fP const &image)"
+.br
+.RI "Load texture from image data\&. "
+.ti -1c
+.RI "void \fBbeginTextureMode\fP (\fBRenderTexture\fP const &target) const"
+.br
+.RI "Initializes render texture for drawing\&. "
+.ti -1c
+.RI "void \fBendTextureMode\fP (void) const"
+.br
+.RI "Ends drawing to render texture\&. "
+.ti -1c
+.RI "\fBTexture\fP \fBloadTextureCubemap\fP (\fBImage\fP const &image, int const &layout)"
+.br
+.RI "Load cubemap from image, multiple image cubemap layouts supported\&. "
+.ti -1c
+.RI "void \fBunloadTexture\fP (\fBTexture\fP const &texture) const"
+.br
+.RI "Unload texture from GPU memory (VRAM) "
+.ti -1c
+.RI "void \fBupdateTexture\fP (\fBTexture\fP const &texture, const void *pixels) const"
+.br
+.RI "Update GPU texture with new data\&. "
+.ti -1c
+.RI "void \fBupdateTextureRec\fP (\fBTexture\fP const &texture, \fBRectangle\fP const &rec, const void *pixels) const"
+.br
+.RI "Update GPU texture rectangle with new data\&. "
+.ti -1c
+.RI "void \fBgenTextureMipmaps\fP (\fBTexture\fP const *texture) const"
+.br
+.RI "Generate GPU mipmaps for a texture\&. "
+.ti -1c
+.RI "void \fBsetTextureFilter\fP (\fBTexture\fP const &texture, int const &filter) const"
+.br
+.RI "Set texture scaling filter mode\&. "
+.ti -1c
+.RI "void \fBsetTextureWrap\fP (\fBTexture\fP const &texture, int const &wrap) const"
+.br
+.RI "Set texture wrapping mode\&. "
+.ti -1c
+.RI "void \fBdrawTexture\fP (const int &posX, const int &posY, const \fBColor\fP &tint) const"
+.br
+.RI "Draw a \fBTexture\fP with position XY\&. "
+.ti -1c
+.RI "void \fBdrawTextureV\fP (\fBTexture\fP const &texture, \fBVector2\fP const &position, \fBColor\fP const &tint=\fBColor::White\fP()) const"
+.br
+.RI "Draw a \fBTexture\fP with position defined as \fBVector2\fP\&. "
+.ti -1c
+.RI "void \fBdrawTexture\fP (const float &posX, const float &posY, float const &rotation, float const &scale, \fBColor\fP const &tint=\fBColor::White\fP()) const"
+.br
+.RI "Draw a \fBTexture\fP with extended parameters\&. "
+.ti -1c
+.RI "void \fBdrawTextureRec\fP (\fBTexture\fP const &texture, \fBRectangle\fP const &source, \fBVector2\fP const &position, \fBColor\fP const &tint) const"
+.br
+.RI "Draw a part of a texture defined by a rectangle\&. "
+.ti -1c
+.RI "void \fBdrawTextureQuad\fP (\fBTexture\fP const &texture, \fBVector2\fP const &tiling, \fBVector2\fP const &offset, \fBRectangle\fP const &quad, \fBColor\fP const &tint) const"
+.br
+.RI "Draw texture quad with tiling and offset parameters\&. "
+.ti -1c
+.RI "void \fBdrawTextureTiled\fP (\fBTexture\fP const &texture, \fBRectangle\fP const &source, \fBRectangle\fP const &dest, \fBVector2\fP const &origin, float const &rotation, float const &scale, \fBColor\fP const &tint) const"
+.br
+.RI "Draw part of a texture (defined by a rectangle) with rotation and scale tiled into dest\&. "
+.ti -1c
+.RI "void \fBdrawTexturePro\fP (\fBTexture\fP const &texture, \fBRectangle\fP const &source, \fBRectangle\fP const &dest, \fBVector2\fP const &origin, float const &rotation, \fBColor\fP const &tint) const"
+.br
+.RI "Draw a part of a texture defined by a rectangle with 'pro' parameters\&. "
+.ti -1c
+.RI "void \fBdrawTextureNPatch\fP (\fBTexture\fP const &texture, NPatchInfo const &nPatchInfo, \fBRectangle\fP const &dest, \fBVector2\fP const &origin, float const &rotation, \fBColor\fP const &tint) const"
+.br
+.RI "Draws a texture (or part of it) that stretches or shrinks nicely\&. "
+.ti -1c
+.RI "void \fBdrawTexturePoly\fP (const \fBTexture\fP &texture, const \fBVector2\fP &center, \fBVector2\fP &points, \fBVector2\fP &texcoords, const int &pointsCount, const \fBColor\fP &tint) const"
+.br
+.RI "Draw a textured polygon\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Texture::Texture (const std::string & fileName)"
+
+.PP
+Construct a new \fBTexture\fP object\&. 
+.SS "Raylib::Texture::Texture (const \fBTexture\fP & texture)\fC [default]\fP"
+
+.PP
+Construct a new \fBTexture\fP object\&. 
+.SS "Raylib::Texture::Texture (const \fBImage\fP & texture)"
+
+.PP
+Construct a new \fBTexture\fP object\&. 
+.SS "Raylib::Texture::~Texture ()"
+
+.PP
+Destroy the \fBTexture\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Texture::beginTextureMode (\fBRenderTexture\fP const & target) const\fC [inline]\fP"
+
+.PP
+Initializes render texture for drawing\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItarget\fP A const reference to the \fBRenderTexture\fP Object 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTexture (const float & posX, const float & posY, float const & rotation, float const & scale, \fBColor\fP const & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draw a \fBTexture\fP with extended parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fIposition\fP A const reference to a \fBVector2\fP 
+.br
+\fIrotation\fP A const reference to a float 
+.br
+\fIscale\fP A const reference to a float 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTexture (const int & posX, const int & posY, const \fBColor\fP & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draw a \fBTexture\fP with position XY\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposX\fP An int 
+.br
+\fIposY\fP An int 
+.br
+\fItint\fP A \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the texture - \fBTexture\fP& 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTextureNPatch (\fBTexture\fP const & texture, NPatchInfo const & nPatchInfo, \fBRectangle\fP const & dest, \fBVector2\fP const & origin, float const & rotation, \fBColor\fP const & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draws a texture (or part of it) that stretches or shrinks nicely\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fItiling\fP A const reference to a \fBVector2\fP 
+.br
+\fIoffset\fP A const reference to a \fBVector2\fP 
+.br
+\fIquad\fP A const reference to a \fBRectangle\fP 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the texture - \fBTexture\fP& 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTexturePoly (const \fBTexture\fP & texture, const \fBVector2\fP & center, \fBVector2\fP & points, \fBVector2\fP & texcoords, const int & pointsCount, const \fBColor\fP & tint) const\fC [inline]\fP"
+
+.PP
+Draw a textured polygon\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fItiling\fP A const reference to a \fBVector2\fP 
+.br
+\fIoffset\fP A const reference to a \fBVector2\fP 
+.br
+\fIquad\fP A const reference to a \fBRectangle\fP 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the texture - \fBTexture\fP& 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTexturePro (\fBTexture\fP const & texture, \fBRectangle\fP const & source, \fBRectangle\fP const & dest, \fBVector2\fP const & origin, float const & rotation, \fBColor\fP const & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draw a part of a texture defined by a rectangle with 'pro' parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fItiling\fP A const reference to a \fBVector2\fP 
+.br
+\fIoffset\fP A const reference to a \fBVector2\fP 
+.br
+\fIquad\fP A const reference to a \fBRectangle\fP 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the texture - \fBTexture\fP& 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTextureQuad (\fBTexture\fP const & texture, \fBVector2\fP const & tiling, \fBVector2\fP const & offset, \fBRectangle\fP const & quad, \fBColor\fP const & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draw texture quad with tiling and offset parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fItiling\fP A const reference to a \fBVector2\fP 
+.br
+\fIoffset\fP A const reference to a \fBVector2\fP 
+.br
+\fIquad\fP A const reference to a \fBRectangle\fP 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTextureRec (\fBTexture\fP const & texture, \fBRectangle\fP const & source, \fBVector2\fP const & position, \fBColor\fP const & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draw a part of a texture defined by a rectangle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fIposition\fP A const reference to a \fBVector2\fP 
+.br
+\fIrotation\fP A const reference to a float 
+.br
+\fIscale\fP A const reference to a float 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTextureTiled (\fBTexture\fP const & texture, \fBRectangle\fP const & source, \fBRectangle\fP const & dest, \fBVector2\fP const & origin, float const & rotation, float const & scale, \fBColor\fP const & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draw part of a texture (defined by a rectangle) with rotation and scale tiled into dest\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fIsource\fP A const reference to a \fBRectangle\fP 
+.br
+\fIdest\fP A const reference to a \fBRectangle\fP 
+.br
+\fIorigin\fP A const reference to a \fBVector2\fP 
+.br
+\fIrotation\fP A const reference to a float 
+.br
+\fIscale\fP A const reference to a float 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Texture::drawTextureV (\fBTexture\fP const & texture, \fBVector2\fP const & position, \fBColor\fP const & tint = \fC\fBColor::White\fP()\fP) const\fC [inline]\fP"
+
+.PP
+Draw a \fBTexture\fP with position defined as \fBVector2\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fIposition\fP A const reference to a \fBVector2\fP 
+.br
+\fItint\fP A const reference to a \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Texture::endTextureMode (void) const\fC [inline]\fP"
+
+.PP
+Ends drawing to render texture\&. 
+.SS "void Raylib::Texture::genTextureMipmaps (\fBTexture\fP const * texture) const\fC [inline]\fP"
+
+.PP
+Generate GPU mipmaps for a texture\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.RE
+.PP
+
+.SS "\fBTexture\fP Raylib::Texture::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Getter of \fBTexture\fP structure (private attribute) 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBTexture\fP C structure 
+.RE
+.PP
+
+.SS "\fBRaylib::Texture\fP & Raylib::Texture::loadTexture (const std::string fileName)\fC [inline]\fP"
+
+.PP
+Load texture from file into GPU memory (VRAM) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A string that represents path to file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the texture - \fBTexture\fP& 
+.RE
+.PP
+
+.SS "\fBRaylib::Texture\fP Raylib::Texture::loadTextureCubemap (\fBImage\fP const & image, int const & layout)\fC [inline]\fP"
+
+.PP
+Load cubemap from image, multiple image cubemap layouts supported\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP A const reference to the \fBImage\fP Object 
+.br
+\fIlayout\fP A const reference to an int 
+.br
+\fItexture\fP A const reference to the \fBTexture\fP Object 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBTexture\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Texture\fP & Raylib::Texture::loadTextureFromImage (\fBImage\fP const & image)\fC [inline]\fP"
+
+.PP
+Load texture from image data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP A const reference to the \fBImage\fP Object 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to the texture - \fBTexture\fP& 
+.RE
+.PP
+
+.SS "\fBRaylib::Texture\fP & Raylib::Texture::operator= (const \fBTexture\fP & texture)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const reference to a \fBTexture\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBTexture\fP (\fBTexture\fP &) 
+.RE
+.PP
+
+.SS "void Raylib::Texture::setShapesTexture (const \fBTexture\fP & texture, const \fBRectangle\fP & source)\fC [inline]\fP"
+
+.PP
+Set texture and rectangle to be used on shapes drawing\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A \fBTexture\fP Object 
+.br
+\fIsource\fP A \fBRectangle\fP Object 
+.RE
+.PP
+
+.SS "void Raylib::Texture::setTextureFilter (\fBTexture\fP const & texture, int const & filter) const\fC [inline]\fP"
+
+.PP
+Set texture scaling filter mode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "void Raylib::Texture::setTextureWrap (\fBTexture\fP const & texture, int const & wrap) const\fC [inline]\fP"
+
+.PP
+Set texture wrapping mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const pointer to a \fBTexture\fP 
+.br
+\fIwrap\fP A const reference to an int 
+.RE
+.PP
+
+.SS "void Raylib::Texture::unloadTexture (\fBTexture\fP const & texture) const\fC [inline]\fP"
+
+.PP
+Unload texture from GPU memory (VRAM) 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const reference to a \fBTexture\fP 
+.RE
+.PP
+
+.SS "void Raylib::Texture::updateTexture (\fBTexture\fP const & texture, const void * pixels) const\fC [inline]\fP"
+
+.PP
+Update GPU texture with new data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const reference to a \fBTexture\fP 
+.br
+\fIpixels\fP A const to a void * 
+.RE
+.PP
+
+.SS "void Raylib::Texture::updateTextureRec (\fBTexture\fP const & texture, \fBRectangle\fP const & rec, const void * pixels) const\fC [inline]\fP"
+
+.PP
+Update GPU texture rectangle with new data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const reference to a \fBTexture\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

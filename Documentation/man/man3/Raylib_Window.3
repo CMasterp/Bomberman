@@ -1,0 +1,135 @@
+.TH "Raylib::Window" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Window
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Window\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWindow\fP (const int &width=1920, const int &height=1080, const std::string &title='Bomberman', const bool &lateInit=false)"
+.br
+.RI "Construct a new \fBWindow\fP object\&. "
+.ti -1c
+.RI "\fB~Window\fP ()"
+.br
+.RI "Destroy the \fBWindow\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBinitWindow\fP (const int &width, const int &height, const std::string &title)"
+.br
+.RI "Initialize window and OpenGL context\&. "
+.ti -1c
+.RI "static bool \fBwindowShouldClose\fP (void)"
+.br
+.RI "Check if KEY_ESCAPE pressed or Close icon pressed\&. "
+.ti -1c
+.RI "static void \fBcloseWindow\fP (void)"
+.br
+.RI "Close window\&. "
+.ti -1c
+.RI "static void \fBsetWindowIcon\fP (\fBRaylib::Image\fP image)"
+.br
+.RI "Set the \fBWindow\fP Icon\&. "
+.ti -1c
+.RI "static bool \fBisWindowFullscreen\fP (void)"
+.br
+.RI "Check if window is currently fullscreen\&. "
+.ti -1c
+.RI "static void \fBtoggleFullscreen\fP ()"
+.br
+.RI "Toggle window state: fullscreen/windowed (only PLATFORM_DESKTOP) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Window::Window (const int & width = \fC1920\fP, const int & height = \fC1080\fP, const std::string & title = \fC'Bomberman'\fP, const bool & lateInit = \fCfalse\fP)"
+
+.PP
+Construct a new \fBWindow\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP Width of the \fBWindow\fP 
+.br
+\fIheight\fP Height of the \fBWindow\fP 
+.br
+\fItitle\fP Title of the \fBWindow\fP 
+.br
+\fIlateInit\fP A boolean, True if window is already init, False otherwise 
+.RE
+.PP
+
+.SS "Raylib::Window::~Window ()"
+
+.PP
+Destroy the \fBWindow\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Window::closeWindow (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Close window\&. 
+.SS "void Raylib::Window::initWindow (const int & width, const int & height, const std::string & title)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Initialize window and OpenGL context\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP Width of the \fBWindow\fP 
+.br
+\fIheight\fP Height of the \fBWindow\fP 
+.br
+\fItitle\fP Title of the \fBWindow\fP 
+.RE
+.PP
+
+.SS "bool Raylib::Window::isWindowFullscreen (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if window is currently fullscreen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "void Raylib::Window::setWindowIcon (\fBRaylib::Image\fP image)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set the \fBWindow\fP Icon\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP \fBImage\fP 
+.RE
+.PP
+
+.SS "void Raylib::Window::toggleFullscreen ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Toggle window state: fullscreen/windowed (only PLATFORM_DESKTOP) 
+.SS "bool Raylib::Window::windowShouldClose (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if KEY_ESCAPE pressed or Close icon pressed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A boolean (True OR False) 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

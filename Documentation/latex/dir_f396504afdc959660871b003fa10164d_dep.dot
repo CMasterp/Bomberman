@@ -1,0 +1,10 @@
+digraph "Documents" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_f396504afdc959660871b003fa10164d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f396504afdc959660871b003fa10164d.html"];
+    dir_f396504afdc959660871b003fa10164d [shape=plaintext label="Documents"];
+  dir_7e17ac9cf8fba2cb04bc248c85b0ceb7 [shape=box label="GitHub" fillcolor="white" style="filled" color="red" URL="dir_7e17ac9cf8fba2cb04bc248c85b0ceb7.html"];
+  }
+}

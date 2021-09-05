@@ -1,0 +1,76 @@
+.TH "Game::Astar" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Astar
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Astar\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAstar\fP (const std::vector< std::string > &map, const \fBPoint\fP &start, const \fBPoint\fP &target)"
+.br
+.RI "Construct a new \fBAstar\fP object\&. "
+.ti -1c
+.RI "bool \fBtargetIsFound\fP (void)"
+.br
+.RI "Find a path to the target\&. "
+.ti -1c
+.RI "int \fBfillPath\fP (std::list< \fBPoint\fP > &path)"
+.br
+.RI "Fill the path finding\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Astar::Astar (const std::vector< std::string > & map, const \fBPoint\fP & start, const \fBPoint\fP & target)"
+
+.PP
+Construct a new \fBAstar\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImap\fP The map 
+.br
+\fIstart\fP The start point 
+.br
+\fItarget\fP The end map 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Game::Astar::fillPath (std::list< \fBPoint\fP > & path)"
+
+.PP
+Fill the path finding\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP A reference to the path (list of Points) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int - The final heuristic cost 
+.RE
+.PP
+
+.SS "bool Game::Astar::targetIsFound (void)"
+
+.PP
+Find a path to the target\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the destination has been found, false otherwise 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,77 @@
+.TH "Game::Score" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Score
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Score\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBScore\fP (const std::array< std::size_t, 9 > &settings, const \fBGame::Player\fP *player)"
+.br
+.RI "Construct the \fBScore\fP object (Copy Constructor) "
+.ti -1c
+.RI "\fB~Score\fP ()"
+.br
+.RI "Destroy the \fBScore\fP object\&. "
+.ti -1c
+.RI "size_t \fBgetScore\fP () const"
+.br
+.RI "Get the \fBScore\fP of the \fBPlayer\fP\&. "
+.ti -1c
+.RI "void \fBsetScore\fP (size_t const &score)"
+.br
+.RI "Set the \fBScore\fP of the \fBPlayer\fP\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Score::Score (const std::array< std::size_t, 9 > & settings, const \fBGame::Player\fP * player)"
+
+.PP
+Construct the \fBScore\fP object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP A const reference to an array of 9 size_t 
+.br
+\fIplayer\fP A const reference to Class \fBPlayer\fP 
+.RE
+.PP
+
+.SS "Game::Score::~Score ()"
+
+.PP
+Destroy the \fBScore\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "size_t Game::Score::getScore (void) const\fC [inline]\fP"
+
+.PP
+Get the \fBScore\fP of the \fBPlayer\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "void Game::Score::setScore (size_t const & score)\fC [inline]\fP"
+
+.PP
+Set the \fBScore\fP of the \fBPlayer\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscore\fP A const reference to a size_t 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,442 @@
+\hypertarget{class_i_game}{}\doxysection{IGame Class Reference}
+\label{class_i_game}\index{IGame@{IGame}}
+
+
+{\ttfamily \#include $<$IGame.\+hpp$>$}
+
+Inheritance diagram for IGame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_game_ac4df169b47b4a4a61d8d2ab1099eac6f}{$\sim$\+IGame}} (void)=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_i_game}{IGame}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_ab28060e6da41d8e549304a7b613b21f7}{restart}} (void)=0
+\begin{DoxyCompactList}\small\item\em Call this function to restart the entire game. The game must reset himself. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_a082935cf063b3c543459343d3c2069a5}{save\+Game}} (std\+::array$<$ std\+::size\+\_\+t, 9 $>$ settings, std\+::vector$<$ std\+::string $>$ player\+Controls)=0
+\begin{DoxyCompactList}\small\item\em Call this function to save the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_a34c5db84317c11ad514fcf57f9a67a32}{load\+Game}} (const std\+::string \&backup\+File\+Path)=0
+\begin{DoxyCompactList}\small\item\em Call this function to load a game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_af1e186e856a529ac2b5484a00acf5450}{set\+User\+Names}} (const std\+::vector$<$ std\+::string $>$ \&user\+Names)=0
+\begin{DoxyCompactList}\small\item\em Set the User Names. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_a697091d869f621d00b7d615a806ff5fc}{set\+Settings}} (const std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \&settings)=0
+\begin{DoxyCompactList}\small\item\em Set the game settings. \end{DoxyCompactList}\item 
+virtual std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \mbox{\hyperlink{class_i_game_a9dae299d7e44243549096bdae11197d8}{get\+Settings}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the game settings. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \& \mbox{\hyperlink{class_i_game_a44c87c259e5e5a733bd615a5dd395a52}{get\+Scores}} (void)=0
+\begin{DoxyCompactList}\small\item\em Getter for the score. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{class_i_game_ac8bb3be057f6861636f6a189c7336608}{get\+Entities}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the Entities. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ $>$ \& \mbox{\hyperlink{class_i_game_acee1ba61297246b82ad408a9e18cdb39}{get\+Players\+Stats}} (void)=0
+\begin{DoxyCompactList}\small\item\em Get the Players Stats. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_a1eab4e6befb35b00d92500bc92327388}{update\+Game}} (void)=0
+\begin{DoxyCompactList}\small\item\em update\+Game function should be called in a loop. It\textquotesingle{}s used to advance the game and update all logic. The game must manage time on it\textquotesingle{}s own. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_i_game_a541d8a81360939df8626547854e6fcaa}{get\+User\+Names}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the User Names. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_game_a9ee8daeeca3248f781e1a0ddcc264ef6}{is\+Game\+Over}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if the game is over. \end{DoxyCompactList}\item 
+virtual const std\+::string \& \mbox{\hyperlink{class_i_game_a56640a0f7b914d0d08bab29963b320ec}{get\+Game\+Name}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the name of the game. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_i_game_a6bec9a136275ae3abd6d492084421b6d}{get\+Map}} (const size\+\_\+t \&size)=0
+\begin{DoxyCompactList}\small\item\em Get the Map. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_i_game_a6a2ecc221fb5f92f732f328dae947e17}{get\+Map}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Map. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_a7fc5862a33d3e0220c46d2c7775962e1}{set\+Map\+Type}} (const std\+::size\+\_\+t \&map\+Type)=0
+\begin{DoxyCompactList}\small\item\em Set the Map Type. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_aa0d53c99cfc9d2d34e8a62d88f5846e8}{do\+Player\+Action}} (const size\+\_\+t player\+ID, const std\+::string action)=0
+\begin{DoxyCompactList}\small\item\em Do A player Action. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_a2cd16a7333134e2e7d4f6a3b71b2c239}{set\+Players}} (const std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ \&players\+Data)=0
+\begin{DoxyCompactList}\small\item\em Set the current Players data. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_i_game_a94d5b4a6f5f8a1b4ebd06b0f9b5fb794}{get\+Player\+Controls}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the player controls. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_game_a5cc0658c9fb840b263378512d9301dbe}{run\+AI}} (void)=0
+\begin{DoxyCompactList}\small\item\em Run the AIs. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_game_ae22940c148455971b1d725047c3d31f3}{is\+Camera\+Shaking}} ()=0
+\begin{DoxyCompactList}\small\item\em Check if the camera should shake. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_game_ac4df169b47b4a4a61d8d2ab1099eac6f}\label{class_i_game_ac4df169b47b4a4a61d8d2ab1099eac6f}} 
+\index{IGame@{IGame}!````~IGame@{$\sim$IGame}}
+\index{````~IGame@{$\sim$IGame}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGame()}{~IGame()}}
+{\footnotesize\ttfamily virtual IGame\+::$\sim$\+IGame (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_i_game}{IGame}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_game_aa0d53c99cfc9d2d34e8a62d88f5846e8}\label{class_i_game_aa0d53c99cfc9d2d34e8a62d88f5846e8}} 
+\index{IGame@{IGame}!doPlayerAction@{doPlayerAction}}
+\index{doPlayerAction@{doPlayerAction}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{doPlayerAction()}{doPlayerAction()}}
+{\footnotesize\ttfamily virtual void IGame\+::do\+Player\+Action (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{player\+ID,  }\item[{const std\+::string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Do A player Action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+ID} & ID of player \\
+\hline
+{\em action} & Action in a string \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a4b977d26ab1b4911867ff15b5edd71b1}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_ac8bb3be057f6861636f6a189c7336608}\label{class_i_game_ac8bb3be057f6861636f6a189c7336608}} 
+\index{IGame@{IGame}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_i_entity}{IEntity}}$>$ $>$\& IGame\+::get\+Entities (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Entities. 
+
+\begin{DoxyReturn}{Returns}
+Return all the game\textquotesingle{}s entities to display in a const std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Thing$>$$>$\& 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a433c9b4f03ff76c105bffeeff2c10394}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a56640a0f7b914d0d08bab29963b320ec}\label{class_i_game_a56640a0f7b914d0d08bab29963b320ec}} 
+\index{IGame@{IGame}!getGameName@{getGameName}}
+\index{getGameName@{getGameName}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getGameName()}{getGameName()}}
+{\footnotesize\ttfamily virtual const std\+::string\& IGame\+::get\+Game\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the name of the game. 
+
+\begin{DoxyReturn}{Returns}
+Name of the game 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_adb1f89c0c678defdb8a16badb85b433b}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a6a2ecc221fb5f92f732f328dae947e17}\label{class_i_game_a6a2ecc221fb5f92f732f328dae947e17}} 
+\index{IGame@{IGame}!getMap@{getMap}}
+\index{getMap@{getMap}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::string$>$\& IGame\+::get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Map. 
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_af6d1c023601bbd13a550a6e8b2b57ed7}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a6bec9a136275ae3abd6d492084421b6d}\label{class_i_game_a6bec9a136275ae3abd6d492084421b6d}} 
+\index{IGame@{IGame}!getMap@{getMap}}
+\index{getMap@{getMap}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::string$>$\& IGame\+::get\+Map (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Map. 
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_af23fe9504994a619fb86d4834df9ba34}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a94d5b4a6f5f8a1b4ebd06b0f9b5fb794}\label{class_i_game_a94d5b4a6f5f8a1b4ebd06b0f9b5fb794}} 
+\index{IGame@{IGame}!getPlayerControls@{getPlayerControls}}
+\index{getPlayerControls@{getPlayerControls}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getPlayerControls()}{getPlayerControls()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::string$>$\& IGame\+::get\+Player\+Controls (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the player controls. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the player controls as a string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a9d18ec02b4d2f072e8851743a47b693c}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_acee1ba61297246b82ad408a9e18cdb39}\label{class_i_game_acee1ba61297246b82ad408a9e18cdb39}} 
+\index{IGame@{IGame}!getPlayersStats@{getPlayersStats}}
+\index{getPlayersStats@{getPlayersStats}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getPlayersStats()}{getPlayersStats()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::vector$<$std\+::pair$<$std\+::string, std\+::string$>$ $>$ $>$\& IGame\+::get\+Players\+Stats (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Players Stats. 
+
+\begin{DoxyReturn}{Returns}
+A vector of a vector all the stats by player \mbox{[}Player -- (Name\+Of\+Stat, Value)\mbox{]}... 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a9aade29f31f3ed8f05468d9a1c8db85b}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a44c87c259e5e5a733bd615a5dd395a52}\label{class_i_game_a44c87c259e5e5a733bd615a5dd395a52}} 
+\index{IGame@{IGame}!getScores@{getScores}}
+\index{getScores@{getScores}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getScores()}{getScores()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::pair$<$std\+::string, std\+::string$>$ $>$\& IGame\+::get\+Scores (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Getter for the score. 
+
+\begin{DoxyReturn}{Returns}
+A array of pair (Player, Score) of the current game 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_ae3589cf5b2da0a702ab83869b555460f}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a9dae299d7e44243549096bdae11197d8}\label{class_i_game_a9dae299d7e44243549096bdae11197d8}} 
+\index{IGame@{IGame}!getSettings@{getSettings}}
+\index{getSettings@{getSettings}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getSettings()}{getSettings()}}
+{\footnotesize\ttfamily virtual std\+::array$<$std\+::size\+\_\+t, 9$>$ IGame\+::get\+Settings (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the game settings. 
+
+\begin{DoxyReturn}{Returns}
+An array of 9 size\+\_\+t 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_adc8cd35b3d03397d10021cfed01f4fd2}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a541d8a81360939df8626547854e6fcaa}\label{class_i_game_a541d8a81360939df8626547854e6fcaa}} 
+\index{IGame@{IGame}!getUserNames@{getUserNames}}
+\index{getUserNames@{getUserNames}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getUserNames()}{getUserNames()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::string$>$\& IGame\+::get\+User\+Names (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the User Names. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all the users names as a const std\+::vector$<$std\+::string$>$\& 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_afe83351d33b2e8828a459bb94df74d64}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_ae22940c148455971b1d725047c3d31f3}\label{class_i_game_ae22940c148455971b1d725047c3d31f3}} 
+\index{IGame@{IGame}!isCameraShaking@{isCameraShaking}}
+\index{isCameraShaking@{isCameraShaking}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{isCameraShaking()}{isCameraShaking()}}
+{\footnotesize\ttfamily virtual bool IGame\+::is\+Camera\+Shaking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the camera should shake. 
+
+\begin{DoxyReturn}{Returns}
+true if should 
+
+false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_ae03f1c554cd1ebef23d2dcdd27ee4ddb}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a9ee8daeeca3248f781e1a0ddcc264ef6}\label{class_i_game_a9ee8daeeca3248f781e1a0ddcc264ef6}} 
+\index{IGame@{IGame}!isGameOver@{isGameOver}}
+\index{isGameOver@{isGameOver}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{isGameOver()}{isGameOver()}}
+{\footnotesize\ttfamily virtual bool IGame\+::is\+Game\+Over (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the game is over. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate if the game is over 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_ae650206b1f7369dd511374023fbb3872}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a34c5db84317c11ad514fcf57f9a67a32}\label{class_i_game_a34c5db84317c11ad514fcf57f9a67a32}} 
+\index{IGame@{IGame}!loadGame@{loadGame}}
+\index{loadGame@{loadGame}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{loadGame()}{loadGame()}}
+{\footnotesize\ttfamily virtual void IGame\+::load\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{backup\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Call this function to load a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em backup\+File\+Path} & Backup File Path \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_ae0747b78c72bd81c41a1dd8336b04039}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_ab28060e6da41d8e549304a7b613b21f7}\label{class_i_game_ab28060e6da41d8e549304a7b613b21f7}} 
+\index{IGame@{IGame}!restart@{restart}}
+\index{restart@{restart}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily virtual void IGame\+::restart (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Call this function to restart the entire game. The game must reset himself. 
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a6c3b453df541006c5f951f8efa113eb2}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a5cc0658c9fb840b263378512d9301dbe}\label{class_i_game_a5cc0658c9fb840b263378512d9301dbe}} 
+\index{IGame@{IGame}!runAI@{runAI}}
+\index{runAI@{runAI}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{runAI()}{runAI()}}
+{\footnotesize\ttfamily virtual void IGame\+::run\+AI (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Run the AIs. 
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a117591c1f5fd76734ef1f597689d047d}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a082935cf063b3c543459343d3c2069a5}\label{class_i_game_a082935cf063b3c543459343d3c2069a5}} 
+\index{IGame@{IGame}!saveGame@{saveGame}}
+\index{saveGame@{saveGame}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{saveGame()}{saveGame()}}
+{\footnotesize\ttfamily virtual void IGame\+::save\+Game (\begin{DoxyParamCaption}\item[{std\+::array$<$ std\+::size\+\_\+t, 9 $>$}]{settings,  }\item[{std\+::vector$<$ std\+::string $>$}]{player\+Controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Call this function to save the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & Backup Container containing the settings \\
+\hline
+{\em player\+Controls} & Backup Container containing the player controls \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a74e1544a25a51fbb985853bbb2e94f1a}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a7fc5862a33d3e0220c46d2c7775962e1}\label{class_i_game_a7fc5862a33d3e0220c46d2c7775962e1}} 
+\index{IGame@{IGame}!setMapType@{setMapType}}
+\index{setMapType@{setMapType}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{setMapType()}{setMapType()}}
+{\footnotesize\ttfamily virtual void IGame\+::set\+Map\+Type (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t \&}]{map\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Map Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Type} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_aeb4725e2691a7b55c4da62898179cdd0}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a2cd16a7333134e2e7d4f6a3b71b2c239}\label{class_i_game_a2cd16a7333134e2e7d4f6a3b71b2c239}} 
+\index{IGame@{IGame}!setPlayers@{setPlayers}}
+\index{setPlayers@{setPlayers}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{setPlayers()}{setPlayers()}}
+{\footnotesize\ttfamily virtual void IGame\+::set\+Players (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ \&}]{players\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the current Players data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Data} & Dictionary of the players\textquotesingle{} data \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_ac64219c9a90040104337874140cdc323}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a697091d869f621d00b7d615a806ff5fc}\label{class_i_game_a697091d869f621d00b7d615a806ff5fc}} 
+\index{IGame@{IGame}!setSettings@{setSettings}}
+\index{setSettings@{setSettings}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{setSettings()}{setSettings()}}
+{\footnotesize\ttfamily virtual void IGame\+::set\+Settings (\begin{DoxyParamCaption}\item[{const std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \&}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the game settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & An array of 9 size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_aff59f2084ed6b5ef4c2c0011345ad613}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_af1e186e856a529ac2b5484a00acf5450}\label{class_i_game_af1e186e856a529ac2b5484a00acf5450}} 
+\index{IGame@{IGame}!setUserNames@{setUserNames}}
+\index{setUserNames@{setUserNames}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{setUserNames()}{setUserNames()}}
+{\footnotesize\ttfamily virtual void IGame\+::set\+User\+Names (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{user\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the User Names. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Names} & A vector of all the users names as a const std\+::vector$<$std\+::string$>$\& \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a3b0c395a48a8d89d71004bc2dc06d462}{Game\+::\+Bomberman}}.
+
+\mbox{\Hypertarget{class_i_game_a1eab4e6befb35b00d92500bc92327388}\label{class_i_game_a1eab4e6befb35b00d92500bc92327388}} 
+\index{IGame@{IGame}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{updateGame()}{updateGame()}}
+{\footnotesize\ttfamily virtual void IGame\+::update\+Game (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+update\+Game function should be called in a loop. It\textquotesingle{}s used to advance the game and update all logic. The game must manage time on it\textquotesingle{}s own. 
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_bomberman_a9a3075f53e61f703734d7045181fad9c}{Game\+::\+Bomberman}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Engine/\+Interfaces/\mbox{\hyperlink{_i_game_8hpp}{IGame.\+hpp}}\end{DoxyCompactItemize}

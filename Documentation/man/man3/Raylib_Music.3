@@ -1,0 +1,265 @@
+.TH "Raylib::Music" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Music
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Music\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMusic\fP ()"
+.br
+.RI "Construct a new \fBMusic\fP object\&. "
+.ti -1c
+.RI "\fBMusic\fP (const \fBMusic\fP &music)"
+.br
+.RI "Construct a new \fBMusic\fP object\&. "
+.ti -1c
+.RI "\fBMusic\fP (const std::string &fileName)"
+.br
+.RI "Load music stream from file\&. "
+.ti -1c
+.RI "\fBMusic\fP (const std::string &fileType, const std::string &data, const int &dataSize)"
+.br
+.RI "Load music stream from memory\&. "
+.ti -1c
+.RI "\fB~Music\fP ()"
+.br
+.RI "Destroy the \fBMusic\fP object\&. "
+.ti -1c
+.RI "void \fBunloadMusic\fP (void) const"
+.br
+.RI "Unload music stream\&. "
+.ti -1c
+.RI "\fBMusic\fP & \fBplayMusic\fP (void)"
+.br
+.RI "Start music playing\&. "
+.ti -1c
+.RI "\fBMusic\fP & \fBupdate\fP (void)"
+.br
+.RI "Updates buffers for music streaming\&. "
+.ti -1c
+.RI "\fBMusic\fP & \fBstop\fP (void)"
+.br
+.RI "Stop music playing\&. "
+.ti -1c
+.RI "\fBMusic\fP & \fBpause\fP (void)"
+.br
+.RI "Pause music playing\&. "
+.ti -1c
+.RI "\fBMusic\fP & \fBresume\fP (void)"
+.br
+.RI "Resume music playing\&. "
+.ti -1c
+.RI "bool \fBisPlaying\fP (void) const"
+.br
+.RI "Check if music is playing\&. "
+.ti -1c
+.RI "\fBMusic\fP & \fBsetVolume\fP (const float &volume)"
+.br
+.RI "Set volume for music\&. "
+.ti -1c
+.RI "\fBMusic\fP & \fBsetPitch\fP (const float &pitch)"
+.br
+.RI "Set pitch for music\&. "
+.ti -1c
+.RI "float \fBgetTimeLength\fP (void) const"
+.br
+.RI "Get music time length (in seconds) "
+.ti -1c
+.RI "float \fBgetTimePlayed\fP (void) const"
+.br
+.RI "Get current music time played (in seconds) "
+.ti -1c
+.RI "\fBMusic\fP & \fBoperator=\fP (const \fBMusic\fP &music)"
+.br
+.RI "Overload of '=' operator\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Music::Music ()"
+
+.PP
+Construct a new \fBMusic\fP object\&. 
+.SS "Raylib::Music::Music (const \fBMusic\fP & music)"
+
+.PP
+Construct a new \fBMusic\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImusic\fP A \fBMusic\fP object 
+.RE
+.PP
+
+.SS "Raylib::Music::Music (const std::string & fileName)"
+
+.PP
+Load music stream from file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A string path to music 
+.RE
+.PP
+
+.SS "Raylib::Music::Music (const std::string & fileType, const std::string & data, const int & dataSize)"
+
+.PP
+Load music stream from memory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileType\fP A string 
+.br
+\fIdata\fP A string 
+.br
+\fIdataSize\fP An int 
+.RE
+.PP
+
+.SS "Raylib::Music::~Music ()"
+
+.PP
+Destroy the \fBMusic\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "float Raylib::Music::getTimeLength (void) const\fC [inline]\fP"
+
+.PP
+Get music time length (in seconds) 
+.PP
+\fBReturns\fP
+.RS 4
+A float 
+.RE
+.PP
+
+.SS "float Raylib::Music::getTimePlayed (void) const\fC [inline]\fP"
+
+.PP
+Get current music time played (in seconds) 
+.PP
+\fBReturns\fP
+.RS 4
+A float 
+.RE
+.PP
+
+.SS "bool Raylib::Music::isPlaying (void) const\fC [inline]\fP"
+
+.PP
+Check if music is playing\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Music\fP & Raylib::Music::operator= (const \fBMusic\fP & music)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImusic\fP A const reference to a \fBMusic\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBMusic\fP (\fBMusic\fP &) 
+.RE
+.PP
+
+.SS "\fBRaylib::Music\fP & Raylib::Music::pause (void)\fC [inline]\fP"
+
+.PP
+Pause music playing\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Music\fP & Raylib::Music::playMusic (void)\fC [inline]\fP"
+
+.PP
+Start music playing\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Music\fP & Raylib::Music::resume (void)\fC [inline]\fP"
+
+.PP
+Resume music playing\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Music\fP & Raylib::Music::setPitch (const float & pitch)\fC [inline]\fP"
+
+.PP
+Set pitch for music\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Music\fP & Raylib::Music::setVolume (const float & volume)\fC [inline]\fP"
+
+.PP
+Set volume for music\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Music\fP & Raylib::Music::stop (void)\fC [inline]\fP"
+
+.PP
+Stop music playing\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+.SS "void Raylib::Music::unloadMusic (void) const\fC [inline]\fP"
+
+.PP
+Unload music stream\&. 
+.SS "\fBRaylib::Music\fP & Raylib::Music::update (void)\fC [inline]\fP"
+
+.PP
+Updates buffers for music streaming\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A reference to a \fBMusic\fP object 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

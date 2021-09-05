@@ -1,0 +1,631 @@
+.TH "Raylib::Image" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Image
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Image\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBImage\fP ()"
+.br
+.RI "Construct a new \fBImage\fP object\&. "
+.ti -1c
+.RI "\fBImage\fP (const \fBImage\fP &image)"
+.br
+.RI "Construct a new \fBImage\fP object\&. "
+.ti -1c
+.RI "\fBImage\fP (const std::string &fileName)"
+.br
+.RI "Construct a new \fBImage\fP object\&. "
+.ti -1c
+.RI "\fBImage\fP (const std::string &fileName, const int &width, const int &height, const int &format, const int &headerSize)"
+.br
+.RI "Construct a new \fBImage\fP object\&. "
+.ti -1c
+.RI "\fB~Image\fP ()"
+.br
+.RI "Destroy the \fBImage\fP object\&. "
+.ti -1c
+.RI "::\fBImage\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Getter of \fBImage\fP structure (private attribute) "
+.ti -1c
+.RI "\fBImage\fP \fBgetScreenData\fP (void)"
+.br
+.RI "Get pixel data from screen buffer and return an \fBImage\fP (screenshot) "
+.ti -1c
+.RI "\fBImage\fP \fBloadImage\fP (const std::string &fileName)"
+.br
+.RI "Load image from file into CPU memory (RAM) "
+.ti -1c
+.RI "\fBImage\fP \fBloadImageRaw\fP (const std::string &fileName, const int &width, const int &height, const int &format, const int &headerSize)"
+.br
+.RI "Load image from RAW file data\&. "
+.ti -1c
+.RI "\fBImage\fP \fBloadImageAnim\fP (const std::string &fileName, int *frames)"
+.br
+.RI "Load image sequence from file (frames appended to image\&.data) "
+.ti -1c
+.RI "\fBImage\fP \fBloadImageFromMemory\fP (const std::string &fileType, const std::string &fileData, const int &dataSize)"
+.br
+.RI "Load image from memory buffer\&. "
+.ti -1c
+.RI "void \fBunloadImage\fP (void)"
+.br
+.RI "Unload image from CPU memory (RAM) "
+.ti -1c
+.RI "bool \fBexportImage\fP (const \fBImage\fP &image, const std::string &fileName) const"
+.br
+.RI "Export image data to file, returns true on success\&. "
+.ti -1c
+.RI "bool \fBexportImageAsCode\fP (const \fBImage\fP &image, const std::string &fileName) const"
+.br
+.RI "Export image as code file defining an array of bytes, returns true on success\&. "
+.ti -1c
+.RI "int \fBgetPixelDataSize\fP (void) const"
+.br
+.RI "Returns the pixel data size of the image\&. "
+.ti -1c
+.RI "\fBImage\fP & \fBoperator=\fP (const \fBImage\fP &image)"
+.br
+.RI "Overload of '=' operator\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgetTextureData\fP (::\fBTexture\fP const &texture) const"
+.br
+.RI "Get pixel data from GPU texture and return an \fBImage\fP\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImageColor\fP (int const &width, int const &height, \fBColor\fP const &color)"
+.br
+.RI "Generate image: plain color\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImageGradientV\fP (int const &width, int const &height, \fBColor\fP const &top, \fBColor\fP const &bottom)"
+.br
+.RI "Generate image: vertical gradient\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImageGradientH\fP (int const &width, int const &height, \fBColor\fP const &left, \fBColor\fP const &right)"
+.br
+.RI "Generate image: horizontal gradient\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImageGradientRadial\fP (int const &width, int const &height, float density, \fBColor\fP inner, \fBColor\fP outer)"
+.br
+.RI "Generate image: radial gradient\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImageChecked\fP (int const &width, int const &height, int const &checksX, int const &checksY, \fBColor\fP col1, \fBColor\fP col2)"
+.br
+.RI "Generate image: checked\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImageWhiteNoise\fP (int const &width, int const &height, float const &factor)"
+.br
+.RI "Generate image: white noise\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImagePerlinNoise\fP (int const &width, int const &height, int offsetX, int offsetY, float scale)"
+.br
+.RI "Generate image: perlin noise\&. "
+.ti -1c
+.RI "\fBImage\fP \fBgenImageCellular\fP (int const &width, int const &height, int const &tileSize)"
+.br
+.RI "Generate image: cellular algorithm\&. Bigger tileSize means bigger cells\&. "
+.ti -1c
+.RI "\fBImage\fP \fBimageCopy\fP (\fBImage\fP const &image)"
+.br
+.RI "Create an image duplicate (useful for transformations) "
+.ti -1c
+.RI "\fBImage\fP \fBimageFromImage\fP (\fBImage\fP const &image, ::\fBRectangle\fP const &rec)"
+.br
+.RI "Create an image from another image piece\&. "
+.ti -1c
+.RI "\fBImage\fP \fBimageText\fP (const char *text, int const &fontSize, \fBColor\fP const &color)"
+.br
+.RI "Create an image from text (default font) "
+.ti -1c
+.RI "\fBImage\fP \fBimageTextEx\fP (\fBFont\fP const &font, const char *text, float const &fontSize, float const &spacing, \fBColor\fP const &tint)"
+.br
+.RI "Create an image from text (custom sprite font) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Image::Image ()"
+
+.PP
+Construct a new \fBImage\fP object\&. 
+.SS "Raylib::Image::Image (const \fBImage\fP & image)"
+
+.PP
+Construct a new \fBImage\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP An \fBImage\fP 
+.RE
+.PP
+
+.SS "Raylib::Image::Image (const std::string & fileName)"
+
+.PP
+Construct a new \fBImage\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A string 
+.RE
+.PP
+
+.SS "Raylib::Image::Image (const std::string & fileName, const int & width, const int & height, const int & format, const int & headerSize)"
+
+.PP
+Construct a new \fBImage\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A string 
+.br
+\fIwidth\fP An int 
+.br
+\fIheight\fP An int 
+.br
+\fIformat\fP An int 
+.br
+\fIheaderSize\fP An int 
+.RE
+.PP
+
+.SS "Raylib::Image::~Image ()"
+
+.PP
+Destroy the \fBImage\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Raylib::Image::exportImage (const \fBImage\fP & image, const std::string & fileName) const\fC [inline]\fP"
+
+.PP
+Export image data to file, returns true on success\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP An \fBImage\fP 
+.br
+\fIfileName\fP A const std::string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A boolean 
+.RE
+.PP
+
+.SS "bool Raylib::Image::exportImageAsCode (const \fBImage\fP & image, const std::string & fileName) const\fC [inline]\fP"
+
+.PP
+Export image as code file defining an array of bytes, returns true on success\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP An \fBImage\fP 
+.br
+\fIfileName\fP A const std::string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImageCellular (int const & width, int const & height, int const & tileSize)\fC [inline]\fP"
+
+.PP
+Generate image: cellular algorithm\&. Bigger tileSize means bigger cells\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fItileSize\fP A const reference to an int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImageChecked (int const & width, int const & height, int const & checksX, int const & checksY, \fBColor\fP col1, \fBColor\fP col2)\fC [inline]\fP"
+
+.PP
+Generate image: checked\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIchecksX\fP A const reference to an int 
+.br
+\fIchecksY\fP A const reference to an int 
+.br
+\fIcol1\fP A const pointer to a Class \fBColor\fP 
+.br
+\fIcol2\fP A const pointer to a Class \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImageColor (int const & width, int const & height, \fBColor\fP const & color)\fC [inline]\fP"
+
+.PP
+Generate image: plain color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIcolor\fP A const pointer to a Class \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImageGradientH (int const & width, int const & height, \fBColor\fP const & left, \fBColor\fP const & right)\fC [inline]\fP"
+
+.PP
+Generate image: horizontal gradient\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIleft\fP A const pointer to a Class \fBColor\fP 
+.br
+\fIright\fP A const pointer to a Class \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImageGradientRadial (int const & width, int const & height, float density, \fBColor\fP inner, \fBColor\fP outer)\fC [inline]\fP"
+
+.PP
+Generate image: radial gradient\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIinner\fP A const pointer to a Class \fBColor\fP 
+.br
+\fIouter\fP A const pointer to a Class \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImageGradientV (int const & width, int const & height, \fBColor\fP const & top, \fBColor\fP const & bottom)\fC [inline]\fP"
+
+.PP
+Generate image: vertical gradient\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fItop\fP A const pointer to a Class \fBColor\fP 
+.br
+\fIbottom\fP A const pointer to a Class \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImagePerlinNoise (int const & width, int const & height, int offsetX, int offsetY, float scale)\fC [inline]\fP"
+
+.PP
+Generate image: perlin noise\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIoffsetX\fP A const reference to an int 
+.br
+\fIoffsetY\fP A const reference to an int 
+.br
+\fIscale\fP A const reference to a float 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::genImageWhiteNoise (int const & width, int const & height, float const & factor)\fC [inline]\fP"
+
+.PP
+Generate image: white noise\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an int 
+.br
+\fIheight\fP A const reference to an int 
+.br
+\fIfactor\fP A const reference to a float 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBImage\fP Raylib::Image::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Getter of \fBImage\fP structure (private attribute) 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP C structure 
+.RE
+.PP
+
+.SS "int Raylib::Image::getPixelDataSize (void) const\fC [inline]\fP"
+
+.PP
+Returns the pixel data size of the image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The pixel data size of the image\&. 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::getScreenData (void)\fC [inline]\fP"
+
+.PP
+Get pixel data from screen buffer and return an \fBImage\fP (screenshot) 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::getTextureData (::\fBTexture\fP const & texture) const\fC [inline]\fP"
+
+.PP
+Get pixel data from GPU texture and return an \fBImage\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP A const reference to a \fBTexture\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::imageCopy (\fBImage\fP const & image)\fC [inline]\fP"
+
+.PP
+Create an image duplicate (useful for transformations) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP A const reference to a Class \fBImage\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::imageFromImage (\fBImage\fP const & image, ::\fBRectangle\fP const & rec)\fC [inline]\fP"
+
+.PP
+Create an image from another image piece\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP A const reference to a Class \fBImage\fP 
+.br
+\fIrec\fP A const reference to a Class \fBRectangle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::imageText (const char * text, int const & fontSize, \fBColor\fP const & color)\fC [inline]\fP"
+
+.PP
+Create an image from text (default font) 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP A const pointer to a char 
+.br
+\fIfontSize\fP A const reference to an int 
+.br
+\fIcolor\fP A const reference to a Class \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::imageTextEx (\fBFont\fP const & font, const char * text, float const & fontSize, float const & spacing, \fBColor\fP const & tint)\fC [inline]\fP"
+
+.PP
+Create an image from text (custom sprite font) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfont\fP A const reference to a Class \fBFont\fP 
+.br
+\fItext\fP A const pointer to a char 
+.br
+\fIfontSize\fP A const pointer to a float 
+.br
+\fIspacing\fP A const pointer to a float 
+.br
+\fItint\fP A const reference to a Class \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::loadImage (const std::string & fileName)\fC [inline]\fP"
+
+.PP
+Load image from file into CPU memory (RAM) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A const std::string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::loadImageAnim (const std::string & fileName, int * frames)\fC [inline]\fP"
+
+.PP
+Load image sequence from file (frames appended to image\&.data) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A const std::string 
+.br
+\fIframes\fP An int * 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::loadImageFromMemory (const std::string & fileType, const std::string & fileData, const int & dataSize)\fC [inline]\fP"
+
+.PP
+Load image from memory buffer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileType\fP A const std::string 
+.br
+\fIfileData\fP A const unsigned std::string 
+.br
+\fIdataSize\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP Raylib::Image::loadImageRaw (const std::string & fileName, const int & width, const int & height, const int & format, const int & headerSize)\fC [inline]\fP"
+
+.PP
+Load image from RAW file data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP A const std::string 
+.br
+\fIwidth\fP An int 
+.br
+\fIheight\fP An int 
+.br
+\fIformat\fP An int 
+.br
+\fIheaderSize\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An \fBImage\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Image\fP & Raylib::Image::operator= (const \fBImage\fP & image)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImusic\fP A const reference to An \fBImage\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBImage\fP (\fBImage\fP &) 
+.RE
+.PP
+
+.SS "void Raylib::Image::unloadImage (void)\fC [inline]\fP"
+
+.PP
+Unload image from CPU memory (RAM) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimage\fP An \fBImage\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

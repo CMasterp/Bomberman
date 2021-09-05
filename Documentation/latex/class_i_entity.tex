@@ -1,0 +1,153 @@
+\hypertarget{class_i_entity}{}\doxysection{IEntity Class Reference}
+\label{class_i_entity}\index{IEntity@{IEntity}}
+
+
+{\ttfamily \#include $<$IEntity.\+hpp$>$}
+
+Inheritance diagram for IEntity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.670395cm]{class_i_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_entity_a8aea4fbca51d17a0ce314aaa4633f28e}{$\sim$\+IEntity}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_i_entity}{IEntity}} object. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_i_entity_acf90d593003711ef619cf14624f60ccc}{get\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \mbox{\hyperlink{class_i_entity_aff5123b0cd33be2f7970e6d6fde58ec5}{get\+Positions}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Positions object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_entity_aa70c149bf77cd12268471e0a7407ca65}{set\+Positions}} (\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&vector)=0
+\begin{DoxyCompactList}\small\item\em Set the Positions. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_entity_a37d57731ff65d299a5c92316347e3cfc}{draw\+Entity}} ()=0
+\begin{DoxyCompactList}\small\item\em Draw Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_entity_a2326e46dab3aa8bd2e0ce9c91a68f79c}{set\+Should\+Display}} (const bool \&should\+Display)=0
+\begin{DoxyCompactList}\small\item\em Set a boolean to know if this entity should be displayed. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_entity_a43cfde8d8a3b908badc43c50bc0b0448}{get\+Should\+Display}} () const =0
+\begin{DoxyCompactList}\small\item\em Get a boolean to know if this entity should be displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_entity_a8aea4fbca51d17a0ce314aaa4633f28e}\label{class_i_entity_a8aea4fbca51d17a0ce314aaa4633f28e}} 
+\index{IEntity@{IEntity}!````~IEntity@{$\sim$IEntity}}
+\index{````~IEntity@{$\sim$IEntity}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{$\sim$IEntity()}{~IEntity()}}
+{\footnotesize\ttfamily virtual IEntity\+::$\sim$\+IEntity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_i_entity}{IEntity}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_entity_a37d57731ff65d299a5c92316347e3cfc}\label{class_i_entity_a37d57731ff65d299a5c92316347e3cfc}} 
+\index{IEntity@{IEntity}!drawEntity@{drawEntity}}
+\index{drawEntity@{drawEntity}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{drawEntity()}{drawEntity()}}
+{\footnotesize\ttfamily virtual void IEntity\+::draw\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw Entity. 
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_motionless_entity_a44168822d294c91d5e533b961d371dbd}{Game\+::\+Motionless\+Entity}}, \mbox{\hyperlink{class_game_1_1_floor_a4d520aac62393f36476b53e9f9035213}{Game\+::\+Floor}}, \mbox{\hyperlink{class_game_1_1_breakable_wall_a5e416a26f367ba2d68e8bf56465d6135}{Game\+::\+Breakable\+Wall}}, \mbox{\hyperlink{class_game_1_1_solid_wall_a5c9ed0eaac32d3457621713620c98ccc}{Game\+::\+Solid\+Wall}}, \mbox{\hyperlink{class_game_1_1_bomb_a05756cd633eb29fd9b46c2181d4ff466}{Game\+::\+Bomb}}, and \mbox{\hyperlink{class_game_1_1_animated_ad25ceed647cd9c7a543c8bd7b141b429}{Game\+::\+Animated}}.
+
+\mbox{\Hypertarget{class_i_entity_aff5123b0cd33be2f7970e6d6fde58ec5}\label{class_i_entity_aff5123b0cd33be2f7970e6d6fde58ec5}} 
+\index{IEntity@{IEntity}!getPositions@{getPositions}}
+\index{getPositions@{getPositions}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{getPositions()}{getPositions()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} IEntity\+::get\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Positions object. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_animated_a8b58362a15756cb5d86267fa1974ffac}{Game\+::\+Animated}}, and \mbox{\hyperlink{class_game_1_1_motionless_entity_a09b349637872af500fa8f020c6e4a100}{Game\+::\+Motionless\+Entity}}.
+
+\mbox{\Hypertarget{class_i_entity_a43cfde8d8a3b908badc43c50bc0b0448}\label{class_i_entity_a43cfde8d8a3b908badc43c50bc0b0448}} 
+\index{IEntity@{IEntity}!getShouldDisplay@{getShouldDisplay}}
+\index{getShouldDisplay@{getShouldDisplay}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{getShouldDisplay()}{getShouldDisplay()}}
+{\footnotesize\ttfamily virtual bool IEntity\+::get\+Should\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get a boolean to know if this entity should be displayed. 
+
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_animated_a7e75abf118a2dfbac85281b827552fa2}{Game\+::\+Animated}}, and \mbox{\hyperlink{class_game_1_1_motionless_entity_a01c1fb984a91f7fb5825ce9c6d4284a4}{Game\+::\+Motionless\+Entity}}.
+
+\mbox{\Hypertarget{class_i_entity_acf90d593003711ef619cf14624f60ccc}\label{class_i_entity_acf90d593003711ef619cf14624f60ccc}} 
+\index{IEntity@{IEntity}!getType@{getType}}
+\index{getType@{getType}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual std\+::string IEntity\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+A std\+::string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_floor_ac30f3a8da34e7b37dfb9f9155334eb1a}{Game\+::\+Floor}}, \mbox{\hyperlink{class_game_1_1_breakable_wall_ac890cc67e84938a37667ce8ce6f1b210}{Game\+::\+Breakable\+Wall}}, \mbox{\hyperlink{class_game_1_1_solid_wall_a90ea4587e5e5b590bb22f79853c97fb2}{Game\+::\+Solid\+Wall}}, \mbox{\hyperlink{class_game_1_1_motionless_entity_ac561e8e6150a671d7a3452d1fc076b72}{Game\+::\+Motionless\+Entity}}, \mbox{\hyperlink{class_game_1_1_animated_a493ed93ff93248750daddae3e8d9864e}{Game\+::\+Animated}}, \mbox{\hyperlink{class_game_1_1_powerups_adc1a068206878d22121c91f07690bc22}{Game\+::\+Powerups}}, \mbox{\hyperlink{class_game_1_1_a_i_a0254c1cdaaa2e355c21091878808cdf5}{Game\+::\+AI}}, \mbox{\hyperlink{class_game_1_1_human_aa213c8f258f467531019e2042845018e}{Game\+::\+Human}}, and \mbox{\hyperlink{class_game_1_1_bomb_a275a8f1bc8cb89a71546b28d35d85696}{Game\+::\+Bomb}}.
+
+\mbox{\Hypertarget{class_i_entity_aa70c149bf77cd12268471e0a7407ca65}\label{class_i_entity_aa70c149bf77cd12268471e0a7407ca65}} 
+\index{IEntity@{IEntity}!setPositions@{setPositions}}
+\index{setPositions@{setPositions}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{setPositions()}{setPositions()}}
+{\footnotesize\ttfamily virtual void IEntity\+::set\+Positions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & A vector3 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_motionless_entity_ae3bc9c83db380a639b2815cea92c9595}{Game\+::\+Motionless\+Entity}}, and \mbox{\hyperlink{class_game_1_1_animated_af7093a0ce46dc9cc528bb5852d58a344}{Game\+::\+Animated}}.
+
+\mbox{\Hypertarget{class_i_entity_a2326e46dab3aa8bd2e0ce9c91a68f79c}\label{class_i_entity_a2326e46dab3aa8bd2e0ce9c91a68f79c}} 
+\index{IEntity@{IEntity}!setShouldDisplay@{setShouldDisplay}}
+\index{setShouldDisplay@{setShouldDisplay}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{setShouldDisplay()}{setShouldDisplay()}}
+{\footnotesize\ttfamily virtual void IEntity\+::set\+Should\+Display (\begin{DoxyParamCaption}\item[{const bool \&}]{should\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set a boolean to know if this entity should be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\+Display} & A boolean to know if this entity should be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_animated_a4b134c488248c8c3c9b5569ea72e7ba4}{Game\+::\+Animated}}, and \mbox{\hyperlink{class_game_1_1_motionless_entity_a324999c240cd9a28e7b632afdff23fcb}{Game\+::\+Motionless\+Entity}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Engine/\+Interfaces/\mbox{\hyperlink{_i_entity_8hpp}{IEntity.\+hpp}}\end{DoxyCompactItemize}

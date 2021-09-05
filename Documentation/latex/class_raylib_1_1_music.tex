@@ -1,0 +1,283 @@
+\hypertarget{class_raylib_1_1_music}{}\doxysection{Raylib\+::Music Class Reference}
+\label{class_raylib_1_1_music}\index{Raylib::Music@{Raylib::Music}}
+
+
+{\ttfamily \#include $<$Music.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_music_ac19242b98d9dd9e5b6989fe7215722f1}{Music}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music_a6fbac9dc46c4fe34ba8f63f943911658}{Music}} (const \mbox{\hyperlink{class_raylib_1_1_music}{Music}} \&music)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music_ae348e1ecb228c98a8cd7f80013192581}{Music}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Load music stream from file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music_a58e1869825623c0abebc75fe5d237083}{Music}} (const std\+::string \&file\+Type, const std\+::string \&data, const int \&data\+Size)
+\begin{DoxyCompactList}\small\item\em Load music stream from memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music_af7dca3bbff8536ac8d50081cbbd048ae}{$\sim$\+Music}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_music_af8d32ffa4d878729d762ff0cf3a2079e}{unload\+Music}} (void) const
+\begin{DoxyCompactList}\small\item\em Unload music stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_a007a73ae6b99814c97806db360f136ef}{play\+Music}} (void)
+\begin{DoxyCompactList}\small\item\em Start music playing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_afaca2db2300644b0f810a91f57640f46}{update}} (void)
+\begin{DoxyCompactList}\small\item\em Updates buffers for music streaming. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_a22a8029f280ead34d2af676a36be814a}{stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stop music playing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_a61436dcbb2978e54e8e6f460a2283db7}{pause}} (void)
+\begin{DoxyCompactList}\small\item\em Pause music playing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_afd17f17e7158678eea6743a6da21558b}{resume}} (void)
+\begin{DoxyCompactList}\small\item\em Resume music playing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_raylib_1_1_music_a2758d12d9a3072d88d6ba23bb66bbaa3}{is\+Playing}} (void) const
+\begin{DoxyCompactList}\small\item\em Check if music is playing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_af86be9fc510dc9642fb9d13c0a84c2ad}{set\+Volume}} (const float \&volume)
+\begin{DoxyCompactList}\small\item\em Set volume for music. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_a87d2d8a0765b7c0cda122e45be11556b}{set\+Pitch}} (const float \&pitch)
+\begin{DoxyCompactList}\small\item\em Set pitch for music. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_raylib_1_1_music_a8ec83cab6bed6143b7bbfe92d0bf00f5}{get\+Time\+Length}} (void) const
+\begin{DoxyCompactList}\small\item\em Get music time length (in seconds) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_raylib_1_1_music_a14c41000cb4e313e4e4ab8703eef87be}{get\+Time\+Played}} (void) const
+\begin{DoxyCompactList}\small\item\em Get current music time played (in seconds) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \& \mbox{\hyperlink{class_raylib_1_1_music_a56cf7bc43cfc8950755b76af9c4683fc}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_music}{Music}} \&music)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_music_ac19242b98d9dd9e5b6989fe7215722f1}\label{class_raylib_1_1_music_ac19242b98d9dd9e5b6989fe7215722f1}} 
+\index{Raylib::Music@{Raylib::Music}!Music@{Music}}
+\index{Music@{Music}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Music\+::\+Music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_music_a6fbac9dc46c4fe34ba8f63f943911658}\label{class_raylib_1_1_music_a6fbac9dc46c4fe34ba8f63f943911658}} 
+\index{Raylib::Music@{Raylib::Music}!Music@{Music}}
+\index{Music@{Music}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Music\+::\+Music (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_music}{Music}} \&}]{music }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & A \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_music_ae348e1ecb228c98a8cd7f80013192581}\label{class_raylib_1_1_music_ae348e1ecb228c98a8cd7f80013192581}} 
+\index{Raylib::Music@{Raylib::Music}!Music@{Music}}
+\index{Music@{Music}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Music\+::\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Load music stream from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & A string path to music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_music_a58e1869825623c0abebc75fe5d237083}\label{class_raylib_1_1_music_a58e1869825623c0abebc75fe5d237083}} 
+\index{Raylib::Music@{Raylib::Music}!Music@{Music}}
+\index{Music@{Music}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Music\+::\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Type,  }\item[{const std\+::string \&}]{data,  }\item[{const int \&}]{data\+Size }\end{DoxyParamCaption})}
+
+
+
+Load music stream from memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Type} & A string \\
+\hline
+{\em data} & A string \\
+\hline
+{\em data\+Size} & An int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_music_af7dca3bbff8536ac8d50081cbbd048ae}\label{class_raylib_1_1_music_af7dca3bbff8536ac8d50081cbbd048ae}} 
+\index{Raylib::Music@{Raylib::Music}!````~Music@{$\sim$Music}}
+\index{````~Music@{$\sim$Music}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{$\sim$Music()}{~Music()}}
+{\footnotesize\ttfamily Raylib\+::\+Music\+::$\sim$\+Music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_music_a8ec83cab6bed6143b7bbfe92d0bf00f5}\label{class_raylib_1_1_music_a8ec83cab6bed6143b7bbfe92d0bf00f5}} 
+\index{Raylib::Music@{Raylib::Music}!getTimeLength@{getTimeLength}}
+\index{getTimeLength@{getTimeLength}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{getTimeLength()}{getTimeLength()}}
+{\footnotesize\ttfamily float Raylib\+::\+Music\+::get\+Time\+Length (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get music time length (in seconds) 
+
+\begin{DoxyReturn}{Returns}
+A float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_a14c41000cb4e313e4e4ab8703eef87be}\label{class_raylib_1_1_music_a14c41000cb4e313e4e4ab8703eef87be}} 
+\index{Raylib::Music@{Raylib::Music}!getTimePlayed@{getTimePlayed}}
+\index{getTimePlayed@{getTimePlayed}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{getTimePlayed()}{getTimePlayed()}}
+{\footnotesize\ttfamily float Raylib\+::\+Music\+::get\+Time\+Played (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get current music time played (in seconds) 
+
+\begin{DoxyReturn}{Returns}
+A float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_a2758d12d9a3072d88d6ba23bb66bbaa3}\label{class_raylib_1_1_music_a2758d12d9a3072d88d6ba23bb66bbaa3}} 
+\index{Raylib::Music@{Raylib::Music}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Music\+::is\+Playing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if music is playing. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_a56cf7bc43cfc8950755b76af9c4683fc}\label{class_raylib_1_1_music_a56cf7bc43cfc8950755b76af9c4683fc}} 
+\index{Raylib::Music@{Raylib::Music}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_music}{Music}} \&}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_music}{Music}} (\mbox{\hyperlink{class_raylib_1_1_music}{Music}} \&) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_a61436dcbb2978e54e8e6f460a2283db7}\label{class_raylib_1_1_music_a61436dcbb2978e54e8e6f460a2283db7}} 
+\index{Raylib::Music@{Raylib::Music}!pause@{pause}}
+\index{pause@{pause}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::pause (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pause music playing. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_a007a73ae6b99814c97806db360f136ef}\label{class_raylib_1_1_music_a007a73ae6b99814c97806db360f136ef}} 
+\index{Raylib::Music@{Raylib::Music}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::play\+Music (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Start music playing. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_afd17f17e7158678eea6743a6da21558b}\label{class_raylib_1_1_music_afd17f17e7158678eea6743a6da21558b}} 
+\index{Raylib::Music@{Raylib::Music}!resume@{resume}}
+\index{resume@{resume}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::resume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resume music playing. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_a87d2d8a0765b7c0cda122e45be11556b}\label{class_raylib_1_1_music_a87d2d8a0765b7c0cda122e45be11556b}} 
+\index{Raylib::Music@{Raylib::Music}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::set\+Pitch (\begin{DoxyParamCaption}\item[{const float \&}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set pitch for music. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_af86be9fc510dc9642fb9d13c0a84c2ad}\label{class_raylib_1_1_music_af86be9fc510dc9642fb9d13c0a84c2ad}} 
+\index{Raylib::Music@{Raylib::Music}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::set\+Volume (\begin{DoxyParamCaption}\item[{const float \&}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set volume for music. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_a22a8029f280ead34d2af676a36be814a}\label{class_raylib_1_1_music_a22a8029f280ead34d2af676a36be814a}} 
+\index{Raylib::Music@{Raylib::Music}!stop@{stop}}
+\index{stop@{stop}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stop music playing. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_music_af8d32ffa4d878729d762ff0cf3a2079e}\label{class_raylib_1_1_music_af8d32ffa4d878729d762ff0cf3a2079e}} 
+\index{Raylib::Music@{Raylib::Music}!unloadMusic@{unloadMusic}}
+\index{unloadMusic@{unloadMusic}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{unloadMusic()}{unloadMusic()}}
+{\footnotesize\ttfamily void Raylib\+::\+Music\+::unload\+Music (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unload music stream. 
+
+\mbox{\Hypertarget{class_raylib_1_1_music_afaca2db2300644b0f810a91f57640f46}\label{class_raylib_1_1_music_afaca2db2300644b0f810a91f57640f46}} 
+\index{Raylib::Music@{Raylib::Music}!update@{update}}
+\index{update@{update}!Raylib::Music@{Raylib::Music}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_music}{Raylib\+::\+Music}} \& Raylib\+::\+Music\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates buffers for music streaming. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_raylib_1_1_music}{Music}} object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Music/\mbox{\hyperlink{_music_8hpp}{Music.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Music/\mbox{\hyperlink{_music_8cpp}{Music.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Music/\mbox{\hyperlink{_music_8inl}{Music.\+inl}}\end{DoxyCompactItemize}

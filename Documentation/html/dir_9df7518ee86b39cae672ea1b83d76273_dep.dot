@@ -1,0 +1,11 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Lib/XRaylib/XRay/sources/PlayerSelector" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d036baa45dd1843db538ff00c282b2f7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="sources" fontname="Helvetica", fontsize="10", URL="dir_d036baa45dd1843db538ff00c282b2f7.html"]
+  dir_9df7518ee86b39cae672ea1b83d76273 [shape=box, label="PlayerSelector", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9df7518ee86b39cae672ea1b83d76273.html"];
+  }
+  dir_66516be2dd357c006849c918fb685c43 [shape=box label="includes" fillcolor="white" style="filled" color="red" URL="dir_66516be2dd357c006849c918fb685c43.html"];
+  dir_9df7518ee86b39cae672ea1b83d76273->dir_66516be2dd357c006849c918fb685c43 [headlabel="3", labeldistance=1.5 headhref="dir_000018_000019.html"];
+}

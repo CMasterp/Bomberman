@@ -1,0 +1,117 @@
+.TH "Engine::Core" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Engine::Core
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Core\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCore\fP ()"
+.br
+.RI "Construct a new \fBCore\fP object\&. "
+.ti -1c
+.RI "\fB~Core\fP ()"
+.br
+.RI "Destroy the \fBCore\fP object\&. "
+.ti -1c
+.RI "void \fBrun\fP (void)"
+.br
+.RI "Run the core\&. "
+.ti -1c
+.RI "bool \fBendGame\fP (void)"
+.br
+.RI "Break cleanly the game loop and save informations\&. "
+.ti -1c
+.RI "void \fBsaveBestScores\fP (void)"
+.br
+.RI "Save the best score(s) in a file\&. "
+.ti -1c
+.RI "void \fBgetBackupFiles\fP (void)"
+.br
+.RI "Get Backup Files\&. "
+.ti -1c
+.RI "void \fBsaveGame\fP (std::array< std::size_t, 9 > settings, std::vector< std::string > playerControls)"
+.br
+.RI "Save the game\&. "
+.ti -1c
+.RI "void \fBloadGame\fP (std::string filepath)"
+.br
+.RI "Load the game\&. "
+.ti -1c
+.RI "void \fBrestartGame\fP ()"
+.br
+.RI "Restart the game\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Engine::Core::Core ()"
+
+.PP
+Construct a new \fBCore\fP object\&. 
+.SS "Engine::Core::~Core ()"
+
+.PP
+Destroy the \fBCore\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Engine::Core::endGame (void)"
+
+.PP
+Break cleanly the game loop and save informations\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true or false 
+.RE
+.PP
+
+.SS "void Engine::Core::getBackupFiles (void)"
+
+.PP
+Get Backup Files\&. 
+.SS "void Engine::Core::loadGame (std::string filepath)"
+
+.PP
+Load the game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilepath\fP Path to backup file 
+.RE
+.PP
+
+.SS "void Engine::Core::restartGame ()"
+
+.PP
+Restart the game\&. 
+.SS "void Engine::Core::run (void)"
+
+.PP
+Run the core\&. 
+.SS "void Engine::Core::saveBestScores (void)"
+
+.PP
+Save the best score(s) in a file\&. 
+.SS "void Engine::Core::saveGame (std::array< std::size_t, 9 > settings, std::vector< std::string > playerControls)"
+
+.PP
+Save the game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP Backup Container containing the settings 
+.br
+\fIplayerControls\fP Backup Container containing the player controls 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

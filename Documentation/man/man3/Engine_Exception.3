@@ -1,0 +1,478 @@
+.TH "Engine::Exception" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Engine::Exception
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Exception\&.hpp>\fP
+.PP
+Inherits std::exception\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBException\fP (const std::string &msg, const std::string &file, const size_t &line, const std::string &function, const std::string &info)"
+.br
+.RI "Detect if a certain functions hits and exception\&. "
+.ti -1c
+.RI "const std::string & \fBgetFile\fP (void) const"
+.br
+.RI "Get the file\&. "
+.ti -1c
+.RI "size_t \fBgetLine\fP (void) const"
+.br
+.RI "Get the line\&. "
+.ti -1c
+.RI "const std::string & \fBgetFunction\fP (void) const"
+.br
+.RI "Get the function\&. "
+.ti -1c
+.RI "const std::string & \fBgetInfo\fP (void) const"
+.br
+.RI "Get the type of exceptions\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayStudio\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayTeamPresentation\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryplayMusic\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryplayAndUpdateMusic\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygoToAnotherSceneFromVictory\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayVictoryScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryupdateTransitionManager\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplaySettingsScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrychangeMusicVolume\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrychangeSfxVolume\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydetectPlayerInput\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryremovePlayer\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryaddPlayer\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrymanageNextOrPrev\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayCardsSettings\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayBack\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayPlayerChoiceScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryshouldGoToEast\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryshouldGoToWest\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryshouldGoToNorth\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryshouldGoToSouth\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryshouldChangeToPrev\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryshouldChangeToNext\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryshouldSimulateAClick\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryupdate\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrymakeWalk\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrymakeBomb\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrymakeEmote\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayMenuScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayGameSettings\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrycheckClickOnMapChoiceScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayMapChoiceScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryloadThisBackup\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayLoadGameScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryKeyboardException\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryupdateGamepad\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetTimeInFormat\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydrawPlayersHead\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayPlayersPanels\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayPauseScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydgoToAnotherScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrymanagePlayersActions\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayInGameScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayHowToPlayScene\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryGamepadException\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygoToAnotherSceneFromDefeat\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayDefeatScenet\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydoesTimeElapsed\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetElapsedTime\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydisplayCinematic\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrywindowShouldClose\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrycloseWindow\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrysetWindowIcon\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisWindowFullscreen\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrytoggleFullscreen\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrysetTargetFPS\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetFPSS\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetFrameTime\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetTime\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydrawText\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrymeasureText\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrytextIsEqual\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrytextLength\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryRectangle\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydrawRectangleV\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrydrawRectanglePro\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryunloadMusic\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisButtonPressed\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisButtonDown\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisButtonReleased\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisButtonUp\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetMouseX\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetMouseY\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisKeyPressed\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisKeyDown\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisKeyReleased\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTryisKeyUp\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetKeyPressed\fP ()"
+.br
+.ti -1c
+.RI "static int \fBcatchThrowTrygetCharPressed\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Engine::Exception::Exception (const std::string & msg, const std::string & file, const size_t & line, const std::string & function, const std::string & info)"
+
+.PP
+Detect if a certain functions hits and exception\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImsg\fP The error message 
+.br
+\fIfile\fP The file containing the error 
+.br
+\fIline\fP The line containing the error 
+.br
+\fIfunc\fP The function containing the error 
+.br
+\fIinfo\fP The error informations 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static int Engine::Exception::catchThrowTryaddPlayer ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrychangeMusicVolume ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrychangeSfxVolume ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrycheckClickOnMapChoiceScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrycloseWindow ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydetectPlayerInput ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydgoToAnotherScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayBack ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayCardsSettings ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayCinematic ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayDefeatScenet ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayGameSettings ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayHowToPlayScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayInGameScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayLoadGameScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayMapChoiceScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayMenuScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayPauseScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayPlayerChoiceScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayPlayersPanels ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplaySettingsScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayStudio ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayTeamPresentation ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydisplayVictoryScene ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydoesTimeElapsed ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydrawPlayersHead ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydrawRectanglePro ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydrawRectangleV ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrydrawText ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryGamepadException ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetCharPressed ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetElapsedTime ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetFPSS ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetFrameTime ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetKeyPressed ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetMouseX ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetMouseY ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetTime ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygetTimeInFormat ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygoToAnotherSceneFromDefeat ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrygoToAnotherSceneFromVictory ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisButtonDown ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisButtonPressed ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisButtonReleased ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisButtonUp ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisKeyDown ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisKeyPressed ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisKeyReleased ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisKeyUp ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryisWindowFullscreen ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryKeyboardException ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryloadThisBackup ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrymakeBomb ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrymakeEmote ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrymakeWalk ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrymanageNextOrPrev ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrymanagePlayersActions ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrymeasureText ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryplayAndUpdateMusic ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryplayMusic ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryRectangle ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryremovePlayer ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrysetTargetFPS ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrysetWindowIcon ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryshouldChangeToNext ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryshouldChangeToPrev ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryshouldGoToEast ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryshouldGoToNorth ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryshouldGoToSouth ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryshouldGoToWest ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryshouldSimulateAClick ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrytextIsEqual ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrytextLength ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrytoggleFullscreen ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryunloadMusic ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryupdate ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryupdateGamepad ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTryupdateTransitionManager ()\fC [static]\fP"
+
+.SS "static int Engine::Exception::catchThrowTrywindowShouldClose ()\fC [static]\fP"
+
+.SS "const std::string & Engine::Exception::getFile (void) const\fC [inline]\fP"
+
+.PP
+Get the file\&. 
+.SS "const std::string & Engine::Exception::getFunction (void) const\fC [inline]\fP"
+
+.PP
+Get the function\&. 
+.SS "const std::string & Engine::Exception::getInfo (void) const\fC [inline]\fP"
+
+.PP
+Get the type of exceptions\&. 
+.SS "size_t Engine::Exception::getLine (void) const\fC [inline]\fP"
+
+.PP
+Get the line\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

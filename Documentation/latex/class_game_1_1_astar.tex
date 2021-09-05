@@ -1,0 +1,78 @@
+\hypertarget{class_game_1_1_astar}{}\doxysection{Game\+::Astar Class Reference}
+\label{class_game_1_1_astar}\index{Game::Astar@{Game::Astar}}
+
+
+{\ttfamily \#include $<$Astar.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_astar_a01b1ced24694d5d9aa692c3a4f6b84f4}{Astar}} (const std\+::vector$<$ std\+::string $>$ \&map, const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&start, const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&target)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_astar}{Astar}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_astar_ad7366f421f22c3e51aa88180369874d9}{target\+Is\+Found}} (void)
+\begin{DoxyCompactList}\small\item\em Find a path to the target. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_astar_aebe663eba0402bfdb61f752086e7a94e}{fill\+Path}} (std\+::list$<$ \mbox{\hyperlink{class_game_1_1_point}{Point}} $>$ \&path)
+\begin{DoxyCompactList}\small\item\em Fill the path finding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_astar_a01b1ced24694d5d9aa692c3a4f6b84f4}\label{class_game_1_1_astar_a01b1ced24694d5d9aa692c3a4f6b84f4}} 
+\index{Game::Astar@{Game::Astar}!Astar@{Astar}}
+\index{Astar@{Astar}!Game::Astar@{Game::Astar}}
+\doxysubsubsection{\texorpdfstring{Astar()}{Astar()}}
+{\footnotesize\ttfamily Game\+::\+Astar\+::\+Astar (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{map,  }\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{start,  }\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{target }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_astar}{Astar}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map \\
+\hline
+{\em start} & The start point \\
+\hline
+{\em target} & The end map \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_astar_aebe663eba0402bfdb61f752086e7a94e}\label{class_game_1_1_astar_aebe663eba0402bfdb61f752086e7a94e}} 
+\index{Game::Astar@{Game::Astar}!fillPath@{fillPath}}
+\index{fillPath@{fillPath}!Game::Astar@{Game::Astar}}
+\doxysubsubsection{\texorpdfstring{fillPath()}{fillPath()}}
+{\footnotesize\ttfamily int Game\+::\+Astar\+::fill\+Path (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_game_1_1_point}{Point}} $>$ \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Fill the path finding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & A reference to the path (list of Points) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ The final heuristic cost 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_astar_ad7366f421f22c3e51aa88180369874d9}\label{class_game_1_1_astar_ad7366f421f22c3e51aa88180369874d9}} 
+\index{Game::Astar@{Game::Astar}!targetIsFound@{targetIsFound}}
+\index{targetIsFound@{targetIsFound}!Game::Astar@{Game::Astar}}
+\doxysubsubsection{\texorpdfstring{targetIsFound()}{targetIsFound()}}
+{\footnotesize\ttfamily bool Game\+::\+Astar\+::target\+Is\+Found (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Find a path to the target. 
+
+\begin{DoxyReturn}{Returns}
+true if the destination has been found, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_astar_8hpp}{Astar.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_astar_8cpp}{Astar.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_astar_8inl}{Astar.\+inl}}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+.TH "Raylib::Vector3" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Vector3
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector3\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector3\fP (float \fBx\fP=0, float \fBy\fP=0, float \fBz\fP=0)"
+.br
+.RI "Construct a new Vector 3 object\&. "
+.ti -1c
+.RI "\fBVector3\fP (const \fBVector3\fP &copy)=default"
+.br
+.RI "Construct a new Vector 3 object\&. "
+.ti -1c
+.RI "\fBVector3\fP (const ::\fBVector3\fP &vector)"
+.br
+.RI "Construct a new Vector 3 object\&. "
+.ti -1c
+.RI "\fB~Vector3\fP ()"
+.br
+.RI "Destroy the Vector 3 object\&. "
+.ti -1c
+.RI "\fBVector3\fP \fBoperator=\fP (const \fBVector3\fP &copy)"
+.br
+.RI "Assign to a \fBVector3\fP from a \fBVector3\fP class instance\&. "
+.ti -1c
+.RI "\fBVector3\fP \fBoperator=\fP (const ::\fBVector3\fP &cvec)"
+.br
+.RI "Assign to a \fBVector3\fP from a \fBVector3\fP C \fBRaylib\fP structure instance\&. "
+.ti -1c
+.RI "::\fBVector3\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Get the \fBVector3\fP C \fBRaylib\fP structure instance\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBx\fP"
+.br
+.RI "The x position\&. "
+.ti -1c
+.RI "float \fBy\fP"
+.br
+.RI "The y position\&. "
+.ti -1c
+.RI "float \fBz\fP"
+.br
+.RI "The z position\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Vector3::Vector3 (float x = \fC0\fP, float y = \fC0\fP, float z = \fC0\fP)"
+
+.PP
+Construct a new Vector 3 object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP x coordinate 
+.br
+\fIy\fP y coordinate 
+.br
+\fIz\fP z coordinate 
+.RE
+.PP
+
+.SS "Raylib::Vector3::Vector3 (const \fBVector3\fP & copy)\fC [default]\fP"
+
+.PP
+Construct a new Vector 3 object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcopy\fP \fBVector3\fP class instance 
+.RE
+.PP
+
+.SS "Raylib::Vector3::Vector3 (const ::\fBVector3\fP & vector)"
+
+.PP
+Construct a new Vector 3 object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvector\fP \fBVector3\fP C \fBRaylib\fP strutcture instance 
+.RE
+.PP
+
+.SS "Raylib::Vector3::~Vector3 ()"
+
+.PP
+Destroy the Vector 3 object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBVector3\fP Raylib::Vector3::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Get the \fBVector3\fP C \fBRaylib\fP structure instance\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector3\fP C \fBRaylib\fP structure instance 
+.RE
+.PP
+
+.SS "\fBVector3\fP Raylib::Vector3::operator= (const ::\fBVector3\fP & cvec)\fC [inline]\fP"
+
+.PP
+Assign to a \fBVector3\fP from a \fBVector3\fP C \fBRaylib\fP structure instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcvec\fP \fBVector3\fP C \fBRaylib\fP structure instance 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector3\fP 
+.RE
+.PP
+
+.SS "\fBVector3\fP Raylib::Vector3::operator= (const \fBVector3\fP & copy)\fC [inline]\fP"
+
+.PP
+Assign to a \fBVector3\fP from a \fBVector3\fP class instance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcopy\fP \fBVector3\fP class instance 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector3\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "float Raylib::Vector3::x"
+
+.PP
+The x position\&. 
+.SS "float Raylib::Vector3::y"
+
+.PP
+The y position\&. 
+.SS "float Raylib::Vector3::z"
+
+.PP
+The z position\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

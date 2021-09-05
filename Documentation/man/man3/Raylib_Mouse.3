@@ -1,0 +1,263 @@
+.TH "Raylib::Mouse" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Mouse
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Mouse\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMouse\fP ()"
+.br
+.RI "Construct a new \fBMouse\fP object\&. "
+.ti -1c
+.RI "\fB~Mouse\fP ()"
+.br
+.RI "Destroy the \fBMouse\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBisButtonPressed\fP (const size_t &button)"
+.br
+.RI "Detect if a mouse button has been pressed once\&. "
+.ti -1c
+.RI "static bool \fBisButtonDown\fP (const size_t &button)"
+.br
+.RI "Detect if a mouse button is being pressed\&. "
+.ti -1c
+.RI "static bool \fBisButtonReleased\fP (const size_t &button)"
+.br
+.RI "Detect if a mouse button has been released once\&. "
+.ti -1c
+.RI "static bool \fBisButtonUp\fP (const size_t &button)"
+.br
+.RI "Detect if a mouse button is NOT being pressed\&. "
+.ti -1c
+.RI "static size_t \fBgetMouseX\fP (void)"
+.br
+.RI "Returns mouse position X\&. "
+.ti -1c
+.RI "static size_t \fBgetMouseY\fP (void)"
+.br
+.RI "Returns mouse position Y\&. "
+.ti -1c
+.RI "static void \fBsetMousePosition\fP (const size_t &x, const size_t &y)"
+.br
+.RI "Set the \fBMouse\fP Position XY\&. "
+.ti -1c
+.RI "static void \fBsetMouseOffset\fP (const size_t &offsetX, const size_t &offsetY)"
+.br
+.RI "Set the \fBMouse\fP Offset\&. "
+.ti -1c
+.RI "static void \fBsetMouseScale\fP (const float &scaleX, const float &scaleY)"
+.br
+.RI "Set the \fBMouse\fP Scale\&. "
+.ti -1c
+.RI "static float \fBgetMouseWheelMove\fP (void)"
+.br
+.RI "Get the \fBMouse\fP Wheel Move\&. "
+.ti -1c
+.RI "static void \fBsetMouseCursor\fP (const size_t &cursor)"
+.br
+.RI "Set the \fBMouse\fP \fBCursor\fP\&. "
+.ti -1c
+.RI "static size_t \fBgetTouchX\fP (void)"
+.br
+.RI "Returns touch position X for touch point 0 (relative to screen size) "
+.ti -1c
+.RI "static size_t \fBgetTouchY\fP (void)"
+.br
+.RI "Returns touch position Y for touch point 0 (relative to screen size) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Mouse::Mouse ()"
+
+.PP
+Construct a new \fBMouse\fP object\&. 
+.SS "Raylib::Mouse::~Mouse ()"
+
+.PP
+Destroy the \fBMouse\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "float Raylib::Mouse::getMouseWheelMove (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the \fBMouse\fP Wheel Move\&. 
+.PP
+\fBReturns\fP
+.RS 4
+float, that represents mouse wheel move 
+.RE
+.PP
+
+.SS "size_t Raylib::Mouse::getMouseX (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Returns mouse position X\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t that represents position of mouse on x-axis 
+.RE
+.PP
+
+.SS "size_t Raylib::Mouse::getMouseY (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Returns mouse position Y\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t that represents position of mouse on y-axis 
+.RE
+.PP
+
+.SS "size_t Raylib::Mouse::getTouchX (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Returns touch position X for touch point 0 (relative to screen size) 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "size_t Raylib::Mouse::getTouchY (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Returns touch position Y for touch point 0 (relative to screen size) 
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "bool Raylib::Mouse::isButtonDown (const size_t & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a mouse button is being pressed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbutton\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if $button is being pressed, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Mouse::isButtonPressed (const size_t & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a mouse button has been pressed once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbutton\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if $button has been pressed once, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Mouse::isButtonReleased (const size_t & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a mouse button has been released once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbutton\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if $button has been released once, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Mouse::isButtonUp (const size_t & button)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Detect if a mouse button is NOT being pressed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbutton\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if $button is NOT being pressed, false otherwise 
+.RE
+.PP
+
+.SS "void Raylib::Mouse::setMouseCursor (const size_t & cursor)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set the \fBMouse\fP \fBCursor\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcursor\fP A size_t 
+.RE
+.PP
+
+.SS "void Raylib::Mouse::setMouseOffset (const size_t & offsetX, const size_t & offsetY)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set the \fBMouse\fP Offset\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoffsetX\fP A size_t 
+.br
+\fIoffsetY\fP A size_t 
+.RE
+.PP
+
+.SS "void Raylib::Mouse::setMousePosition (const size_t & x, const size_t & y)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set the \fBMouse\fP Position XY\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP Position of \fBMouse\fP on x-axis 
+.br
+\fIy\fP Position of \fBMouse\fP on y-axis 
+.RE
+.PP
+
+.SS "void Raylib::Mouse::setMouseScale (const float & scaleX, const float & scaleY)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set the \fBMouse\fP Scale\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscaleX\fP A size_t 
+.br
+\fIscaleY\fP A size_t 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,20 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Lib/XRaylib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2e114b6c2ea195007f07f47d968e03e9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Lib" fontname="Helvetica", fontsize="10", URL="dir_2e114b6c2ea195007f07f47d968e03e9.html"]
+  subgraph clusterdir_34244dabb43d53e30027e1c0d07596f4 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_34244dabb43d53e30027e1c0d07596f4.html"];
+    dir_34244dabb43d53e30027e1c0d07596f4 [shape=plaintext label="XRaylib"];
+  dir_de334b3105e3c27a200be04983862f6f [shape=box label="Raylib" fillcolor="white" style="filled" color="red" URL="dir_de334b3105e3c27a200be04983862f6f.html"];
+  dir_e279af23d9bdab6bcc8800e945683509 [shape=box label="XRay" fillcolor="white" style="filled" color="red" URL="dir_e279af23d9bdab6bcc8800e945683509.html"];
+  }
+  }
+  dir_65b0892c83f613d26dd8ae47df83a316 [shape=box label="Engine" fillcolor="white" style="filled" color="red" URL="dir_65b0892c83f613d26dd8ae47df83a316.html"];
+  dir_e279af23d9bdab6bcc8800e945683509->dir_65b0892c83f613d26dd8ae47df83a316 [headlabel="20", labeldistance=1.5 headhref="dir_000016_000003.html"];
+  dir_e279af23d9bdab6bcc8800e945683509->dir_de334b3105e3c27a200be04983862f6f [headlabel="29", labeldistance=1.5 headhref="dir_000016_000026.html"];
+  dir_65b0892c83f613d26dd8ae47df83a316->dir_e279af23d9bdab6bcc8800e945683509 [headlabel="3", labeldistance=1.5 headhref="dir_000003_000016.html"];
+  dir_65b0892c83f613d26dd8ae47df83a316->dir_de334b3105e3c27a200be04983862f6f [headlabel="2", labeldistance=1.5 headhref="dir_000003_000026.html"];
+  dir_de334b3105e3c27a200be04983862f6f->dir_65b0892c83f613d26dd8ae47df83a316 [headlabel="8", labeldistance=1.5 headhref="dir_000026_000003.html"];
+}

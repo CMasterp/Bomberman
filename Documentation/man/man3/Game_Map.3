@@ -1,0 +1,190 @@
+.TH "Game::Map" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Map
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Map\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMap\fP ()"
+.br
+.RI "Construct the \fBMap\fP object\&. "
+.ti -1c
+.RI "\fBMap\fP (const size_t &width, const size_t &height, const std::pair< size_t, size_t > &playersNumber)"
+.br
+.RI "Construct the \fBMap\fP object (Copy Constructor) "
+.ti -1c
+.RI "\fB~Map\fP ()"
+.br
+.RI "Destroy the \fBMap\fP object\&. "
+.ti -1c
+.RI "size_t \fBgetWidth\fP (void) const"
+.br
+.RI "Getter for map width\&. "
+.ti -1c
+.RI "size_t \fBgetHeight\fP (void) const"
+.br
+.RI "Getter for map height\&. "
+.ti -1c
+.RI "void \fBsetWidth\fP (const size_t width)"
+.br
+.RI "Setter for map width\&. "
+.ti -1c
+.RI "void \fBsetHeight\fP (const size_t height)"
+.br
+.RI "Setter for map height\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBgetMap\fP (void) const"
+.br
+.RI "Getter for map\&. "
+.ti -1c
+.RI "void \fBsetMap\fP (const std::vector< std::string > &map)"
+.br
+.RI "Setter for map\&. "
+.ti -1c
+.RI "void \fBdump\fP (void) const"
+.br
+.RI "Dump the map\&. "
+.ti -1c
+.RI "void \fBsetPlayersAreas\fP (const size_t &areaSize)"
+.br
+.RI "Set the Players Areas in the map\&. "
+.ti -1c
+.RI "\fBMap\fP & \fBoperator=\fP (const \fBMap\fP &map)"
+.br
+.RI "Overwritting of assignment operator\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Map::Map ()"
+
+.PP
+Construct the \fBMap\fP object\&. 
+.SS "Game::Map::Map (const size_t & width, const size_t & height, const std::pair< size_t, size_t > & playersNumber)"
+
+.PP
+Construct the \fBMap\fP object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP Width of the map 
+.br
+\fIheight\fP Height of the map 
+.br
+\fIplayersNumber\fP Number of players in the map (first: human number, second: \fBAI\fP number) 
+.RE
+.PP
+
+.SS "Game::Map::~Map ()"
+
+.PP
+Destroy the \fBMap\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::Map::dump (void) const\fC [inline]\fP"
+
+.PP
+Dump the map\&. 
+.SS "size_t Game::Map::getHeight (void) const\fC [inline]\fP"
+
+.PP
+Getter for map height\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Height of the map (size_t) 
+.RE
+.PP
+
+.SS "std::vector< std::string > Game::Map::getMap (void) const\fC [inline]\fP"
+
+.PP
+Getter for map\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The map (a vector of vectors of chars) 
+.RE
+.PP
+
+.SS "size_t Game::Map::getWidth (void) const\fC [inline]\fP"
+
+.PP
+Getter for map width\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Width of the map (size_t) 
+.RE
+.PP
+
+.SS "\fBGame::Map\fP & Game::Map::operator= (const \fBMap\fP & map)\fC [inline]\fP"
+
+.PP
+Overwritting of assignment operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImap\fP The map to copy 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBMap\fP& A new map instance 
+.RE
+.PP
+
+.SS "void Game::Map::setHeight (const size_t height)\fC [inline]\fP"
+
+.PP
+Setter for map height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIheight\fP A const reference to an size_t 
+.RE
+.PP
+
+.SS "void Game::Map::setMap (const std::vector< std::string > & map)\fC [inline]\fP"
+
+.PP
+Setter for map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImap\fP The new map (a vector of strings) 
+.RE
+.PP
+
+.SS "void Game::Map::setPlayersAreas (const size_t & areaSize)\fC [inline]\fP"
+
+.PP
+Set the Players Areas in the map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIareaSize\fP A const reference to a size_t 
+.RE
+.PP
+
+.SS "void Game::Map::setWidth (const size_t width)\fC [inline]\fP"
+
+.PP
+Setter for map width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A const reference to an size_t 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

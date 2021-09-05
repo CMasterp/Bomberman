@@ -1,0 +1,191 @@
+\hypertarget{class_raylib_1_1_camera2_d}{}\doxysection{Raylib\+::Camera2D Class Reference}
+\label{class_raylib_1_1_camera2_d}\index{Raylib::Camera2D@{Raylib::Camera2D}}
+
+
+{\ttfamily \#include $<$Camera2\+D.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_camera2_d_a0ce081b58e4c03e67a2ad3181b6edcf9}{Camera2D}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_camera2_d_aecf2f09896833e6f7984df74df1462bd}{$\sim$\+Camera2D}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_camera2_d_a52ba0b233d89ae813fad985a0978d46a}{Camera2D}} (\+::\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} const \&camera)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} object (Copy Constructor) \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} \mbox{\hyperlink{class_raylib_1_1_camera2_d_a19329cf10b16cee02c3863c802ca8b6a}{get\+CStruct}} (void) const
+\begin{DoxyCompactList}\small\item\em Get C Structure for \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} Class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera2_d_a835cf812c1dddca6a9793533a6de8437}{begin\+Mode2D}} (\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&camera) const
+\begin{DoxyCompactList}\small\item\em Initialize 2D mode with custom camera (2D) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera2_d_a518e1b3313bbef681774f129a0317adc}{End\+Mode2D}} (void) const
+\begin{DoxyCompactList}\small\item\em Ends 2D mode with custom camera. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} \mbox{\hyperlink{class_raylib_1_1_camera2_d_a1f803ddc846aae18d3944091865d9f00}{get\+Camera\+Matrix2D}} (\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&camera) const
+\begin{DoxyCompactList}\small\item\em Returns camera 2d transform matrix. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \mbox{\hyperlink{class_raylib_1_1_camera2_d_aa7bf96b55e174563a74f63a41cfb0230}{get\+World\+To\+Screen2D}} (\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&position, \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&camera) const
+\begin{DoxyCompactList}\small\item\em Returns the screen space position for a 2d camera world space position. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \mbox{\hyperlink{class_raylib_1_1_camera2_d_a24e4ed68db49ae4cdfc8babb8aa8a27d}{get\+Screen\+To\+World2D}} (\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&position, \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&camera) const
+\begin{DoxyCompactList}\small\item\em Returns the world space position for a 2d camera screen space position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} \& \mbox{\hyperlink{class_raylib_1_1_camera2_d_aa4fb66dc3bd6ae6ba3109bd42c0c3a54}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} \&camera)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_a0ce081b58e4c03e67a2ad3181b6edcf9}\label{class_raylib_1_1_camera2_d_a0ce081b58e4c03e67a2ad3181b6edcf9}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!Camera2D@{Camera2D}}
+\index{Camera2D@{Camera2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{Camera2D()}{Camera2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Raylib\+::\+Camera2\+D\+::\+Camera2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_aecf2f09896833e6f7984df74df1462bd}\label{class_raylib_1_1_camera2_d_aecf2f09896833e6f7984df74df1462bd}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!````~Camera2D@{$\sim$Camera2D}}
+\index{````~Camera2D@{$\sim$Camera2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Camera2D()}{~Camera2D()}}
+{\footnotesize\ttfamily Raylib\+::\+Camera2\+D\+::$\sim$\+Camera2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_a52ba0b233d89ae813fad985a0978d46a}\label{class_raylib_1_1_camera2_d_a52ba0b233d89ae813fad985a0978d46a}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!Camera2D@{Camera2D}}
+\index{Camera2D@{Camera2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{Camera2D()}{Camera2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Raylib\+::\+Camera2\+D\+::\+Camera2D (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} const \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} object (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}}} & A \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} C Structure \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_a835cf812c1dddca6a9793533a6de8437}\label{class_raylib_1_1_camera2_d_a835cf812c1dddca6a9793533a6de8437}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!beginMode2D@{beginMode2D}}
+\index{beginMode2D@{beginMode2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{beginMode2D()}{beginMode2D()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera2\+D\+::begin\+Mode2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&}]{camera }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize 2D mode with custom camera (2D) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}}} & A \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_a518e1b3313bbef681774f129a0317adc}\label{class_raylib_1_1_camera2_d_a518e1b3313bbef681774f129a0317adc}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!EndMode2D@{EndMode2D}}
+\index{EndMode2D@{EndMode2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{EndMode2D()}{EndMode2D()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera2\+D\+::\+End\+Mode2D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ends 2D mode with custom camera. 
+
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_a1f803ddc846aae18d3944091865d9f00}\label{class_raylib_1_1_camera2_d_a1f803ddc846aae18d3944091865d9f00}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!getCameraMatrix2D@{getCameraMatrix2D}}
+\index{getCameraMatrix2D@{getCameraMatrix2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{getCameraMatrix2D()}{getCameraMatrix2D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} Raylib\+::\+Camera2\+D\+::get\+Camera\+Matrix2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&}]{camera }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns camera 2d transform matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}}} & A \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_a19329cf10b16cee02c3863c802ca8b6a}\label{class_raylib_1_1_camera2_d_a19329cf10b16cee02c3863c802ca8b6a}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!getCStruct@{getCStruct}}
+\index{getCStruct@{getCStruct}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{getCStruct()}{getCStruct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} Raylib\+::\+Camera2\+D\+::get\+CStruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get C Structure for \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} Class. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} C Structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_a24e4ed68db49ae4cdfc8babb8aa8a27d}\label{class_raylib_1_1_camera2_d_a24e4ed68db49ae4cdfc8babb8aa8a27d}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!getScreenToWorld2D@{getScreenToWorld2D}}
+\index{getScreenToWorld2D@{getScreenToWorld2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{getScreenToWorld2D()}{getScreenToWorld2D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} Raylib\+::\+Camera2\+D\+::get\+Screen\+To\+World2D (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{position,  }\item[{\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&}]{camera }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the world space position for a 2d camera screen space position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & A \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} structure \\
+\hline
+{\em \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}}} & A \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_aa7bf96b55e174563a74f63a41cfb0230}\label{class_raylib_1_1_camera2_d_aa7bf96b55e174563a74f63a41cfb0230}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!getWorldToScreen2D@{getWorldToScreen2D}}
+\index{getWorldToScreen2D@{getWorldToScreen2D}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{getWorldToScreen2D()}{getWorldToScreen2D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} Raylib\+::\+Camera2\+D\+::get\+World\+To\+Screen2D (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{position,  }\item[{\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} const \&}]{camera }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the screen space position for a 2d camera world space position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & A \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} structure \\
+\hline
+{\em \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}}} & A \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera2_d_aa4fb66dc3bd6ae6ba3109bd42c0c3a54}\label{class_raylib_1_1_camera2_d_aa4fb66dc3bd6ae6ba3109bd42c0c3a54}} 
+\index{Raylib::Camera2D@{Raylib::Camera2D}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Camera2D@{Raylib::Camera2D}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Raylib\+::\+Camera2D}} \& Raylib\+::\+Camera2\+D\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} (\mbox{\hyperlink{class_raylib_1_1_camera2_d}{Camera2D}} \&) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Camera2\+D/\mbox{\hyperlink{_camera2_d_8hpp}{Camera2\+D.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Camera2\+D/\mbox{\hyperlink{_camera2_d_8cpp}{Camera2\+D.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Camera2\+D/\mbox{\hyperlink{_camera2_d_8inl}{Camera2\+D.\+inl}}\end{DoxyCompactItemize}

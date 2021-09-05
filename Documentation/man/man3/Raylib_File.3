@@ -1,0 +1,450 @@
+.TH "Raylib::File" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::File
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <File\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFile\fP ()"
+.br
+.RI "Construct a new \fBFile\fP object\&. "
+.ti -1c
+.RI "\fB~File\fP ()"
+.br
+.RI "Destroy the \fBFile\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::string \fBloadFileData\fP (const std::string &fileName, unsigned int &bytesRead)"
+.br
+.RI "Load file data as byte array (read) "
+.ti -1c
+.RI "static void \fBunloadFileData\fP (const std::string &data)"
+.br
+.RI "Unload file data allocated by LoadFileData() "
+.ti -1c
+.RI "static bool \fBsaveFileData\fP (const std::string &fileName, void *data, const unsigned int &bytesToWrite)"
+.br
+.RI "Save data to file from byte array (write) "
+.ti -1c
+.RI "static std::string \fBloadFileText\fP (const std::string &fileName)"
+.br
+.RI "Load text data from file (read) "
+.ti -1c
+.RI "static void \fBunloadFileText\fP (const std::string &text)"
+.br
+.RI "Unload file text data allocated by LoadFileText() "
+.ti -1c
+.RI "static bool \fBsaveFileText\fP (const std::string &fileName, const std::string &text)"
+.br
+.RI "Save text data to file (write), string must be '\\0' terminated\&. "
+.ti -1c
+.RI "static bool \fBfileExists\fP (const std::string &fileName)"
+.br
+.RI "Check if file exists\&. "
+.ti -1c
+.RI "static bool \fBdirectoryExists\fP (const std::string &dirPath)"
+.br
+.RI "Check if a directory path exists\&. "
+.ti -1c
+.RI "static bool \fBisFileExtension\fP (const std::string &fileName, const std::string &ext)"
+.br
+.RI "Check file extension (including point: \&.png, \&.wav) "
+.ti -1c
+.RI "static const std::string \fBgetFileExtension\fP (const std::string &fileName)"
+.br
+.RI "Get pointer to extension for a filename string (includes dot: '\&.png') "
+.ti -1c
+.RI "static const std::string \fBgetFileName\fP (const std::string &filePath)"
+.br
+.RI "Get pointer to filename for a path string\&. "
+.ti -1c
+.RI "static const std::string \fBgetFileNameWithoutExt\fP (const std::string &filePath)"
+.br
+.RI "Get filename string without extension (uses static string) "
+.ti -1c
+.RI "static const std::string \fBgetDirectoryPath\fP (const std::string &filePath)"
+.br
+.RI "Get full path for a given fileName with path (uses static string) "
+.ti -1c
+.RI "static const std::string \fBgetPrevDirectoryPath\fP (const std::string &dirPath)"
+.br
+.RI "Get previous directory path for a given path (uses static string) "
+.ti -1c
+.RI "static const std::string \fBgetWorkingDirectory\fP (void)"
+.br
+.RI "Get current working directory (uses static string) "
+.ti -1c
+.RI "static std::vector< std::string > \fBgetDirectoryFiles\fP (const std::string &dirPath, int &count)"
+.br
+.RI "Get filenames in a directory path (memory should be freed) "
+.ti -1c
+.RI "static void \fBclearDirectoryFiles\fP (void)"
+.br
+.RI "Clear directory files paths buffers (free memory) "
+.ti -1c
+.RI "static bool \fBchangeDirectory\fP (const std::string &dir)"
+.br
+.RI "Change working directory\&. "
+.ti -1c
+.RI "static bool \fBisFileDropped\fP (void)"
+.br
+.RI "Check if a file has been dropped into window\&. "
+.ti -1c
+.RI "static std::vector< std::string > \fBgetDroppedFiles\fP (int &count)"
+.br
+.RI "Get dropped files names (memory should be freed) "
+.ti -1c
+.RI "static void \fBclearDroppedFiles\fP (void)"
+.br
+.RI "Clear dropped files paths buffer (free memory) "
+.ti -1c
+.RI "static long \fBgetFileModTime\fP (const std::string &fileName)"
+.br
+.RI "Get file modification time (last write time) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::File::File ()"
+
+.PP
+Construct a new \fBFile\fP object\&. 
+.SS "Raylib::File::~File ()"
+
+.PP
+Destroy the \fBFile\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Raylib::File::changeDirectory (const std::string & dir)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Change working directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdir\fP the directory you whant to move to 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+return true on success and false on error 
+.RE
+.PP
+
+.SS "void Raylib::File::clearDirectoryFiles (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Clear directory files paths buffers (free memory) 
+.SS "void Raylib::File::clearDroppedFiles (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Clear dropped files paths buffer (free memory) 
+.SS "bool Raylib::File::directoryExists (const std::string & dirPath)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if a directory path exists\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdirPath\fP path of the directory 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns true on success, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::File::fileExists (const std::string & fileName)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if file exists\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP the name of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns true on success, false otherwise 
+.RE
+.PP
+
+.SS "std::vector< std::string > Raylib::File::getDirectoryFiles (const std::string & dirPath, int & count)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get filenames in a directory path (memory should be freed) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdirPath\fP the path of the directory 
+.br
+\fIcount\fP the number of files 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+filenames 
+.RE
+.PP
+
+.SS "const std::string Raylib::File::getDirectoryPath (const std::string & filePath)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get full path for a given fileName with path (uses static string) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilePath\fP the path of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+full path 
+.RE
+.PP
+
+.SS "std::vector< std::string > Raylib::File::getDroppedFiles (int & count)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get dropped files names (memory should be freed) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcount\fP the numbers of dropped files 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Filesnames 
+.RE
+.PP
+
+.SS "const std::string Raylib::File::getFileExtension (const std::string & fileName)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get pointer to extension for a filename string (includes dot: '\&.png') 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP the name of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A pointer 
+.RE
+.PP
+
+.SS "long Raylib::File::getFileModTime (const std::string & fileName)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get file modification time (last write time) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP the name of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+file modification time (last write time) 
+.RE
+.PP
+
+.SS "const std::string Raylib::File::getFileName (const std::string & filePath)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get pointer to filename for a path string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilePath\fP the path of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A pointer 
+.RE
+.PP
+
+.SS "const std::string Raylib::File::getFileNameWithoutExt (const std::string & filePath)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get filename string without extension (uses static string) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilePath\fP the path of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+filename string without extension 
+.RE
+.PP
+
+.SS "const std::string Raylib::File::getPrevDirectoryPath (const std::string & dirPath)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get previous directory path for a given path (uses static string) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdirPath\fP the path of the directory 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+previous directory 
+.RE
+.PP
+
+.SS "const std::string Raylib::File::getWorkingDirectory (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get current working directory (uses static string) 
+.PP
+\fBReturns\fP
+.RS 4
+Get current working directory 
+.RE
+.PP
+
+.SS "bool Raylib::File::isFileDropped (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if a file has been dropped into window\&. 
+.PP
+\fBReturns\fP
+.RS 4
+return true on success and false on error 
+.RE
+.PP
+
+.SS "bool Raylib::File::isFileExtension (const std::string & fileName, const std::string & ext)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check file extension (including point: \&.png, \&.wav) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP the name of the file 
+.br
+\fIext\fP the extension of the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns true on success, false otherwise 
+.RE
+.PP
+
+.SS "std::string Raylib::File::loadFileData (const std::string & fileName, unsigned int & bytesRead)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Load file data as byte array (read) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP const std::string 
+.br
+\fIbytesRead\fP unsigned int & 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+data static std::string 
+.RE
+.PP
+
+.SS "std::string Raylib::File::loadFileText (const std::string & fileName)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Load text data from file (read) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP const std::string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns a '\\0' terminated string 
+.RE
+.PP
+
+.SS "bool Raylib::File::saveFileData (const std::string & fileName, void * data, const unsigned int & bytesToWrite)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Save data to file from byte array (write) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP const std::string 
+.br
+\fIdata\fP void * 
+.br
+\fIbytesToWrite\fP unsigned int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns true on success, false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::File::saveFileText (const std::string & fileName, const std::string & text)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Save text data to file (write), string must be '\\0' terminated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfileName\fP the name of the file 
+.br
+\fItext\fP the text to write in the file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns true on success, false otherwise 
+.RE
+.PP
+
+.SS "void Raylib::File::unloadFileData (const std::string & data)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Unload file data allocated by LoadFileData() 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP unsigned char 
+.RE
+.PP
+
+.SS "void Raylib::File::unloadFileText (const std::string & text)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Unload file text data allocated by LoadFileText() 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP unsigned std::string 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

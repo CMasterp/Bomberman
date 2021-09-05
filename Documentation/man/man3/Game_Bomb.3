@@ -1,0 +1,168 @@
+.TH "Game::Bomb" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Bomb
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Bomb\&.hpp>\fP
+.PP
+Inherits \fBGame::Animated\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBomb\fP (const \fBRaylib::Vector3\fP &positions, const int &fire, std::vector< std::shared_ptr< \fBGame::Player\fP >> &players, std::function< void(size_t)> function, \fBGame::Player\fP &player)"
+.br
+.RI "Construct a new \fBBomb\fP object\&. "
+.ti -1c
+.RI "\fB~Bomb\fP ()"
+.br
+.RI "Destroy the \fBBomb\fP object\&. "
+.ti -1c
+.RI "std::string \fBgetType\fP () const override"
+.br
+.RI "Get the Type object\&. "
+.ti -1c
+.RI "int \fBmakeExplode\fP ()"
+.br
+.RI "Make the bomb explose\&. "
+.ti -1c
+.RI "bool \fBisExploding\fP ()"
+.br
+.RI "check if bomb is exploding "
+.ti -1c
+.RI "bool \fBhasExplode\fP ()"
+.br
+.RI "check if bomb has exploded "
+.ti -1c
+.RI "void \fBdrawEntity\fP () override"
+.br
+.RI "draw the bomb entity "
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.RI "update the bom status "
+.ti -1c
+.RI "void \fBsetBombzone\fP (std::vector< std::string > map)"
+.br
+.RI "Set the Bombzone object\&. "
+.ti -1c
+.RI "void \fBsetPlayers\fP (std::vector< std::shared_ptr< \fBGame::Player\fP >> players)"
+.br
+.RI "Set the \fBPlayer\fP object\&. "
+.ti -1c
+.RI "void \fBincreasePlayerWall\fP ()"
+.br
+.RI "Increase the walls breaked value to the player owner of the bomb\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Bomb::Bomb (const \fBRaylib::Vector3\fP & positions, const int & fire, std::vector< std::shared_ptr< \fBGame::Player\fP >> & players, std::function< void(size_t)> function, \fBGame::Player\fP & player)"
+
+.PP
+Construct a new \fBBomb\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpositions\fP 
+.br
+\fIfire\fP 
+.br
+\fIplayers\fP 
+.br
+\fIfunction\fP 
+.RE
+.PP
+
+.SS "Game::Bomb::~Bomb ()"
+
+.PP
+Destroy the \fBBomb\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Game::Bomb::drawEntity (void)\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+draw the bomb entity 
+.PP
+Reimplemented from \fBGame::Animated\fP\&.
+.SS "std::string Game::Bomb::getType (void) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the Type object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A std::string 
+.RE
+.PP
+
+.PP
+Implements \fBGame::Animated\fP\&.
+.SS "bool Game::Bomb::hasExplode ()\fC [inline]\fP"
+
+.PP
+check if bomb has exploded 
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "void Game::Bomb::increasePlayerWall ()\fC [inline]\fP"
+
+.PP
+Increase the walls breaked value to the player owner of the bomb\&. 
+.SS "bool Game::Bomb::isExploding ()\fC [inline]\fP"
+
+.PP
+check if bomb is exploding 
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "int Game::Bomb::makeExplode ()\fC [inline]\fP"
+
+.PP
+Make the bomb explose\&. 
+.SS "void Game::Bomb::setBombzone (std::vector< std::string > map)\fC [inline]\fP"
+
+.PP
+Set the Bombzone object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImap\fP 
+.RE
+.PP
+
+.SS "void Game::Bomb::setPlayers (std::vector< std::shared_ptr< \fBGame::Player\fP >> players)\fC [inline]\fP"
+
+.PP
+Set the \fBPlayer\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayers\fP A vector of shared_ptr of Players 
+.RE
+.PP
+
+.SS "void Game::Bomb::update ()\fC [inline]\fP"
+
+.PP
+update the bom status 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

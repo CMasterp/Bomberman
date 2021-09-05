@@ -1,0 +1,75 @@
+\hypertarget{class_game_1_1_powerups}{}\doxysection{Game\+::Powerups Class Reference}
+\label{class_game_1_1_powerups}\index{Game::Powerups@{Game::Powerups}}
+
+
+{\ttfamily \#include $<$Powerups.\+hpp$>$}
+
+Inheritance diagram for Game\+::Powerups\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.929825cm]{class_game_1_1_powerups}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_powerups_a7725dcc45716326ce29ad41897e3da0c}{Powerups}} (const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&position, const std\+::string \&type)
+\item 
+\mbox{\hyperlink{class_game_1_1_powerups_ad82e1ed38fef01458c359f17575b18a5}{$\sim$\+Powerups}} ()
+\item 
+virtual void \mbox{\hyperlink{class_game_1_1_powerups_a51040af303d49005e0cb78b21f12d254}{apply\+Powerup\+To}} (\mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} \&player)=0
+\item 
+std\+::string \mbox{\hyperlink{class_game_1_1_powerups_adc1a068206878d22121c91f07690bc22}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_powerups_a7725dcc45716326ce29ad41897e3da0c}\label{class_game_1_1_powerups_a7725dcc45716326ce29ad41897e3da0c}} 
+\index{Game::Powerups@{Game::Powerups}!Powerups@{Powerups}}
+\index{Powerups@{Powerups}!Game::Powerups@{Game::Powerups}}
+\doxysubsubsection{\texorpdfstring{Powerups()}{Powerups()}}
+{\footnotesize\ttfamily Game\+::\+Powerups\+::\+Powerups (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{position,  }\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_1_1_powerups_ad82e1ed38fef01458c359f17575b18a5}\label{class_game_1_1_powerups_ad82e1ed38fef01458c359f17575b18a5}} 
+\index{Game::Powerups@{Game::Powerups}!````~Powerups@{$\sim$Powerups}}
+\index{````~Powerups@{$\sim$Powerups}!Game::Powerups@{Game::Powerups}}
+\doxysubsubsection{\texorpdfstring{$\sim$Powerups()}{~Powerups()}}
+{\footnotesize\ttfamily Game\+::\+Powerups\+::$\sim$\+Powerups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_powerups_a51040af303d49005e0cb78b21f12d254}\label{class_game_1_1_powerups_a51040af303d49005e0cb78b21f12d254}} 
+\index{Game::Powerups@{Game::Powerups}!applyPowerupTo@{applyPowerupTo}}
+\index{applyPowerupTo@{applyPowerupTo}!Game::Powerups@{Game::Powerups}}
+\doxysubsubsection{\texorpdfstring{applyPowerupTo()}{applyPowerupTo()}}
+{\footnotesize\ttfamily virtual void Game\+::\+Powerups\+::apply\+Powerup\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} \&}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_game_1_1_speed_a0266e810a61e53aaa7965c4d319682a8}{Game\+::\+Speed}}, \mbox{\hyperlink{class_game_1_1_bomb_up_a7a6db63c06d8b1f38657217daf78fc15}{Game\+::\+Bomb\+Up}}, \mbox{\hyperlink{class_game_1_1_fire_a3981f87a3e07faf6ae59c449a8ee0e5f}{Game\+::\+Fire}}, \mbox{\hyperlink{class_game_1_1_pass_a5047a00ee395907cfdf60bfd6a4a6223}{Game\+::\+Pass}}, and \mbox{\hyperlink{class_game_1_1_life_a5cbf0de5a8a2851291ee2be3d3e5578c}{Game\+::\+Life}}.
+
+\mbox{\Hypertarget{class_game_1_1_powerups_adc1a068206878d22121c91f07690bc22}\label{class_game_1_1_powerups_adc1a068206878d22121c91f07690bc22}} 
+\index{Game::Powerups@{Game::Powerups}!getType@{getType}}
+\index{getType@{getType}!Game::Powerups@{Game::Powerups}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Game\+::\+Powerups\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+A std\+::string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_1_1_animated_a493ed93ff93248750daddae3e8d9864e}{Game\+::\+Animated}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Powerups/\mbox{\hyperlink{_powerups_8hpp}{Powerups.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Powerups/\mbox{\hyperlink{_powerups_8cpp}{Powerups.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Powerups/\mbox{\hyperlink{_powerups_8inl}{Powerups.\+inl}}\end{DoxyCompactItemize}

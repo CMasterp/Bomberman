@@ -1,0 +1,469 @@
+\hypertarget{class_raylib_1_1_file}{}\doxysection{Raylib\+::File Class Reference}
+\label{class_raylib_1_1_file}\index{Raylib::File@{Raylib::File}}
+
+
+{\ttfamily \#include $<$File.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_file_a7183f39d7e7757d79fd564e5b6f09c4d}{File}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_file}{File}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_file_a90ade279b763cafab36ae60d8a121e06}{$\sim$\+File}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_file}{File}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a587b59ef233f6148d495f15e46e9ad05}{load\+File\+Data}} (const std\+::string \&file\+Name, unsigned int \&bytes\+Read)
+\begin{DoxyCompactList}\small\item\em Load file data as byte array (read) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_file_a8abcda8595fc9df7efe60e8c4c582dce}{unload\+File\+Data}} (const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Unload file data allocated by Load\+File\+Data() \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_file_af99ea9067ebe1634e5e41820d6d25d3d}{save\+File\+Data}} (const std\+::string \&file\+Name, void $\ast$data, const unsigned int \&bytes\+To\+Write)
+\begin{DoxyCompactList}\small\item\em Save data to file from byte array (write) \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a0d1c9c56a4443e6a313acc7caf080bfb}{load\+File\+Text}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Load text data from file (read) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_file_a3f5116abbf49434c275cbc534a716e18}{unload\+File\+Text}} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Unload file text data allocated by Load\+File\+Text() \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_file_a10fd3eb313b8f123f79add31de02cae0}{save\+File\+Text}} (const std\+::string \&file\+Name, const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Save text data to file (write), string must be \textquotesingle{}\textbackslash{}0\textquotesingle{} terminated. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_file_a661ba2dc9a211611ceffea0f5a67771a}{file\+Exists}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Check if file exists. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_file_a70e326733bfa17b1bdb029ad8cdf6e81}{directory\+Exists}} (const std\+::string \&dir\+Path)
+\begin{DoxyCompactList}\small\item\em Check if a directory path exists. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_file_af874a848d679ecae28931167864c94ac}{is\+File\+Extension}} (const std\+::string \&file\+Name, const std\+::string \&ext)
+\begin{DoxyCompactList}\small\item\em Check file extension (including point\+: .png, .wav) \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a7c34b3a6a2c22ef2307ab7805dc5f92d}{get\+File\+Extension}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Get pointer to extension for a filename string (includes dot\+: \char`\"{}.\+png\char`\"{}) \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a6469c08bbda4d8632d80d4e95bdd9255}{get\+File\+Name}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Get pointer to filename for a path string. \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a1a743ec9ceaf54e74207f96993b106ba}{get\+File\+Name\+Without\+Ext}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Get filename string without extension (uses static string) \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a3e4bc09c1f41402475a875048d9fb1ed}{get\+Directory\+Path}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Get full path for a given file\+Name with path (uses static string) \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a3ab23cebd490fd32d9ed6c522769a5ad}{get\+Prev\+Directory\+Path}} (const std\+::string \&dir\+Path)
+\begin{DoxyCompactList}\small\item\em Get previous directory path for a given path (uses static string) \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_raylib_1_1_file_a7c64792ab4d1f02795e8e23919bc9dfb}{get\+Working\+Directory}} (void)
+\begin{DoxyCompactList}\small\item\em Get current working directory (uses static string) \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_raylib_1_1_file_a8d4d0a57ab3fccc7165a4aa8caebe9f0}{get\+Directory\+Files}} (const std\+::string \&dir\+Path, int \&count)
+\begin{DoxyCompactList}\small\item\em Get filenames in a directory path (memory should be freed) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_file_abeeaa1ad6bc4b31d25c9a18d55595645}{clear\+Directory\+Files}} (void)
+\begin{DoxyCompactList}\small\item\em Clear directory files paths buffers (free memory) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_file_a7a59cb6182e0fd54343565804a063324}{change\+Directory}} (const std\+::string \&dir)
+\begin{DoxyCompactList}\small\item\em Change working directory. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_file_ad243171fb57f7f4e91c9ae2c72aa3b90}{is\+File\+Dropped}} (void)
+\begin{DoxyCompactList}\small\item\em Check if a file has been dropped into window. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_raylib_1_1_file_ac1a233b95cae9b851caa6cffa828f824}{get\+Dropped\+Files}} (int \&count)
+\begin{DoxyCompactList}\small\item\em Get dropped files names (memory should be freed) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_file_ac6b16a3db62a890fcb4abd8581a8a022}{clear\+Dropped\+Files}} (void)
+\begin{DoxyCompactList}\small\item\em Clear dropped files paths buffer (free memory) \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{class_raylib_1_1_file_aa24a8fb2707652dbde0279314e88da49}{get\+File\+Mod\+Time}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Get file modification time (last write time) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_file_a7183f39d7e7757d79fd564e5b6f09c4d}\label{class_raylib_1_1_file_a7183f39d7e7757d79fd564e5b6f09c4d}} 
+\index{Raylib::File@{Raylib::File}!File@{File}}
+\index{File@{File}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{File()}{File()}}
+{\footnotesize\ttfamily Raylib\+::\+File\+::\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_file}{File}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_file_a90ade279b763cafab36ae60d8a121e06}\label{class_raylib_1_1_file_a90ade279b763cafab36ae60d8a121e06}} 
+\index{Raylib::File@{Raylib::File}!````~File@{$\sim$File}}
+\index{````~File@{$\sim$File}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{$\sim$File()}{~File()}}
+{\footnotesize\ttfamily Raylib\+::\+File\+::$\sim$\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_file}{File}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_file_a7a59cb6182e0fd54343565804a063324}\label{class_raylib_1_1_file_a7a59cb6182e0fd54343565804a063324}} 
+\index{Raylib::File@{Raylib::File}!changeDirectory@{changeDirectory}}
+\index{changeDirectory@{changeDirectory}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{changeDirectory()}{changeDirectory()}}
+{\footnotesize\ttfamily bool Raylib\+::\+File\+::change\+Directory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Change working directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & the directory you whant to move to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true on success and false on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_abeeaa1ad6bc4b31d25c9a18d55595645}\label{class_raylib_1_1_file_abeeaa1ad6bc4b31d25c9a18d55595645}} 
+\index{Raylib::File@{Raylib::File}!clearDirectoryFiles@{clearDirectoryFiles}}
+\index{clearDirectoryFiles@{clearDirectoryFiles}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{clearDirectoryFiles()}{clearDirectoryFiles()}}
+{\footnotesize\ttfamily void Raylib\+::\+File\+::clear\+Directory\+Files (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Clear directory files paths buffers (free memory) 
+
+\mbox{\Hypertarget{class_raylib_1_1_file_ac6b16a3db62a890fcb4abd8581a8a022}\label{class_raylib_1_1_file_ac6b16a3db62a890fcb4abd8581a8a022}} 
+\index{Raylib::File@{Raylib::File}!clearDroppedFiles@{clearDroppedFiles}}
+\index{clearDroppedFiles@{clearDroppedFiles}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{clearDroppedFiles()}{clearDroppedFiles()}}
+{\footnotesize\ttfamily void Raylib\+::\+File\+::clear\+Dropped\+Files (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Clear dropped files paths buffer (free memory) 
+
+\mbox{\Hypertarget{class_raylib_1_1_file_a70e326733bfa17b1bdb029ad8cdf6e81}\label{class_raylib_1_1_file_a70e326733bfa17b1bdb029ad8cdf6e81}} 
+\index{Raylib::File@{Raylib::File}!directoryExists@{directoryExists}}
+\index{directoryExists@{directoryExists}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{directoryExists()}{directoryExists()}}
+{\footnotesize\ttfamily bool Raylib\+::\+File\+::directory\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dir\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if a directory path exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir\+Path} & path of the directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true on success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a661ba2dc9a211611ceffea0f5a67771a}\label{class_raylib_1_1_file_a661ba2dc9a211611ceffea0f5a67771a}} 
+\index{Raylib::File@{Raylib::File}!fileExists@{fileExists}}
+\index{fileExists@{fileExists}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{fileExists()}{fileExists()}}
+{\footnotesize\ttfamily bool Raylib\+::\+File\+::file\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if file exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the name of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true on success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a8d4d0a57ab3fccc7165a4aa8caebe9f0}\label{class_raylib_1_1_file_a8d4d0a57ab3fccc7165a4aa8caebe9f0}} 
+\index{Raylib::File@{Raylib::File}!getDirectoryFiles@{getDirectoryFiles}}
+\index{getDirectoryFiles@{getDirectoryFiles}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getDirectoryFiles()}{getDirectoryFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Raylib\+::\+File\+::get\+Directory\+Files (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dir\+Path,  }\item[{int \&}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get filenames in a directory path (memory should be freed) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir\+Path} & the path of the directory \\
+\hline
+{\em count} & the number of files \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+filenames 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a3e4bc09c1f41402475a875048d9fb1ed}\label{class_raylib_1_1_file_a3e4bc09c1f41402475a875048d9fb1ed}} 
+\index{Raylib::File@{Raylib::File}!getDirectoryPath@{getDirectoryPath}}
+\index{getDirectoryPath@{getDirectoryPath}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getDirectoryPath()}{getDirectoryPath()}}
+{\footnotesize\ttfamily const std\+::string Raylib\+::\+File\+::get\+Directory\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get full path for a given file\+Name with path (uses static string) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & the path of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+full path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_ac1a233b95cae9b851caa6cffa828f824}\label{class_raylib_1_1_file_ac1a233b95cae9b851caa6cffa828f824}} 
+\index{Raylib::File@{Raylib::File}!getDroppedFiles@{getDroppedFiles}}
+\index{getDroppedFiles@{getDroppedFiles}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getDroppedFiles()}{getDroppedFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Raylib\+::\+File\+::get\+Dropped\+Files (\begin{DoxyParamCaption}\item[{int \&}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get dropped files names (memory should be freed) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & the numbers of dropped files \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Filesnames 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a7c34b3a6a2c22ef2307ab7805dc5f92d}\label{class_raylib_1_1_file_a7c34b3a6a2c22ef2307ab7805dc5f92d}} 
+\index{Raylib::File@{Raylib::File}!getFileExtension@{getFileExtension}}
+\index{getFileExtension@{getFileExtension}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getFileExtension()}{getFileExtension()}}
+{\footnotesize\ttfamily const std\+::string Raylib\+::\+File\+::get\+File\+Extension (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get pointer to extension for a filename string (includes dot\+: \char`\"{}.\+png\char`\"{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the name of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_aa24a8fb2707652dbde0279314e88da49}\label{class_raylib_1_1_file_aa24a8fb2707652dbde0279314e88da49}} 
+\index{Raylib::File@{Raylib::File}!getFileModTime@{getFileModTime}}
+\index{getFileModTime@{getFileModTime}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getFileModTime()}{getFileModTime()}}
+{\footnotesize\ttfamily long Raylib\+::\+File\+::get\+File\+Mod\+Time (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get file modification time (last write time) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the name of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file modification time (last write time) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a6469c08bbda4d8632d80d4e95bdd9255}\label{class_raylib_1_1_file_a6469c08bbda4d8632d80d4e95bdd9255}} 
+\index{Raylib::File@{Raylib::File}!getFileName@{getFileName}}
+\index{getFileName@{getFileName}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getFileName()}{getFileName()}}
+{\footnotesize\ttfamily const std\+::string Raylib\+::\+File\+::get\+File\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get pointer to filename for a path string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & the path of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a1a743ec9ceaf54e74207f96993b106ba}\label{class_raylib_1_1_file_a1a743ec9ceaf54e74207f96993b106ba}} 
+\index{Raylib::File@{Raylib::File}!getFileNameWithoutExt@{getFileNameWithoutExt}}
+\index{getFileNameWithoutExt@{getFileNameWithoutExt}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getFileNameWithoutExt()}{getFileNameWithoutExt()}}
+{\footnotesize\ttfamily const std\+::string Raylib\+::\+File\+::get\+File\+Name\+Without\+Ext (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get filename string without extension (uses static string) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & the path of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+filename string without extension 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a3ab23cebd490fd32d9ed6c522769a5ad}\label{class_raylib_1_1_file_a3ab23cebd490fd32d9ed6c522769a5ad}} 
+\index{Raylib::File@{Raylib::File}!getPrevDirectoryPath@{getPrevDirectoryPath}}
+\index{getPrevDirectoryPath@{getPrevDirectoryPath}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getPrevDirectoryPath()}{getPrevDirectoryPath()}}
+{\footnotesize\ttfamily const std\+::string Raylib\+::\+File\+::get\+Prev\+Directory\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dir\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get previous directory path for a given path (uses static string) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir\+Path} & the path of the directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+previous directory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a7c64792ab4d1f02795e8e23919bc9dfb}\label{class_raylib_1_1_file_a7c64792ab4d1f02795e8e23919bc9dfb}} 
+\index{Raylib::File@{Raylib::File}!getWorkingDirectory@{getWorkingDirectory}}
+\index{getWorkingDirectory@{getWorkingDirectory}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{getWorkingDirectory()}{getWorkingDirectory()}}
+{\footnotesize\ttfamily const std\+::string Raylib\+::\+File\+::get\+Working\+Directory (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get current working directory (uses static string) 
+
+\begin{DoxyReturn}{Returns}
+Get current working directory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_ad243171fb57f7f4e91c9ae2c72aa3b90}\label{class_raylib_1_1_file_ad243171fb57f7f4e91c9ae2c72aa3b90}} 
+\index{Raylib::File@{Raylib::File}!isFileDropped@{isFileDropped}}
+\index{isFileDropped@{isFileDropped}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{isFileDropped()}{isFileDropped()}}
+{\footnotesize\ttfamily bool Raylib\+::\+File\+::is\+File\+Dropped (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if a file has been dropped into window. 
+
+\begin{DoxyReturn}{Returns}
+return true on success and false on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_af874a848d679ecae28931167864c94ac}\label{class_raylib_1_1_file_af874a848d679ecae28931167864c94ac}} 
+\index{Raylib::File@{Raylib::File}!isFileExtension@{isFileExtension}}
+\index{isFileExtension@{isFileExtension}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{isFileExtension()}{isFileExtension()}}
+{\footnotesize\ttfamily bool Raylib\+::\+File\+::is\+File\+Extension (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{const std\+::string \&}]{ext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check file extension (including point\+: .png, .wav) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the name of the file \\
+\hline
+{\em ext} & the extension of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true on success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a587b59ef233f6148d495f15e46e9ad05}\label{class_raylib_1_1_file_a587b59ef233f6148d495f15e46e9ad05}} 
+\index{Raylib::File@{Raylib::File}!loadFileData@{loadFileData}}
+\index{loadFileData@{loadFileData}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{loadFileData()}{loadFileData()}}
+{\footnotesize\ttfamily std\+::string Raylib\+::\+File\+::load\+File\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{unsigned int \&}]{bytes\+Read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Load file data as byte array (read) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & const std\+::string \\
+\hline
+{\em bytes\+Read} & unsigned int \& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data static std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a0d1c9c56a4443e6a313acc7caf080bfb}\label{class_raylib_1_1_file_a0d1c9c56a4443e6a313acc7caf080bfb}} 
+\index{Raylib::File@{Raylib::File}!loadFileText@{loadFileText}}
+\index{loadFileText@{loadFileText}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{loadFileText()}{loadFileText()}}
+{\footnotesize\ttfamily std\+::string Raylib\+::\+File\+::load\+File\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Load text data from file (read) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & const std\+::string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a \textquotesingle{}\textbackslash{}0\textquotesingle{} terminated string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_af99ea9067ebe1634e5e41820d6d25d3d}\label{class_raylib_1_1_file_af99ea9067ebe1634e5e41820d6d25d3d}} 
+\index{Raylib::File@{Raylib::File}!saveFileData@{saveFileData}}
+\index{saveFileData@{saveFileData}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{saveFileData()}{saveFileData()}}
+{\footnotesize\ttfamily bool Raylib\+::\+File\+::save\+File\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{void $\ast$}]{data,  }\item[{const unsigned int \&}]{bytes\+To\+Write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Save data to file from byte array (write) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & const std\+::string \\
+\hline
+{\em data} & void $\ast$ \\
+\hline
+{\em bytes\+To\+Write} & unsigned int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true on success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a10fd3eb313b8f123f79add31de02cae0}\label{class_raylib_1_1_file_a10fd3eb313b8f123f79add31de02cae0}} 
+\index{Raylib::File@{Raylib::File}!saveFileText@{saveFileText}}
+\index{saveFileText@{saveFileText}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{saveFileText()}{saveFileText()}}
+{\footnotesize\ttfamily bool Raylib\+::\+File\+::save\+File\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Save text data to file (write), string must be \textquotesingle{}\textbackslash{}0\textquotesingle{} terminated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the name of the file \\
+\hline
+{\em text} & the text to write in the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true on success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_file_a8abcda8595fc9df7efe60e8c4c582dce}\label{class_raylib_1_1_file_a8abcda8595fc9df7efe60e8c4c582dce}} 
+\index{Raylib::File@{Raylib::File}!unloadFileData@{unloadFileData}}
+\index{unloadFileData@{unloadFileData}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{unloadFileData()}{unloadFileData()}}
+{\footnotesize\ttfamily void Raylib\+::\+File\+::unload\+File\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Unload file data allocated by Load\+File\+Data() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & unsigned char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_file_a3f5116abbf49434c275cbc534a716e18}\label{class_raylib_1_1_file_a3f5116abbf49434c275cbc534a716e18}} 
+\index{Raylib::File@{Raylib::File}!unloadFileText@{unloadFileText}}
+\index{unloadFileText@{unloadFileText}!Raylib::File@{Raylib::File}}
+\doxysubsubsection{\texorpdfstring{unloadFileText()}{unloadFileText()}}
+{\footnotesize\ttfamily void Raylib\+::\+File\+::unload\+File\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Unload file text data allocated by Load\+File\+Text() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & unsigned std\+::string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+File/\mbox{\hyperlink{_file_8hpp}{File.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+File/\mbox{\hyperlink{_file_8cpp}{File.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+File/\mbox{\hyperlink{_file_8inl}{File.\+inl}}\end{DoxyCompactItemize}

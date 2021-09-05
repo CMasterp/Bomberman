@@ -1,0 +1,84 @@
+.TH "CFunctions" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CFunctions
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CFunctions\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCFunctions\fP ()=default"
+.br
+.RI "Construct a new \fBCFunctions\fP object\&. "
+.ti -1c
+.RI "\fB~CFunctions\fP ()=default"
+.br
+.RI "Destroy the \fBCFunctions\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::pair< size_t, size_t > \fBgeneratePairOfRandomIntegers\fP (size_t limitOfFirst, size_t limitOfSecond)"
+.br
+.RI "This function use c functions to generate a pair of random integers\&. "
+.ti -1c
+.RI "static size_t \fBgenerateRandomInteger\fP (size_t limit)"
+.br
+.RI "generates a random number "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CFunctions::CFunctions ()\fC [default]\fP"
+
+.PP
+Construct a new \fBCFunctions\fP object\&. 
+.SS "CFunctions::~CFunctions ()\fC [default]\fP"
+
+.PP
+Destroy the \fBCFunctions\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "std::pair< size_t, size_t > CFunctions::generatePairOfRandomIntegers (size_t limitOfFirst, size_t limitOfSecond)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+This function use c functions to generate a pair of random integers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlimitOfFirst\fP A size_t 
+.br
+\fIlimitOfSecond\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::pair<size_t, size_t> 
+.RE
+.PP
+
+.SS "size_t CFunctions::generateRandomInteger (size_t limit)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+generates a random number 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlimit\fP limit value 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+size_t the number generated 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

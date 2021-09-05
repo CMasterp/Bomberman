@@ -1,0 +1,154 @@
+.TH "Raylib::Text" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Text
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Text\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBText\fP ()"
+.br
+.RI "Construct a new \fBText\fP object\&. "
+.ti -1c
+.RI "\fB~Text\fP ()"
+.br
+.RI "Destroy the \fBText\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBdrawText\fP (const std::string &title, const int &posX, const int &posY, const int &fontSize, const \fBColor\fP &color)"
+.br
+.RI "Draw text (using default font) "
+.ti -1c
+.RI "static void \fBdrawTextEx\fP (const std::string &font, const std::string &text, const std::pair< int, int > &position, const float &fontSize, const float &spacing, const \fBColor\fP &tint)"
+.br
+.RI "Draw text using custom font\&. "
+.ti -1c
+.RI "static int \fBmeasureText\fP (const std::string &text, const int &fontSize)"
+.br
+.RI "Measure string width for default font\&. "
+.ti -1c
+.RI "static bool \fBtextIsEqual\fP (const std::string &text1, const std::string &text2)"
+.br
+.RI "Check if two text string are equal\&. "
+.ti -1c
+.RI "static int \fBtextLength\fP (const std::string &text)"
+.br
+.RI "Check if two text string are equal\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Text::Text ()"
+
+.PP
+Construct a new \fBText\fP object\&. 
+.SS "Raylib::Text::~Text ()"
+
+.PP
+Destroy the \fBText\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Text::drawText (const std::string & title, const int & posX, const int & posY, const int & fontSize, const \fBColor\fP & color)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Draw text (using default font) 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP A string 
+.br
+\fIposX\fP An int 
+.br
+\fIposY\fP An int 
+.br
+\fIfontSize\fP An int 
+.br
+\fIcolor\fP A \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Text::drawTextEx (const std::string & font, const std::string & text, const std::pair< int, int > & position, const float & fontSize, const float & spacing, const \fBColor\fP & tint)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Draw text using custom font\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfont\fP A string 
+.br
+\fItext\fP A string 
+.br
+\fIposition\fP A pair of int 
+.br
+\fIfontSize\fP A float 
+.br
+\fIspacing\fP A float 
+.br
+\fIcolor\fP A \fBColor\fP 
+.RE
+.PP
+
+.SS "int Raylib::Text::measureText (const std::string & text, const int & fontSize)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Measure string width for default font\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP A string 
+.br
+\fIfontSize\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An int 
+.RE
+.PP
+
+.SS "bool Raylib::Text::textIsEqual (const std::string & text1, const std::string & text2)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if two text string are equal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext1\fP A string 
+.br
+\fItext2\fP A string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A boolean 
+.RE
+.PP
+
+.SS "int Raylib::Text::textLength (const std::string & text)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if two text string are equal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP A string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+An int 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

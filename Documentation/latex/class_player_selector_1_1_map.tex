@@ -1,0 +1,184 @@
+\hypertarget{class_player_selector_1_1_map}{}\doxysection{Player\+Selector\+::Map Class Reference}
+\label{class_player_selector_1_1_map}\index{PlayerSelector::Map@{PlayerSelector::Map}}
+
+
+{\ttfamily \#include $<$Map.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472}{Model\+Mode}} \{ \mbox{\hyperlink{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472abf1c50504fbda337e40fc258a14db127}{FLOOR}}
+, \mbox{\hyperlink{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472ae7ab97f6cbe789323b4a8a746b9f7b95}{WALL}}
+, \mbox{\hyperlink{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472a98f1279d974664bf8277ed14911745bc}{BOX}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_selector_1_1_map_a713eab59395f2ae709ab5c66367f8879}{Map}} (std\+::vector$<$ \mbox{\hyperlink{class_player_selector_1_1_player}{Player}} $>$ models, std\+::vector$<$ std\+::string $>$ \&ascii\+Map)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_selector_1_1_map_a1aec406b1978a2d1adc83f9cdf3d8cdb}{$\sim$\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ Texture $>$ $>$ \mbox{\hyperlink{class_player_selector_1_1_map_a2446b2e4b336cd47cd4968921521bc29}{find\+Textures\+Available}} (int \&nb\+\_\+textures)
+\begin{DoxyCompactList}\small\item\em Find dynamically all availables textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_map_a0ab03a19565be9edfa4b31ff8df644ea}{next}} ()
+\begin{DoxyCompactList}\small\item\em Set the next map texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_map_adee4da6bb171f4196d60aaf017a55dd3}{prev}} ()
+\begin{DoxyCompactList}\small\item\em Set the prev map texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_map_a4fa13fd87421ddfbc85cbd19d02c2814}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Print the 3D \mbox{\hyperlink{class_player_selector_1_1_map}{Map}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_player_selector_1_1_map_a96d0ecfee4aea85c99d52f2a345e3160}{get\+Map\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} Type (Floor, Wall or Box) \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_player_selector_1_1_map_aecf83ea71a23c1f97f2b4f8bc0b95d89}{get\+Map}} () const
+\begin{DoxyCompactList}\small\item\em Get the Ascii \mbox{\hyperlink{class_player_selector_1_1_map}{Map}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ Texture2D $>$ \mbox{\hyperlink{class_player_selector_1_1_map_a996510a01fa9cb4dcc1266487023f8b6}{get\+Textures}} () const
+\begin{DoxyCompactList}\small\item\em Get the Textures object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472}\label{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!ModelMode@{ModelMode}}
+\index{ModelMode@{ModelMode}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{ModelMode}{ModelMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472}{Player\+Selector\+::\+Map\+::\+Model\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLOOR@{FLOOR}!PlayerSelector::Map@{PlayerSelector::Map}}\index{PlayerSelector::Map@{PlayerSelector::Map}!FLOOR@{FLOOR}}}\mbox{\Hypertarget{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472abf1c50504fbda337e40fc258a14db127}\label{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472abf1c50504fbda337e40fc258a14db127}} 
+FLOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WALL@{WALL}!PlayerSelector::Map@{PlayerSelector::Map}}\index{PlayerSelector::Map@{PlayerSelector::Map}!WALL@{WALL}}}\mbox{\Hypertarget{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472ae7ab97f6cbe789323b4a8a746b9f7b95}\label{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472ae7ab97f6cbe789323b4a8a746b9f7b95}} 
+WALL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOX@{BOX}!PlayerSelector::Map@{PlayerSelector::Map}}\index{PlayerSelector::Map@{PlayerSelector::Map}!BOX@{BOX}}}\mbox{\Hypertarget{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472a98f1279d974664bf8277ed14911745bc}\label{class_player_selector_1_1_map_ac4e277ab0275e66ee054aed365563472a98f1279d974664bf8277ed14911745bc}} 
+BOX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_map_a713eab59395f2ae709ab5c66367f8879}\label{class_player_selector_1_1_map_a713eab59395f2ae709ab5c66367f8879}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!Map@{Map}}
+\index{Map@{Map}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily Player\+Selector\+::\+Map\+::\+Map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_player_selector_1_1_player}{Player}} $>$}]{models,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{ascii\+Map }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em models} & pair of models with their scalable values \\
+\hline
+{\em ascii\+Map} & the ascii map to print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_map_a1aec406b1978a2d1adc83f9cdf3d8cdb}\label{class_player_selector_1_1_map_a1aec406b1978a2d1adc83f9cdf3d8cdb}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!````~Map@{$\sim$Map}}
+\index{````~Map@{$\sim$Map}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{$\sim$Map()}{~Map()}}
+{\footnotesize\ttfamily Player\+Selector\+::\+Map\+::$\sim$\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_map_a4fa13fd87421ddfbc85cbd19d02c2814}\label{class_player_selector_1_1_map_a4fa13fd87421ddfbc85cbd19d02c2814}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!draw@{draw}}
+\index{draw@{draw}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Map\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the 3D \mbox{\hyperlink{class_player_selector_1_1_map}{Map}}. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_map_a2446b2e4b336cd47cd4968921521bc29}\label{class_player_selector_1_1_map_a2446b2e4b336cd47cd4968921521bc29}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!findTexturesAvailable@{findTexturesAvailable}}
+\index{findTexturesAvailable@{findTexturesAvailable}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{findTexturesAvailable()}{findTexturesAvailable()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ Texture $>$ $>$ Player\+Selector\+::\+Map\+::find\+Textures\+Available (\begin{DoxyParamCaption}\item[{int \&}]{nb\+\_\+textures }\end{DoxyParamCaption})}
+
+
+
+Find dynamically all availables textures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+textures} & a counter of all available textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A map of all textures available 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_map_aecf83ea71a23c1f97f2b4f8bc0b95d89}\label{class_player_selector_1_1_map_aecf83ea71a23c1f97f2b4f8bc0b95d89}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!getMap@{getMap}}
+\index{getMap@{getMap}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Player\+Selector\+::\+Map\+::get\+Map (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Ascii \mbox{\hyperlink{class_player_selector_1_1_map}{Map}}. 
+
+\begin{DoxyReturn}{Returns}
+The map as vector of strings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_map_a96d0ecfee4aea85c99d52f2a345e3160}\label{class_player_selector_1_1_map_a96d0ecfee4aea85c99d52f2a345e3160}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!getMapType@{getMapType}}
+\index{getMapType@{getMapType}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{getMapType()}{getMapType()}}
+{\footnotesize\ttfamily size\+\_\+t Player\+Selector\+::\+Map\+::get\+Map\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} Type (Floor, Wall or Box) 
+
+\begin{DoxyReturn}{Returns}
+The map type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_map_a996510a01fa9cb4dcc1266487023f8b6}\label{class_player_selector_1_1_map_a996510a01fa9cb4dcc1266487023f8b6}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!getTextures@{getTextures}}
+\index{getTextures@{getTextures}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{getTextures()}{getTextures()}}
+{\footnotesize\ttfamily std\+::vector$<$ Texture2D $>$ Player\+Selector\+::\+Map\+::get\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Textures object. 
+
+\begin{DoxyReturn}{Returns}
+All the textures 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_map_a0ab03a19565be9edfa4b31ff8df644ea}\label{class_player_selector_1_1_map_a0ab03a19565be9edfa4b31ff8df644ea}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!next@{next}}
+\index{next@{next}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Map\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the next map texture. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_map_adee4da6bb171f4196d60aaf017a55dd3}\label{class_player_selector_1_1_map_adee4da6bb171f4196d60aaf017a55dd3}} 
+\index{PlayerSelector::Map@{PlayerSelector::Map}!prev@{prev}}
+\index{prev@{prev}!PlayerSelector::Map@{PlayerSelector::Map}}
+\doxysubsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Map\+::prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the prev map texture. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\+Player\+Selector/\mbox{\hyperlink{_lib_2_x_raylib_2_x_ray_2includes_2_player_selector_2_map_8hpp}{Map.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\+Player\+Selector/\mbox{\hyperlink{_lib_2_x_raylib_2_x_ray_2sources_2_player_selector_2_map_8cpp}{Map.\+cpp}}\end{DoxyCompactItemize}

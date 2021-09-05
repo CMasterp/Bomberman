@@ -1,0 +1,679 @@
+.TH "Raylib::Color" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Color
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Color\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBColor\fP ()"
+.br
+.RI "Construct a new \fBColor\fP object\&. "
+.ti -1c
+.RI "\fB~Color\fP ()"
+.br
+.RI "Destroy the \fBColor\fP object\&. "
+.ti -1c
+.RI "\fBColor\fP & \fBoperator=\fP (const ::\fBColor\fP &color)"
+.br
+.RI "Overload of '=' operator\&. "
+.ti -1c
+.RI "size_t \fBcolorToInt\fP (\fBColor\fP color) const"
+.br
+.RI "Returns hexadecimal value for a \fBColor\fP\&. "
+.ti -1c
+.RI "\fBColor\fP \fBcolorFromHSV\fP (const float &hue, const float &saturation, const float &value) const"
+.br
+.RI "Returns a \fBColor\fP from HSV values, hue [0\&.\&.360], saturation/value [0\&.\&.1]\&. "
+.ti -1c
+.RI "\fBColor\fP \fBcolorAlpha\fP (\fBColor\fP color, const float &alpha) const"
+.br
+.RI "Returns color with alpha applied, alpha goes from 0\&.0f to 1\&.0f\&. "
+.ti -1c
+.RI "\fBColor\fP \fBcolorAlphaBlend\fP (\fBColor\fP dst, \fBColor\fP src, \fBColor\fP tint) const"
+.br
+.RI "Returns src alpha-blended into dst color with tint\&. "
+.ti -1c
+.RI "\fBColor\fP \fBgetColor\fP (const size_t &hexValue) const"
+.br
+.RI "Get \fBColor\fP structure from hexadecimal value\&. "
+.ti -1c
+.RI "\fBColor\fP \fBgetPixelColor\fP (void *srcPtr, const size_t &format) const"
+.br
+.RI "Get \fBColor\fP from a source pixel pointer of certain format\&. "
+.ti -1c
+.RI "void \fBsetPixelColor\fP (void *dstPtr, \fBColor\fP color, const size_t &format) const"
+.br
+.RI "Set color formatted into destination pixel pointer\&. "
+.ti -1c
+.RI "size_t \fBgetPixelDataSize\fP (const size_t &width, const size_t &height, const size_t &format) const"
+.br
+.RI "Get pixel data size in bytes for certain format\&. "
+.ti -1c
+.RI "\fBColor\fP \fBgetColor\fP (const std::string &color)"
+.br
+.RI "Return color\&. "
+.ti -1c
+.RI "::\fBColor\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Getter of \fBColor\fP structure (private attribute) "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBColor\fP \fBfade\fP (\fBColor\fP color, const float &alpha)"
+.br
+.RI "Returns color with alpha applied, alpha goes from 0\&.0f to 1\&.0f\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBLightGray\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBGray\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBDarkGray\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBYellow\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBGold\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBOrange\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBPink\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBRed\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBMaroon\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBGreen\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBLime\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBDarkGreen\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBSkyBlue\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBBlue\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBDarkBlue\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBPurple\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBViolet\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBDarkPurple\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBBeige\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBBrown\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBDarkBrown\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBWhite\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBBlack\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBBlank\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBMagenta\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBRayWhite\fP (void)"
+.br
+.RI "Return the \fBColor\fP that represents the name of the function\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Color::Color ()"
+
+.PP
+Construct a new \fBColor\fP object\&. 
+.SS "Raylib::Color::~Color ()"
+
+.PP
+Destroy the \fBColor\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBRaylib::Color\fP Raylib::Color::Beige (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Black (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Blank (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Blue (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Brown (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::colorAlpha (\fBRaylib::Color\fP color, const float & alpha) const\fC [inline]\fP"
+
+.PP
+Returns color with alpha applied, alpha goes from 0\&.0f to 1\&.0f\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP A \fBColor\fP Object 
+.br
+\fIalpha\fP A float 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::colorAlphaBlend (\fBColor\fP dst, \fBColor\fP src, \fBColor\fP tint) const\fC [inline]\fP"
+
+.PP
+Returns src alpha-blended into dst color with tint\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdst\fP A \fBColor\fP 
+.br
+\fIsrc\fP A \fBColor\fP 
+.br
+\fItint\fP A \fBColor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::colorFromHSV (const float & hue, const float & saturation, const float & value) const\fC [inline]\fP"
+
+.PP
+Returns a \fBColor\fP from HSV values, hue [0\&.\&.360], saturation/value [0\&.\&.1]\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhue\fP A float 
+.br
+\fIsaturation\fP A float 
+.br
+\fIvalue\fP A float 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "size_t Raylib::Color::colorToInt (\fBRaylib::Color\fP color) const\fC [inline]\fP"
+
+.PP
+Returns hexadecimal value for a \fBColor\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP A \fBColor\fP Object 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::DarkBlue (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::DarkBrown (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::DarkGray (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::DarkGreen (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::DarkPurple (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::fade (\fBRaylib::Color\fP color, const float & alpha)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Returns color with alpha applied, alpha goes from 0\&.0f to 1\&.0f\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP A \fBColor\fP Object 
+.br
+\fIalpha\fP A float 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::getColor (const size_t & hexValue) const\fC [inline]\fP"
+
+.PP
+Get \fBColor\fP structure from hexadecimal value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhexValue\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::getColor (const std::string & color)\fC [inline]\fP"
+
+.PP
+Return color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP Name of color 
+.RE
+.PP
+
+.SS "\fBColor\fP Raylib::Color::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Getter of \fBColor\fP structure (private attribute) 
+.PP
+\fBReturns\fP
+.RS 4
+An \fBColor\fP C structure 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::getPixelColor (void * srcPtr, const size_t & format) const\fC [inline]\fP"
+
+.PP
+Get \fBColor\fP from a source pixel pointer of certain format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsrcPtr\fP A pointer 
+.br
+\fIformat\fP A size_t 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "size_t Raylib::Color::getPixelDataSize (const size_t & width, const size_t & height, const size_t & format) const\fC [inline]\fP"
+
+.PP
+Get pixel data size in bytes for certain format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwidth\fP A size_t that represents width 
+.br
+\fIheight\fP A size_t that represents height 
+.br
+\fIformat\fP A size_t that represents format 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A size_t 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Gold (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Gray (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Green (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::LightGray (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Lime (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Magenta (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Maroon (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP & Raylib::Color::operator= (const ::\fBColor\fP & color)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP A \fBColor\fP Object 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBColor\fP& - A reference to new \fBColor\fP object 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Orange (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Pink (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Purple (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::RayWhite (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Red (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "void Raylib::Color::setPixelColor (void * dstPtr, \fBRaylib::Color\fP color, const size_t & format) const\fC [inline]\fP"
+
+.PP
+Set color formatted into destination pixel pointer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdstPtr\fP A pointer 
+.br
+\fIcolor\fP A \fBColor\fP 
+.br
+\fIformat\fP A size_t 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::SkyBlue (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Violet (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::White (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Color\fP Raylib::Color::Yellow (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Return the \fBColor\fP that represents the name of the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBColor\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,276 @@
+\hypertarget{class_raylib_1_1_gamepad}{}\doxysection{Raylib\+::Gamepad Class Reference}
+\label{class_raylib_1_1_gamepad}\index{Raylib::Gamepad@{Raylib::Gamepad}}
+
+
+{\ttfamily \#include $<$Gamepad.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_gamepad_a3ba49eaca19bb75d067c4ae3bac39583}{Gamepad}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_gamepad}{Gamepad}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_gamepad_a99efb8181bc8c0d2173d542f8636d7a9}{$\sim$\+Gamepad}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_gamepad}{Gamepad}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_gamepad_a7842e7e9625211419e98b8ece1221f28}{is\+Gamepad\+Available}} (const int \&gamepad)
+\begin{DoxyCompactList}\small\item\em Detect if a gamepad is available. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_gamepad_adad625e84c43b205d1cb5d400df3998f}{is\+Gamepad\+Name}} (const int \&gamepad, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Check gamepad name (if available) \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_raylib_1_1_gamepad_a69d86523247aa78e2a105313e99b1c49}{get\+Gamepad\+Name}} (const int \&gamepad)
+\begin{DoxyCompactList}\small\item\em Return gamepad internal name id. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_gamepad_aba7b6683eb1b45e98dd690a4dbe730fd}{is\+Gamepad\+Button\+Pressed}} (const int \&gamepad, const int \&button)
+\begin{DoxyCompactList}\small\item\em Detect if a gamepad button has been pressed once. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_gamepad_a04f8856f00411712615c60d7a1da64b7}{is\+Gamepad\+Button\+Down}} (const int \&gamepad, const int \&button)
+\begin{DoxyCompactList}\small\item\em Detect if a gamepad button is being pressed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_gamepad_a898ba3275cedc45b24a3d2fa086aae00}{is\+Gamepad\+Button\+Released}} (const int \&gamepad, const int \&button)
+\begin{DoxyCompactList}\small\item\em Detect if a gamepad button has been released once. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_gamepad_a41aab0b3e7710601d0253714d68fb6c8}{is\+Gamepad\+Button\+Up}} (const int \&gamepad, const int \&button)
+\begin{DoxyCompactList}\small\item\em Detect if a gamepad button is NOT being pressed. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_raylib_1_1_gamepad_abd1b8b652b245864c0f4ec6623a8c740}{get\+Gamepad\+Button\+Pressed}} (void)
+\begin{DoxyCompactList}\small\item\em Get the last gamepad button pressed. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_raylib_1_1_gamepad_a35591e789b1e2fdb165cad5636e0f0ef}{get\+Gamepad\+Axis\+Count}} (const int \&gamepad)
+\begin{DoxyCompactList}\small\item\em Return gamepad axis count for a gamepad. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_raylib_1_1_gamepad_ab99a0e1608a828ca0aeedc86c4a90661}{get\+Gamepad\+Axis\+Movement}} (const int \&gamepad, const int \&axis)
+\begin{DoxyCompactList}\small\item\em Return axis movement value for a gamepad axis. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_raylib_1_1_gamepad_a8a5aa4a4cefa55d3c0cabe0d10a62e83}{set\+Gamepad\+Mappings}} (const std\+::string \&mappings)
+\begin{DoxyCompactList}\small\item\em Set internal gamepad mappings (SDL\+\_\+\+Game\+Controller\+DB) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a3ba49eaca19bb75d067c4ae3bac39583}\label{class_raylib_1_1_gamepad_a3ba49eaca19bb75d067c4ae3bac39583}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!Gamepad@{Gamepad}}
+\index{Gamepad@{Gamepad}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{Gamepad()}{Gamepad()}}
+{\footnotesize\ttfamily Raylib\+::\+Gamepad\+::\+Gamepad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_gamepad}{Gamepad}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a99efb8181bc8c0d2173d542f8636d7a9}\label{class_raylib_1_1_gamepad_a99efb8181bc8c0d2173d542f8636d7a9}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!````~Gamepad@{$\sim$Gamepad}}
+\index{````~Gamepad@{$\sim$Gamepad}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{$\sim$Gamepad()}{~Gamepad()}}
+{\footnotesize\ttfamily Raylib\+::\+Gamepad\+::$\sim$\+Gamepad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_gamepad}{Gamepad}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a35591e789b1e2fdb165cad5636e0f0ef}\label{class_raylib_1_1_gamepad_a35591e789b1e2fdb165cad5636e0f0ef}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!getGamepadAxisCount@{getGamepadAxisCount}}
+\index{getGamepadAxisCount@{getGamepadAxisCount}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{getGamepadAxisCount()}{getGamepadAxisCount()}}
+{\footnotesize\ttfamily int Raylib\+::\+Gamepad\+::get\+Gamepad\+Axis\+Count (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return gamepad axis count for a gamepad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_ab99a0e1608a828ca0aeedc86c4a90661}\label{class_raylib_1_1_gamepad_ab99a0e1608a828ca0aeedc86c4a90661}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!getGamepadAxisMovement@{getGamepadAxisMovement}}
+\index{getGamepadAxisMovement@{getGamepadAxisMovement}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{getGamepadAxisMovement()}{getGamepadAxisMovement()}}
+{\footnotesize\ttfamily float Raylib\+::\+Gamepad\+::get\+Gamepad\+Axis\+Movement (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad,  }\item[{const int \&}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return axis movement value for a gamepad axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+{\em axis} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_abd1b8b652b245864c0f4ec6623a8c740}\label{class_raylib_1_1_gamepad_abd1b8b652b245864c0f4ec6623a8c740}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!getGamepadButtonPressed@{getGamepadButtonPressed}}
+\index{getGamepadButtonPressed@{getGamepadButtonPressed}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{getGamepadButtonPressed()}{getGamepadButtonPressed()}}
+{\footnotesize\ttfamily int Raylib\+::\+Gamepad\+::get\+Gamepad\+Button\+Pressed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the last gamepad button pressed. 
+
+\begin{DoxyReturn}{Returns}
+An int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a69d86523247aa78e2a105313e99b1c49}\label{class_raylib_1_1_gamepad_a69d86523247aa78e2a105313e99b1c49}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!getGamepadName@{getGamepadName}}
+\index{getGamepadName@{getGamepadName}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{getGamepadName()}{getGamepadName()}}
+{\footnotesize\ttfamily std\+::string Raylib\+::\+Gamepad\+::get\+Gamepad\+Name (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return gamepad internal name id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a7842e7e9625211419e98b8ece1221f28}\label{class_raylib_1_1_gamepad_a7842e7e9625211419e98b8ece1221f28}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!isGamepadAvailable@{isGamepadAvailable}}
+\index{isGamepadAvailable@{isGamepadAvailable}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{isGamepadAvailable()}{isGamepadAvailable()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Gamepad\+::is\+Gamepad\+Available (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a gamepad is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a gamepad is available, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a04f8856f00411712615c60d7a1da64b7}\label{class_raylib_1_1_gamepad_a04f8856f00411712615c60d7a1da64b7}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!isGamepadButtonDown@{isGamepadButtonDown}}
+\index{isGamepadButtonDown@{isGamepadButtonDown}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{isGamepadButtonDown()}{isGamepadButtonDown()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Gamepad\+::is\+Gamepad\+Button\+Down (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad,  }\item[{const int \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a gamepad button is being pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+{\em button} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_aba7b6683eb1b45e98dd690a4dbe730fd}\label{class_raylib_1_1_gamepad_aba7b6683eb1b45e98dd690a4dbe730fd}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!isGamepadButtonPressed@{isGamepadButtonPressed}}
+\index{isGamepadButtonPressed@{isGamepadButtonPressed}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{isGamepadButtonPressed()}{isGamepadButtonPressed()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Gamepad\+::is\+Gamepad\+Button\+Pressed (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad,  }\item[{const int \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a gamepad button has been pressed once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+{\em button} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a898ba3275cedc45b24a3d2fa086aae00}\label{class_raylib_1_1_gamepad_a898ba3275cedc45b24a3d2fa086aae00}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!isGamepadButtonReleased@{isGamepadButtonReleased}}
+\index{isGamepadButtonReleased@{isGamepadButtonReleased}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{isGamepadButtonReleased()}{isGamepadButtonReleased()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Gamepad\+::is\+Gamepad\+Button\+Released (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad,  }\item[{const int \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a gamepad button has been released once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+{\em button} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a41aab0b3e7710601d0253714d68fb6c8}\label{class_raylib_1_1_gamepad_a41aab0b3e7710601d0253714d68fb6c8}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!isGamepadButtonUp@{isGamepadButtonUp}}
+\index{isGamepadButtonUp@{isGamepadButtonUp}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{isGamepadButtonUp()}{isGamepadButtonUp()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Gamepad\+::is\+Gamepad\+Button\+Up (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad,  }\item[{const int \&}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Detect if a gamepad button is NOT being pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+{\em button} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_adad625e84c43b205d1cb5d400df3998f}\label{class_raylib_1_1_gamepad_adad625e84c43b205d1cb5d400df3998f}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!isGamepadName@{isGamepadName}}
+\index{isGamepadName@{isGamepadName}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{isGamepadName()}{isGamepadName()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Gamepad\+::is\+Gamepad\+Name (\begin{DoxyParamCaption}\item[{const int \&}]{gamepad,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check gamepad name (if available) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & An int \\
+\hline
+{\em name} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_gamepad_a8a5aa4a4cefa55d3c0cabe0d10a62e83}\label{class_raylib_1_1_gamepad_a8a5aa4a4cefa55d3c0cabe0d10a62e83}} 
+\index{Raylib::Gamepad@{Raylib::Gamepad}!setGamepadMappings@{setGamepadMappings}}
+\index{setGamepadMappings@{setGamepadMappings}!Raylib::Gamepad@{Raylib::Gamepad}}
+\doxysubsubsection{\texorpdfstring{setGamepadMappings()}{setGamepadMappings()}}
+{\footnotesize\ttfamily int Raylib\+::\+Gamepad\+::set\+Gamepad\+Mappings (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{mappings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set internal gamepad mappings (SDL\+\_\+\+Game\+Controller\+DB) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mappings} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Gamepad/\mbox{\hyperlink{_gamepad_8hpp}{Gamepad.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Gamepad/\mbox{\hyperlink{_gamepad_8cpp}{Gamepad.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Gamepad/\mbox{\hyperlink{_gamepad_8inl}{Gamepad.\+inl}}\end{DoxyCompactItemize}

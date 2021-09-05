@@ -1,0 +1,13 @@
+digraph "Documents/GitHub/B-YEP-400-LYN-4-1-indiestudio-lucas.guichard/Lib/XRaylib/Raylib/Matrix" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_de334b3105e3c27a200be04983862f6f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Raylib" fontname="Helvetica", fontsize="10", URL="dir_de334b3105e3c27a200be04983862f6f.html"]
+  dir_62d30213f4ee49d07883a09b4aca7dce [shape=box label="Camera3D" URL="dir_62d30213f4ee49d07883a09b4aca7dce.html"];
+  dir_b0a7cae33c38f96ea20b24f93d53a092 [shape=box label="Camera2D" URL="dir_b0a7cae33c38f96ea20b24f93d53a092.html"];
+  dir_11f672325c5331bc32f2dabbf0c38823 [shape=box, label="Matrix", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_11f672325c5331bc32f2dabbf0c38823.html"];
+  }
+  dir_11f672325c5331bc32f2dabbf0c38823->dir_62d30213f4ee49d07883a09b4aca7dce [headlabel="1", labeldistance=1.5 headhref="dir_000040_000029.html"];
+  dir_11f672325c5331bc32f2dabbf0c38823->dir_b0a7cae33c38f96ea20b24f93d53a092 [headlabel="1", labeldistance=1.5 headhref="dir_000040_000028.html"];
+}

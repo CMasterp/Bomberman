@@ -1,0 +1,102 @@
+.TH "Raylib::Timing" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Timing
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Timing\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTiming\fP ()"
+.br
+.RI "Construct a new \fBTiming\fP object\&. "
+.ti -1c
+.RI "\fB~Timing\fP (void)"
+.br
+.RI "Destroy the \fBTiming\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBsetTargetFPS\fP (const int &fps)"
+.br
+.RI "Set Framerate Per Second\&. "
+.ti -1c
+.RI "static int \fBgetFPS\fP (void)"
+.br
+.RI "Get Framerate Per Second\&. "
+.ti -1c
+.RI "static float \fBgetFrameTime\fP (void)"
+.br
+.RI "Get frame time\&. "
+.ti -1c
+.RI "static double \fBgetTime\fP (void)"
+.br
+.RI "Get time since window initialization\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Timing::Timing ()"
+
+.PP
+Construct a new \fBTiming\fP object\&. 
+.SS "Raylib::Timing::~Timing (void)"
+
+.PP
+Destroy the \fBTiming\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "int Raylib::Timing::getFPS (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get Framerate Per Second\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The current FPS - int 
+.RE
+.PP
+
+.SS "float Raylib::Timing::getFrameTime (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get frame time\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The time in seconds for last frame drawn (delta time) - float 
+.RE
+.PP
+
+.SS "double Raylib::Timing::getTime (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get time since window initialization\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The elapsed time in seconds since InitWindow(void) - double 
+.RE
+.PP
+
+.SS "void Raylib::Timing::setTargetFPS (const int & fps)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Set Framerate Per Second\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfps\fP An int 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

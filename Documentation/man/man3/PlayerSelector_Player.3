@@ -1,0 +1,149 @@
+.TH "PlayerSelector::Player" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerSelector::Player
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Player\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP (const std::string &obj, const std::string &texture, const float &scalable, const int &idCharacter, const std::string &name, const \fBRaylib::Color\fP &color=\fBRaylib::Color::White\fP(), const std::vector< std::string > &animations={})"
+.br
+.RI "Construct a new \fBPlayer\fP object\&. "
+.ti -1c
+.RI "\fB~Player\fP ()"
+.br
+.RI "Destroy the \fBPlayer\fP object\&. "
+.ti -1c
+.RI "void \fBdraw\fP (const float &rotation, const \fBRaylib::Vector3\fP &pos)"
+.br
+.RI "Display the character\&. "
+.ti -1c
+.RI "void \fBdrawForMaps\fP (const float &rotation, const \fBRaylib::Vector3\fP &pos)"
+.br
+.RI "Display the character on the map selector\&. "
+.ti -1c
+.RI "int \fBgetId\fP (void) const"
+.br
+.RI "Get the character's Id\&. "
+.ti -1c
+.RI "const std::string \fBgetName\fP () const"
+.br
+.RI "Get the Name\&. "
+.ti -1c
+.RI "const \fBCharDictionary\fP \fBgetCharDictionary\fP () const"
+.br
+.RI "Get the Char Dictionary object\&. "
+.ti -1c
+.RI "std::pair< Model, float > \fBgetModel\fP () const"
+.br
+.RI "Get the Model\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PlayerSelector::Player::Player (const std::string & obj, const std::string & texture, const float & scalable, const int & idCharacter, const std::string & name, const \fBRaylib::Color\fP & color = \fC\fBRaylib::Color::White\fP()\fP, const std::vector< std::string > & animations = \fC{}\fP)"
+
+.PP
+Construct a new \fBPlayer\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP model path 
+.br
+\fItexture\fP texture path 
+.br
+\fIscalable\fP scalable value 
+.br
+\fIidCharacter\fP id of the character 
+.br
+\fIname\fP name of the character 
+.br
+\fIcolor\fP main color of the character 
+.br
+\fIanimations\fP strings vector of animations'path 
+.RE
+.PP
+
+.SS "PlayerSelector::Player::~Player (void)"
+
+.PP
+Destroy the \fBPlayer\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void PlayerSelector::Player::draw (const float & rotation, const \fBRaylib::Vector3\fP & pos)"
+
+.PP
+Display the character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrotation\fP rotation value (if there's not animations) 
+.br
+\fIpos\fP position to display the character 
+.RE
+.PP
+
+.SS "void PlayerSelector::Player::drawForMaps (const float & rotation, const \fBRaylib::Vector3\fP & pos)"
+
+.PP
+Display the character on the map selector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpos\fP position to display the character 
+.RE
+.PP
+
+.SS "const \fBCharDictionary\fP PlayerSelector::Player::getCharDictionary () const"
+
+.PP
+Get the Char Dictionary object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+const \fBCharDictionary\fP 
+.RE
+.PP
+
+.SS "int PlayerSelector::Player::getId (void) const"
+
+.PP
+Get the character's Id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+the id 
+.RE
+.PP
+
+.SS "std::pair< Model, float > PlayerSelector::Player::getModel () const"
+
+.PP
+Get the Model\&. 
+.PP
+\fBReturns\fP
+.RS 4
+a pair of the Model and its scalable value 
+.RE
+.PP
+
+.SS "const std::string PlayerSelector::Player::getName (void) const"
+
+.PP
+Get the Name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+the character's name 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

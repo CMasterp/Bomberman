@@ -1,0 +1,409 @@
+\hypertarget{class_raylib_1_1_rectangle}{}\doxysection{Raylib\+::Rectangle Class Reference}
+\label{class_raylib_1_1_rectangle}\index{Raylib::Rectangle@{Raylib::Rectangle}}
+
+
+{\ttfamily \#include $<$Rectangle.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_rectangle_ae529d8d786b3e4ef660d5592679e845c}{Rectangle}} (float x=0, float y=0, float width=0, float height=0)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object with parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_rectangle_ad0c16913ac5f74e3089048334e6448f0}{Rectangle}} (\+::\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} rec)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_rectangle_a338a9623ce52d258eff9dc11ce10a0cc}{Rectangle}} (\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&position, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&size)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object with parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_rectangle_a3af528d01c8ba4007eedef028a1fd9de}{Rectangle}} (\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&size)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object with parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \& \mbox{\hyperlink{class_raylib_1_1_rectangle_a2f6b67ff96fa8a2183b3e57451a4effc}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&rectangle)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_rectangle_af2995f3cabfa457da48410441964054f}{$\sim$\+Rectangle}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \mbox{\hyperlink{class_raylib_1_1_rectangle_abee61007c4773c6eaecc0ccc1ccc7149}{get\+CStruct}} (void) const
+\begin{DoxyCompactList}\small\item\em Getter of \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} structure (private attribute) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_afe7bc9a4ab8de249aa151ad1092e1d25}{draw\+RectangleV}} (const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&position, const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&size, const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&color) const
+\begin{DoxyCompactList}\small\item\em Draw a color-\/filled rectangle (Vector version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_a2e0e641cbe56af79544044b866ceace6}{draw\+Rectangle\+Pro}} (\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec, \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&origin, float const \&rotation, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color) const
+\begin{DoxyCompactList}\small\item\em Draw a color-\/filled rectangle with pro parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_a8b0761210f1500bbfbb16e6994ffa07d}{draw\+Rectangle\+GradientV}} (int const \&posX, int const \&posY, int const \&width, int const \&height, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color1, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color2) const
+\begin{DoxyCompactList}\small\item\em Draw a vertical-\/gradient-\/filled rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_a4241ae571a64d3baf038dc2c12044b3f}{draw\+Rectangle\+GradientH}} (int const \&posX, int const \&posY, int const \&width, int const \&height, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color1, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color2) const
+\begin{DoxyCompactList}\small\item\em Draw a horizontal-\/gradient-\/filled rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_a7378b76767afdaec559fd95a84d1ba56}{draw\+Rectangle\+Gradient\+Ex}} (\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&col1, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&col2, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&col3, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&col4) const
+\begin{DoxyCompactList}\small\item\em Draw a gradient-\/filled rectangle with custom vertex colors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_aecfb26374f9692460738db5fbd7e4004}{draw\+Rectangle\+Lines\+Ex}} (\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec, int const \&line\+Thick, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color) const
+\begin{DoxyCompactList}\small\item\em Draw rectangle outline with extended parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_a3c2c2931fe35ddcd74287f6fcd2b0c29}{draw\+Rectangle\+Rounded}} (\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec, float const \&roundness, int const \&segments, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color) const
+\begin{DoxyCompactList}\small\item\em Draw rectangle with rounded edges. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_rectangle_a0f2c3a96a14fd03f8efb14716c4bdcc6}{draw\+Rectangle\+Rounded\+Lines}} (\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec, float const \&roundness, int const \&segments, int const \&line\+Thick, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color) const
+\begin{DoxyCompactList}\small\item\em Draw rectangle with rounded edges outline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_raylib_1_1_rectangle_aac19a448c50532f315b49d5f997ac0ab}{draw\+Rectangle}} (int const \&posX, int const \&posY, int const \&width, int const \&height, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color)
+\begin{DoxyCompactList}\small\item\em Draw a color-\/filled rectangle. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_rectangle_a030505b8f15cdb35e6f0acb04ca9142f}{draw\+Rectangle\+Rec}} (\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&rec, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color)
+\begin{DoxyCompactList}\small\item\em Draw a color-\/filled rectangle. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_rectangle_a65f67ee7f2bc792a92a110cd6b720016}{draw\+Rectangle\+Lines}} (int const \&posX, int const \&posY, int const \&width, int const \&height, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&color)
+\begin{DoxyCompactList}\small\item\em Draw rectangle outline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_ae529d8d786b3e4ef660d5592679e845c}\label{class_raylib_1_1_rectangle_ae529d8d786b3e4ef660d5592679e845c}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{float}]{x = {\ttfamily 0},  }\item[{float}]{y = {\ttfamily 0},  }\item[{float}]{width = {\ttfamily 0},  }\item[{float}]{height = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position X \\
+\hline
+{\em y} & Position Y \\
+\hline
+{\em width} & The width of the rectangle \\
+\hline
+{\em height} & The height of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_ad0c16913ac5f74e3089048334e6448f0}\label{class_raylib_1_1_rectangle_ad0c16913ac5f74e3089048334e6448f0}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}}}]{rec }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & C \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a338a9623ce52d258eff9dc11ce10a0cc}\label{class_raylib_1_1_rectangle_a338a9623ce52d258eff9dc11ce10a0cc}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{position,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{size }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & An const reference to the \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em size} & An const reference to the \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a3af528d01c8ba4007eedef028a1fd9de}\label{class_raylib_1_1_rectangle_a3af528d01c8ba4007eedef028a1fd9de}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Raylib\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{size }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & An const reference to the \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_af2995f3cabfa457da48410441964054f}\label{class_raylib_1_1_rectangle_af2995f3cabfa457da48410441964054f}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!````~Rectangle@{$\sim$Rectangle}}
+\index{````~Rectangle@{$\sim$Rectangle}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{$\sim$Rectangle()}{~Rectangle()}}
+{\footnotesize\ttfamily Raylib\+::\+Rectangle\+::$\sim$\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_aac19a448c50532f315b49d5f997ac0ab}\label{class_raylib_1_1_rectangle_aac19a448c50532f315b49d5f997ac0ab}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle (\begin{DoxyParamCaption}\item[{int const \&}]{posX,  }\item[{int const \&}]{posY,  }\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Draw a color-\/filled rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & A const reference to an int \\
+\hline
+{\em posY} & A const reference to an int \\
+\hline
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a7378b76767afdaec559fd95a84d1ba56}\label{class_raylib_1_1_rectangle_a7378b76767afdaec559fd95a84d1ba56}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleGradientEx@{drawRectangleGradientEx}}
+\index{drawRectangleGradientEx@{drawRectangleGradientEx}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleGradientEx()}{drawRectangleGradientEx()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+Gradient\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{col1,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{col2,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{col3,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{col4 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a gradient-\/filled rectangle with custom vertex colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em col1} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em col2} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em col3} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em col4} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a4241ae571a64d3baf038dc2c12044b3f}\label{class_raylib_1_1_rectangle_a4241ae571a64d3baf038dc2c12044b3f}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleGradientH@{drawRectangleGradientH}}
+\index{drawRectangleGradientH@{drawRectangleGradientH}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleGradientH()}{drawRectangleGradientH()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+GradientH (\begin{DoxyParamCaption}\item[{int const \&}]{posX,  }\item[{int const \&}]{posY,  }\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color1,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a horizontal-\/gradient-\/filled rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & A const reference to an int \\
+\hline
+{\em posY} & A const reference to an int \\
+\hline
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em col1} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em col2} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a8b0761210f1500bbfbb16e6994ffa07d}\label{class_raylib_1_1_rectangle_a8b0761210f1500bbfbb16e6994ffa07d}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleGradientV@{drawRectangleGradientV}}
+\index{drawRectangleGradientV@{drawRectangleGradientV}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleGradientV()}{drawRectangleGradientV()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+GradientV (\begin{DoxyParamCaption}\item[{int const \&}]{posX,  }\item[{int const \&}]{posY,  }\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color1,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a vertical-\/gradient-\/filled rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & A const reference to an int \\
+\hline
+{\em posY} & A const reference to an int \\
+\hline
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em col1} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em col2} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a65f67ee7f2bc792a92a110cd6b720016}\label{class_raylib_1_1_rectangle_a65f67ee7f2bc792a92a110cd6b720016}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleLines@{drawRectangleLines}}
+\index{drawRectangleLines@{drawRectangleLines}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleLines()}{drawRectangleLines()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+Lines (\begin{DoxyParamCaption}\item[{int const \&}]{posX,  }\item[{int const \&}]{posY,  }\item[{int const \&}]{width,  }\item[{int const \&}]{height,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Draw rectangle outline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & A const reference to an int \\
+\hline
+{\em posY} & A const reference to an int \\
+\hline
+{\em width} & A const reference to an int \\
+\hline
+{\em height} & A const reference to an int \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_aecfb26374f9692460738db5fbd7e4004}\label{class_raylib_1_1_rectangle_aecfb26374f9692460738db5fbd7e4004}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleLinesEx@{drawRectangleLinesEx}}
+\index{drawRectangleLinesEx@{drawRectangleLinesEx}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleLinesEx()}{drawRectangleLinesEx()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+Lines\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec,  }\item[{int const \&}]{line\+Thick,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw rectangle outline with extended parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em line\+Thick} & A const reference to an int \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a2e0e641cbe56af79544044b866ceace6}\label{class_raylib_1_1_rectangle_a2e0e641cbe56af79544044b866ceace6}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectanglePro@{drawRectanglePro}}
+\index{drawRectanglePro@{drawRectanglePro}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectanglePro()}{drawRectanglePro()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+Pro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{origin,  }\item[{float const \&}]{rotation,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a color-\/filled rectangle with pro parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em orgin} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em rotation} & A const reference to a float \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a030505b8f15cdb35e6f0acb04ca9142f}\label{class_raylib_1_1_rectangle_a030505b8f15cdb35e6f0acb04ca9142f}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleRec@{drawRectangleRec}}
+\index{drawRectangleRec@{drawRectangleRec}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleRec()}{drawRectangleRec()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Draw a color-\/filled rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a3c2c2931fe35ddcd74287f6fcd2b0c29}\label{class_raylib_1_1_rectangle_a3c2c2931fe35ddcd74287f6fcd2b0c29}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleRounded@{drawRectangleRounded}}
+\index{drawRectangleRounded@{drawRectangleRounded}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleRounded()}{drawRectangleRounded()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+Rounded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec,  }\item[{float const \&}]{roundness,  }\item[{int const \&}]{segments,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw rectangle with rounded edges. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em roundness} & A const reference to a float \\
+\hline
+{\em segments} & A const reference to an int \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a0f2c3a96a14fd03f8efb14716c4bdcc6}\label{class_raylib_1_1_rectangle_a0f2c3a96a14fd03f8efb14716c4bdcc6}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleRoundedLines@{drawRectangleRoundedLines}}
+\index{drawRectangleRoundedLines@{drawRectangleRoundedLines}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleRoundedLines()}{drawRectangleRoundedLines()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+Rectangle\+Rounded\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&}]{rec,  }\item[{float const \&}]{roundness,  }\item[{int const \&}]{segments,  }\item[{int const \&}]{line\+Thick,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}} const \&}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw rectangle with rounded edges outline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rec} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+{\em roundness} & A const reference to a float \\
+\hline
+{\em segments} & A const reference to an int \\
+\hline
+{\em line\+Thick} & A const reference to an int \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_afe7bc9a4ab8de249aa151ad1092e1d25}\label{class_raylib_1_1_rectangle_afe7bc9a4ab8de249aa151ad1092e1d25}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!drawRectangleV@{drawRectangleV}}
+\index{drawRectangleV@{drawRectangleV}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{drawRectangleV()}{drawRectangleV()}}
+{\footnotesize\ttfamily void Raylib\+::\+Rectangle\+::draw\+RectangleV (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{position,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \&}]{size,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a color-\/filled rectangle (Vector version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em size} & A const reference to a Class \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \\
+\hline
+{\em color} & A const reference to Class \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_abee61007c4773c6eaecc0ccc1ccc7149}\label{class_raylib_1_1_rectangle_abee61007c4773c6eaecc0ccc1ccc7149}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!getCStruct@{getCStruct}}
+\index{getCStruct@{getCStruct}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{getCStruct()}{getCStruct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} Raylib\+::\+Rectangle\+::get\+CStruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter of \mbox{\hyperlink{class_raylib_1_1_texture}{Texture}} structure (private attribute) 
+
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} C structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_rectangle_a2f6b67ff96fa8a2183b3e57451a4effc}\label{class_raylib_1_1_rectangle_a2f6b67ff96fa8a2183b3e57451a4effc}} 
+\index{Raylib::Rectangle@{Raylib::Rectangle}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Rectangle@{Raylib::Rectangle}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_rectangle}{Raylib\+::\+Rectangle}} \& Raylib\+::\+Rectangle\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&}]{rectangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} (\mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} \&) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Rectangle/\mbox{\hyperlink{_rectangle_8hpp}{Rectangle.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Rectangle/\mbox{\hyperlink{_rectangle_8cpp}{Rectangle.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Rectangle/\mbox{\hyperlink{_rectangle_8inl}{Rectangle.\+inl}}\end{DoxyCompactItemize}

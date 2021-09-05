@@ -1,0 +1,142 @@
+\hypertarget{class_game_1_1_point}{}\doxysection{Game\+::Point Class Reference}
+\label{class_game_1_1_point}\index{Game::Point@{Game::Point}}
+
+
+{\ttfamily \#include $<$Astar.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_point_a055722a55f79b95c721e7a7fcb9053ed}{Point}} (const int \&x=0, const int \&y=0)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_point}{Point}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_point_a4015a6110328a46aeb4e6013d5e374a0}{operator==}} (const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&point)
+\begin{DoxyCompactList}\small\item\em Equal operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_point_abee0dbd9faa6cb092795f9a21d959b8d}{operator!=}} (const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&point)
+\begin{DoxyCompactList}\small\item\em Unequal operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_point}{Point}} \mbox{\hyperlink{class_game_1_1_point_a7ce9adb1fd43ed169d91219cb657c247}{operator+}} (const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&point)
+\begin{DoxyCompactList}\small\item\em Add operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_point}{Point}} \& \mbox{\hyperlink{class_game_1_1_point_ad07c1935102a3bdca719b235dd468611}{operator=}} (const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&point)
+\begin{DoxyCompactList}\small\item\em Assign operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_1_1_point_a78e0421f8ce1fb9ced7d0d377b5f31b1}{\+\_\+x}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_point_a6c9f0febdc7e62626a7dee2e8aa5b2e9}{\+\_\+y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_point_a055722a55f79b95c721e7a7fcb9053ed}\label{class_game_1_1_point_a055722a55f79b95c721e7a7fcb9053ed}} 
+\index{Game::Point@{Game::Point}!Point@{Point}}
+\index{Point@{Point}!Game::Point@{Game::Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily Game\+::\+Point\+::\+Point (\begin{DoxyParamCaption}\item[{const int \&}]{x = {\ttfamily 0},  }\item[{const int \&}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_point}{Point}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The abscissa coordinate \\
+\hline
+{\em y} & The ordinate coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_point_abee0dbd9faa6cb092795f9a21d959b8d}\label{class_game_1_1_point_abee0dbd9faa6cb092795f9a21d959b8d}} 
+\index{Game::Point@{Game::Point}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Game::Point@{Game::Point}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Game\+::\+Point\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unequal operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \mbox{\hyperlink{class_game_1_1_point}{Point}} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the points are the different, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_point_a7ce9adb1fd43ed169d91219cb657c247}\label{class_game_1_1_point_a7ce9adb1fd43ed169d91219cb657c247}} 
+\index{Game::Point@{Game::Point}!operator+@{operator+}}
+\index{operator+@{operator+}!Game::Point@{Game::Point}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_point}{Point}} Game\+::\+Point\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \mbox{\hyperlink{class_game_1_1_point}{Point}} to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new point with addition positions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_point_ad07c1935102a3bdca719b235dd468611}\label{class_game_1_1_point_ad07c1935102a3bdca719b235dd468611}} 
+\index{Game::Point@{Game::Point}!operator=@{operator=}}
+\index{operator=@{operator=}!Game::Point@{Game::Point}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_point}{Point}}\& Game\+::\+Point\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assign operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \mbox{\hyperlink{class_game_1_1_point}{Point}} to assign \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assign point Object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_point_a4015a6110328a46aeb4e6013d5e374a0}\label{class_game_1_1_point_a4015a6110328a46aeb4e6013d5e374a0}} 
+\index{Game::Point@{Game::Point}!operator==@{operator==}}
+\index{operator==@{operator==}!Game::Point@{Game::Point}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Game\+::\+Point\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_1_1_point}{Point}} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equal operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \mbox{\hyperlink{class_game_1_1_point}{Point}} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the points are the same, false otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_point_a78e0421f8ce1fb9ced7d0d377b5f31b1}\label{class_game_1_1_point_a78e0421f8ce1fb9ced7d0d377b5f31b1}} 
+\index{Game::Point@{Game::Point}!\_x@{\_x}}
+\index{\_x@{\_x}!Game::Point@{Game::Point}}
+\doxysubsubsection{\texorpdfstring{\_x}{\_x}}
+{\footnotesize\ttfamily int Game\+::\+Point\+::\+\_\+x}
+
+\mbox{\Hypertarget{class_game_1_1_point_a6c9f0febdc7e62626a7dee2e8aa5b2e9}\label{class_game_1_1_point_a6c9f0febdc7e62626a7dee2e8aa5b2e9}} 
+\index{Game::Point@{Game::Point}!\_y@{\_y}}
+\index{\_y@{\_y}!Game::Point@{Game::Point}}
+\doxysubsubsection{\texorpdfstring{\_y}{\_y}}
+{\footnotesize\ttfamily int Game\+::\+Point\+::\+\_\+y}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_astar_8hpp}{Astar.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_astar_8cpp}{Astar.\+cpp}}\end{DoxyCompactItemize}

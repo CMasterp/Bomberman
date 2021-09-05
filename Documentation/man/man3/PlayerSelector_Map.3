@@ -1,0 +1,156 @@
+.TH "PlayerSelector::Map" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlayerSelector::Map
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Map\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBModelMode\fP { \fBFLOOR\fP, \fBWALL\fP, \fBBOX\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMap\fP (std::vector< \fBPlayer\fP > models, std::vector< std::string > &asciiMap)"
+.br
+.RI "Construct a new \fBMap\fP object\&. "
+.ti -1c
+.RI "\fB~Map\fP ()"
+.br
+.RI "Destroy the \fBMap\fP object\&. "
+.ti -1c
+.RI "std::vector< std::vector< Texture > > \fBfindTexturesAvailable\fP (int &nb_textures)"
+.br
+.RI "Find dynamically all availables textures\&. "
+.ti -1c
+.RI "void \fBnext\fP ()"
+.br
+.RI "Set the next map texture\&. "
+.ti -1c
+.RI "void \fBprev\fP ()"
+.br
+.RI "Set the prev map texture\&. "
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.RI "Print the 3D \fBMap\fP\&. "
+.ti -1c
+.RI "size_t \fBgetMapType\fP () const"
+.br
+.RI "Get the \fBMap\fP Type (Floor, Wall or Box) "
+.ti -1c
+.RI "std::vector< std::string > \fBgetMap\fP () const"
+.br
+.RI "Get the Ascii \fBMap\fP\&. "
+.ti -1c
+.RI "std::vector< Texture2D > \fBgetTextures\fP () const"
+.br
+.RI "Get the Textures object\&. "
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBPlayerSelector::Map::ModelMode\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIFLOOR \fP\fP
+.TP
+\fB\fIWALL \fP\fP
+.TP
+\fB\fIBOX \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PlayerSelector::Map::Map (std::vector< \fBPlayer\fP > models, std::vector< std::string > & asciiMap)"
+
+.PP
+Construct a new \fBMap\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImodels\fP pair of models with their scalable values 
+.br
+\fIasciiMap\fP the ascii map to print 
+.RE
+.PP
+
+.SS "PlayerSelector::Map::~Map ()"
+
+.PP
+Destroy the \fBMap\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void PlayerSelector::Map::draw ()"
+
+.PP
+Print the 3D \fBMap\fP\&. 
+.SS "std::vector< std::vector< Texture > > PlayerSelector::Map::findTexturesAvailable (int & nb_textures)"
+
+.PP
+Find dynamically all availables textures\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb_textures\fP a counter of all available textures 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A map of all textures available 
+.RE
+.PP
+
+.SS "std::vector< std::string > PlayerSelector::Map::getMap (void) const"
+
+.PP
+Get the Ascii \fBMap\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The map as vector of strings 
+.RE
+.PP
+
+.SS "size_t PlayerSelector::Map::getMapType () const"
+
+.PP
+Get the \fBMap\fP Type (Floor, Wall or Box) 
+.PP
+\fBReturns\fP
+.RS 4
+The map type 
+.RE
+.PP
+
+.SS "std::vector< Texture2D > PlayerSelector::Map::getTextures () const"
+
+.PP
+Get the Textures object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+All the textures 
+.RE
+.PP
+
+.SS "void PlayerSelector::Map::next ()"
+
+.PP
+Set the next map texture\&. 
+.SS "void PlayerSelector::Map::prev ()"
+
+.PP
+Set the prev map texture\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

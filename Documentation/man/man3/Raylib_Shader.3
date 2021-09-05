@@ -1,0 +1,313 @@
+.TH "Raylib::Shader" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Shader
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Shader\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShader\fP ()"
+.br
+.RI "Construct a new \fBShader\fP object\&. "
+.ti -1c
+.RI "\fB~Shader\fP ()"
+.br
+.RI "Destroy the \fBShader\fP object\&. "
+.ti -1c
+.RI "\fBShader\fP (::\fBShader\fP const &shader)"
+.br
+.RI "Construct a new \fBShader\fP object (Copy Constructor) "
+.ti -1c
+.RI "\fBShader\fP (const std::string &vsFileName, const std::string &fsFileName)"
+.br
+.RI "Construct a new \fBShader\fP object (Copy Constructor) "
+.ti -1c
+.RI "::\fBShader\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Get C Structure for \fBShader\fP Class\&. "
+.ti -1c
+.RI "\fBShader\fP & \fBoperator=\fP (const \fBShader\fP &shader)"
+.br
+.RI "Overload of '=' operator\&. "
+.ti -1c
+.RI "void \fBbeginShaderMode\fP (\fBShader\fP const &shader) const"
+.br
+.RI "Begin custom shader drawing\&. "
+.ti -1c
+.RI "void \fBendShaderMode\fP (void) const"
+.br
+.RI "End custom shader drawing (use default shader) "
+.ti -1c
+.RI "\fBShader\fP \fBloadShader\fP (const char *vsFileName, const char *fsFileName) const"
+.br
+.RI "Load shader from files and bind default locations\&. "
+.ti -1c
+.RI "\fBShader\fP \fBloadShaderFromMemory\fP (const char *vsCode, const char *fsCode) const"
+.br
+.RI "Load shader from code strings and bind default locations\&. "
+.ti -1c
+.RI "int \fBgetShaderLocation\fP (\fBShader\fP const &shader, const char *uniformName) const"
+.br
+.RI "Get shader uniform location\&. "
+.ti -1c
+.RI "int \fBgetShaderLocationAttrib\fP (\fBShader\fP const &shader, const char *attribName) const"
+.br
+.RI "Get shader attribute location\&. "
+.ti -1c
+.RI "void \fBsetShaderValue\fP (\fBShader\fP const &shader, int const &locIndex, const void *value, int const &uniformType) const"
+.br
+.RI "Set shader uniform value\&. "
+.ti -1c
+.RI "void \fBsetShaderValueV\fP (\fBShader\fP const &shader, int const &locIndex, const void *value, int const &uniformType, int const &count) const"
+.br
+.RI "Set shader uniform value vector\&. "
+.ti -1c
+.RI "void \fBsetShaderValueMatrix\fP (\fBShader\fP const &shader, int const &locIndex, \fBMatrix\fP const &mat) const"
+.br
+.RI "Set shader uniform value (matrix 4x4) "
+.ti -1c
+.RI "void \fBsetShaderValueTexture\fP (\fBShader\fP const &shader, int const &locIndex, Texture2D const &texture) const"
+.br
+.RI "Set shader uniform value for texture (sampler2d) "
+.ti -1c
+.RI "void \fBunloadShader\fP (\fBShader\fP shader) const"
+.br
+.RI "Unload shader from GPU memory (VRAM) "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Shader::Shader ()"
+
+.PP
+Construct a new \fBShader\fP object\&. 
+.SS "Raylib::Shader::~Shader ()"
+
+.PP
+Destroy the \fBShader\fP object\&. 
+.SS "Raylib::Shader::Shader (::\fBShader\fP const & shader)"
+
+.PP
+Construct a new \fBShader\fP object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBShader\fP\fP A \fBShader\fP C Structure 
+.RE
+.PP
+
+.SS "Raylib::Shader::Shader (const std::string & vsFileName, const std::string & fsFileName)"
+
+.PP
+Construct a new \fBShader\fP object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvsFileName\fP A const reference to a char * 
+.br
+\fIfsFileName\fP A const reference to a char * 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Shader::beginShaderMode (\fBShader\fP const & shader) const\fC [inline]\fP"
+
+.PP
+Begin custom shader drawing\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.RE
+.PP
+
+.SS "void Raylib::Shader::endShaderMode (void) const\fC [inline]\fP"
+
+.PP
+End custom shader drawing (use default shader) 
+.SS "\fBShader\fP Raylib::Shader::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Get C Structure for \fBShader\fP Class\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBShader\fP C Structure 
+.RE
+.PP
+
+.SS "int Raylib::Shader::getShaderLocation (\fBShader\fP const & shader, const char * uniformName) const\fC [inline]\fP"
+
+.PP
+Get shader uniform location\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.br
+\fIuniformName\fP A const reference to a char * 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Int 
+.RE
+.PP
+
+.SS "int Raylib::Shader::getShaderLocationAttrib (\fBShader\fP const & shader, const char * attribName) const\fC [inline]\fP"
+
+.PP
+Get shader attribute location\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.br
+\fIuniformName\fP A const reference to a char * 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Int 
+.RE
+.PP
+
+.SS "\fBRaylib::Shader\fP Raylib::Shader::loadShader (const char * vsFileName, const char * fsFileName) const\fC [inline]\fP"
+
+.PP
+Load shader from files and bind default locations\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvsFileName\fP A const reference to a char * 
+.br
+\fIfsFileName\fP A const reference to a char *
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBShader\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Shader\fP Raylib::Shader::loadShaderFromMemory (const char * vsCode, const char * fsCode) const\fC [inline]\fP"
+
+.PP
+Load shader from code strings and bind default locations\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvsCode\fP A const reference to a char * 
+.br
+\fIfsCode\fP A const reference to a char *
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A \fBShader\fP 
+.RE
+.PP
+
+.SS "\fBRaylib::Shader\fP & Raylib::Shader::operator= (const \fBShader\fP & shader)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBShader\fP (\fBShader\fP &) 
+.RE
+.PP
+
+.SS "void Raylib::Shader::setShaderValue (\fBShader\fP const & shader, int const & locIndex, const void * value, int const & uniformType) const\fC [inline]\fP"
+
+.PP
+Set shader uniform value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.br
+\fIlocIndex\fP A const reference to an int 
+.br
+\fIvalue\fP A const Void * 
+.br
+\fIuniformType\fP A const reference to an int 
+.RE
+.PP
+
+.SS "void Raylib::Shader::setShaderValueMatrix (\fBShader\fP const & shader, int const & locIndex, \fBMatrix\fP const & mat) const\fC [inline]\fP"
+
+.PP
+Set shader uniform value (matrix 4x4) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.br
+\fIlocIndex\fP A const reference to an int 
+.br
+\fImat\fP A const reference to a \fBMatrix\fP 
+.RE
+.PP
+
+.SS "void Raylib::Shader::setShaderValueTexture (\fBShader\fP const & shader, int const & locIndex, Texture2D const & texture) const\fC [inline]\fP"
+
+.PP
+Set shader uniform value for texture (sampler2d) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.br
+\fIlocIndex\fP A const reference to an int 
+.br
+\fItexture\fP A const reference to a \fBTexture\fP 
+.RE
+.PP
+
+.SS "void Raylib::Shader::setShaderValueV (\fBShader\fP const & shader, int const & locIndex, const void * value, int const & uniformType, int const & count) const\fC [inline]\fP"
+
+.PP
+Set shader uniform value vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.br
+\fIlocIndex\fP A const reference to an int 
+.br
+\fIvalue\fP A const Void * 
+.br
+\fIuniformType\fP A const reference to an int 
+.br
+\fIcount\fP A const reference to an int 
+.RE
+.PP
+
+.SS "void Raylib::Shader::unloadShader (\fBShader\fP shader) const\fC [inline]\fP"
+
+.PP
+Unload shader from GPU memory (VRAM) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIshader\fP A const reference to a \fBShader\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

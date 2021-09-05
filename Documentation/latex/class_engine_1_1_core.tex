@@ -1,0 +1,144 @@
+\hypertarget{class_engine_1_1_core}{}\doxysection{Engine\+::Core Class Reference}
+\label{class_engine_1_1_core}\index{Engine::Core@{Engine::Core}}
+
+
+{\ttfamily \#include $<$Core.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_engine_1_1_core_a706b1589c7441ca20081fd72ded54810}{Core}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_engine_1_1_core}{Core}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_engine_1_1_core_a2d19fea89a9b35071d1490662c55f5a6}{$\sim$\+Core}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_engine_1_1_core}{Core}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_1_1_core_ae5c8185e17e68a8c553f7c40ae21fb3e}{run}} (void)
+\begin{DoxyCompactList}\small\item\em Run the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_engine_1_1_core_ae2b509b9fdad1ad3e8ac9cd2ca72f1b2}{end\+Game}} (void)
+\begin{DoxyCompactList}\small\item\em Break cleanly the game loop and save informations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_1_1_core_ac6a5b766feeb82b658e2e539b6077798}{save\+Best\+Scores}} (void)
+\begin{DoxyCompactList}\small\item\em Save the best score(s) in a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_1_1_core_a023afb26490bf23344175f4b47871adf}{get\+Backup\+Files}} (void)
+\begin{DoxyCompactList}\small\item\em Get Backup Files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_1_1_core_a3ec82cdb4f11be1686e5bea8ee64be1b}{save\+Game}} (std\+::array$<$ std\+::size\+\_\+t, 9 $>$ settings, std\+::vector$<$ std\+::string $>$ player\+Controls)
+\begin{DoxyCompactList}\small\item\em Save the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_1_1_core_a1e91acdb4ea0384f2a9f2c866d40ae7f}{load\+Game}} (std\+::string filepath)
+\begin{DoxyCompactList}\small\item\em Load the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_1_1_core_aa72c2437b27260f374e646ec9e783c2d}{restart\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Restart the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_engine_1_1_core_a706b1589c7441ca20081fd72ded54810}\label{class_engine_1_1_core_a706b1589c7441ca20081fd72ded54810}} 
+\index{Engine::Core@{Engine::Core}!Core@{Core}}
+\index{Core@{Core}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily Engine\+::\+Core\+::\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_engine_1_1_core}{Core}} object. 
+
+\mbox{\Hypertarget{class_engine_1_1_core_a2d19fea89a9b35071d1490662c55f5a6}\label{class_engine_1_1_core_a2d19fea89a9b35071d1490662c55f5a6}} 
+\index{Engine::Core@{Engine::Core}!````~Core@{$\sim$Core}}
+\index{````~Core@{$\sim$Core}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{$\sim$Core()}{~Core()}}
+{\footnotesize\ttfamily Engine\+::\+Core\+::$\sim$\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_engine_1_1_core}{Core}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_engine_1_1_core_ae2b509b9fdad1ad3e8ac9cd2ca72f1b2}\label{class_engine_1_1_core_ae2b509b9fdad1ad3e8ac9cd2ca72f1b2}} 
+\index{Engine::Core@{Engine::Core}!endGame@{endGame}}
+\index{endGame@{endGame}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{endGame()}{endGame()}}
+{\footnotesize\ttfamily bool Engine\+::\+Core\+::end\+Game (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Break cleanly the game loop and save informations. 
+
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_1_1_core_a023afb26490bf23344175f4b47871adf}\label{class_engine_1_1_core_a023afb26490bf23344175f4b47871adf}} 
+\index{Engine::Core@{Engine::Core}!getBackupFiles@{getBackupFiles}}
+\index{getBackupFiles@{getBackupFiles}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{getBackupFiles()}{getBackupFiles()}}
+{\footnotesize\ttfamily void Engine\+::\+Core\+::get\+Backup\+Files (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Backup Files. 
+
+\mbox{\Hypertarget{class_engine_1_1_core_a1e91acdb4ea0384f2a9f2c866d40ae7f}\label{class_engine_1_1_core_a1e91acdb4ea0384f2a9f2c866d40ae7f}} 
+\index{Engine::Core@{Engine::Core}!loadGame@{loadGame}}
+\index{loadGame@{loadGame}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{loadGame()}{loadGame()}}
+{\footnotesize\ttfamily void Engine\+::\+Core\+::load\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+
+
+Load the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & Path to backup file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_1_1_core_aa72c2437b27260f374e646ec9e783c2d}\label{class_engine_1_1_core_aa72c2437b27260f374e646ec9e783c2d}} 
+\index{Engine::Core@{Engine::Core}!restartGame@{restartGame}}
+\index{restartGame@{restartGame}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{restartGame()}{restartGame()}}
+{\footnotesize\ttfamily void Engine\+::\+Core\+::restart\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restart the game. 
+
+\mbox{\Hypertarget{class_engine_1_1_core_ae5c8185e17e68a8c553f7c40ae21fb3e}\label{class_engine_1_1_core_ae5c8185e17e68a8c553f7c40ae21fb3e}} 
+\index{Engine::Core@{Engine::Core}!run@{run}}
+\index{run@{run}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Engine\+::\+Core\+::run (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Run the core. 
+
+\mbox{\Hypertarget{class_engine_1_1_core_ac6a5b766feeb82b658e2e539b6077798}\label{class_engine_1_1_core_ac6a5b766feeb82b658e2e539b6077798}} 
+\index{Engine::Core@{Engine::Core}!saveBestScores@{saveBestScores}}
+\index{saveBestScores@{saveBestScores}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{saveBestScores()}{saveBestScores()}}
+{\footnotesize\ttfamily void Engine\+::\+Core\+::save\+Best\+Scores (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Save the best score(s) in a file. 
+
+\mbox{\Hypertarget{class_engine_1_1_core_a3ec82cdb4f11be1686e5bea8ee64be1b}\label{class_engine_1_1_core_a3ec82cdb4f11be1686e5bea8ee64be1b}} 
+\index{Engine::Core@{Engine::Core}!saveGame@{saveGame}}
+\index{saveGame@{saveGame}!Engine::Core@{Engine::Core}}
+\doxysubsubsection{\texorpdfstring{saveGame()}{saveGame()}}
+{\footnotesize\ttfamily void Engine\+::\+Core\+::save\+Game (\begin{DoxyParamCaption}\item[{std\+::array$<$ std\+::size\+\_\+t, 9 $>$}]{settings,  }\item[{std\+::vector$<$ std\+::string $>$}]{player\+Controls }\end{DoxyParamCaption})}
+
+
+
+Save the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & Backup Container containing the settings \\
+\hline
+{\em player\+Controls} & Backup Container containing the player controls \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Engine/\+Core/\mbox{\hyperlink{_core_8hpp}{Core.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Engine/\+Core/\mbox{\hyperlink{_core_8cpp}{Core.\+cpp}}\end{DoxyCompactItemize}

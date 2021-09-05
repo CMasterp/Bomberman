@@ -1,0 +1,1347 @@
+\hypertarget{class_x_ray}{}\doxysection{XRay Class Reference}
+\label{class_x_ray}\index{XRay@{XRay}}
+
+
+{\ttfamily \#include $<$XRay.\+hpp$>$}
+
+Inheritance diagram for XRay\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_x_ray}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_x_ray_ae74464953ca00984da4355790376131e}{XRay}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new Ray Lib object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_x_ray_a4efb453f1b101519cedbe5f3d8ab4dc2}{$\sim$\+XRay}} (void) override
+\begin{DoxyCompactList}\small\item\em Destroy the Ray Lib object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_x_ray_a6a80919d7056c65a15c44ee30677646d}{should\+Close\+Window}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the window should be close. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a7fa78f75ccd3a92c6916de182cd0138f}{set\+Scores}} (const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&scores) override
+\begin{DoxyCompactList}\small\item\em This function sets the list of scores. First element of the pair is the username, the second is the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a379dd8936ae4230391fddc6b315203db}{set\+Best\+Scores}} (const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&scores) override
+\begin{DoxyCompactList}\small\item\em This function sets the list of bests scores. First element of the pair is the username, the second is the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a1c893505febc6514bfd5e9bbb7490bd0}{update\+Game\+Infos}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$$>$ \&game\+Infos) override
+\begin{DoxyCompactList}\small\item\em This is called in a loop when the game is running. This vector contains entities that should be displayed in the game scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ab1b39190d61cb1dfaf79bf7e13fbe024}{set\+Players\+Stats}} (const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$$>$ \&info) override
+\begin{DoxyCompactList}\small\item\em This is called in a loop when the game is running. Sets the current informations about players and their stats. The first element of the pair is the category (e.\+g. Score), the second is the value (e.\+g. 200). \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_x_ray_a06829767ec106dbda07dc92a4b5e8f06}{get\+User\+Names}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the User Names. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a41c116df8dd757520d8d3c60d5199263}{set\+User\+Names}} (const std\+::vector$<$ std\+::string $>$ \&user\+Names) override
+\begin{DoxyCompactList}\small\item\em Set the User Names. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} \mbox{\hyperlink{class_x_ray_a988ece592800b6d94151511e5ece242a}{get\+Scene}} (void) const override
+\begin{DoxyCompactList}\small\item\em Returns the current scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a43b20054583362fb21cd5a0e33646cde}{set\+Scene}} (const \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} \&scene) override
+\begin{DoxyCompactList}\small\item\em Set the current scene. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_x_ray_a150902c0d0023586d32ab37f996f216d}{get\+Backups}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the paths to all backups files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ad2a7192370aaf8db1862741a9f623329}{set\+Backups}} (const std\+::vector$<$ std\+::string $>$ \&) override
+\begin{DoxyCompactList}\small\item\em Get the paths to all backups files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_abc9b397ee904edc91802137f7b81e6bb}{begin\+Drawing}} (void) const override
+\begin{DoxyCompactList}\small\item\em Set buffer to Draw textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ab555aeb737b1116d7d36cac65f86b882}{begin\+Drawing}} (const bool \&must\+Be\+Clear) const
+\begin{DoxyCompactList}\small\item\em Set buffer to Draw textures clear A boolean to know if he should clear. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ab35f0bc56df18fccdd6e67303cde2440}{end\+Drawing}} (void) const override
+\begin{DoxyCompactList}\small\item\em Unset buffer to Draw textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a02ca4c2fce2cb1a1b1298319ec546e48}{close\+Window}} (void) const override
+\begin{DoxyCompactList}\small\item\em Close window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ae5aac67cbd898c25ab58e401a20442bf}{set\+Map}} (std\+::vector$<$ std\+::string $>$ \&map) override
+\begin{DoxyCompactList}\small\item\em Set the Map. \end{DoxyCompactList}\item 
+std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \mbox{\hyperlink{class_x_ray_ac4069977af167232aeb9d44c1045e248}{get\+Map\+Size\+And\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get Map Size and Type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a4266a3e5764c424fdfcb86ef6e90ca0d}{set\+Map\+Size}} (size\+\_\+t size) override
+\begin{DoxyCompactList}\small\item\em Set the size of Map. \end{DoxyCompactList}\item 
+std\+::array$<$ size\+\_\+t, 9 $>$ \mbox{\hyperlink{class_x_ray_aa69ab5ee1bd9ffdc655a5a420d714e8b}{get\+Game\+Settings}} () override
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{namespace_game}{Game}} Settings. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{class_x_ray_a47a79787dcec6334b376c1b30ecd05f4}{mouse\+Is\+In\+Box}} (const std\+::vector$<$ T $>$ \&box) const
+\begin{DoxyCompactList}\small\item\em Return true if the mouse is in the region and false otherwise. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ T $>$ \mbox{\hyperlink{class_x_ray_aea1d2f319fa6c46e6e522e1f8ef893f7}{create\+Box}} (const T \&upper\+Left\+Corner, const T \&upper\+Right\+Corner, const T \&lower\+Left\+Corner, const T \&lower\+Right\+Corner) const
+\begin{DoxyCompactList}\small\item\em Return a size\+\_\+t vector contains the four corners values of a box. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a522cd6ec733c6e7023c104e3a68f0506}{update\+Transition\+Manager}} (\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} to\+Fade\+Out, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} to\+Fade\+In)
+\begin{DoxyCompactList}\small\item\em Update Transition Manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a31f952d3077ff1e370b195be9ed3dd6b}{fade\+This\+Scene}} (\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} to\+Fade)
+\begin{DoxyCompactList}\small\item\em This function do fade\+In or fade\+Out for a scene in relation to transition manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ae9a673d6fee9434c950c3fb7b86a8a85}{display\+Menu\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display Main Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a3b0e696dc61950257b0970d42a8ae15d}{display\+Game\+Mode\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display Play Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_aed6ca84c9928fa6cb11367fc8c5949de}{display\+How\+To\+Play\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display How to play Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ac77da47ede515b93f105fdfd74c8b06e}{display\+Settings\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display Settings Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a2187635a26b4b21d0c94a5f563aa2971}{change\+Music\+Volume}} (void)
+\begin{DoxyCompactList}\small\item\em Change the volume of all the music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ab4a8a12dd484fa23f7035575808f5c8d}{change\+Sfx\+Volume}} (void)
+\begin{DoxyCompactList}\small\item\em Change the volume of all the sfx. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a1ffd9feafa2acee4b8239925bdcf95e3}{quit\+Game}} (void)
+\begin{DoxyCompactList}\small\item\em Quit program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a0da95731abcb56cb44b899d8239a1cb0}{display\+Load\+Game\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display Settings Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a726f8a92421aa4c61b6ae3e66e9a79ee}{display\+Player\+Choice\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Scene for Modes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a2a7899775dbc0cbbd118a42fa2afbc5e}{display\+In\+Game\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Scene for \mbox{\hyperlink{namespace_game}{Game}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a1d0c7f114f327f44bf2523fddee67d7e}{display\+Map\+Choice\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Scene for Maps. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a44babd0e22a9f08a76384a36922fe169}{display\+Studio}} (void)
+\begin{DoxyCompactList}\small\item\em Display Intro Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a3e8b0a5e29e4e6e384a466b6566019b4}{display\+Team\+Presentation}} (void)
+\begin{DoxyCompactList}\small\item\em Display A intro Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a543b30d89c2baedfed54da6ed815b6be}{go\+To\+Another\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Go to Another Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a3cba97650d5e19cdc7c4bcd23de6072a}{go\+To\+Another\+Scene\+From\+Victory}} (void)
+\begin{DoxyCompactList}\small\item\em Go to Another Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_acc877e2a5a935970cd76d3fa9b3b14c2}{go\+To\+Another\+Scene\+From\+Defeat}} (void)
+\begin{DoxyCompactList}\small\item\em Go to Another Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a89528f977f411978fae823c829819eca}{display\+Cinematic}} (const \mbox{\hyperlink{_cinematic_8hpp_ade68686e03147e2aa4a56c90c8bf7fb4}{Cinematic}} \&cinematic)
+\begin{DoxyCompactList}\small\item\em Display specific cinematic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ae31974f990feaf6b22e8527891bfce58}{display\+Cinematic}} (const std\+::string \&cinematic\+Path\+Directory, const size\+\_\+t \&hide\+Skip=0, const size\+\_\+t \&gap=0, const bool \&clear\+Or\+Not=true, const int \&posX=0)
+\begin{DoxyCompactList}\small\item\em Display a specific cinematic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ae20b9f4299d684817b5a68c584e8832b}{display}} (void) override
+\begin{DoxyCompactList}\small\item\em This function must display the current scene. It is used in the game loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ae92a10d1ec8a509a9387f1136e04696f}{manage\+Next\+Or\+Prev}} (void)
+\begin{DoxyCompactList}\small\item\em This function manages the click on the different previous and next buttons. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a859bd72c3655c51ad7bb69e01bc2d126}{add\+Player}} (void)
+\begin{DoxyCompactList}\small\item\em Adds a new player to the board, if the limit is not exceeded. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a904f5048ac20d4b027c5dbd9a6369b2a}{remove\+Player}} (const std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&remove\+Buttons)
+\begin{DoxyCompactList}\small\item\em Remove the player of the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a1c3b4391468efd5cb97e6611617b33cc}{display\+Mouse}} (void) const
+\begin{DoxyCompactList}\small\item\em This function display the mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a9cd0d08c86bed1b3382e537d71b69976}{set\+Resources}} (void)
+\begin{DoxyCompactList}\small\item\em Set the Resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ade665ce07c71ab5690a3f4c07f5c768c}{set\+Audio\+Resources}} (void)
+\begin{DoxyCompactList}\small\item\em Set the Audio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_aa2b043ac622e77ebe392569967b41563}{play\+Music}} (\mbox{\hyperlink{_resources_8hpp_a05d3e1053571c2b695e6712d4ff14fee}{Music\+Resources}} music)
+\begin{DoxyCompactList}\small\item\em Function that start a music and call \mbox{\hyperlink{class_x_ray_a353afb5fb7e675435d1b91d72b27bfbf}{play\+And\+Update\+Music()}} in a thread. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a353afb5fb7e675435d1b91d72b27bfbf}{play\+And\+Update\+Music}} (\mbox{\hyperlink{_resources_8hpp_a05d3e1053571c2b695e6712d4ff14fee}{Music\+Resources}} music)
+\begin{DoxyCompactList}\small\item\em Play a music in a thread, dont call this function only use it with \mbox{\hyperlink{class_x_ray_aa2b043ac622e77ebe392569967b41563}{play\+Music(\+Music\+Resources music)}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_abc2a66ebe66162bed6e447e2c603463a}{display\+Game\+Settings}} (void)
+\begin{DoxyCompactList}\small\item\em Display \mbox{\hyperlink{namespace_game}{Game}} Settings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a5f94a13ff38d0f96bafd9eec61b652f4}{detect\+Player\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em Detect New \mbox{\hyperlink{class_input}{Input}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_aec3a651dbf154f5b1dbbf4c5dfc7eb57}{display\+Back}} (void)
+\begin{DoxyCompactList}\small\item\em Diplay Background Parallax. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a1050f51669e4937772a7addfd25209ce}{display\+Pause\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display Pause Button and pause panel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a58b54e4287cf5fdf0de272bc9910c02b}{load\+This\+Backup}} (const std\+::string \&\+\_\+path\+To\+Backup\+File)
+\begin{DoxyCompactList}\small\item\em Load a game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_aff8ed48182437f26edc6c285a132cbef}{check\+End\+Scenario}} (void)
+\begin{DoxyCompactList}\small\item\em Check End Scenario of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_af79a20ef8f385c5e1f5e225036a3feb0}{display\+Victory\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display Victory Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_adbd7e66daaf5ab4f2a035c1979a182d9}{display\+Defeat\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Display Defeat Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ab3b8299bf8430094e726a286b02ba9d9}{display\+Players\+Panels}} (std\+::vector$<$ std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$$>$ \&\+\_\+panel\+Pos)
+\begin{DoxyCompactList}\small\item\em Display Players Panels in the scene In\+Game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_aeb96a3aeeb5b193e629689d3e104896b}{display\+Cards\+Settings}} (std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&remove\+Buttons, int $\ast$x)
+\begin{DoxyCompactList}\small\item\em This function displays all cards and their parameters. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_x_ray_a82426c94029fcf8519393ba6ccf346e9}{count\+Files\+Directory}} (const std\+::filesystem\+::path \&path) const
+\begin{DoxyCompactList}\small\item\em This function counts the number of files in a specific directory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_aaaeb7101b64ec7777fafeb34e6bd298b}{set\+Text\+Box}} (std\+::vector$<$ bool $>$ \&mouse\+On\+Text, std\+::vector$<$ \mbox{\hyperlink{class_raylib_1_1_rectangle}{Raylib\+::\+Rectangle}} $>$ \&text\+Box)
+\begin{DoxyCompactList}\small\item\em Initialize all the containers that refer to the boxes of the pseudos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_aadb103998913d97f0af795f69a0067ac}{update\+Text\+Box}} (std\+::vector$<$ bool $>$ \&mouse\+On\+Text, const std\+::vector$<$ \mbox{\hyperlink{class_raylib_1_1_rectangle}{Raylib\+::\+Rectangle}} $>$ \&text\+Box)
+\begin{DoxyCompactList}\small\item\em Update all the containers that refer to the boxes of the pseudos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a6d1bc08a02266982349c73bf2c39279f}{set\+Load\+Func}} (std\+::function$<$ void(std\+::string)$>$) override
+\begin{DoxyCompactList}\small\item\em Set pointer to Load Function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a9d60f33a9f275ee7cf27b637fa6be3a6}{set\+Save\+Func}} (std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$, std\+::vector$<$ std\+::string $>$)$>$) override
+\begin{DoxyCompactList}\small\item\em Set pointer to Save Function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a59238f6070f101bc02303f5434cd76ac}{set\+Restart\+Func}} (std\+::function$<$ void()$>$) override
+\begin{DoxyCompactList}\small\item\em Set the Restart Func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ae85f87f71089defddb408c747b07db5b}{set\+Settings\+Func}} (std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$)$>$) override
+\begin{DoxyCompactList}\small\item\em Set pointer to Settings Function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a3a4dd2d91cd04b49413b37cf0118abcb}{set\+Player\+Actions\+Func}} (std\+::function$<$ void(const size\+\_\+t pos, const std\+::string action)$>$) override
+\begin{DoxyCompactList}\small\item\em Set the Player Actions Func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_afaac1c33f28bd7bebfbd47964de1b6a6}{check\+Click\+On\+Map\+Choice\+Scene}} (void)
+\begin{DoxyCompactList}\small\item\em Check Click on Map\+Choice\+Scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a65d7004560e5a6bc249abfc09ddea901}{manage\+Players\+Actions}} (void)
+\begin{DoxyCompactList}\small\item\em Manage Players Actions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a92226c96815d01e98a7543e1874fcf24}{reset\+All}} (void)
+\begin{DoxyCompactList}\small\item\em Reset All attributes. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_x_ray_ae35dec92ac5e866a04deb040e910aa21}{get\+Time\+In\+Format}} (void)
+\begin{DoxyCompactList}\small\item\em Get time in good format from clock and return in minutes and second. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_accd3a023ea96d85189753b26e978f307}{draw\+Players\+Head}} (size\+\_\+t i, size\+\_\+t x, size\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Draw Players Head. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ \mbox{\hyperlink{class_x_ray_a2a3598480618a735f31cca44acfbe3e9}{get\+Players\+Data}} () override
+\begin{DoxyCompactList}\small\item\em Get players Data to the \mbox{\hyperlink{namespace_game}{Game}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ae5db2f1308d9cf8ab20841d1e79cf70f}{set\+Game\+Settings}} (const std\+::array$<$ size\+\_\+t, 9 $>$ \&settings) override
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{namespace_game}{Game}} Settings. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_x_ray_aa32536c233560d9133d7e2e23b0ab25f}{get\+Player\+Controls}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the player controls. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_ac96dabdc151371f359142d2a2ef6ab0d}{set\+Player\+Controls}} (const std\+::vector$<$ std\+::string $>$ \&player\+Controls) override
+\begin{DoxyCompactList}\small\item\em Set the player controls. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a61e0d6a63154e4ee5da68c5411cf9cdd}{camera\+Shake}} () override
+\begin{DoxyCompactList}\small\item\em Shake the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_x_ray_a516141a6224e96e54b91f5d3241eb705}{display\+End\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Displaying the scores in end scenes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_x_ray_ae74464953ca00984da4355790376131e}\label{class_x_ray_ae74464953ca00984da4355790376131e}} 
+\index{XRay@{XRay}!XRay@{XRay}}
+\index{XRay@{XRay}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{XRay()}{XRay()}}
+{\footnotesize\ttfamily XRay\+::\+XRay (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Ray Lib object. 
+
+\mbox{\Hypertarget{class_x_ray_a4efb453f1b101519cedbe5f3d8ab4dc2}\label{class_x_ray_a4efb453f1b101519cedbe5f3d8ab4dc2}} 
+\index{XRay@{XRay}!````~XRay@{$\sim$XRay}}
+\index{````~XRay@{$\sim$XRay}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{$\sim$XRay()}{~XRay()}}
+{\footnotesize\ttfamily XRay\+::$\sim$\+XRay (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroy the Ray Lib object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_x_ray_a859bd72c3655c51ad7bb69e01bc2d126}\label{class_x_ray_a859bd72c3655c51ad7bb69e01bc2d126}} 
+\index{XRay@{XRay}!addPlayer@{addPlayer}}
+\index{addPlayer@{addPlayer}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{addPlayer()}{addPlayer()}}
+{\footnotesize\ttfamily void XRay\+::add\+Player (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Adds a new player to the board, if the limit is not exceeded. 
+
+\mbox{\Hypertarget{class_x_ray_ab555aeb737b1116d7d36cac65f86b882}\label{class_x_ray_ab555aeb737b1116d7d36cac65f86b882}} 
+\index{XRay@{XRay}!beginDrawing@{beginDrawing}}
+\index{beginDrawing@{beginDrawing}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{beginDrawing()}{beginDrawing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void XRay\+::begin\+Drawing (\begin{DoxyParamCaption}\item[{const bool \&}]{must\+Be\+Clear }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set buffer to Draw textures clear A boolean to know if he should clear. 
+
+\mbox{\Hypertarget{class_x_ray_abc9b397ee904edc91802137f7b81e6bb}\label{class_x_ray_abc9b397ee904edc91802137f7b81e6bb}} 
+\index{XRay@{XRay}!beginDrawing@{beginDrawing}}
+\index{beginDrawing@{beginDrawing}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{beginDrawing()}{beginDrawing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void XRay\+::begin\+Drawing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set buffer to Draw textures. 
+
+
+
+Implements \mbox{\hyperlink{class_i_graphical_acfd15b6301d602cfed05f8c16b89b1bc}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a61e0d6a63154e4ee5da68c5411cf9cdd}\label{class_x_ray_a61e0d6a63154e4ee5da68c5411cf9cdd}} 
+\index{XRay@{XRay}!cameraShake@{cameraShake}}
+\index{cameraShake@{cameraShake}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{cameraShake()}{cameraShake()}}
+{\footnotesize\ttfamily void XRay\+::camera\+Shake (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shake the camera. 
+
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a72c6ac47aed276ed5aedaa73e07af8c1}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a2187635a26b4b21d0c94a5f563aa2971}\label{class_x_ray_a2187635a26b4b21d0c94a5f563aa2971}} 
+\index{XRay@{XRay}!changeMusicVolume@{changeMusicVolume}}
+\index{changeMusicVolume@{changeMusicVolume}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{changeMusicVolume()}{changeMusicVolume()}}
+{\footnotesize\ttfamily void XRay\+::change\+Music\+Volume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Change the volume of all the music. 
+
+\mbox{\Hypertarget{class_x_ray_ab4a8a12dd484fa23f7035575808f5c8d}\label{class_x_ray_ab4a8a12dd484fa23f7035575808f5c8d}} 
+\index{XRay@{XRay}!changeSfxVolume@{changeSfxVolume}}
+\index{changeSfxVolume@{changeSfxVolume}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{changeSfxVolume()}{changeSfxVolume()}}
+{\footnotesize\ttfamily void XRay\+::change\+Sfx\+Volume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Change the volume of all the sfx. 
+
+\mbox{\Hypertarget{class_x_ray_afaac1c33f28bd7bebfbd47964de1b6a6}\label{class_x_ray_afaac1c33f28bd7bebfbd47964de1b6a6}} 
+\index{XRay@{XRay}!checkClickOnMapChoiceScene@{checkClickOnMapChoiceScene}}
+\index{checkClickOnMapChoiceScene@{checkClickOnMapChoiceScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{checkClickOnMapChoiceScene()}{checkClickOnMapChoiceScene()}}
+{\footnotesize\ttfamily void XRay\+::check\+Click\+On\+Map\+Choice\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check Click on Map\+Choice\+Scene. 
+
+\mbox{\Hypertarget{class_x_ray_aff8ed48182437f26edc6c285a132cbef}\label{class_x_ray_aff8ed48182437f26edc6c285a132cbef}} 
+\index{XRay@{XRay}!checkEndScenario@{checkEndScenario}}
+\index{checkEndScenario@{checkEndScenario}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{checkEndScenario()}{checkEndScenario()}}
+{\footnotesize\ttfamily void XRay\+::check\+End\+Scenario (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check End Scenario of the game. 
+
+\mbox{\Hypertarget{class_x_ray_a02ca4c2fce2cb1a1b1298319ec546e48}\label{class_x_ray_a02ca4c2fce2cb1a1b1298319ec546e48}} 
+\index{XRay@{XRay}!closeWindow@{closeWindow}}
+\index{closeWindow@{closeWindow}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{closeWindow()}{closeWindow()}}
+{\footnotesize\ttfamily void XRay\+::close\+Window (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Close window. 
+
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a39eeffb3841872dd0902388be041bade}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a82426c94029fcf8519393ba6ccf346e9}\label{class_x_ray_a82426c94029fcf8519393ba6ccf346e9}} 
+\index{XRay@{XRay}!countFilesDirectory@{countFilesDirectory}}
+\index{countFilesDirectory@{countFilesDirectory}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{countFilesDirectory()}{countFilesDirectory()}}
+{\footnotesize\ttfamily size\+\_\+t XRay\+::count\+Files\+Directory (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function counts the number of files in a specific directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & A filesystem path related to a directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of files (size\+\_\+t) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_x_ray_aea1d2f319fa6c46e6e522e1f8ef893f7}\label{class_x_ray_aea1d2f319fa6c46e6e522e1f8ef893f7}} 
+\index{XRay@{XRay}!createBox@{createBox}}
+\index{createBox@{createBox}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{createBox()}{createBox()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$ T $>$ XRay\+::create\+Box (\begin{DoxyParamCaption}\item[{const T \&}]{upper\+Left\+Corner,  }\item[{const T \&}]{upper\+Right\+Corner,  }\item[{const T \&}]{lower\+Left\+Corner,  }\item[{const T \&}]{lower\+Right\+Corner }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a size\+\_\+t vector contains the four corners values of a box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & size\+\_\+t represents upper\+Left\+Corner \\
+\hline
+{\em box} & size\+\_\+t represents upper\+Right\+Corner \\
+\hline
+{\em box} & size\+\_\+t represents lower\+Left\+Corner \\
+\hline
+{\em box} & size\+\_\+t represents lower\+Right\+Corner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_x_ray_a5f94a13ff38d0f96bafd9eec61b652f4}\label{class_x_ray_a5f94a13ff38d0f96bafd9eec61b652f4}} 
+\index{XRay@{XRay}!detectPlayerInput@{detectPlayerInput}}
+\index{detectPlayerInput@{detectPlayerInput}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{detectPlayerInput()}{detectPlayerInput()}}
+{\footnotesize\ttfamily void XRay\+::detect\+Player\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Detect New \mbox{\hyperlink{class_input}{Input}}. 
+
+\mbox{\Hypertarget{class_x_ray_ae20b9f4299d684817b5a68c584e8832b}\label{class_x_ray_ae20b9f4299d684817b5a68c584e8832b}} 
+\index{XRay@{XRay}!display@{display}}
+\index{display@{display}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void XRay\+::display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This function must display the current scene. It is used in the game loop. 
+
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a0b449073a44736721bd9b39051620777}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_aec3a651dbf154f5b1dbbf4c5dfc7eb57}\label{class_x_ray_aec3a651dbf154f5b1dbbf4c5dfc7eb57}} 
+\index{XRay@{XRay}!displayBack@{displayBack}}
+\index{displayBack@{displayBack}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayBack()}{displayBack()}}
+{\footnotesize\ttfamily void XRay\+::display\+Back (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Diplay Background Parallax. 
+
+\mbox{\Hypertarget{class_x_ray_aeb96a3aeeb5b193e629689d3e104896b}\label{class_x_ray_aeb96a3aeeb5b193e629689d3e104896b}} 
+\index{XRay@{XRay}!displayCardsSettings@{displayCardsSettings}}
+\index{displayCardsSettings@{displayCardsSettings}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayCardsSettings()}{displayCardsSettings()}}
+{\footnotesize\ttfamily void XRay\+::display\+Cards\+Settings (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&}]{remove\+Buttons,  }\item[{int $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+This function displays all cards and their parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em remove\+Buttons} & A vector of all remove buttons coordinates \\
+\hline
+{\em next\+Buttons} & A vector of all next buttons coordinates \\
+\hline
+{\em prev\+Buttons} & A vector of all previous buttons coordinates \\
+\hline
+{\em x} & A pointer to an int that represents the x coordinate of the last displayed card \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_a89528f977f411978fae823c829819eca}\label{class_x_ray_a89528f977f411978fae823c829819eca}} 
+\index{XRay@{XRay}!displayCinematic@{displayCinematic}}
+\index{displayCinematic@{displayCinematic}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayCinematic()}{displayCinematic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void XRay\+::display\+Cinematic (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_cinematic_8hpp_ade68686e03147e2aa4a56c90c8bf7fb4}{Cinematic}} \&}]{cinematic }\end{DoxyParamCaption})}
+
+
+
+Display specific cinematic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cinematic} & Cinematic enum type, representing specific cinematic \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_ae31974f990feaf6b22e8527891bfce58}\label{class_x_ray_ae31974f990feaf6b22e8527891bfce58}} 
+\index{XRay@{XRay}!displayCinematic@{displayCinematic}}
+\index{displayCinematic@{displayCinematic}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayCinematic()}{displayCinematic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void XRay\+::display\+Cinematic (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cinematic\+Path\+Directory,  }\item[{const size\+\_\+t \&}]{hide\+Skip = {\ttfamily 0},  }\item[{const size\+\_\+t \&}]{gap = {\ttfamily 0},  }\item[{const bool \&}]{clear\+Or\+Not = {\ttfamily true},  }\item[{const int \&}]{posX = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Display a specific cinematic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cinematic\+Path\+Directory} & A string related to the specific cinematic directory \\
+\hline
+{\em hide\+Skip} & A size\+\_\+t corresponding to the cinematic frame when you must hide the skip button \\
+\hline
+{\em gap} & Duration between each frame \\
+\hline
+{\em clear\+Or\+Not} & Boolean to kwow if screen should be clear or not \\
+\hline
+{\em posX} & Pos X of frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_adbd7e66daaf5ab4f2a035c1979a182d9}\label{class_x_ray_adbd7e66daaf5ab4f2a035c1979a182d9}} 
+\index{XRay@{XRay}!displayDefeatScene@{displayDefeatScene}}
+\index{displayDefeatScene@{displayDefeatScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayDefeatScene()}{displayDefeatScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Defeat\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Defeat Scene. 
+
+\mbox{\Hypertarget{class_x_ray_a516141a6224e96e54b91f5d3241eb705}\label{class_x_ray_a516141a6224e96e54b91f5d3241eb705}} 
+\index{XRay@{XRay}!displayEndScores@{displayEndScores}}
+\index{displayEndScores@{displayEndScores}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayEndScores()}{displayEndScores()}}
+{\footnotesize\ttfamily void XRay\+::display\+End\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Displaying the scores in end scenes. 
+
+\mbox{\Hypertarget{class_x_ray_a3b0e696dc61950257b0970d42a8ae15d}\label{class_x_ray_a3b0e696dc61950257b0970d42a8ae15d}} 
+\index{XRay@{XRay}!displayGameModeScene@{displayGameModeScene}}
+\index{displayGameModeScene@{displayGameModeScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayGameModeScene()}{displayGameModeScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Game\+Mode\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Play Scene. 
+
+\mbox{\Hypertarget{class_x_ray_abc2a66ebe66162bed6e447e2c603463a}\label{class_x_ray_abc2a66ebe66162bed6e447e2c603463a}} 
+\index{XRay@{XRay}!displayGameSettings@{displayGameSettings}}
+\index{displayGameSettings@{displayGameSettings}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayGameSettings()}{displayGameSettings()}}
+{\footnotesize\ttfamily void XRay\+::display\+Game\+Settings (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display \mbox{\hyperlink{namespace_game}{Game}} Settings. 
+
+\mbox{\Hypertarget{class_x_ray_aed6ca84c9928fa6cb11367fc8c5949de}\label{class_x_ray_aed6ca84c9928fa6cb11367fc8c5949de}} 
+\index{XRay@{XRay}!displayHowToPlayScene@{displayHowToPlayScene}}
+\index{displayHowToPlayScene@{displayHowToPlayScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayHowToPlayScene()}{displayHowToPlayScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+How\+To\+Play\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display How to play Scene. 
+
+\mbox{\Hypertarget{class_x_ray_a2a7899775dbc0cbbd118a42fa2afbc5e}\label{class_x_ray_a2a7899775dbc0cbbd118a42fa2afbc5e}} 
+\index{XRay@{XRay}!displayInGameScene@{displayInGameScene}}
+\index{displayInGameScene@{displayInGameScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayInGameScene()}{displayInGameScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+In\+Game\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Scene for \mbox{\hyperlink{namespace_game}{Game}}. 
+
+\mbox{\Hypertarget{class_x_ray_a0da95731abcb56cb44b899d8239a1cb0}\label{class_x_ray_a0da95731abcb56cb44b899d8239a1cb0}} 
+\index{XRay@{XRay}!displayLoadGameScene@{displayLoadGameScene}}
+\index{displayLoadGameScene@{displayLoadGameScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayLoadGameScene()}{displayLoadGameScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Load\+Game\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Settings Scene. 
+
+\mbox{\Hypertarget{class_x_ray_a1d0c7f114f327f44bf2523fddee67d7e}\label{class_x_ray_a1d0c7f114f327f44bf2523fddee67d7e}} 
+\index{XRay@{XRay}!displayMapChoiceScene@{displayMapChoiceScene}}
+\index{displayMapChoiceScene@{displayMapChoiceScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayMapChoiceScene()}{displayMapChoiceScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Map\+Choice\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Scene for Maps. 
+
+\mbox{\Hypertarget{class_x_ray_ae9a673d6fee9434c950c3fb7b86a8a85}\label{class_x_ray_ae9a673d6fee9434c950c3fb7b86a8a85}} 
+\index{XRay@{XRay}!displayMenuScene@{displayMenuScene}}
+\index{displayMenuScene@{displayMenuScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayMenuScene()}{displayMenuScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Menu\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Main Menu. 
+
+\mbox{\Hypertarget{class_x_ray_a1c3b4391468efd5cb97e6611617b33cc}\label{class_x_ray_a1c3b4391468efd5cb97e6611617b33cc}} 
+\index{XRay@{XRay}!displayMouse@{displayMouse}}
+\index{displayMouse@{displayMouse}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayMouse()}{displayMouse()}}
+{\footnotesize\ttfamily void XRay\+::display\+Mouse (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function display the mouse. 
+
+\mbox{\Hypertarget{class_x_ray_a1050f51669e4937772a7addfd25209ce}\label{class_x_ray_a1050f51669e4937772a7addfd25209ce}} 
+\index{XRay@{XRay}!displayPauseScene@{displayPauseScene}}
+\index{displayPauseScene@{displayPauseScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayPauseScene()}{displayPauseScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Pause\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Pause Button and pause panel. 
+
+\mbox{\Hypertarget{class_x_ray_a726f8a92421aa4c61b6ae3e66e9a79ee}\label{class_x_ray_a726f8a92421aa4c61b6ae3e66e9a79ee}} 
+\index{XRay@{XRay}!displayPlayerChoiceScene@{displayPlayerChoiceScene}}
+\index{displayPlayerChoiceScene@{displayPlayerChoiceScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayPlayerChoiceScene()}{displayPlayerChoiceScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Player\+Choice\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Scene for Modes. 
+
+\mbox{\Hypertarget{class_x_ray_ab3b8299bf8430094e726a286b02ba9d9}\label{class_x_ray_ab3b8299bf8430094e726a286b02ba9d9}} 
+\index{XRay@{XRay}!displayPlayersPanels@{displayPlayersPanels}}
+\index{displayPlayersPanels@{displayPlayersPanels}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayPlayersPanels()}{displayPlayersPanels()}}
+{\footnotesize\ttfamily void XRay\+::display\+Players\+Panels (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$$>$ \&}]{\+\_\+panel\+Pos }\end{DoxyParamCaption})}
+
+
+
+Display Players Panels in the scene In\+Game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+panel\+Pos} & Position of all Panels in a vector of pair (x, y) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_ac77da47ede515b93f105fdfd74c8b06e}\label{class_x_ray_ac77da47ede515b93f105fdfd74c8b06e}} 
+\index{XRay@{XRay}!displaySettingsScene@{displaySettingsScene}}
+\index{displaySettingsScene@{displaySettingsScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displaySettingsScene()}{displaySettingsScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Settings\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Settings Scene. 
+
+Draw scene\mbox{\Hypertarget{class_x_ray_a44babd0e22a9f08a76384a36922fe169}\label{class_x_ray_a44babd0e22a9f08a76384a36922fe169}} 
+\index{XRay@{XRay}!displayStudio@{displayStudio}}
+\index{displayStudio@{displayStudio}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayStudio()}{displayStudio()}}
+{\footnotesize\ttfamily void XRay\+::display\+Studio (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Intro Scene. 
+
+\mbox{\Hypertarget{class_x_ray_a3e8b0a5e29e4e6e384a466b6566019b4}\label{class_x_ray_a3e8b0a5e29e4e6e384a466b6566019b4}} 
+\index{XRay@{XRay}!displayTeamPresentation@{displayTeamPresentation}}
+\index{displayTeamPresentation@{displayTeamPresentation}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayTeamPresentation()}{displayTeamPresentation()}}
+{\footnotesize\ttfamily void XRay\+::display\+Team\+Presentation (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display A intro Scene. 
+
+\mbox{\Hypertarget{class_x_ray_af79a20ef8f385c5e1f5e225036a3feb0}\label{class_x_ray_af79a20ef8f385c5e1f5e225036a3feb0}} 
+\index{XRay@{XRay}!displayVictoryScene@{displayVictoryScene}}
+\index{displayVictoryScene@{displayVictoryScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{displayVictoryScene()}{displayVictoryScene()}}
+{\footnotesize\ttfamily void XRay\+::display\+Victory\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display Victory Scene. 
+
+\mbox{\Hypertarget{class_x_ray_accd3a023ea96d85189753b26e978f307}\label{class_x_ray_accd3a023ea96d85189753b26e978f307}} 
+\index{XRay@{XRay}!drawPlayersHead@{drawPlayersHead}}
+\index{drawPlayersHead@{drawPlayersHead}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{drawPlayersHead()}{drawPlayersHead()}}
+{\footnotesize\ttfamily void XRay\+::draw\+Players\+Head (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{i,  }\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw Players Head. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & A size\+\_\+t \\
+\hline
+{\em x} & A size\+\_\+t \\
+\hline
+{\em y} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_ab35f0bc56df18fccdd6e67303cde2440}\label{class_x_ray_ab35f0bc56df18fccdd6e67303cde2440}} 
+\index{XRay@{XRay}!endDrawing@{endDrawing}}
+\index{endDrawing@{endDrawing}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{endDrawing()}{endDrawing()}}
+{\footnotesize\ttfamily void XRay\+::end\+Drawing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unset buffer to Draw textures. 
+
+
+
+Implements \mbox{\hyperlink{class_i_graphical_aa49a27d20abd79b15c969b65b28e5bb1}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a31f952d3077ff1e370b195be9ed3dd6b}\label{class_x_ray_a31f952d3077ff1e370b195be9ed3dd6b}} 
+\index{XRay@{XRay}!fadeThisScene@{fadeThisScene}}
+\index{fadeThisScene@{fadeThisScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{fadeThisScene()}{fadeThisScene()}}
+{\footnotesize\ttfamily void XRay\+::fade\+This\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}}}]{to\+Fade }\end{DoxyParamCaption})}
+
+
+
+This function do fade\+In or fade\+Out for a scene in relation to transition manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Fade} & Scene to fade \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_a150902c0d0023586d32ab37f996f216d}\label{class_x_ray_a150902c0d0023586d32ab37f996f216d}} 
+\index{XRay@{XRay}!getBackups@{getBackups}}
+\index{getBackups@{getBackups}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getBackups()}{getBackups()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& XRay\+::get\+Backups (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the paths to all backups files. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all the paths to backups files as a const std\+::vector$<$std\+::string$>$\& 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_ab698d41130a27801610b031430d0195c}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_aa69ab5ee1bd9ffdc655a5a420d714e8b}\label{class_x_ray_aa69ab5ee1bd9ffdc655a5a420d714e8b}} 
+\index{XRay@{XRay}!getGameSettings@{getGameSettings}}
+\index{getGameSettings@{getGameSettings}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getGameSettings()}{getGameSettings()}}
+{\footnotesize\ttfamily std\+::array$<$ size\+\_\+t, 9 $>$ XRay\+::get\+Game\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get \mbox{\hyperlink{namespace_game}{Game}} Settings. 
+
+\begin{DoxyReturn}{Returns}
+An array of 9 size\+\_\+t 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_aa24a766c25d9c576e887d11c208c64ca}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_ac4069977af167232aeb9d44c1045e248}\label{class_x_ray_ac4069977af167232aeb9d44c1045e248}} 
+\index{XRay@{XRay}!getMapSizeAndType@{getMapSizeAndType}}
+\index{getMapSizeAndType@{getMapSizeAndType}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getMapSizeAndType()}{getMapSizeAndType()}}
+{\footnotesize\ttfamily std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ XRay\+::get\+Map\+Size\+And\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get Map Size and Type. 
+
+\begin{DoxyReturn}{Returns}
+A pair of size\+\_\+t 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a16151e328de43308e7cd9e44748b5e7e}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_aa32536c233560d9133d7e2e23b0ab25f}\label{class_x_ray_aa32536c233560d9133d7e2e23b0ab25f}} 
+\index{XRay@{XRay}!getPlayerControls@{getPlayerControls}}
+\index{getPlayerControls@{getPlayerControls}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getPlayerControls()}{getPlayerControls()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ XRay\+::get\+Player\+Controls (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the player controls. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the player controls as a string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_adb29491873bfab5f723f8231108c563c}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a2a3598480618a735f31cca44acfbe3e9}\label{class_x_ray_a2a3598480618a735f31cca44acfbe3e9}} 
+\index{XRay@{XRay}!getPlayersData@{getPlayersData}}
+\index{getPlayersData@{getPlayersData}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getPlayersData()}{getPlayersData()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ XRay\+::get\+Players\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get players Data to the \mbox{\hyperlink{namespace_game}{Game}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Player\+Data$>$ represents all the players data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_aa92d85a71ed6846bc477930138e41391}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a988ece592800b6d94151511e5ece242a}\label{class_x_ray_a988ece592800b6d94151511e5ece242a}} 
+\index{XRay@{XRay}!getScene@{getScene}}
+\index{getScene@{getScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getScene()}{getScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{IGraphical\+::\+Scene}} XRay\+::get\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the current scene. 
+
+\begin{DoxyReturn}{Returns}
+The scene (MAIN\+\_\+\+MENU, GAME, END\+\_\+\+GAME), the step where we are in the window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a150a64c9d951f2fae58f87d57cace570}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_ae35dec92ac5e866a04deb040e910aa21}\label{class_x_ray_ae35dec92ac5e866a04deb040e910aa21}} 
+\index{XRay@{XRay}!getTimeInFormat@{getTimeInFormat}}
+\index{getTimeInFormat@{getTimeInFormat}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getTimeInFormat()}{getTimeInFormat()}}
+{\footnotesize\ttfamily std\+::string XRay\+::get\+Time\+In\+Format (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get time in good format from clock and return in minutes and second. 
+
+\begin{DoxyReturn}{Returns}
+Time in format (MIN \+: SECOND) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_x_ray_a06829767ec106dbda07dc92a4b5e8f06}\label{class_x_ray_a06829767ec106dbda07dc92a4b5e8f06}} 
+\index{XRay@{XRay}!getUserNames@{getUserNames}}
+\index{getUserNames@{getUserNames}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{getUserNames()}{getUserNames()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& XRay\+::get\+User\+Names (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the User Names. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all the user names as a const std\+::vector$<$std\+::string$>$\& 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a85f11dd376c85b250805ebc950ab21f2}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a543b30d89c2baedfed54da6ed815b6be}\label{class_x_ray_a543b30d89c2baedfed54da6ed815b6be}} 
+\index{XRay@{XRay}!goToAnotherScene@{goToAnotherScene}}
+\index{goToAnotherScene@{goToAnotherScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{goToAnotherScene()}{goToAnotherScene()}}
+{\footnotesize\ttfamily void XRay\+::go\+To\+Another\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Go to Another Scene. 
+
+\mbox{\Hypertarget{class_x_ray_acc877e2a5a935970cd76d3fa9b3b14c2}\label{class_x_ray_acc877e2a5a935970cd76d3fa9b3b14c2}} 
+\index{XRay@{XRay}!goToAnotherSceneFromDefeat@{goToAnotherSceneFromDefeat}}
+\index{goToAnotherSceneFromDefeat@{goToAnotherSceneFromDefeat}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{goToAnotherSceneFromDefeat()}{goToAnotherSceneFromDefeat()}}
+{\footnotesize\ttfamily void XRay\+::go\+To\+Another\+Scene\+From\+Defeat (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Go to Another Scene. 
+
+\mbox{\Hypertarget{class_x_ray_a3cba97650d5e19cdc7c4bcd23de6072a}\label{class_x_ray_a3cba97650d5e19cdc7c4bcd23de6072a}} 
+\index{XRay@{XRay}!goToAnotherSceneFromVictory@{goToAnotherSceneFromVictory}}
+\index{goToAnotherSceneFromVictory@{goToAnotherSceneFromVictory}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{goToAnotherSceneFromVictory()}{goToAnotherSceneFromVictory()}}
+{\footnotesize\ttfamily void XRay\+::go\+To\+Another\+Scene\+From\+Victory (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Go to Another Scene. 
+
+\mbox{\Hypertarget{class_x_ray_a58b54e4287cf5fdf0de272bc9910c02b}\label{class_x_ray_a58b54e4287cf5fdf0de272bc9910c02b}} 
+\index{XRay@{XRay}!loadThisBackup@{loadThisBackup}}
+\index{loadThisBackup@{loadThisBackup}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{loadThisBackup()}{loadThisBackup()}}
+{\footnotesize\ttfamily void XRay\+::load\+This\+Backup (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path\+To\+Backup\+File }\end{DoxyParamCaption})}
+
+
+
+Load a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path\+To\+Backup\+File} & A string that represents path to backup fiel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_ae92a10d1ec8a509a9387f1136e04696f}\label{class_x_ray_ae92a10d1ec8a509a9387f1136e04696f}} 
+\index{XRay@{XRay}!manageNextOrPrev@{manageNextOrPrev}}
+\index{manageNextOrPrev@{manageNextOrPrev}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{manageNextOrPrev()}{manageNextOrPrev()}}
+{\footnotesize\ttfamily void XRay\+::manage\+Next\+Or\+Prev (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function manages the click on the different previous and next buttons. 
+
+\mbox{\Hypertarget{class_x_ray_a65d7004560e5a6bc249abfc09ddea901}\label{class_x_ray_a65d7004560e5a6bc249abfc09ddea901}} 
+\index{XRay@{XRay}!managePlayersActions@{managePlayersActions}}
+\index{managePlayersActions@{managePlayersActions}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{managePlayersActions()}{managePlayersActions()}}
+{\footnotesize\ttfamily void XRay\+::manage\+Players\+Actions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Manage Players Actions. 
+
+\mbox{\Hypertarget{class_x_ray_a47a79787dcec6334b376c1b30ecd05f4}\label{class_x_ray_a47a79787dcec6334b376c1b30ecd05f4}} 
+\index{XRay@{XRay}!mouseIsInBox@{mouseIsInBox}}
+\index{mouseIsInBox@{mouseIsInBox}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{mouseIsInBox()}{mouseIsInBox()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool XRay\+::mouse\+Is\+In\+Box (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{box }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return true if the mouse is in the region and false otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Vector contains Box positions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_x_ray_a353afb5fb7e675435d1b91d72b27bfbf}\label{class_x_ray_a353afb5fb7e675435d1b91d72b27bfbf}} 
+\index{XRay@{XRay}!playAndUpdateMusic@{playAndUpdateMusic}}
+\index{playAndUpdateMusic@{playAndUpdateMusic}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{playAndUpdateMusic()}{playAndUpdateMusic()}}
+{\footnotesize\ttfamily void XRay\+::play\+And\+Update\+Music (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_resources_8hpp_a05d3e1053571c2b695e6712d4ff14fee}{Music\+Resources}}}]{music }\end{DoxyParamCaption})}
+
+
+
+Play a music in a thread, dont call this function only use it with \mbox{\hyperlink{class_x_ray_aa2b043ac622e77ebe392569967b41563}{play\+Music(\+Music\+Resources music)}} 
+
+\mbox{\Hypertarget{class_x_ray_aa2b043ac622e77ebe392569967b41563}\label{class_x_ray_aa2b043ac622e77ebe392569967b41563}} 
+\index{XRay@{XRay}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}}
+{\footnotesize\ttfamily void XRay\+::play\+Music (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_resources_8hpp_a05d3e1053571c2b695e6712d4ff14fee}{Music\+Resources}}}]{music }\end{DoxyParamCaption})}
+
+
+
+Function that start a music and call \mbox{\hyperlink{class_x_ray_a353afb5fb7e675435d1b91d72b27bfbf}{play\+And\+Update\+Music()}} in a thread. 
+
+\mbox{\Hypertarget{class_x_ray_a1ffd9feafa2acee4b8239925bdcf95e3}\label{class_x_ray_a1ffd9feafa2acee4b8239925bdcf95e3}} 
+\index{XRay@{XRay}!quitGame@{quitGame}}
+\index{quitGame@{quitGame}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{quitGame()}{quitGame()}}
+{\footnotesize\ttfamily void XRay\+::quit\+Game (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Quit program. 
+
+\mbox{\Hypertarget{class_x_ray_a904f5048ac20d4b027c5dbd9a6369b2a}\label{class_x_ray_a904f5048ac20d4b027c5dbd9a6369b2a}} 
+\index{XRay@{XRay}!removePlayer@{removePlayer}}
+\index{removePlayer@{removePlayer}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{removePlayer()}{removePlayer()}}
+{\footnotesize\ttfamily void XRay\+::remove\+Player (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&}]{remove\+Buttons }\end{DoxyParamCaption})}
+
+
+
+Remove the player of the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em remove\+Buttons} & A vector of all remove buttons coordinates \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_a92226c96815d01e98a7543e1874fcf24}\label{class_x_ray_a92226c96815d01e98a7543e1874fcf24}} 
+\index{XRay@{XRay}!resetAll@{resetAll}}
+\index{resetAll@{resetAll}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{resetAll()}{resetAll()}}
+{\footnotesize\ttfamily void XRay\+::reset\+All (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset All attributes. 
+
+\mbox{\Hypertarget{class_x_ray_ade665ce07c71ab5690a3f4c07f5c768c}\label{class_x_ray_ade665ce07c71ab5690a3f4c07f5c768c}} 
+\index{XRay@{XRay}!setAudioResources@{setAudioResources}}
+\index{setAudioResources@{setAudioResources}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setAudioResources()}{setAudioResources()}}
+{\footnotesize\ttfamily void XRay\+::set\+Audio\+Resources (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the Audio. 
+
+\mbox{\Hypertarget{class_x_ray_ad2a7192370aaf8db1862741a9f623329}\label{class_x_ray_ad2a7192370aaf8db1862741a9f623329}} 
+\index{XRay@{XRay}!setBackups@{setBackups}}
+\index{setBackups@{setBackups}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setBackups()}{setBackups()}}
+{\footnotesize\ttfamily void XRay\+::set\+Backups (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{backups }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the paths to all backups files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & vector of all the paths to backups files as a const std\+::vector$<$std\+::string$>$\& \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a3ef30b5283f659221432b0650d2edbd1}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a379dd8936ae4230391fddc6b315203db}\label{class_x_ray_a379dd8936ae4230391fddc6b315203db}} 
+\index{XRay@{XRay}!setBestScores@{setBestScores}}
+\index{setBestScores@{setBestScores}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setBestScores()}{setBestScores()}}
+{\footnotesize\ttfamily void XRay\+::set\+Best\+Scores (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&}]{scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This function sets the list of bests scores. First element of the pair is the username, the second is the score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scores} & A vector of pair (username, score) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a31257746876d078c54efc72252f41a77}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_ae5db2f1308d9cf8ab20841d1e79cf70f}\label{class_x_ray_ae5db2f1308d9cf8ab20841d1e79cf70f}} 
+\index{XRay@{XRay}!setGameSettings@{setGameSettings}}
+\index{setGameSettings@{setGameSettings}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setGameSettings()}{setGameSettings()}}
+{\footnotesize\ttfamily void XRay\+::set\+Game\+Settings (\begin{DoxyParamCaption}\item[{const std\+::array$<$ size\+\_\+t, 9 $>$ \&}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{namespace_game}{Game}} Settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & An array of 9 size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_acba8506e3a47188ed519853cf35cc3ed}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a6d1bc08a02266982349c73bf2c39279f}\label{class_x_ray_a6d1bc08a02266982349c73bf2c39279f}} 
+\index{XRay@{XRay}!setLoadFunc@{setLoadFunc}}
+\index{setLoadFunc@{setLoadFunc}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setLoadFunc()}{setLoadFunc()}}
+{\footnotesize\ttfamily void XRay\+::set\+Load\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::string)$>$}]{pointer\+To\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set pointer to Load Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em load\+Func} & A pointer to Load function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a5bb0905832e98cb5c1d23dbf31a5e11b}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_ae5aac67cbd898c25ab58e401a20442bf}\label{class_x_ray_ae5aac67cbd898c25ab58e401a20442bf}} 
+\index{XRay@{XRay}!setMap@{setMap}}
+\index{setMap@{setMap}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setMap()}{setMap()}}
+{\footnotesize\ttfamily void XRay\+::set\+Map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & A const std\+::vector$<$std\+::string$>$\& \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a421df6e8852408c0f471ed0a0be9c938}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a4266a3e5764c424fdfcb86ef6e90ca0d}\label{class_x_ray_a4266a3e5764c424fdfcb86ef6e90ca0d}} 
+\index{XRay@{XRay}!setMapSize@{setMapSize}}
+\index{setMapSize@{setMapSize}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setMapSize()}{setMapSize()}}
+{\footnotesize\ttfamily void XRay\+::set\+Map\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the size of Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_aa74a3a2100e0f6aa366d4e316c8864f4}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a3a4dd2d91cd04b49413b37cf0118abcb}\label{class_x_ray_a3a4dd2d91cd04b49413b37cf0118abcb}} 
+\index{XRay@{XRay}!setPlayerActionsFunc@{setPlayerActionsFunc}}
+\index{setPlayerActionsFunc@{setPlayerActionsFunc}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setPlayerActionsFunc()}{setPlayerActionsFunc()}}
+{\footnotesize\ttfamily void XRay\+::set\+Player\+Actions\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const size\+\_\+t pos, const std\+::string action)$>$}]{player\+Actions\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the Player Actions Func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Actions\+Func} & A pointer to function that manage all players actions in the game (left, right ...) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a18c9055be2a5219909d37dcf7e76dfd1}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_ac96dabdc151371f359142d2a2ef6ab0d}\label{class_x_ray_ac96dabdc151371f359142d2a2ef6ab0d}} 
+\index{XRay@{XRay}!setPlayerControls@{setPlayerControls}}
+\index{setPlayerControls@{setPlayerControls}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setPlayerControls()}{setPlayerControls()}}
+{\footnotesize\ttfamily void XRay\+::set\+Player\+Controls (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{player\+Controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the player controls. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Controls} & A vector containing all the player controls as a string \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a1d8524bef5911a8e2e51d4d785576f42}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_ab1b39190d61cb1dfaf79bf7e13fbe024}\label{class_x_ray_ab1b39190d61cb1dfaf79bf7e13fbe024}} 
+\index{XRay@{XRay}!setPlayersStats@{setPlayersStats}}
+\index{setPlayersStats@{setPlayersStats}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setPlayersStats()}{setPlayersStats()}}
+{\footnotesize\ttfamily void XRay\+::set\+Players\+Stats (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$$>$ \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This is called in a loop when the game is running. Sets the current informations about players and their stats. The first element of the pair is the category (e.\+g. Score), the second is the value (e.\+g. 200). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & A vector of vector of all the stats \mbox{[}Player -- (Name\+Of\+Stat, Value)\mbox{]}... \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a4cc19208d20f895ef5c057d6298ae422}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a9cd0d08c86bed1b3382e537d71b69976}\label{class_x_ray_a9cd0d08c86bed1b3382e537d71b69976}} 
+\index{XRay@{XRay}!setResources@{setResources}}
+\index{setResources@{setResources}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setResources()}{setResources()}}
+{\footnotesize\ttfamily void XRay\+::set\+Resources (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the Resources. 
+
+\mbox{\Hypertarget{class_x_ray_a59238f6070f101bc02303f5434cd76ac}\label{class_x_ray_a59238f6070f101bc02303f5434cd76ac}} 
+\index{XRay@{XRay}!setRestartFunc@{setRestartFunc}}
+\index{setRestartFunc@{setRestartFunc}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setRestartFunc()}{setRestartFunc()}}
+{\footnotesize\ttfamily void XRay\+::set\+Restart\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void()$>$}]{pointer\+To\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the Restart Func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restart\+Func} & A pointer to Restart function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a0cb31b6a588117728baccc32cfa6e2ef}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a9d60f33a9f275ee7cf27b637fa6be3a6}\label{class_x_ray_a9d60f33a9f275ee7cf27b637fa6be3a6}} 
+\index{XRay@{XRay}!setSaveFunc@{setSaveFunc}}
+\index{setSaveFunc@{setSaveFunc}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setSaveFunc()}{setSaveFunc()}}
+{\footnotesize\ttfamily void XRay\+::set\+Save\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$, std\+::vector$<$ std\+::string $>$)$>$}]{pointer\+To\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set pointer to Save Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Func} & A pointer to Save function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_ad690bef29f3bbb0c5500a75a1fce2ff2}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a43b20054583362fb21cd5a0e33646cde}\label{class_x_ray_a43b20054583362fb21cd5a0e33646cde}} 
+\index{XRay@{XRay}!setScene@{setScene}}
+\index{setScene@{setScene}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setScene()}{setScene()}}
+{\footnotesize\ttfamily void XRay\+::set\+Scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the current scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & The scene (MAIN\+\_\+\+MENU, GAME, END\+\_\+\+GAME), the step where we are in the window \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_ac4029cf9cc5a94ba5499c78d07ed16b4}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a7fa78f75ccd3a92c6916de182cd0138f}\label{class_x_ray_a7fa78f75ccd3a92c6916de182cd0138f}} 
+\index{XRay@{XRay}!setScores@{setScores}}
+\index{setScores@{setScores}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setScores()}{setScores()}}
+{\footnotesize\ttfamily void XRay\+::set\+Scores (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&}]{scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This function sets the list of scores. First element of the pair is the username, the second is the score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scores} & A vector of pair (username, score) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_ab82d440eaf70a585d8e4d104199a33ca}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_ae85f87f71089defddb408c747b07db5b}\label{class_x_ray_ae85f87f71089defddb408c747b07db5b}} 
+\index{XRay@{XRay}!setSettingsFunc@{setSettingsFunc}}
+\index{setSettingsFunc@{setSettingsFunc}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setSettingsFunc()}{setSettingsFunc()}}
+{\footnotesize\ttfamily void XRay\+::set\+Settings\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$)$>$}]{pointer\+To\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set pointer to Settings Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings\+Func} & A pointer to Settings function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_ab95012ab6536ad9eabb613be71b2a9c1}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_aaaeb7101b64ec7777fafeb34e6bd298b}\label{class_x_ray_aaaeb7101b64ec7777fafeb34e6bd298b}} 
+\index{XRay@{XRay}!setTextBox@{setTextBox}}
+\index{setTextBox@{setTextBox}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setTextBox()}{setTextBox()}}
+{\footnotesize\ttfamily void XRay\+::set\+Text\+Box (\begin{DoxyParamCaption}\item[{std\+::vector$<$ bool $>$ \&}]{mouse\+On\+Text,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_raylib_1_1_rectangle}{Raylib\+::\+Rectangle}} $>$ \&}]{text\+Box }\end{DoxyParamCaption})}
+
+
+
+Initialize all the containers that refer to the boxes of the pseudos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+On\+Text} & A vector of boolean that represents if mouse is on box to position n with n $<$ mouse\+On\+Text.\+size() \\
+\hline
+{\em text\+Box} & A vector of rectangle that represents the boxes of the pseudos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_a41c116df8dd757520d8d3c60d5199263}\label{class_x_ray_a41c116df8dd757520d8d3c60d5199263}} 
+\index{XRay@{XRay}!setUserNames@{setUserNames}}
+\index{setUserNames@{setUserNames}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{setUserNames()}{setUserNames()}}
+{\footnotesize\ttfamily void XRay\+::set\+User\+Names (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{user\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the User Names. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Names} & A vector containing all the user names \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a7c38a0159bd2e72725d0ea614b62ddae}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a6a80919d7056c65a15c44ee30677646d}\label{class_x_ray_a6a80919d7056c65a15c44ee30677646d}} 
+\index{XRay@{XRay}!shouldCloseWindow@{shouldCloseWindow}}
+\index{shouldCloseWindow@{shouldCloseWindow}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{shouldCloseWindow()}{shouldCloseWindow()}}
+{\footnotesize\ttfamily bool XRay\+::should\+Close\+Window (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the window should be close. 
+
+\begin{DoxyReturn}{Returns}
+true if the window should close and false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_a486b8b14933715c16dbfb761bb4cfa40}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_a1c893505febc6514bfd5e9bbb7490bd0}\label{class_x_ray_a1c893505febc6514bfd5e9bbb7490bd0}} 
+\index{XRay@{XRay}!updateGameInfos@{updateGameInfos}}
+\index{updateGameInfos@{updateGameInfos}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{updateGameInfos()}{updateGameInfos()}}
+{\footnotesize\ttfamily void XRay\+::update\+Game\+Infos (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$$>$ \&}]{game\+Infos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This is called in a loop when the game is running. This vector contains entities that should be displayed in the game scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Infos} & A vector of shared pointer that represent all the entities to display. Ex \+: Map, Score, User\+Info, Button \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_graphical_aa920ce32d32bf8a0e053b7b7b29ad2c3}{IGraphical}}.
+
+\mbox{\Hypertarget{class_x_ray_aadb103998913d97f0af795f69a0067ac}\label{class_x_ray_aadb103998913d97f0af795f69a0067ac}} 
+\index{XRay@{XRay}!updateTextBox@{updateTextBox}}
+\index{updateTextBox@{updateTextBox}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{updateTextBox()}{updateTextBox()}}
+{\footnotesize\ttfamily void XRay\+::update\+Text\+Box (\begin{DoxyParamCaption}\item[{std\+::vector$<$ bool $>$ \&}]{mouse\+On\+Text,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_raylib_1_1_rectangle}{Raylib\+::\+Rectangle}} $>$ \&}]{text\+Box }\end{DoxyParamCaption})}
+
+
+
+Update all the containers that refer to the boxes of the pseudos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+On\+Text} & A vector of boolean that represents if mouse is on box to position n with n $<$ mouse\+On\+Text.\+size() \\
+\hline
+{\em text\+Box} & A vector of rectangle that represents the boxes of the pseudos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_x_ray_a522cd6ec733c6e7023c104e3a68f0506}\label{class_x_ray_a522cd6ec733c6e7023c104e3a68f0506}} 
+\index{XRay@{XRay}!updateTransitionManager@{updateTransitionManager}}
+\index{updateTransitionManager@{updateTransitionManager}!XRay@{XRay}}
+\doxysubsubsection{\texorpdfstring{updateTransitionManager()}{updateTransitionManager()}}
+{\footnotesize\ttfamily void XRay\+::update\+Transition\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}}}]{to\+Fade\+Out,  }\item[{\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}}}]{to\+Fade\+In }\end{DoxyParamCaption})}
+
+
+
+Update Transition Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Fade\+Out} & Scene to fade out \\
+\hline
+{\em to\+Fade\+In} & Scene to fade in \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\mbox{\hyperlink{_x_ray_8hpp}{XRay.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\mbox{\hyperlink{_x_ray_8inl}{XRay.\+inl}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_cinematic_8cpp}{Cinematic.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_defeat_8cpp}{Defeat.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_game_mode_8cpp}{Game\+Mode.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_how_to_play_8cpp}{How\+To\+Play.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_in_game_8cpp}{In\+Game.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_load_game_8cpp}{Load\+Game.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_map_choice_scene_8cpp}{Map\+Choice\+Scene.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_player_choice_8cpp}{Player\+Choice.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_settings_8cpp}{Settings.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_transition_8cpp}{Transition.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_victory_8cpp}{Victory.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\mbox{\hyperlink{_x_ray_8cpp}{XRay.\+cpp}}\end{DoxyCompactItemize}

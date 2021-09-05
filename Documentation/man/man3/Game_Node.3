@@ -1,0 +1,89 @@
+.TH "Game::Node" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Node
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Astar\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNode\fP (const \fBPoint\fP &positions, const \fBPoint\fP &parentPositions, const int &g, const int &h)"
+.br
+.RI "Construct a new \fBNode\fP object\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBPoint\fP point)"
+.br
+.RI "Equal operator\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP \fB_positions\fP"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fB_parentPositions\fP"
+.br
+.ti -1c
+.RI "int \fB_g\fP"
+.br
+.ti -1c
+.RI "int \fB_h\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Node::Node (const \fBPoint\fP & positions, const \fBPoint\fP & parentPositions, const int & g, const int & h)"
+
+.PP
+Construct a new \fBNode\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpositions\fP The \fBNode\fP positions 
+.br
+\fIparentPositions\fP The node's parent positions 
+.br
+\fIg\fP The movement cost 
+.br
+\fIh\fP The movement heuristic 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Game::Node::operator== (const \fBPoint\fP point)\fC [inline]\fP"
+
+.PP
+Equal operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP \fBPoint\fP to compare 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the points are the same, false otherwise 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int Game::Node::_g"
+
+.SS "int Game::Node::_h"
+
+.SS "\fBPoint\fP Game::Node::_parentPositions"
+
+.SS "\fBPoint\fP Game::Node::_positions"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

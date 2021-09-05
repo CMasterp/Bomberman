@@ -1,0 +1,360 @@
+.TH "IGame" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IGame
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IGame\&.hpp>\fP
+.PP
+Inherited by \fBGame::Bomberman\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IGame\fP (void)=default"
+.br
+.RI "Destroy the \fBIGame\fP object\&. "
+.ti -1c
+.RI "virtual void \fBrestart\fP (void)=0"
+.br
+.RI "Call this function to restart the entire game\&. The game must reset himself\&. "
+.ti -1c
+.RI "virtual void \fBsaveGame\fP (std::array< std::size_t, 9 > settings, std::vector< std::string > playerControls)=0"
+.br
+.RI "Call this function to save the game\&. "
+.ti -1c
+.RI "virtual void \fBloadGame\fP (const std::string &backupFilePath)=0"
+.br
+.RI "Call this function to load a game\&. "
+.ti -1c
+.RI "virtual void \fBsetUserNames\fP (const std::vector< std::string > &userNames)=0"
+.br
+.RI "Set the User Names\&. "
+.ti -1c
+.RI "virtual void \fBsetSettings\fP (const std::array< std::size_t, 9 > &settings)=0"
+.br
+.RI "Set the game settings\&. "
+.ti -1c
+.RI "virtual std::array< std::size_t, 9 > \fBgetSettings\fP (void) const =0"
+.br
+.RI "Get the game settings\&. "
+.ti -1c
+.RI "virtual const std::vector< std::pair< std::string, std::string > > & \fBgetScores\fP (void)=0"
+.br
+.RI "Getter for the score\&. "
+.ti -1c
+.RI "virtual const std::vector< std::shared_ptr< \fBIEntity\fP > > & \fBgetEntities\fP (void) const =0"
+.br
+.RI "Get the Entities\&. "
+.ti -1c
+.RI "virtual const std::vector< std::vector< std::pair< std::string, std::string > > > & \fBgetPlayersStats\fP (void)=0"
+.br
+.RI "Get the Players Stats\&. "
+.ti -1c
+.RI "virtual void \fBupdateGame\fP (void)=0"
+.br
+.RI "updateGame function should be called in a loop\&. It's used to advance the game and update all logic\&. The game must manage time on it's own\&. "
+.ti -1c
+.RI "virtual const std::vector< std::string > & \fBgetUserNames\fP (void) const =0"
+.br
+.RI "Get the User Names\&. "
+.ti -1c
+.RI "virtual bool \fBisGameOver\fP (void) const =0"
+.br
+.RI "Check if the game is over\&. "
+.ti -1c
+.RI "virtual const std::string & \fBgetGameName\fP (void) const =0"
+.br
+.RI "Get the name of the game\&. "
+.ti -1c
+.RI "virtual std::vector< std::string > & \fBgetMap\fP (const size_t &size)=0"
+.br
+.RI "Get the Map\&. "
+.ti -1c
+.RI "virtual std::vector< std::string > & \fBgetMap\fP ()=0"
+.br
+.RI "Get the Map\&. "
+.ti -1c
+.RI "virtual void \fBsetMapType\fP (const std::size_t &mapType)=0"
+.br
+.RI "Set the Map Type\&. "
+.ti -1c
+.RI "virtual void \fBdoPlayerAction\fP (const size_t playerID, const std::string action)=0"
+.br
+.RI "Do A player Action\&. "
+.ti -1c
+.RI "virtual void \fBsetPlayers\fP (const std::vector< \fBCharDictionary\fP > &playersData)=0"
+.br
+.RI "Set the current Players data\&. "
+.ti -1c
+.RI "virtual const std::vector< std::string > & \fBgetPlayerControls\fP (void) const =0"
+.br
+.RI "Get the player controls\&. "
+.ti -1c
+.RI "virtual void \fBrunAI\fP (void)=0"
+.br
+.RI "Run the AIs\&. "
+.ti -1c
+.RI "virtual bool \fBisCameraShaking\fP ()=0"
+.br
+.RI "Check if the camera should shake\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual IGame::~IGame (void)\fC [virtual]\fP, \fC [default]\fP"
+
+.PP
+Destroy the \fBIGame\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void IGame::doPlayerAction (const size_t playerID, const std::string action)\fC [pure virtual]\fP"
+
+.PP
+Do A player Action\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayerID\fP ID of player 
+.br
+\fIaction\fP Action in a string 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual const std::vector<std::shared_ptr<\fBIEntity\fP> >& IGame::getEntities (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the Entities\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Return all the game's entities to display in a const std::vector<std::shared_ptr<Thing>>& 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual const std::string& IGame::getGameName (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the name of the game\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Name of the game 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual std::vector<std::string>& IGame::getMap ()\fC [pure virtual]\fP"
+
+.PP
+Get the Map\&. 
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual std::vector<std::string>& IGame::getMap (const size_t & size)\fC [pure virtual]\fP"
+
+.PP
+Get the Map\&. 
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual const std::vector<std::string>& IGame::getPlayerControls (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the player controls\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector containing the player controls as a string 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual const std::vector<std::vector<std::pair<std::string, std::string> > >& IGame::getPlayersStats (void)\fC [pure virtual]\fP"
+
+.PP
+Get the Players Stats\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of a vector all the stats by player [Player -- (NameOfStat, Value)]\&.\&.\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual const std::vector<std::pair<std::string, std::string> >& IGame::getScores (void)\fC [pure virtual]\fP"
+
+.PP
+Getter for the score\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A array of pair (Player, Score) of the current game 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual std::array<std::size_t, 9> IGame::getSettings (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the game settings\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An array of 9 size_t 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual const std::vector<std::string>& IGame::getUserNames (void) const\fC [pure virtual]\fP"
+
+.PP
+Get the User Names\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of all the users names as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual bool IGame::isCameraShaking ()\fC [pure virtual]\fP"
+
+.PP
+Check if the camera should shake\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if should 
+.PP
+false otherwise 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual bool IGame::isGameOver (void) const\fC [pure virtual]\fP"
+
+.PP
+Check if the game is over\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool which indicate if the game is over 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::loadGame (const std::string & backupFilePath)\fC [pure virtual]\fP"
+
+.PP
+Call this function to load a game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbackupFilePath\fP Backup File Path 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::restart (void)\fC [pure virtual]\fP"
+
+.PP
+Call this function to restart the entire game\&. The game must reset himself\&. 
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::runAI (void)\fC [pure virtual]\fP"
+
+.PP
+Run the AIs\&. 
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::saveGame (std::array< std::size_t, 9 > settings, std::vector< std::string > playerControls)\fC [pure virtual]\fP"
+
+.PP
+Call this function to save the game\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP Backup Container containing the settings 
+.br
+\fIplayerControls\fP Backup Container containing the player controls 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::setMapType (const std::size_t & mapType)\fC [pure virtual]\fP"
+
+.PP
+Set the Map Type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImapType\fP A size_t 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::setPlayers (const std::vector< \fBCharDictionary\fP > & playersData)\fC [pure virtual]\fP"
+
+.PP
+Set the current Players data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIplayersData\fP Dictionary of the players' data 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::setSettings (const std::array< std::size_t, 9 > & settings)\fC [pure virtual]\fP"
+
+.PP
+Set the game settings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsettings\fP An array of 9 size_t 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::setUserNames (const std::vector< std::string > & userNames)\fC [pure virtual]\fP"
+
+.PP
+Set the User Names\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserNames\fP A vector of all the users names as a const std::vector<std::string>& 
+.RE
+.PP
+
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+.SS "virtual void IGame::updateGame (void)\fC [pure virtual]\fP"
+
+.PP
+updateGame function should be called in a loop\&. It's used to advance the game and update all logic\&. The game must manage time on it's own\&. 
+.PP
+Implemented in \fBGame::Bomberman\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,152 @@
+\hypertarget{class_raylib_1_1_window}{}\doxysection{Raylib\+::Window Class Reference}
+\label{class_raylib_1_1_window}\index{Raylib::Window@{Raylib::Window}}
+
+
+{\ttfamily \#include $<$Window.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_window_accd15f8331537660956d04a7c8ead377}{Window}} (const int \&width=1920, const int \&height=1080, const std\+::string \&title=\char`\"{}Bomberman\char`\"{}, const bool \&late\+Init=false)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_window}{Window}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_window_aa168b688c5ae5030e8a9320eb3b80c5f}{$\sim$\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_raylib_1_1_window_a2cc07b95e771ec33136503ee84b4ecd0}{init\+Window}} (const int \&width, const int \&height, const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Initialize window and Open\+GL context. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_window_a7e45f1616d717a5076875fd88d54facd}{window\+Should\+Close}} (void)
+\begin{DoxyCompactList}\small\item\em Check if KEY\+\_\+\+ESCAPE pressed or Close icon pressed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_window_a705564d091c3b120525037f0fd626a26}{close\+Window}} (void)
+\begin{DoxyCompactList}\small\item\em Close window. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_window_a6b5b69c4697a53334555321670f277f1}{set\+Window\+Icon}} (\mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}} image)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} Icon. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_window_abceaef2221d2140993052c6614ee17c2}{is\+Window\+Fullscreen}} (void)
+\begin{DoxyCompactList}\small\item\em Check if window is currently fullscreen. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_window_af29ba1e7b62a73b5822e1cef2d8a7b9b}{toggle\+Fullscreen}} ()
+\begin{DoxyCompactList}\small\item\em Toggle window state\+: fullscreen/windowed (only PLATFORM\+\_\+\+DESKTOP) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_window_accd15f8331537660956d04a7c8ead377}\label{class_raylib_1_1_window_accd15f8331537660956d04a7c8ead377}} 
+\index{Raylib::Window@{Raylib::Window}!Window@{Window}}
+\index{Window@{Window}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily Raylib\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{const int \&}]{width = {\ttfamily 1920},  }\item[{const int \&}]{height = {\ttfamily 1080},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}Bomberman\char`\"{}},  }\item[{const bool \&}]{late\+Init = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_window}{Window}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} \\
+\hline
+{\em height} & Height of the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} \\
+\hline
+{\em title} & Title of the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} \\
+\hline
+{\em late\+Init} & A boolean, True if window is already init, False otherwise \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_window_aa168b688c5ae5030e8a9320eb3b80c5f}\label{class_raylib_1_1_window_aa168b688c5ae5030e8a9320eb3b80c5f}} 
+\index{Raylib::Window@{Raylib::Window}!````~Window@{$\sim$Window}}
+\index{````~Window@{$\sim$Window}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Window()}{~Window()}}
+{\footnotesize\ttfamily Raylib\+::\+Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_window_a705564d091c3b120525037f0fd626a26}\label{class_raylib_1_1_window_a705564d091c3b120525037f0fd626a26}} 
+\index{Raylib::Window@{Raylib::Window}!closeWindow@{closeWindow}}
+\index{closeWindow@{closeWindow}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{closeWindow()}{closeWindow()}}
+{\footnotesize\ttfamily void Raylib\+::\+Window\+::close\+Window (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Close window. 
+
+\mbox{\Hypertarget{class_raylib_1_1_window_a2cc07b95e771ec33136503ee84b4ecd0}\label{class_raylib_1_1_window_a2cc07b95e771ec33136503ee84b4ecd0}} 
+\index{Raylib::Window@{Raylib::Window}!initWindow@{initWindow}}
+\index{initWindow@{initWindow}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{initWindow()}{initWindow()}}
+{\footnotesize\ttfamily void Raylib\+::\+Window\+::init\+Window (\begin{DoxyParamCaption}\item[{const int \&}]{width,  }\item[{const int \&}]{height,  }\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Initialize window and Open\+GL context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} \\
+\hline
+{\em height} & Height of the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} \\
+\hline
+{\em title} & Title of the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_window_abceaef2221d2140993052c6614ee17c2}\label{class_raylib_1_1_window_abceaef2221d2140993052c6614ee17c2}} 
+\index{Raylib::Window@{Raylib::Window}!isWindowFullscreen@{isWindowFullscreen}}
+\index{isWindowFullscreen@{isWindowFullscreen}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{isWindowFullscreen()}{isWindowFullscreen()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Window\+::is\+Window\+Fullscreen (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if window is currently fullscreen. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_window_a6b5b69c4697a53334555321670f277f1}\label{class_raylib_1_1_window_a6b5b69c4697a53334555321670f277f1}} 
+\index{Raylib::Window@{Raylib::Window}!setWindowIcon@{setWindowIcon}}
+\index{setWindowIcon@{setWindowIcon}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{setWindowIcon()}{setWindowIcon()}}
+{\footnotesize\ttfamily void Raylib\+::\+Window\+::set\+Window\+Icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_image}{Raylib\+::\+Image}}}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set the \mbox{\hyperlink{class_raylib_1_1_window}{Window}} Icon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \mbox{\hyperlink{class_raylib_1_1_image}{Image}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_window_af29ba1e7b62a73b5822e1cef2d8a7b9b}\label{class_raylib_1_1_window_af29ba1e7b62a73b5822e1cef2d8a7b9b}} 
+\index{Raylib::Window@{Raylib::Window}!toggleFullscreen@{toggleFullscreen}}
+\index{toggleFullscreen@{toggleFullscreen}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{toggleFullscreen()}{toggleFullscreen()}}
+{\footnotesize\ttfamily void Raylib\+::\+Window\+::toggle\+Fullscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Toggle window state\+: fullscreen/windowed (only PLATFORM\+\_\+\+DESKTOP) 
+
+\mbox{\Hypertarget{class_raylib_1_1_window_a7e45f1616d717a5076875fd88d54facd}\label{class_raylib_1_1_window_a7e45f1616d717a5076875fd88d54facd}} 
+\index{Raylib::Window@{Raylib::Window}!windowShouldClose@{windowShouldClose}}
+\index{windowShouldClose@{windowShouldClose}!Raylib::Window@{Raylib::Window}}
+\doxysubsubsection{\texorpdfstring{windowShouldClose()}{windowShouldClose()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Window\+::window\+Should\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if KEY\+\_\+\+ESCAPE pressed or Close icon pressed. 
+
+\begin{DoxyReturn}{Returns}
+A boolean (True OR False) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Window/\mbox{\hyperlink{_window_8hpp}{Window.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Window/\mbox{\hyperlink{_window_8cpp}{Window.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Window/\mbox{\hyperlink{_window_8inl}{Window.\+inl}}\end{DoxyCompactItemize}

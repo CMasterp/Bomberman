@@ -1,0 +1,165 @@
+\hypertarget{class_raylib_1_1_text}{}\doxysection{Raylib\+::Text Class Reference}
+\label{class_raylib_1_1_text}\index{Raylib::Text@{Raylib::Text}}
+
+
+{\ttfamily \#include $<$Text.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_text_a1e148080bbb9143e6d6ee07525495aed}{Text}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_text}{Text}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_text_a56585a1ab933eea2833f59d73acb8f01}{$\sim$\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_text}{Text}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_raylib_1_1_text_a40fb9706b9c22827d0865e20a7eb78cd}{draw\+Text}} (const std\+::string \&title, const int \&posX, const int \&posY, const int \&font\+Size, const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Draw text (using default font) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_raylib_1_1_text_afff85c28ef16e2999b5ef684faf21126}{draw\+Text\+Ex}} (const std\+::string \&font, const std\+::string \&text, const std\+::pair$<$ int, int $>$ \&position, const float \&font\+Size, const float \&spacing, const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&tint)
+\begin{DoxyCompactList}\small\item\em Draw text using custom font. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_raylib_1_1_text_a59f84aafa4ba69ea09219f80179148f0}{measure\+Text}} (const std\+::string \&text, const int \&font\+Size)
+\begin{DoxyCompactList}\small\item\em Measure string width for default font. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_raylib_1_1_text_a5793c53e68b67e228e53cfdb058ad616}{text\+Is\+Equal}} (const std\+::string \&text1, const std\+::string \&text2)
+\begin{DoxyCompactList}\small\item\em Check if two text string are equal. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_raylib_1_1_text_ade93d1eda69b0b5272af6506e283decf}{text\+Length}} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Check if two text string are equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_text_a1e148080bbb9143e6d6ee07525495aed}\label{class_raylib_1_1_text_a1e148080bbb9143e6d6ee07525495aed}} 
+\index{Raylib::Text@{Raylib::Text}!Text@{Text}}
+\index{Text@{Text}!Raylib::Text@{Raylib::Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}}
+{\footnotesize\ttfamily Raylib\+::\+Text\+::\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_text}{Text}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_text_a56585a1ab933eea2833f59d73acb8f01}\label{class_raylib_1_1_text_a56585a1ab933eea2833f59d73acb8f01}} 
+\index{Raylib::Text@{Raylib::Text}!````~Text@{$\sim$Text}}
+\index{````~Text@{$\sim$Text}!Raylib::Text@{Raylib::Text}}
+\doxysubsubsection{\texorpdfstring{$\sim$Text()}{~Text()}}
+{\footnotesize\ttfamily Raylib\+::\+Text\+::$\sim$\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_text}{Text}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_text_a40fb9706b9c22827d0865e20a7eb78cd}\label{class_raylib_1_1_text_a40fb9706b9c22827d0865e20a7eb78cd}} 
+\index{Raylib::Text@{Raylib::Text}!drawText@{drawText}}
+\index{drawText@{drawText}!Raylib::Text@{Raylib::Text}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void Raylib\+::\+Text\+::draw\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const int \&}]{posX,  }\item[{const int \&}]{posY,  }\item[{const int \&}]{font\+Size,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Draw text (using default font) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & A string \\
+\hline
+{\em posX} & An int \\
+\hline
+{\em posY} & An int \\
+\hline
+{\em font\+Size} & An int \\
+\hline
+{\em color} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_text_afff85c28ef16e2999b5ef684faf21126}\label{class_raylib_1_1_text_afff85c28ef16e2999b5ef684faf21126}} 
+\index{Raylib::Text@{Raylib::Text}!drawTextEx@{drawTextEx}}
+\index{drawTextEx@{drawTextEx}!Raylib::Text@{Raylib::Text}}
+\doxysubsubsection{\texorpdfstring{drawTextEx()}{drawTextEx()}}
+{\footnotesize\ttfamily void Raylib\+::\+Text\+::draw\+Text\+Ex (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font,  }\item[{const std\+::string \&}]{text,  }\item[{const std\+::pair$<$ int, int $>$ \&}]{position,  }\item[{const float \&}]{font\+Size,  }\item[{const float \&}]{spacing,  }\item[{const \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Draw text using custom font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & A string \\
+\hline
+{\em text} & A string \\
+\hline
+{\em position} & A pair of int \\
+\hline
+{\em font\+Size} & A float \\
+\hline
+{\em spacing} & A float \\
+\hline
+{\em color} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_text_a59f84aafa4ba69ea09219f80179148f0}\label{class_raylib_1_1_text_a59f84aafa4ba69ea09219f80179148f0}} 
+\index{Raylib::Text@{Raylib::Text}!measureText@{measureText}}
+\index{measureText@{measureText}!Raylib::Text@{Raylib::Text}}
+\doxysubsubsection{\texorpdfstring{measureText()}{measureText()}}
+{\footnotesize\ttfamily int Raylib\+::\+Text\+::measure\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const int \&}]{font\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Measure string width for default font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & A string \\
+\hline
+{\em font\+Size} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_text_a5793c53e68b67e228e53cfdb058ad616}\label{class_raylib_1_1_text_a5793c53e68b67e228e53cfdb058ad616}} 
+\index{Raylib::Text@{Raylib::Text}!textIsEqual@{textIsEqual}}
+\index{textIsEqual@{textIsEqual}!Raylib::Text@{Raylib::Text}}
+\doxysubsubsection{\texorpdfstring{textIsEqual()}{textIsEqual()}}
+{\footnotesize\ttfamily bool Raylib\+::\+Text\+::text\+Is\+Equal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text1,  }\item[{const std\+::string \&}]{text2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if two text string are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text1} & A string \\
+\hline
+{\em text2} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_text_ade93d1eda69b0b5272af6506e283decf}\label{class_raylib_1_1_text_ade93d1eda69b0b5272af6506e283decf}} 
+\index{Raylib::Text@{Raylib::Text}!textLength@{textLength}}
+\index{textLength@{textLength}!Raylib::Text@{Raylib::Text}}
+\doxysubsubsection{\texorpdfstring{textLength()}{textLength()}}
+{\footnotesize\ttfamily int Raylib\+::\+Text\+::text\+Length (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if two text string are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & A string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Text/\mbox{\hyperlink{_text_8hpp}{Text.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Text/\mbox{\hyperlink{_text_8cpp}{Text.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Text/\mbox{\hyperlink{_text_8inl}{Text.\+inl}}\end{DoxyCompactItemize}

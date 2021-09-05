@@ -1,0 +1,671 @@
+\hypertarget{class_i_graphical}{}\doxysection{IGraphical Class Reference}
+\label{class_i_graphical}\index{IGraphical@{IGraphical}}
+
+
+{\ttfamily \#include $<$IGraphical.\+hpp$>$}
+
+Inheritance diagram for IGraphical\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_graphical}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} \{ \newline
+\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ae20c25f1428889589b152671db3ff98b}{MENU}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a13cef28af7cc4d94a8db27f3508b529d}{GAME\+\_\+\+MODE}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ab2297398cdacd36def2c184dfff21950}{HELP}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a018ef86788162ee35f3ffb2134c59cca}{SETTINGS}}
+, \newline
+\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ac788b00c2a8c31f2d3655753c23e220b}{PLAYER\+\_\+\+CHOICE}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ae3c5499e180af6f11353d902ce82193e}{MAP\+\_\+\+CHOICE}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0afd3ffd6547b443a190c9f21fbe88d7fa}{LOAD\+\_\+\+GAME}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a69d0e770574b64d41f4045d5bf275bea}{IN\+\_\+\+GAME}}
+, \newline
+\mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a492811a625db7048a3e9ea9f3a38d0f9}{VICTORY}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a3f8bf49bb250bb22b2929e1f2eb7c172}{DEFEAT}}
+, \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0acfa5985dcddb946c0c7e3629756e2732}{END\+\_\+\+GAME}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_graphical_a228e6afdff7858dd1f12473002a606e9}{$\sim$\+IGraphical}} (void)=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_i_graphical}{IGraphical}} object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_graphical_a486b8b14933715c16dbfb761bb4cfa40}{should\+Close\+Window}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Check if the window should be close. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_ab82d440eaf70a585d8e4d104199a33ca}{set\+Scores}} (const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&scores)=0
+\begin{DoxyCompactList}\small\item\em This function sets the list of scores. First element of the pair is the username, the second is the score. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a31257746876d078c54efc72252f41a77}{set\+Best\+Scores}} (const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&scores)=0
+\begin{DoxyCompactList}\small\item\em This function sets the list of bests scores. First element of the pair is the username, the second is the score. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_aa920ce32d32bf8a0e053b7b7b29ad2c3}{update\+Game\+Infos}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$$>$ \&game\+Infos)=0
+\begin{DoxyCompactList}\small\item\em This is called in a loop when the game is running. This vector contains entities that should be displayed in the game scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a4cc19208d20f895ef5c057d6298ae422}{set\+Players\+Stats}} (const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$$>$ \&info)=0
+\begin{DoxyCompactList}\small\item\em This is called in a loop when the game is running. Sets the current informations about players and their stats. The first element of the pair is the category (e.\+g. Score), the second is the value (e.\+g. 200). \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_i_graphical_a85f11dd376c85b250805ebc950ab21f2}{get\+User\+Names}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the User Names. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a7c38a0159bd2e72725d0ea614b62ddae}{set\+User\+Names}} (const std\+::vector$<$ std\+::string $>$ \&user\+Names)=0
+\begin{DoxyCompactList}\small\item\em Set the User Names. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_i_graphical_ab698d41130a27801610b031430d0195c}{get\+Backups}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the paths to all backups files. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a3ef30b5283f659221432b0650d2edbd1}{set\+Backups}} (const std\+::vector$<$ std\+::string $>$ \&backups)=0
+\begin{DoxyCompactList}\small\item\em Get the paths to all backups files. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} \mbox{\hyperlink{class_i_graphical_a150a64c9d951f2fae58f87d57cace570}{get\+Scene}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns the current scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_ac4029cf9cc5a94ba5499c78d07ed16b4}{set\+Scene}} (const \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} \&scene)=0
+\begin{DoxyCompactList}\small\item\em Set the current scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a39eeffb3841872dd0902388be041bade}{close\+Window}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Close window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_acfd15b6301d602cfed05f8c16b89b1bc}{begin\+Drawing}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Set buffer to Draw textures. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_aa49a27d20abd79b15c969b65b28e5bb1}{end\+Drawing}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Unset buffer to Draw textures. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a0b449073a44736721bd9b39051620777}{display}} (void)=0
+\begin{DoxyCompactList}\small\item\em This function must display the current scene. It is used in the game loop. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a421df6e8852408c0f471ed0a0be9c938}{set\+Map}} (std\+::vector$<$ std\+::string $>$ \&map)=0
+\begin{DoxyCompactList}\small\item\em Set the Map. \end{DoxyCompactList}\item 
+virtual std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \mbox{\hyperlink{class_i_graphical_a16151e328de43308e7cd9e44748b5e7e}{get\+Map\+Size\+And\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the size and type of Map. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_aa74a3a2100e0f6aa366d4e316c8864f4}{set\+Map\+Size}} (size\+\_\+t size)=0
+\begin{DoxyCompactList}\small\item\em Set the size of Map. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a5bb0905832e98cb5c1d23dbf31a5e11b}{set\+Load\+Func}} (std\+::function$<$ void(std\+::string)$>$)=0
+\begin{DoxyCompactList}\small\item\em Set pointer to Load Function. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_ad690bef29f3bbb0c5500a75a1fce2ff2}{set\+Save\+Func}} (std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$, std\+::vector$<$ std\+::string $>$)$>$)=0
+\begin{DoxyCompactList}\small\item\em Set pointer to Save Function. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_ab95012ab6536ad9eabb613be71b2a9c1}{set\+Settings\+Func}} (std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$)$>$)=0
+\begin{DoxyCompactList}\small\item\em Set pointer to Settings Function. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a0cb31b6a588117728baccc32cfa6e2ef}{set\+Restart\+Func}} (std\+::function$<$ void()$>$)=0
+\begin{DoxyCompactList}\small\item\em Set the Restart Func. \end{DoxyCompactList}\item 
+virtual std\+::array$<$ size\+\_\+t, 9 $>$ \mbox{\hyperlink{class_i_graphical_aa24a766c25d9c576e887d11c208c64ca}{get\+Game\+Settings}} ()=0
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{namespace_game}{Game}} Settings. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a18c9055be2a5219909d37dcf7e76dfd1}{set\+Player\+Actions\+Func}} (std\+::function$<$ void(const size\+\_\+t pos, const std\+::string action)$>$)=0
+\begin{DoxyCompactList}\small\item\em Set the Player Actions Func. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_acba8506e3a47188ed519853cf35cc3ed}{set\+Game\+Settings}} (const std\+::array$<$ size\+\_\+t, 9 $>$ \&settings)=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ \mbox{\hyperlink{class_i_graphical_aa92d85a71ed6846bc477930138e41391}{get\+Players\+Data}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Players Data. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_i_graphical_adb29491873bfab5f723f8231108c563c}{get\+Player\+Controls}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the player controls. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a1d8524bef5911a8e2e51d4d785576f42}{set\+Player\+Controls}} (const std\+::vector$<$ std\+::string $>$ \&player\+Controls)=0
+\begin{DoxyCompactList}\small\item\em Set the player controls. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_graphical_a72c6ac47aed276ed5aedaa73e07af8c1}{camera\+Shake}} (void)=0
+\begin{DoxyCompactList}\small\item\em Shake the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}} 
+\index{IGraphical@{IGraphical}!Scene@{Scene}}
+\index{Scene@{Scene}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{Scene}{Scene}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{IGraphical\+::\+Scene}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MENU@{MENU}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!MENU@{MENU}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ae20c25f1428889589b152671db3ff98b}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ae20c25f1428889589b152671db3ff98b}} 
+MENU&This scene is the main menu of our game. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_MODE@{GAME\_MODE}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!GAME\_MODE@{GAME\_MODE}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a13cef28af7cc4d94a8db27f3508b529d}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a13cef28af7cc4d94a8db27f3508b529d}} 
+GAME\+\_\+\+MODE&This scene is the one used to choose the game mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HELP@{HELP}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!HELP@{HELP}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ab2297398cdacd36def2c184dfff21950}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ab2297398cdacd36def2c184dfff21950}} 
+HELP&This scene represents the HELP section, containing information such as how to play etc. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTINGS@{SETTINGS}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!SETTINGS@{SETTINGS}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a018ef86788162ee35f3ffb2134c59cca}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a018ef86788162ee35f3ffb2134c59cca}} 
+SETTINGS&This scene represents the settings section. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER\_CHOICE@{PLAYER\_CHOICE}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!PLAYER\_CHOICE@{PLAYER\_CHOICE}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ac788b00c2a8c31f2d3655753c23e220b}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ac788b00c2a8c31f2d3655753c23e220b}} 
+PLAYER\+\_\+\+CHOICE&This scene is the one used to choose the players and the different game parameters. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAP\_CHOICE@{MAP\_CHOICE}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!MAP\_CHOICE@{MAP\_CHOICE}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ae3c5499e180af6f11353d902ce82193e}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0ae3c5499e180af6f11353d902ce82193e}} 
+MAP\+\_\+\+CHOICE&This scene is the one used to choose map, sets and time. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOAD\_GAME@{LOAD\_GAME}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!LOAD\_GAME@{LOAD\_GAME}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0afd3ffd6547b443a190c9f21fbe88d7fa}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0afd3ffd6547b443a190c9f21fbe88d7fa}} 
+LOAD\+\_\+\+GAME&This scene is the one used to load a game backup. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IN\_GAME@{IN\_GAME}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!IN\_GAME@{IN\_GAME}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a69d0e770574b64d41f4045d5bf275bea}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a69d0e770574b64d41f4045d5bf275bea}} 
+IN\+\_\+\+GAME&This is the scene where the game is in progress. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VICTORY@{VICTORY}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!VICTORY@{VICTORY}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a492811a625db7048a3e9ea9f3a38d0f9}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a492811a625db7048a3e9ea9f3a38d0f9}} 
+VICTORY&This is the scene where the display winner options. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEFEAT@{DEFEAT}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!DEFEAT@{DEFEAT}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a3f8bf49bb250bb22b2929e1f2eb7c172}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0a3f8bf49bb250bb22b2929e1f2eb7c172}} 
+DEFEAT&This is the scene where the display loser options. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{END\_GAME@{END\_GAME}!IGraphical@{IGraphical}}\index{IGraphical@{IGraphical}!END\_GAME@{END\_GAME}}}\mbox{\Hypertarget{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0acfa5985dcddb946c0c7e3629756e2732}\label{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0acfa5985dcddb946c0c7e3629756e2732}} 
+END\+\_\+\+GAME&This scene represents the end of the game. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_graphical_a228e6afdff7858dd1f12473002a606e9}\label{class_i_graphical_a228e6afdff7858dd1f12473002a606e9}} 
+\index{IGraphical@{IGraphical}!````~IGraphical@{$\sim$IGraphical}}
+\index{````~IGraphical@{$\sim$IGraphical}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGraphical()}{~IGraphical()}}
+{\footnotesize\ttfamily virtual IGraphical\+::$\sim$\+IGraphical (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_i_graphical}{IGraphical}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_graphical_acfd15b6301d602cfed05f8c16b89b1bc}\label{class_i_graphical_acfd15b6301d602cfed05f8c16b89b1bc}} 
+\index{IGraphical@{IGraphical}!beginDrawing@{beginDrawing}}
+\index{beginDrawing@{beginDrawing}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{beginDrawing()}{beginDrawing()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::begin\+Drawing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set buffer to Draw textures. 
+
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_abc9b397ee904edc91802137f7b81e6bb}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a72c6ac47aed276ed5aedaa73e07af8c1}\label{class_i_graphical_a72c6ac47aed276ed5aedaa73e07af8c1}} 
+\index{IGraphical@{IGraphical}!cameraShake@{cameraShake}}
+\index{cameraShake@{cameraShake}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{cameraShake()}{cameraShake()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::camera\+Shake (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Shake the camera. 
+
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a61e0d6a63154e4ee5da68c5411cf9cdd}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a39eeffb3841872dd0902388be041bade}\label{class_i_graphical_a39eeffb3841872dd0902388be041bade}} 
+\index{IGraphical@{IGraphical}!closeWindow@{closeWindow}}
+\index{closeWindow@{closeWindow}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{closeWindow()}{closeWindow()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::close\+Window (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Close window. 
+
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a02ca4c2fce2cb1a1b1298319ec546e48}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a0b449073a44736721bd9b39051620777}\label{class_i_graphical_a0b449073a44736721bd9b39051620777}} 
+\index{IGraphical@{IGraphical}!display@{display}}
+\index{display@{display}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This function must display the current scene. It is used in the game loop. 
+
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ae20b9f4299d684817b5a68c584e8832b}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_aa49a27d20abd79b15c969b65b28e5bb1}\label{class_i_graphical_aa49a27d20abd79b15c969b65b28e5bb1}} 
+\index{IGraphical@{IGraphical}!endDrawing@{endDrawing}}
+\index{endDrawing@{endDrawing}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{endDrawing()}{endDrawing()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::end\+Drawing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unset buffer to Draw textures. 
+
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ab35f0bc56df18fccdd6e67303cde2440}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_ab698d41130a27801610b031430d0195c}\label{class_i_graphical_ab698d41130a27801610b031430d0195c}} 
+\index{IGraphical@{IGraphical}!getBackups@{getBackups}}
+\index{getBackups@{getBackups}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{getBackups()}{getBackups()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::string$>$\& IGraphical\+::get\+Backups (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the paths to all backups files. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all the paths to backups files as a const std\+::vector$<$std\+::string$>$\& 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a150902c0d0023586d32ab37f996f216d}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_aa24a766c25d9c576e887d11c208c64ca}\label{class_i_graphical_aa24a766c25d9c576e887d11c208c64ca}} 
+\index{IGraphical@{IGraphical}!getGameSettings@{getGameSettings}}
+\index{getGameSettings@{getGameSettings}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{getGameSettings()}{getGameSettings()}}
+{\footnotesize\ttfamily virtual std\+::array$<$size\+\_\+t, 9$>$ IGraphical\+::get\+Game\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get \mbox{\hyperlink{namespace_game}{Game}} Settings. 
+
+\begin{DoxyReturn}{Returns}
+An array of 9 size\+\_\+t 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_aa69ab5ee1bd9ffdc655a5a420d714e8b}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a16151e328de43308e7cd9e44748b5e7e}\label{class_i_graphical_a16151e328de43308e7cd9e44748b5e7e}} 
+\index{IGraphical@{IGraphical}!getMapSizeAndType@{getMapSizeAndType}}
+\index{getMapSizeAndType@{getMapSizeAndType}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{getMapSizeAndType()}{getMapSizeAndType()}}
+{\footnotesize\ttfamily virtual std\+::pair$<$size\+\_\+t, size\+\_\+t$>$ IGraphical\+::get\+Map\+Size\+And\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the size and type of Map. 
+
+\begin{DoxyReturn}{Returns}
+A pair of size\+\_\+t 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ac4069977af167232aeb9d44c1045e248}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_adb29491873bfab5f723f8231108c563c}\label{class_i_graphical_adb29491873bfab5f723f8231108c563c}} 
+\index{IGraphical@{IGraphical}!getPlayerControls@{getPlayerControls}}
+\index{getPlayerControls@{getPlayerControls}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{getPlayerControls()}{getPlayerControls()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::string$>$ IGraphical\+::get\+Player\+Controls (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the player controls. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the player controls as a string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_aa32536c233560d9133d7e2e23b0ab25f}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_aa92d85a71ed6846bc477930138e41391}\label{class_i_graphical_aa92d85a71ed6846bc477930138e41391}} 
+\index{IGraphical@{IGraphical}!getPlayersData@{getPlayersData}}
+\index{getPlayersData@{getPlayersData}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{getPlayersData()}{getPlayersData()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}}$>$ IGraphical\+::get\+Players\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Players Data. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Char\+Dictionary$>$ containing players data 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a2a3598480618a735f31cca44acfbe3e9}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a150a64c9d951f2fae58f87d57cace570}\label{class_i_graphical_a150a64c9d951f2fae58f87d57cace570}} 
+\index{IGraphical@{IGraphical}!getScene@{getScene}}
+\index{getScene@{getScene}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{getScene()}{getScene()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} IGraphical\+::get\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current scene. 
+
+\begin{DoxyReturn}{Returns}
+The scene (MAIN\+\_\+\+MENU, GAME, END\+\_\+\+GAME...), the step where we are in the window 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a988ece592800b6d94151511e5ece242a}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a85f11dd376c85b250805ebc950ab21f2}\label{class_i_graphical_a85f11dd376c85b250805ebc950ab21f2}} 
+\index{IGraphical@{IGraphical}!getUserNames@{getUserNames}}
+\index{getUserNames@{getUserNames}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{getUserNames()}{getUserNames()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::string$>$\& IGraphical\+::get\+User\+Names (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the User Names. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all the users names as a const std\+::vector$<$std\+::string$>$\& 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a06829767ec106dbda07dc92a4b5e8f06}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a3ef30b5283f659221432b0650d2edbd1}\label{class_i_graphical_a3ef30b5283f659221432b0650d2edbd1}} 
+\index{IGraphical@{IGraphical}!setBackups@{setBackups}}
+\index{setBackups@{setBackups}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setBackups()}{setBackups()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Backups (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{backups }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the paths to all backups files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em backups} & A vector of all the paths to backups files as a const std\+::vector$<$std\+::string$>$\& \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ad2a7192370aaf8db1862741a9f623329}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a31257746876d078c54efc72252f41a77}\label{class_i_graphical_a31257746876d078c54efc72252f41a77}} 
+\index{IGraphical@{IGraphical}!setBestScores@{setBestScores}}
+\index{setBestScores@{setBestScores}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setBestScores()}{setBestScores()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Best\+Scores (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&}]{scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This function sets the list of bests scores. First element of the pair is the username, the second is the score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scores} & A vector of pair (username, score) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a379dd8936ae4230391fddc6b315203db}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_acba8506e3a47188ed519853cf35cc3ed}\label{class_i_graphical_acba8506e3a47188ed519853cf35cc3ed}} 
+\index{IGraphical@{IGraphical}!setGameSettings@{setGameSettings}}
+\index{setGameSettings@{setGameSettings}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setGameSettings()}{setGameSettings()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Game\+Settings (\begin{DoxyParamCaption}\item[{const std\+::array$<$ size\+\_\+t, 9 $>$ \&}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ae5db2f1308d9cf8ab20841d1e79cf70f}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a5bb0905832e98cb5c1d23dbf31a5e11b}\label{class_i_graphical_a5bb0905832e98cb5c1d23dbf31a5e11b}} 
+\index{IGraphical@{IGraphical}!setLoadFunc@{setLoadFunc}}
+\index{setLoadFunc@{setLoadFunc}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setLoadFunc()}{setLoadFunc()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Load\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::string)$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set pointer to Load Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em load\+Func} & A pointer to Load function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a6d1bc08a02266982349c73bf2c39279f}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a421df6e8852408c0f471ed0a0be9c938}\label{class_i_graphical_a421df6e8852408c0f471ed0a0be9c938}} 
+\index{IGraphical@{IGraphical}!setMap@{setMap}}
+\index{setMap@{setMap}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setMap()}{setMap()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & A const std\+::vector$<$std\+::string$>$\& \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ae5aac67cbd898c25ab58e401a20442bf}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_aa74a3a2100e0f6aa366d4e316c8864f4}\label{class_i_graphical_aa74a3a2100e0f6aa366d4e316c8864f4}} 
+\index{IGraphical@{IGraphical}!setMapSize@{setMapSize}}
+\index{setMapSize@{setMapSize}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setMapSize()}{setMapSize()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Map\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the size of Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a4266a3e5764c424fdfcb86ef6e90ca0d}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a18c9055be2a5219909d37dcf7e76dfd1}\label{class_i_graphical_a18c9055be2a5219909d37dcf7e76dfd1}} 
+\index{IGraphical@{IGraphical}!setPlayerActionsFunc@{setPlayerActionsFunc}}
+\index{setPlayerActionsFunc@{setPlayerActionsFunc}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setPlayerActionsFunc()}{setPlayerActionsFunc()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Player\+Actions\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const size\+\_\+t pos, const std\+::string action)$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Player Actions Func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Actions\+Func} & A pointer to function that manage all players actions in the game (left, right ...) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a3a4dd2d91cd04b49413b37cf0118abcb}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a1d8524bef5911a8e2e51d4d785576f42}\label{class_i_graphical_a1d8524bef5911a8e2e51d4d785576f42}} 
+\index{IGraphical@{IGraphical}!setPlayerControls@{setPlayerControls}}
+\index{setPlayerControls@{setPlayerControls}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setPlayerControls()}{setPlayerControls()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Player\+Controls (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{player\+Controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the player controls. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Controls} & A vector containing all the player controls as a string \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ac96dabdc151371f359142d2a2ef6ab0d}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a4cc19208d20f895ef5c057d6298ae422}\label{class_i_graphical_a4cc19208d20f895ef5c057d6298ae422}} 
+\index{IGraphical@{IGraphical}!setPlayersStats@{setPlayersStats}}
+\index{setPlayersStats@{setPlayersStats}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setPlayersStats()}{setPlayersStats()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Players\+Stats (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$$>$ \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This is called in a loop when the game is running. Sets the current informations about players and their stats. The first element of the pair is the category (e.\+g. Score), the second is the value (e.\+g. 200). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & A vector of a vector all the stats by player \mbox{[}Player -- (Name\+Of\+Stat, Value)\mbox{]}... \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ab1b39190d61cb1dfaf79bf7e13fbe024}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a0cb31b6a588117728baccc32cfa6e2ef}\label{class_i_graphical_a0cb31b6a588117728baccc32cfa6e2ef}} 
+\index{IGraphical@{IGraphical}!setRestartFunc@{setRestartFunc}}
+\index{setRestartFunc@{setRestartFunc}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setRestartFunc()}{setRestartFunc()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Restart\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void()$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Restart Func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restart\+Func} & A pointer to Restart function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a59238f6070f101bc02303f5434cd76ac}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_ad690bef29f3bbb0c5500a75a1fce2ff2}\label{class_i_graphical_ad690bef29f3bbb0c5500a75a1fce2ff2}} 
+\index{IGraphical@{IGraphical}!setSaveFunc@{setSaveFunc}}
+\index{setSaveFunc@{setSaveFunc}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setSaveFunc()}{setSaveFunc()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Save\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$, std\+::vector$<$ std\+::string $>$)$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set pointer to Save Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Func} & A pointer to Save function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a9d60f33a9f275ee7cf27b637fa6be3a6}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_ac4029cf9cc5a94ba5499c78d07ed16b4}\label{class_i_graphical_ac4029cf9cc5a94ba5499c78d07ed16b4}} 
+\index{IGraphical@{IGraphical}!setScene@{setScene}}
+\index{setScene@{setScene}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setScene()}{setScene()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_i_graphical_ac79fe372d70eed1e929c6d1662a070d0}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the current scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & The scene (MAIN\+\_\+\+MENU, GAME, END\+\_\+\+GAME...), the step where we are in the window \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a43b20054583362fb21cd5a0e33646cde}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_ab82d440eaf70a585d8e4d104199a33ca}\label{class_i_graphical_ab82d440eaf70a585d8e4d104199a33ca}} 
+\index{IGraphical@{IGraphical}!setScores@{setScores}}
+\index{setScores@{setScores}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setScores()}{setScores()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Scores (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&}]{scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This function sets the list of scores. First element of the pair is the username, the second is the score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scores} & A vector of pair (username, score) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a7fa78f75ccd3a92c6916de182cd0138f}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_ab95012ab6536ad9eabb613be71b2a9c1}\label{class_i_graphical_ab95012ab6536ad9eabb613be71b2a9c1}} 
+\index{IGraphical@{IGraphical}!setSettingsFunc@{setSettingsFunc}}
+\index{setSettingsFunc@{setSettingsFunc}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setSettingsFunc()}{setSettingsFunc()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+Settings\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::array$<$ std\+::size\+\_\+t, 9 $>$)$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set pointer to Settings Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings\+Func} & A pointer to Settings function in the core \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_ae85f87f71089defddb408c747b07db5b}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a7c38a0159bd2e72725d0ea614b62ddae}\label{class_i_graphical_a7c38a0159bd2e72725d0ea614b62ddae}} 
+\index{IGraphical@{IGraphical}!setUserNames@{setUserNames}}
+\index{setUserNames@{setUserNames}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{setUserNames()}{setUserNames()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::set\+User\+Names (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{user\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the User Names. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Names} & A vector containing all the users names \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a41c116df8dd757520d8d3c60d5199263}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_a486b8b14933715c16dbfb761bb4cfa40}\label{class_i_graphical_a486b8b14933715c16dbfb761bb4cfa40}} 
+\index{IGraphical@{IGraphical}!shouldCloseWindow@{shouldCloseWindow}}
+\index{shouldCloseWindow@{shouldCloseWindow}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{shouldCloseWindow()}{shouldCloseWindow()}}
+{\footnotesize\ttfamily virtual bool IGraphical\+::should\+Close\+Window (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the window should be close. 
+
+\begin{DoxyReturn}{Returns}
+true if the window should close and false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a6a80919d7056c65a15c44ee30677646d}{XRay}}.
+
+\mbox{\Hypertarget{class_i_graphical_aa920ce32d32bf8a0e053b7b7b29ad2c3}\label{class_i_graphical_aa920ce32d32bf8a0e053b7b7b29ad2c3}} 
+\index{IGraphical@{IGraphical}!updateGameInfos@{updateGameInfos}}
+\index{updateGameInfos@{updateGameInfos}!IGraphical@{IGraphical}}
+\doxysubsubsection{\texorpdfstring{updateGameInfos()}{updateGameInfos()}}
+{\footnotesize\ttfamily virtual void IGraphical\+::update\+Game\+Infos (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$$>$ \&}]{game\+Infos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This is called in a loop when the game is running. This vector contains entities that should be displayed in the game scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Infos} & A vector of shared pointer that represent all the entities to display. Ex \+: Map, Score, User\+Info, Button \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_x_ray_a1c893505febc6514bfd5e9bbb7490bd0}{XRay}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Engine/\+Interfaces/\mbox{\hyperlink{_i_graphical_8hpp}{IGraphical.\+hpp}}\end{DoxyCompactItemize}

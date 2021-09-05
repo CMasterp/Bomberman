@@ -1,0 +1,59 @@
+\hypertarget{class_game_1_1_artificial_intelligence}{}\doxysection{Game\+::Artificial\+Intelligence Class Reference}
+\label{class_game_1_1_artificial_intelligence}\index{Game::ArtificialIntelligence@{Game::ArtificialIntelligence}}
+
+
+{\ttfamily \#include $<$Artificial\+Intelligence.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_artificial_intelligence_aacf030e026c053cb84cd6f37bee17d2e}{Artificial\+Intelligence}} (std\+::function$<$ void(const size\+\_\+t pos, const std\+::string action)$>$ player\+Actions\+Func, const std\+::vector$<$ \mbox{\hyperlink{class_game_1_1_a_i}{AI}} $>$ \&AIs, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$$>$ entities, const std\+::vector$<$ std\+::string $>$ \&map, const size\+\_\+t \&level)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_artificial_intelligence}{Artificial\+Intelligence}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_artificial_intelligence_a35ee9f00aa26dd55d75226273239a140}{run}} (void) const
+\begin{DoxyCompactList}\small\item\em Run the \mbox{\hyperlink{class_game_1_1_a_i}{AI}} algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_artificial_intelligence_aacf030e026c053cb84cd6f37bee17d2e}\label{class_game_1_1_artificial_intelligence_aacf030e026c053cb84cd6f37bee17d2e}} 
+\index{Game::ArtificialIntelligence@{Game::ArtificialIntelligence}!ArtificialIntelligence@{ArtificialIntelligence}}
+\index{ArtificialIntelligence@{ArtificialIntelligence}!Game::ArtificialIntelligence@{Game::ArtificialIntelligence}}
+\doxysubsubsection{\texorpdfstring{ArtificialIntelligence()}{ArtificialIntelligence()}}
+{\footnotesize\ttfamily Game\+::\+Artificial\+Intelligence\+::\+Artificial\+Intelligence (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const size\+\_\+t pos, const std\+::string action)$>$}]{player\+Actions\+Func,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_game_1_1_a_i}{AI}} $>$ \&}]{AIs,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$$>$}]{entities,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{map,  }\item[{const size\+\_\+t \&}]{level }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_artificial_intelligence}{Artificial\+Intelligence}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Actions\+Func} & A pointer to function that manage all players actions in the game (left, right...) \\
+\hline
+{\em AIs} & A vector of \mbox{\hyperlink{class_game_1_1_a_i}{AI}} objects \\
+\hline
+{\em entities} & A vector of targets entities objects \\
+\hline
+{\em map} & The game map \\
+\hline
+{\em level} & The \mbox{\hyperlink{class_game_1_1_a_i}{AI}} level \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_artificial_intelligence_a35ee9f00aa26dd55d75226273239a140}\label{class_game_1_1_artificial_intelligence_a35ee9f00aa26dd55d75226273239a140}} 
+\index{Game::ArtificialIntelligence@{Game::ArtificialIntelligence}!run@{run}}
+\index{run@{run}!Game::ArtificialIntelligence@{Game::ArtificialIntelligence}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+::\+Artificial\+Intelligence\+::run (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Run the \mbox{\hyperlink{class_game_1_1_a_i}{AI}} algorithm. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_artificial_intelligence_8hpp}{Artificial\+Intelligence.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_artificial_intelligence_8cpp}{Artificial\+Intelligence.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+AI/\mbox{\hyperlink{_artificial_intelligence_8inl}{Artificial\+Intelligence.\+inl}}\end{DoxyCompactItemize}

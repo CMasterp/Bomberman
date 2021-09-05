@@ -1,0 +1,60 @@
+.TH "Game::Powerups" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game::Powerups
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Powerups\&.hpp>\fP
+.PP
+Inherits \fBGame::Animated\fP\&.
+.PP
+Inherited by \fBGame::BombUp\fP, \fBGame::Fire\fP, \fBGame::Life\fP, \fBGame::Pass\fP, and \fBGame::Speed\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPowerups\fP (const \fBRaylib::Vector3\fP &position, const std::string &type)"
+.br
+.ti -1c
+.RI "\fB~Powerups\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBapplyPowerupTo\fP (\fBGame::Player\fP &player)=0"
+.br
+.ti -1c
+.RI "std::string \fBgetType\fP () const override"
+.br
+.RI "Get the Type object\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Powerups::Powerups (const \fBRaylib::Vector3\fP & position, const std::string & type)"
+
+.SS "Game::Powerups::~Powerups ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Game::Powerups::applyPowerupTo (\fBGame::Player\fP & player)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBGame::Speed\fP, \fBGame::BombUp\fP, \fBGame::Fire\fP, \fBGame::Pass\fP, and \fBGame::Life\fP\&.
+.SS "std::string Game::Powerups::getType () const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the Type object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A std::string 
+.RE
+.PP
+
+.PP
+Implements \fBGame::Animated\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

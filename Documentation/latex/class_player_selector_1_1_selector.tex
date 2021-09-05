@@ -1,0 +1,360 @@
+\hypertarget{class_player_selector_1_1_selector}{}\doxysection{Player\+Selector\+::Selector Class Reference}
+\label{class_player_selector_1_1_selector}\index{PlayerSelector::Selector@{PlayerSelector::Selector}}
+
+
+{\ttfamily \#include $<$Selector.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_selector_1_1_selector_a74bb2113a6d7e3c34adc2d80bbc7282f}{Selector}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_player_selector_1_1_selector}{Selector}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_selector_1_1_selector_acd56b5aa8d211c9ebc341e40e0a34902}{$\sim$\+Selector}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_player_selector_1_1_selector}{Selector}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_a71b16f087627313df993a80f725ee920}{toggle\+Mods\+Available}} ()
+\begin{DoxyCompactList}\small\item\em Toggle Mods Available. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_selector_1_1_selector_ae1e2cc02be8c97231d06f9cff63b265f}{is\+Mods\+Available}} ()
+\begin{DoxyCompactList}\small\item\em Check if mods are available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_aa9a0925738a9341ddf52f3a7c52addea}{first\+Load}} ()
+\begin{DoxyCompactList}\small\item\em Load for the first time a character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_a807c44d72e30ba96c46e0d7e5bb5a874}{load}} ()
+\begin{DoxyCompactList}\small\item\em Add a character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_add14fc246076a6cb6dcd1b506e829a92}{unload}} (const int \&id)
+\begin{DoxyCompactList}\small\item\em Remove a character. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ Model, float $>$ $>$ \mbox{\hyperlink{class_player_selector_1_1_selector_ae74c80dcf57fe88005b718862b31f422}{get\+Models}} () const
+\begin{DoxyCompactList}\small\item\em Get characters Models. \end{DoxyCompactList}\item 
+std\+::vector$<$ Texture2D $>$ \mbox{\hyperlink{class_player_selector_1_1_selector_a44cd104bc725850a6d8e23646848e760}{get\+Bloc\+Textures}} () const
+\begin{DoxyCompactList}\small\item\em Get the Bloc Textures object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_adb9683b222b1767ecbcaf9a8fdeb4312}{unload\+All}} ()
+\begin{DoxyCompactList}\small\item\em Remove all characters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_a3e623a59276b4f8600b4631d70dacb7a}{draw\+Players}} ()
+\begin{DoxyCompactList}\small\item\em Display all the players. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_ab41365dcbd097391a537736a730db307}{init\+Maps}} (std\+::vector$<$ std\+::string $>$ ascii\+Map)
+\begin{DoxyCompactList}\small\item\em Init the 3D maps from the Ascii one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_a422732f14a86a9c3d749a29ddb5b656f}{draw\+Maps}} ()
+\begin{DoxyCompactList}\small\item\em Display the 3D map. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_player_selector_1_1_selector_a029effa898f5727d6235d123f1a4df86}{get\+Map}} () const
+\begin{DoxyCompactList}\small\item\em Get the Ascii \mbox{\hyperlink{class_player_selector_1_1_map}{Map}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_a032cdd1f67b9ac6e82e6f52b747f4fd5}{end\+Maps}} ()
+\begin{DoxyCompactList}\small\item\em Unload map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_ab07c9b5da9c4e3d8850bc37ae21f91f2}{next\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Select the next map textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_a575a28c1d325c735eb5755d6d889d56b}{prev\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Select the previous map textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_aa840a964347c77cf591a4da457176d6f}{next}} (const int \&player)
+\begin{DoxyCompactList}\small\item\em Select the next character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_selector_1_1_selector_a8487b506ad6289ba4d9f84fb8a47ad98}{prev}} (const int \&player)
+\begin{DoxyCompactList}\small\item\em Select the next character. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_player_selector_1_1_selector_a2432804aab529d05a0682481e492c26d}{get\+Map\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} Type. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ \mbox{\hyperlink{class_player_selector_1_1_selector_a560abb6e6f163d5e7def26d7deb77817}{get\+Player\+Data}} () const
+\item 
+\mbox{\hyperlink{class_player_selector_1_1_player}{Player\+Selector\+::\+Player}} \& \mbox{\hyperlink{class_player_selector_1_1_selector_a997a7bbca7388c9a5b79c77f8d0cd96f}{operator\mbox{[}$\,$\mbox{]}}} (const int \&index)
+\item 
+const \mbox{\hyperlink{class_player_selector_1_1_player}{Player\+Selector\+::\+Player}} \& \mbox{\hyperlink{class_player_selector_1_1_selector_abc0f082b1bc7ede002ad1d52119f85d1}{operator\mbox{[}$\,$\mbox{]}}} (const int \&index) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} $>$ \mbox{\hyperlink{class_player_selector_1_1_selector_a59ba9ef5c39f592d61e88285b0befb32}{POS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a74bb2113a6d7e3c34adc2d80bbc7282f}\label{class_player_selector_1_1_selector_a74bb2113a6d7e3c34adc2d80bbc7282f}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!Selector@{Selector}}
+\index{Selector@{Selector}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{Selector()}{Selector()}}
+{\footnotesize\ttfamily Player\+Selector\+::\+Selector\+::\+Selector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_player_selector_1_1_selector}{Selector}} object. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_acd56b5aa8d211c9ebc341e40e0a34902}\label{class_player_selector_1_1_selector_acd56b5aa8d211c9ebc341e40e0a34902}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!````~Selector@{$\sim$Selector}}
+\index{````~Selector@{$\sim$Selector}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{$\sim$Selector()}{~Selector()}}
+{\footnotesize\ttfamily Player\+Selector\+::\+Selector\+::$\sim$\+Selector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_player_selector_1_1_selector}{Selector}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a422732f14a86a9c3d749a29ddb5b656f}\label{class_player_selector_1_1_selector_a422732f14a86a9c3d749a29ddb5b656f}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!drawMaps@{drawMaps}}
+\index{drawMaps@{drawMaps}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{drawMaps()}{drawMaps()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::draw\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display the 3D map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ascii\+Map} & a new ascii map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a3e623a59276b4f8600b4631d70dacb7a}\label{class_player_selector_1_1_selector_a3e623a59276b4f8600b4631d70dacb7a}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!drawPlayers@{drawPlayers}}
+\index{drawPlayers@{drawPlayers}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{drawPlayers()}{drawPlayers()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::draw\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display all the players. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a032cdd1f67b9ac6e82e6f52b747f4fd5}\label{class_player_selector_1_1_selector_a032cdd1f67b9ac6e82e6f52b747f4fd5}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!endMaps@{endMaps}}
+\index{endMaps@{endMaps}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{endMaps()}{endMaps()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::end\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unload map. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_aa9a0925738a9341ddf52f3a7c52addea}\label{class_player_selector_1_1_selector_aa9a0925738a9341ddf52f3a7c52addea}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!firstLoad@{firstLoad}}
+\index{firstLoad@{firstLoad}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{firstLoad()}{firstLoad()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::first\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Load for the first time a character. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a44cd104bc725850a6d8e23646848e760}\label{class_player_selector_1_1_selector_a44cd104bc725850a6d8e23646848e760}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!getBlocTextures@{getBlocTextures}}
+\index{getBlocTextures@{getBlocTextures}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{getBlocTextures()}{getBlocTextures()}}
+{\footnotesize\ttfamily std\+::vector$<$ Texture2D $>$ Player\+Selector\+::\+Selector\+::get\+Bloc\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Bloc Textures object. 
+
+\begin{DoxyReturn}{Returns}
+a vector of textures 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a029effa898f5727d6235d123f1a4df86}\label{class_player_selector_1_1_selector_a029effa898f5727d6235d123f1a4df86}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!getMap@{getMap}}
+\index{getMap@{getMap}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Player\+Selector\+::\+Selector\+::get\+Map (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Ascii \mbox{\hyperlink{class_player_selector_1_1_map}{Map}}. 
+
+\begin{DoxyReturn}{Returns}
+the ascii map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a2432804aab529d05a0682481e492c26d}\label{class_player_selector_1_1_selector_a2432804aab529d05a0682481e492c26d}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!getMapType@{getMapType}}
+\index{getMapType@{getMapType}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{getMapType()}{getMapType()}}
+{\footnotesize\ttfamily size\+\_\+t Player\+Selector\+::\+Selector\+::get\+Map\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{class_player_selector_1_1_map}{Map}} Type. 
+
+\begin{DoxyReturn}{Returns}
+map type (Floor, Wall, or Box) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_ae74c80dcf57fe88005b718862b31f422}\label{class_player_selector_1_1_selector_ae74c80dcf57fe88005b718862b31f422}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!getModels@{getModels}}
+\index{getModels@{getModels}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{getModels()}{getModels()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ Model, float $>$ $>$ Player\+Selector\+::\+Selector\+::get\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get characters Models. 
+
+\begin{DoxyReturn}{Returns}
+a vector of pairs of Model withe their scalable value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a560abb6e6f163d5e7def26d7deb77817}\label{class_player_selector_1_1_selector_a560abb6e6f163d5e7def26d7deb77817}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!getPlayerData@{getPlayerData}}
+\index{getPlayerData@{getPlayerData}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{getPlayerData()}{getPlayerData()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ Player\+Selector\+::\+Selector\+::get\+Player\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+//\+TODO\+: DOC \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_ab41365dcbd097391a537736a730db307}\label{class_player_selector_1_1_selector_ab41365dcbd097391a537736a730db307}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!initMaps@{initMaps}}
+\index{initMaps@{initMaps}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{initMaps()}{initMaps()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::init\+Maps (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{ascii\+Map }\end{DoxyParamCaption})}
+
+
+
+Init the 3D maps from the Ascii one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ascii\+Map} & the ascii map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_ae1e2cc02be8c97231d06f9cff63b265f}\label{class_player_selector_1_1_selector_ae1e2cc02be8c97231d06f9cff63b265f}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!isModsAvailable@{isModsAvailable}}
+\index{isModsAvailable@{isModsAvailable}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{isModsAvailable()}{isModsAvailable()}}
+{\footnotesize\ttfamily bool Player\+Selector\+::\+Selector\+::is\+Mods\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if mods are available. 
+
+\begin{DoxyReturn}{Returns}
+true if mods are available 
+
+false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a807c44d72e30ba96c46e0d7e5bb5a874}\label{class_player_selector_1_1_selector_a807c44d72e30ba96c46e0d7e5bb5a874}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!load@{load}}
+\index{load@{load}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add a character. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_aa840a964347c77cf591a4da457176d6f}\label{class_player_selector_1_1_selector_aa840a964347c77cf591a4da457176d6f}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!next@{next}}
+\index{next@{next}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::next (\begin{DoxyParamCaption}\item[{const int \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Select the next character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & id of player who want to change the character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_ab07c9b5da9c4e3d8850bc37ae21f91f2}\label{class_player_selector_1_1_selector_ab07c9b5da9c4e3d8850bc37ae21f91f2}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!nextMap@{nextMap}}
+\index{nextMap@{nextMap}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{nextMap()}{nextMap()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::next\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Select the next map textures. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a997a7bbca7388c9a5b79c77f8d0cd96f}\label{class_player_selector_1_1_selector_a997a7bbca7388c9a5b79c77f8d0cd96f}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_selector_1_1_player}{Player\+Selector\+::\+Player}} \& Player\+Selector\+::\+Selector\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int \&}]{index }\end{DoxyParamCaption})}
+
+//\+TODO\+: DOC 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_abc0f082b1bc7ede002ad1d52119f85d1}\label{class_player_selector_1_1_selector_abc0f082b1bc7ede002ad1d52119f85d1}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_player_selector_1_1_player}{Player\+Selector\+::\+Player}} \& Player\+Selector\+::\+Selector\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int \&}]{index }\end{DoxyParamCaption}) const}
+
+//\+TODO\+: DOC 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a8487b506ad6289ba4d9f84fb8a47ad98}\label{class_player_selector_1_1_selector_a8487b506ad6289ba4d9f84fb8a47ad98}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!prev@{prev}}
+\index{prev@{prev}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::prev (\begin{DoxyParamCaption}\item[{const int \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Select the next character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & id of player who want to change the character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a575a28c1d325c735eb5755d6d889d56b}\label{class_player_selector_1_1_selector_a575a28c1d325c735eb5755d6d889d56b}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!prevMap@{prevMap}}
+\index{prevMap@{prevMap}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{prevMap()}{prevMap()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::prev\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Select the previous map textures. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a71b16f087627313df993a80f725ee920}\label{class_player_selector_1_1_selector_a71b16f087627313df993a80f725ee920}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!toggleModsAvailable@{toggleModsAvailable}}
+\index{toggleModsAvailable@{toggleModsAvailable}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{toggleModsAvailable()}{toggleModsAvailable()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::toggle\+Mods\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Toggle Mods Available. 
+
+\mbox{\Hypertarget{class_player_selector_1_1_selector_add14fc246076a6cb6dcd1b506e829a92}\label{class_player_selector_1_1_selector_add14fc246076a6cb6dcd1b506e829a92}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!unload@{unload}}
+\index{unload@{unload}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::unload (\begin{DoxyParamCaption}\item[{const int \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Remove a character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & character\textquotesingle{}s id to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_adb9683b222b1767ecbcaf9a8fdeb4312}\label{class_player_selector_1_1_selector_adb9683b222b1767ecbcaf9a8fdeb4312}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!unloadAll@{unloadAll}}
+\index{unloadAll@{unloadAll}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{unloadAll()}{unloadAll()}}
+{\footnotesize\ttfamily void Player\+Selector\+::\+Selector\+::unload\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove all characters. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_selector_1_1_selector_a59ba9ef5c39f592d61e88285b0befb32}\label{class_player_selector_1_1_selector_a59ba9ef5c39f592d61e88285b0befb32}} 
+\index{PlayerSelector::Selector@{PlayerSelector::Selector}!POS@{POS}}
+\index{POS@{POS}!PlayerSelector::Selector@{PlayerSelector::Selector}}
+\doxysubsubsection{\texorpdfstring{POS}{POS}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}}$>$ Player\+Selector\+::\+Selector\+::\+POS}
+
+//\+TODO\+: DOC 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/includes/\+Player\+Selector/\mbox{\hyperlink{_selector_8hpp}{Selector.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+XRay/sources/\+Player\+Selector/\mbox{\hyperlink{_selector_8cpp}{Selector.\+cpp}}\end{DoxyCompactItemize}

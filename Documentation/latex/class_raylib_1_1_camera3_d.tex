@@ -1,0 +1,393 @@
+\hypertarget{class_raylib_1_1_camera3_d}{}\doxysection{Raylib\+::Camera3D Class Reference}
+\label{class_raylib_1_1_camera3_d}\index{Raylib::Camera3D@{Raylib::Camera3D}}
+
+
+{\ttfamily \#include $<$Camera3\+D.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_camera3_d_aa27ed6659810426572d42b9f03369f03}{Camera3D}} (const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&position=\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}}(10, 10, 10), const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&target=\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}}(0, 0, 0), const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&up=\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}}(0, 1, 0), const float \&fovy=45, const int \&projection=\+::CAMERA\+\_\+\+PERSPECTIVE)
+\begin{DoxyCompactList}\small\item\em Construct a new Camera 3D object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_camera3_d_a38e92e3f5d827f7e533c848b40712f23}{$\sim$\+Camera3D}} (void)
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_camera3_d_a0c29787c07931e41dba617aa40538cf7}{Camera3D}} (\+::\mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} const \&camera)
+\begin{DoxyCompactList}\small\item\em Construct a new Camera object (Copy Constructor) \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} \mbox{\hyperlink{class_raylib_1_1_camera3_d_a28873f3e6fe025d62171d02ec3638ccf}{get\+CStruct}} (void) const
+\begin{DoxyCompactList}\small\item\em Get C Structure for \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} Class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} \& \mbox{\hyperlink{class_raylib_1_1_camera3_d_aaee878c3b36a6d73775474e6b2fa9785}{operator=}} (const \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} \&camera)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a1b494da7adc8f963d9afeb73cc71c772}{begin\+Mode3D}} (void) const
+\begin{DoxyCompactList}\small\item\em Initialize 3D mode with custom camera (3D) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a8ae1b54af4f8c1e1ec50271ad287d370}{end\+Mode3D}} (void) const
+\begin{DoxyCompactList}\small\item\em Ends 3D mode with custom camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_ae995a79b6dac863c2a9d661aad4f37a5}{set\+Camera\+Mode}} (int const \&mode) const
+\begin{DoxyCompactList}\small\item\em Set camera mode (multiple camera modes available) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a1138fbbadf68a4a238a1645b238d38c9}{set\+Position}} (const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&position)
+\begin{DoxyCompactList}\small\item\em Set the Position object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a393d855c872311ab20f4943a6b8b5594}{update\+Camera}} (void)
+\begin{DoxyCompactList}\small\item\em Update camera position for selected mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a18a7628a574a24efbda8daa7a5dcd196}{set\+Camera\+Pan\+Control}} (int const \&key\+Pan) const
+\begin{DoxyCompactList}\small\item\em Set camera pan key to combine with mouse movement (free camera) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_aac32885fb39fcd4832845bd73c09a712}{set\+Camera\+Alt\+Control}} (int const \&key\+Alt) const
+\begin{DoxyCompactList}\small\item\em Set camera alt key to combine with mouse movement (free camera) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_acc1196eaf4f20903536d56914cdd272b}{set\+Camera\+Smooth\+Zoom\+Control}} (int const \&key\+Smooth\+Zoom) const
+\begin{DoxyCompactList}\small\item\em Set camera smooth zoom key to combine with mouse (free camera) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a5ee81bc5f5746d8ab966f197a781586b}{set\+Camera\+Move\+Controls}} (int const \&front\+Key, int const \&back\+Key, int const \&right\+Key, int const \&left\+Key, int const \&up\+Key, int const \&down\+Key) const
+\begin{DoxyCompactList}\small\item\em Set camera move controls (1st person and 3rd person cameras) \end{DoxyCompactList}\item 
+Ray \mbox{\hyperlink{class_raylib_1_1_camera3_d_ac151213a86217287142e90865f7d9158}{get\+Mouse\+Ray}} (\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&mouse\+Position) const
+\begin{DoxyCompactList}\small\item\em Returns a ray trace from mouse position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} \mbox{\hyperlink{class_raylib_1_1_camera3_d_a1a5e6351f6d6be9bccffce9a8d96801b}{get\+Camera\+Matrix}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns camera transform matrix (view matrix) \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \mbox{\hyperlink{class_raylib_1_1_camera3_d_a63675945a1476c7f7a2f028f2de2919f}{get\+World\+To\+Screen}} (\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&position) const
+\begin{DoxyCompactList}\small\item\em Returns the screen space position for a 3d world space position. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} \mbox{\hyperlink{class_raylib_1_1_camera3_d_a6ad1c1394ac8de34fe75a204b34ca67b}{get\+World\+To\+Screen\+Ex}} (\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&position, int const \&width, int const \&height) const
+\begin{DoxyCompactList}\small\item\em Returns size position for a 3d world space position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a4e9729d8231d3763e2fc746c716b81b1}{draw\+Billboard}} (Texture2D const \&texture, \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&center, float const \&size, \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} const \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw a billboard texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_camera3_d_a96563fd3b0fd46c18e1cc909d008cb25}{draw\+Billboard\+Rec}} (Texture2D const \&texture, \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} const \&source, \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&center, float const \&size, \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} const \&tint) const
+\begin{DoxyCompactList}\small\item\em Draw a billboard texture defined by source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_aa27ed6659810426572d42b9f03369f03}\label{class_raylib_1_1_camera3_d_aa27ed6659810426572d42b9f03369f03}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!Camera3D@{Camera3D}}
+\index{Camera3D@{Camera3D}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{Camera3D()}{Camera3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Raylib\+::\+Camera3\+D\+::\+Camera3D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{position = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}}(10,~10,~10)},  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{target = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}}(0,~0,~0)},  }\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{up = {\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}}(0,~1,~0)},  }\item[{const float \&}]{fovy = {\ttfamily 45},  }\item[{const int \&}]{projection = {\ttfamily \+:\+:CAMERA\+\_\+PERSPECTIVE} }\end{DoxyParamCaption})}
+
+
+
+Construct a new Camera 3D object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & A \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \\
+\hline
+{\em target} & A \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \\
+\hline
+{\em up} & A \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \\
+\hline
+{\em fovy} & A float \\
+\hline
+{\em projection} & A int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a38e92e3f5d827f7e533c848b40712f23}\label{class_raylib_1_1_camera3_d_a38e92e3f5d827f7e533c848b40712f23}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!````~Camera3D@{$\sim$Camera3D}}
+\index{````~Camera3D@{$\sim$Camera3D}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Camera3D()}{~Camera3D()}}
+{\footnotesize\ttfamily Raylib\+::\+Camera3\+D\+::$\sim$\+Camera3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a0c29787c07931e41dba617aa40538cf7}\label{class_raylib_1_1_camera3_d_a0c29787c07931e41dba617aa40538cf7}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!Camera3D@{Camera3D}}
+\index{Camera3D@{Camera3D}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{Camera3D()}{Camera3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Raylib\+::\+Camera3\+D\+::\+Camera3D (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} const \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Construct a new Camera object (Copy Constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}}} & A \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} C Structure \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a1b494da7adc8f963d9afeb73cc71c772}\label{class_raylib_1_1_camera3_d_a1b494da7adc8f963d9afeb73cc71c772}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!beginMode3D@{beginMode3D}}
+\index{beginMode3D@{beginMode3D}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{beginMode3D()}{beginMode3D()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::begin\+Mode3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize 3D mode with custom camera (3D) 
+
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a4e9729d8231d3763e2fc746c716b81b1}\label{class_raylib_1_1_camera3_d_a4e9729d8231d3763e2fc746c716b81b1}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!drawBillboard@{drawBillboard}}
+\index{drawBillboard@{drawBillboard}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{drawBillboard()}{drawBillboard()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::draw\+Billboard (\begin{DoxyParamCaption}\item[{Texture2D const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&}]{center,  }\item[{float const \&}]{size,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} const \&}]{tint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a billboard texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & A \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} Class \\
+\hline
+{\em texture} & A Texture2D Class \\
+\hline
+{\em center} & A \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} Class \\
+\hline
+{\em size} & A float \\
+\hline
+{\em tint} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} Class \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a96563fd3b0fd46c18e1cc909d008cb25}\label{class_raylib_1_1_camera3_d_a96563fd3b0fd46c18e1cc909d008cb25}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!drawBillboardRec@{drawBillboardRec}}
+\index{drawBillboardRec@{drawBillboardRec}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{drawBillboardRec()}{drawBillboardRec()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::draw\+Billboard\+Rec (\begin{DoxyParamCaption}\item[{Texture2D const \&}]{texture,  }\item[{\mbox{\hyperlink{class_raylib_1_1_rectangle}{Raylib\+::\+Rectangle}} const \&}]{source,  }\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&}]{center,  }\item[{float const \&}]{size,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} const \&}]{tint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a billboard texture defined by source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & A \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} Class \\
+\hline
+{\em texture} & A Texture2D Class \\
+\hline
+{\em source} & A \mbox{\hyperlink{class_raylib_1_1_rectangle}{Rectangle}} Class \\
+\hline
+{\em center} & A \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} Class \\
+\hline
+{\em size} & A float \\
+\hline
+{\em tint} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} Class \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a8ae1b54af4f8c1e1ec50271ad287d370}\label{class_raylib_1_1_camera3_d_a8ae1b54af4f8c1e1ec50271ad287d370}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!endMode3D@{endMode3D}}
+\index{endMode3D@{endMode3D}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{endMode3D()}{endMode3D()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::end\+Mode3D (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ends 3D mode with custom camera. 
+
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a1a5e6351f6d6be9bccffce9a8d96801b}\label{class_raylib_1_1_camera3_d_a1a5e6351f6d6be9bccffce9a8d96801b}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!getCameraMatrix@{getCameraMatrix}}
+\index{getCameraMatrix@{getCameraMatrix}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{getCameraMatrix()}{getCameraMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} Raylib\+::\+Camera3\+D\+::get\+Camera\+Matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns camera transform matrix (view matrix) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} Class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_raylib_1_1_matrix}{Matrix}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a28873f3e6fe025d62171d02ec3638ccf}\label{class_raylib_1_1_camera3_d_a28873f3e6fe025d62171d02ec3638ccf}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!getCStruct@{getCStruct}}
+\index{getCStruct@{getCStruct}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{getCStruct()}{getCStruct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} Raylib\+::\+Camera3\+D\+::get\+CStruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get C Structure for \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} Class. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} C Structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_ac151213a86217287142e90865f7d9158}\label{class_raylib_1_1_camera3_d_ac151213a86217287142e90865f7d9158}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!getMouseRay@{getMouseRay}}
+\index{getMouseRay@{getMouseRay}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{getMouseRay()}{getMouseRay()}}
+{\footnotesize\ttfamily Ray Raylib\+::\+Camera3\+D\+::get\+Mouse\+Ray (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} const \&}]{mouse\+Position }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a ray trace from mouse position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Position} & \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} Class \\
+\hline
+{\em camera} & \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} Class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ray type (useful for raycast) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a63675945a1476c7f7a2f028f2de2919f}\label{class_raylib_1_1_camera3_d_a63675945a1476c7f7a2f028f2de2919f}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!getWorldToScreen@{getWorldToScreen}}
+\index{getWorldToScreen@{getWorldToScreen}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{getWorldToScreen()}{getWorldToScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} Raylib\+::\+Camera3\+D\+::get\+World\+To\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&}]{position }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the screen space position for a 3d world space position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Alt} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a6ad1c1394ac8de34fe75a204b34ca67b}\label{class_raylib_1_1_camera3_d_a6ad1c1394ac8de34fe75a204b34ca67b}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!getWorldToScreenEx@{getWorldToScreenEx}}
+\index{getWorldToScreenEx@{getWorldToScreenEx}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{getWorldToScreenEx()}{getWorldToScreenEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} Raylib\+::\+Camera3\+D\+::get\+World\+To\+Screen\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} const \&}]{position,  }\item[{int const \&}]{width,  }\item[{int const \&}]{height }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns size position for a 3d world space position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Alt} & An int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_raylib_1_1_vector2}{Vector2}} Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_aaee878c3b36a6d73775474e6b2fa9785}\label{class_raylib_1_1_camera3_d_aaee878c3b36a6d73775474e6b2fa9785}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Raylib\+::\+Camera3D}} \& Raylib\+::\+Camera3\+D\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & A const reference to a \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} (\mbox{\hyperlink{class_raylib_1_1_camera3_d}{Camera3D}} \&) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_aac32885fb39fcd4832845bd73c09a712}\label{class_raylib_1_1_camera3_d_aac32885fb39fcd4832845bd73c09a712}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!setCameraAltControl@{setCameraAltControl}}
+\index{setCameraAltControl@{setCameraAltControl}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{setCameraAltControl()}{setCameraAltControl()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::set\+Camera\+Alt\+Control (\begin{DoxyParamCaption}\item[{int const \&}]{key\+Alt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set camera alt key to combine with mouse movement (free camera) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Alt} & An int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_ae995a79b6dac863c2a9d661aad4f37a5}\label{class_raylib_1_1_camera3_d_ae995a79b6dac863c2a9d661aad4f37a5}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!setCameraMode@{setCameraMode}}
+\index{setCameraMode@{setCameraMode}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{setCameraMode()}{setCameraMode()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::set\+Camera\+Mode (\begin{DoxyParamCaption}\item[{int const \&}]{mode }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set camera mode (multiple camera modes available) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & An int for the mode \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a5ee81bc5f5746d8ab966f197a781586b}\label{class_raylib_1_1_camera3_d_a5ee81bc5f5746d8ab966f197a781586b}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!setCameraMoveControls@{setCameraMoveControls}}
+\index{setCameraMoveControls@{setCameraMoveControls}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{setCameraMoveControls()}{setCameraMoveControls()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::set\+Camera\+Move\+Controls (\begin{DoxyParamCaption}\item[{int const \&}]{front\+Key,  }\item[{int const \&}]{back\+Key,  }\item[{int const \&}]{right\+Key,  }\item[{int const \&}]{left\+Key,  }\item[{int const \&}]{up\+Key,  }\item[{int const \&}]{down\+Key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set camera move controls (1st person and 3rd person cameras) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em front\+Key} & An int \\
+\hline
+{\em back\+Key} & An int \\
+\hline
+{\em right\+Key} & An int \\
+\hline
+{\em left\+Key} & An int \\
+\hline
+{\em up\+Key} & An int \\
+\hline
+{\em down\+Key} & An int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a18a7628a574a24efbda8daa7a5dcd196}\label{class_raylib_1_1_camera3_d_a18a7628a574a24efbda8daa7a5dcd196}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!setCameraPanControl@{setCameraPanControl}}
+\index{setCameraPanControl@{setCameraPanControl}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{setCameraPanControl()}{setCameraPanControl()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::set\+Camera\+Pan\+Control (\begin{DoxyParamCaption}\item[{int const \&}]{key\+Pan }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set camera pan key to combine with mouse movement (free camera) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Pan} & An int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_acc1196eaf4f20903536d56914cdd272b}\label{class_raylib_1_1_camera3_d_acc1196eaf4f20903536d56914cdd272b}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!setCameraSmoothZoomControl@{setCameraSmoothZoomControl}}
+\index{setCameraSmoothZoomControl@{setCameraSmoothZoomControl}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{setCameraSmoothZoomControl()}{setCameraSmoothZoomControl()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::set\+Camera\+Smooth\+Zoom\+Control (\begin{DoxyParamCaption}\item[{int const \&}]{key\+Smooth\+Zoom }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set camera smooth zoom key to combine with mouse (free camera) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Smooth\+Zoom} & An int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a1138fbbadf68a4a238a1645b238d38c9}\label{class_raylib_1_1_camera3_d_a1138fbbadf68a4a238a1645b238d38c9}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Vector3}} \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Position object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_camera3_d_a393d855c872311ab20f4943a6b8b5594}\label{class_raylib_1_1_camera3_d_a393d855c872311ab20f4943a6b8b5594}} 
+\index{Raylib::Camera3D@{Raylib::Camera3D}!updateCamera@{updateCamera}}
+\index{updateCamera@{updateCamera}!Raylib::Camera3D@{Raylib::Camera3D}}
+\doxysubsubsection{\texorpdfstring{updateCamera()}{updateCamera()}}
+{\footnotesize\ttfamily void Raylib\+::\+Camera3\+D\+::update\+Camera (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update camera position for selected mode. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Camera3\+D/\mbox{\hyperlink{_camera3_d_8hpp}{Camera3\+D.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Camera3\+D/\mbox{\hyperlink{_camera3_d_8cpp}{Camera3\+D.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Camera3\+D/\mbox{\hyperlink{_camera3_d_8inl}{Camera3\+D.\+inl}}\end{DoxyCompactItemize}

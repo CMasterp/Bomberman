@@ -1,0 +1,236 @@
+.TH "Raylib::Collision2D" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Collision2D
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Collision2D\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCollision2D\fP ()"
+.br
+.RI "Construct a new \fBCollision2D\fP object\&. "
+.ti -1c
+.RI "\fB~Collision2D\fP ()"
+.br
+.RI "Destroy the \fBCollision2D\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const \fBRectangle\fP &rec1, const \fBRectangle\fP &rec2)"
+.br
+.RI "Check if two rectangles intersect\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const \fBVector2\fP &center1, const float &radius1, const \fBVector2\fP &center2, const float &radius2)"
+.br
+.RI "Check if two circles intersect\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const \fBVector2\fP &center, const float &radius, const \fBRectangle\fP &rec)"
+.br
+.RI "Check if a \fBRectangle\fP and a Circle intersect\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (\fBVector2\fP const &point, const \fBRectangle\fP &rec)"
+.br
+.RI "Check if a Point and a \fBRectangle\fP intersect\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const \fBVector2\fP &point, const \fBVector2\fP &center, const float &radius)"
+.br
+.RI "Check if a Point and a Cercle intersect\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const \fBVector2\fP &point, const \fBVector2\fP &\fBp1\fP, const \fBVector2\fP &\fBp2\fP, const \fBVector2\fP &\fBp3\fP)"
+.br
+.RI "Check if a Point and Triangle\&. "
+.ti -1c
+.RI "static bool \fBcheckCollision\fP (const \fBVector2\fP &startPos1, const \fBVector2\fP &endPos1, const \fBVector2\fP &startPos2, const \fBVector2\fP &endPos2, \fBVector2\fP &collisionPoint)"
+.br
+.RI "Check if 2 lines intersects and return the collision point\&. "
+.ti -1c
+.RI "static \fBRectangle\fP \fBgetCollision\fP (const \fBRectangle\fP &rec1, const \fBRectangle\fP &rec2)"
+.br
+.RI "Get the Collision Rec object\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Collision2D::Collision2D ()"
+
+.PP
+Construct a new \fBCollision2D\fP object\&. 
+.SS "Raylib::Collision2D::~Collision2D ()"
+
+.PP
+Destroy the \fBCollision2D\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Raylib::Collision2D::checkCollision (const \fBRectangle\fP & rec1, const \fBRectangle\fP & rec2)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if two rectangles intersect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec1\fP the first rectangle 
+.br
+\fIrec2\fP the second one 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangles intersects false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision2D::checkCollision (const \fBVector2\fP & center, const float & radius, const \fBRectangle\fP & rec)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if a \fBRectangle\fP and a Circle intersect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcenter\fP the circle's center position 
+.br
+\fIradius\fP the circle's radius 
+.br
+\fIrec\fP the rectangle 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangle and the circle intersect false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision2D::checkCollision (const \fBVector2\fP & center1, const float & radius1, const \fBVector2\fP & center2, const float & radius2)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if two circles intersect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcenter1\fP the first circle's center position 
+.br
+\fIradius1\fP the first circle's radius 
+.br
+\fIcenter2\fP the second circle's center position 
+.br
+\fIradius2\fP the second circle's radius 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the rectangles intersect false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision2D::checkCollision (const \fBVector2\fP & point, const \fBVector2\fP & center, const float & radius)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if a Point and a Cercle intersect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP the point coordinates 
+.br
+\fIcenter\fP the circle's center position 
+.br
+\fIradius\fP the circle's radius 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the point is on the circle false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision2D::checkCollision (const \fBVector2\fP & point, const \fBVector2\fP & p1, const \fBVector2\fP & p2, const \fBVector2\fP & p3)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if a Point and Triangle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP the point coordinates 
+.br
+\fIp1\fP the first triangle's point 
+.br
+\fIp2\fP the second trinagle's point 
+.br
+\fIp3\fP the third triangle's point 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the point is on the trinagle false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision2D::checkCollision (const \fBVector2\fP & startPos1, const \fBVector2\fP & endPos1, const \fBVector2\fP & startPos2, const \fBVector2\fP & endPos2, \fBVector2\fP & collisionPoint)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if 2 lines intersects and return the collision point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstartPos1\fP the first lines's start position 
+.br
+\fIendPos1\fP the first lines's end position 
+.br
+\fIstartPos2\fP the second lines's start position 
+.br
+\fIendPos2\fP the second lines's end position 
+.br
+\fIcollisionPoint\fP the collision point pointer 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the two lines intersect false otherwise 
+.RE
+.PP
+
+.SS "bool Raylib::Collision2D::checkCollision (\fBVector2\fP const & point, const \fBRectangle\fP & rec)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Check if a Point and a \fBRectangle\fP intersect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP the point coordinates 
+.br
+\fIrec\fP the rectangle 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true when the point is on the rectangle false otherwise 
+.RE
+.PP
+
+.SS "\fBRectangle\fP Raylib::Collision2D::getCollision (const \fBRectangle\fP & rec1, const \fBRectangle\fP & rec2)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the Collision Rec object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrec1\fP the first rectangle 
+.br
+\fIrec2\fP the second rectangle 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBRectangle\fP corresponding the instersection zone 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

@@ -1,0 +1,690 @@
+\hypertarget{class_raylib_1_1_color}{}\doxysection{Raylib\+::Color Class Reference}
+\label{class_raylib_1_1_color}\index{Raylib::Color@{Raylib::Color}}
+
+
+{\ttfamily \#include $<$Color.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raylib_1_1_color_affcd7b3a059a18c73d16f3965babc32f}{Color}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_raylib_1_1_color}{Color}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color_a92799f4bc3c48548fd29fb7a584e72aa}{$\sim$\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \& \mbox{\hyperlink{class_raylib_1_1_color_ae2069f73250cb5271a4608ef778c4c17}{operator=}} (const \+::\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Overload of \textquotesingle{}=\textquotesingle{} operator. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_raylib_1_1_color_a43b97057c672041a99391d60cb449124}{color\+To\+Int}} (\mbox{\hyperlink{class_raylib_1_1_color}{Color}} color) const
+\begin{DoxyCompactList}\small\item\em Returns hexadecimal value for a \mbox{\hyperlink{class_raylib_1_1_color}{Color}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a0697edc2b5ad22b12f7531dc948ba467}{color\+From\+HSV}} (const float \&hue, const float \&saturation, const float \&value) const
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} from HSV values, hue \mbox{[}0..360\mbox{]}, saturation/value \mbox{[}0..1\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a4c911f9d7ab2474210edd094051ddd60}{color\+Alpha}} (\mbox{\hyperlink{class_raylib_1_1_color}{Color}} color, const float \&alpha) const
+\begin{DoxyCompactList}\small\item\em Returns color with alpha applied, alpha goes from 0.\+0f to 1.\+0f. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_afaae96e967df4b3cb7f560f4711444b0}{color\+Alpha\+Blend}} (\mbox{\hyperlink{class_raylib_1_1_color}{Color}} dst, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} src, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} tint) const
+\begin{DoxyCompactList}\small\item\em Returns src alpha-\/blended into dst color with tint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a04d39744e097c7986ba01960e7263879}{get\+Color}} (const size\+\_\+t \&hex\+Value) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_raylib_1_1_color}{Color}} structure from hexadecimal value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a24974b00735453d5e5f1303b3678f7d9}{get\+Pixel\+Color}} (void $\ast$src\+Ptr, const size\+\_\+t \&format) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_raylib_1_1_color}{Color}} from a source pixel pointer of certain format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_raylib_1_1_color_a9f3b225c0fb32f13c23998ca3336ddc4}{set\+Pixel\+Color}} (void $\ast$dst\+Ptr, \mbox{\hyperlink{class_raylib_1_1_color}{Color}} color, const size\+\_\+t \&format) const
+\begin{DoxyCompactList}\small\item\em Set color formatted into destination pixel pointer. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_raylib_1_1_color_a8208758bd0e437c61c78cbf7d746d509}{get\+Pixel\+Data\+Size}} (const size\+\_\+t \&width, const size\+\_\+t \&height, const size\+\_\+t \&format) const
+\begin{DoxyCompactList}\small\item\em Get pixel data size in bytes for certain format. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a26f1df62627d7df9516072ebc0a0161e}{get\+Color}} (const std\+::string \&color)
+\begin{DoxyCompactList}\small\item\em Return color. \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a47ee986fd0b45a1e9056d4149c6e2e0c}{get\+CStruct}} (void) const
+\begin{DoxyCompactList}\small\item\em Getter of \mbox{\hyperlink{class_raylib_1_1_color}{Color}} structure (private attribute) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_ab2ace01076a1cdac0c308f81b0e00b56}{fade}} (\mbox{\hyperlink{class_raylib_1_1_color}{Color}} color, const float \&alpha)
+\begin{DoxyCompactList}\small\item\em Returns color with alpha applied, alpha goes from 0.\+0f to 1.\+0f. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_ae232a39d45ebb670ddcd58cab9ebb779}{Light\+Gray}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_ab2f4ab1d4613a52d76cadd54794a726b}{Gray}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a22271c789d697dd64856ffb54030b2de}{Dark\+Gray}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a3dcb8e75c4dfcde0b640adeaee48c15f}{Yellow}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a0ab20a8bffaced56dcc84ecbcedcea12}{Gold}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a9a7f953ee88fcf99db54aac6aeaca232}{Orange}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a73f9a25289ab6eb1bea3441c38eb8fd4}{Pink}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a718ac1db33f1259ddee39db3b8a0e913}{Red}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a84fdc90afbb606b8b6faa36d9e0113d9}{Maroon}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a5f347c38619bd1e36c92ccf187a08487}{Green}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a1aa0c4f31f48a906f2eefb72b7e6f42c}{Lime}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a8919adabe4215b3fec904c02d7179e94}{Dark\+Green}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_aed40ade0c51665b92ba2cd6a88fa9101}{Sky\+Blue}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a0b542d09b699ccabd3c10e2fd728e57a}{Blue}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a9c038c5888b8059fa3ab6d386169128c}{Dark\+Blue}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a85ede5fbd37aa15aaf685ef55c15fe5b}{Purple}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_ab2f5b4676b300a3815ee47f719c95450}{Violet}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_aa0f2c476421e5df2a34bf9d4abd51e05}{Dark\+Purple}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a33256057fba4b69c375a4abf5409455a}{Beige}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a05553529680a0e29a75fe846a5a965c9}{Brown}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_aa7100a3ee4f8b26515b45b172453572b}{Dark\+Brown}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}{White}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a056f867b4b24ed005d356a2f9841d778}{Black}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_ab222e1f66fa7323e8c702bf77f5b618b}{Blank}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_a158ecc38bfb2515815d73775f6710a15}{Magenta}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \mbox{\hyperlink{class_raylib_1_1_color_ab5db628062c9cb4f6c364ccc31c168c8}{Ray\+White}} (void)
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_color_affcd7b3a059a18c73d16f3965babc32f}\label{class_raylib_1_1_color_affcd7b3a059a18c73d16f3965babc32f}} 
+\index{Raylib::Color@{Raylib::Color}!Color@{Color}}
+\index{Color@{Color}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}}
+{\footnotesize\ttfamily Raylib\+::\+Color\+::\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_raylib_1_1_color}{Color}} object. 
+
+\mbox{\Hypertarget{class_raylib_1_1_color_a92799f4bc3c48548fd29fb7a584e72aa}\label{class_raylib_1_1_color_a92799f4bc3c48548fd29fb7a584e72aa}} 
+\index{Raylib::Color@{Raylib::Color}!````~Color@{$\sim$Color}}
+\index{````~Color@{$\sim$Color}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{$\sim$Color()}{~Color()}}
+{\footnotesize\ttfamily Raylib\+::\+Color\+::$\sim$\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raylib_1_1_color_a33256057fba4b69c375a4abf5409455a}\label{class_raylib_1_1_color_a33256057fba4b69c375a4abf5409455a}} 
+\index{Raylib::Color@{Raylib::Color}!Beige@{Beige}}
+\index{Beige@{Beige}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Beige()}{Beige()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Beige (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a056f867b4b24ed005d356a2f9841d778}\label{class_raylib_1_1_color_a056f867b4b24ed005d356a2f9841d778}} 
+\index{Raylib::Color@{Raylib::Color}!Black@{Black}}
+\index{Black@{Black}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Black()}{Black()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Black (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_ab222e1f66fa7323e8c702bf77f5b618b}\label{class_raylib_1_1_color_ab222e1f66fa7323e8c702bf77f5b618b}} 
+\index{Raylib::Color@{Raylib::Color}!Blank@{Blank}}
+\index{Blank@{Blank}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Blank()}{Blank()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Blank (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a0b542d09b699ccabd3c10e2fd728e57a}\label{class_raylib_1_1_color_a0b542d09b699ccabd3c10e2fd728e57a}} 
+\index{Raylib::Color@{Raylib::Color}!Blue@{Blue}}
+\index{Blue@{Blue}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Blue()}{Blue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Blue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a05553529680a0e29a75fe846a5a965c9}\label{class_raylib_1_1_color_a05553529680a0e29a75fe846a5a965c9}} 
+\index{Raylib::Color@{Raylib::Color}!Brown@{Brown}}
+\index{Brown@{Brown}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Brown()}{Brown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Brown (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a4c911f9d7ab2474210edd094051ddd60}\label{class_raylib_1_1_color_a4c911f9d7ab2474210edd094051ddd60}} 
+\index{Raylib::Color@{Raylib::Color}!colorAlpha@{colorAlpha}}
+\index{colorAlpha@{colorAlpha}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{colorAlpha()}{colorAlpha()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::color\+Alpha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}}}]{color,  }\item[{const float \&}]{alpha }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns color with alpha applied, alpha goes from 0.\+0f to 1.\+0f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} Object \\
+\hline
+{\em alpha} & A float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_afaae96e967df4b3cb7f560f4711444b0}\label{class_raylib_1_1_color_afaae96e967df4b3cb7f560f4711444b0}} 
+\index{Raylib::Color@{Raylib::Color}!colorAlphaBlend@{colorAlphaBlend}}
+\index{colorAlphaBlend@{colorAlphaBlend}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{colorAlphaBlend()}{colorAlphaBlend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::color\+Alpha\+Blend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}}}]{dst,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}}}]{src,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Color}}}]{tint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns src alpha-\/blended into dst color with tint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em src} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em tint} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a0697edc2b5ad22b12f7531dc948ba467}\label{class_raylib_1_1_color_a0697edc2b5ad22b12f7531dc948ba467}} 
+\index{Raylib::Color@{Raylib::Color}!colorFromHSV@{colorFromHSV}}
+\index{colorFromHSV@{colorFromHSV}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{colorFromHSV()}{colorFromHSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::color\+From\+HSV (\begin{DoxyParamCaption}\item[{const float \&}]{hue,  }\item[{const float \&}]{saturation,  }\item[{const float \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a \mbox{\hyperlink{class_raylib_1_1_color}{Color}} from HSV values, hue \mbox{[}0..360\mbox{]}, saturation/value \mbox{[}0..1\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hue} & A float \\
+\hline
+{\em saturation} & A float \\
+\hline
+{\em value} & A float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a43b97057c672041a99391d60cb449124}\label{class_raylib_1_1_color_a43b97057c672041a99391d60cb449124}} 
+\index{Raylib::Color@{Raylib::Color}!colorToInt@{colorToInt}}
+\index{colorToInt@{colorToInt}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{colorToInt()}{colorToInt()}}
+{\footnotesize\ttfamily size\+\_\+t Raylib\+::\+Color\+::color\+To\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}}}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns hexadecimal value for a \mbox{\hyperlink{class_raylib_1_1_color}{Color}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} Object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a9c038c5888b8059fa3ab6d386169128c}\label{class_raylib_1_1_color_a9c038c5888b8059fa3ab6d386169128c}} 
+\index{Raylib::Color@{Raylib::Color}!DarkBlue@{DarkBlue}}
+\index{DarkBlue@{DarkBlue}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{DarkBlue()}{DarkBlue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Dark\+Blue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_aa7100a3ee4f8b26515b45b172453572b}\label{class_raylib_1_1_color_aa7100a3ee4f8b26515b45b172453572b}} 
+\index{Raylib::Color@{Raylib::Color}!DarkBrown@{DarkBrown}}
+\index{DarkBrown@{DarkBrown}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{DarkBrown()}{DarkBrown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Dark\+Brown (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a22271c789d697dd64856ffb54030b2de}\label{class_raylib_1_1_color_a22271c789d697dd64856ffb54030b2de}} 
+\index{Raylib::Color@{Raylib::Color}!DarkGray@{DarkGray}}
+\index{DarkGray@{DarkGray}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{DarkGray()}{DarkGray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Dark\+Gray (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a8919adabe4215b3fec904c02d7179e94}\label{class_raylib_1_1_color_a8919adabe4215b3fec904c02d7179e94}} 
+\index{Raylib::Color@{Raylib::Color}!DarkGreen@{DarkGreen}}
+\index{DarkGreen@{DarkGreen}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{DarkGreen()}{DarkGreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Dark\+Green (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_aa0f2c476421e5df2a34bf9d4abd51e05}\label{class_raylib_1_1_color_aa0f2c476421e5df2a34bf9d4abd51e05}} 
+\index{Raylib::Color@{Raylib::Color}!DarkPurple@{DarkPurple}}
+\index{DarkPurple@{DarkPurple}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{DarkPurple()}{DarkPurple()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Dark\+Purple (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_ab2ace01076a1cdac0c308f81b0e00b56}\label{class_raylib_1_1_color_ab2ace01076a1cdac0c308f81b0e00b56}} 
+\index{Raylib::Color@{Raylib::Color}!fade@{fade}}
+\index{fade@{fade}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{fade()}{fade()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::fade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}}}]{color,  }\item[{const float \&}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns color with alpha applied, alpha goes from 0.\+0f to 1.\+0f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} Object \\
+\hline
+{\em alpha} & A float \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a04d39744e097c7986ba01960e7263879}\label{class_raylib_1_1_color_a04d39744e097c7986ba01960e7263879}} 
+\index{Raylib::Color@{Raylib::Color}!getColor@{getColor}}
+\index{getColor@{getColor}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::get\+Color (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{hex\+Value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get \mbox{\hyperlink{class_raylib_1_1_color}{Color}} structure from hexadecimal value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hex\+Value} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a26f1df62627d7df9516072ebc0a0161e}\label{class_raylib_1_1_color_a26f1df62627d7df9516072ebc0a0161e}} 
+\index{Raylib::Color@{Raylib::Color}!getColor@{getColor}}
+\index{getColor@{getColor}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::get\+Color (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Name of color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_color_a47ee986fd0b45a1e9056d4149c6e2e0c}\label{class_raylib_1_1_color_a47ee986fd0b45a1e9056d4149c6e2e0c}} 
+\index{Raylib::Color@{Raylib::Color}!getCStruct@{getCStruct}}
+\index{getCStruct@{getCStruct}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{getCStruct()}{getCStruct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Color}} Raylib\+::\+Color\+::get\+CStruct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter of \mbox{\hyperlink{class_raylib_1_1_color}{Color}} structure (private attribute) 
+
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{class_raylib_1_1_color}{Color}} C structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a24974b00735453d5e5f1303b3678f7d9}\label{class_raylib_1_1_color_a24974b00735453d5e5f1303b3678f7d9}} 
+\index{Raylib::Color@{Raylib::Color}!getPixelColor@{getPixelColor}}
+\index{getPixelColor@{getPixelColor}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{getPixelColor()}{getPixelColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::get\+Pixel\+Color (\begin{DoxyParamCaption}\item[{void $\ast$}]{src\+Ptr,  }\item[{const size\+\_\+t \&}]{format }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get \mbox{\hyperlink{class_raylib_1_1_color}{Color}} from a source pixel pointer of certain format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+Ptr} & A pointer \\
+\hline
+{\em format} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a8208758bd0e437c61c78cbf7d746d509}\label{class_raylib_1_1_color_a8208758bd0e437c61c78cbf7d746d509}} 
+\index{Raylib::Color@{Raylib::Color}!getPixelDataSize@{getPixelDataSize}}
+\index{getPixelDataSize@{getPixelDataSize}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{getPixelDataSize()}{getPixelDataSize()}}
+{\footnotesize\ttfamily size\+\_\+t Raylib\+::\+Color\+::get\+Pixel\+Data\+Size (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{width,  }\item[{const size\+\_\+t \&}]{height,  }\item[{const size\+\_\+t \&}]{format }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get pixel data size in bytes for certain format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A size\+\_\+t that represents width \\
+\hline
+{\em height} & A size\+\_\+t that represents height \\
+\hline
+{\em format} & A size\+\_\+t that represents format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a0ab20a8bffaced56dcc84ecbcedcea12}\label{class_raylib_1_1_color_a0ab20a8bffaced56dcc84ecbcedcea12}} 
+\index{Raylib::Color@{Raylib::Color}!Gold@{Gold}}
+\index{Gold@{Gold}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Gold()}{Gold()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Gold (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_ab2f4ab1d4613a52d76cadd54794a726b}\label{class_raylib_1_1_color_ab2f4ab1d4613a52d76cadd54794a726b}} 
+\index{Raylib::Color@{Raylib::Color}!Gray@{Gray}}
+\index{Gray@{Gray}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Gray()}{Gray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Gray (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a5f347c38619bd1e36c92ccf187a08487}\label{class_raylib_1_1_color_a5f347c38619bd1e36c92ccf187a08487}} 
+\index{Raylib::Color@{Raylib::Color}!Green@{Green}}
+\index{Green@{Green}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Green()}{Green()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Green (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_ae232a39d45ebb670ddcd58cab9ebb779}\label{class_raylib_1_1_color_ae232a39d45ebb670ddcd58cab9ebb779}} 
+\index{Raylib::Color@{Raylib::Color}!LightGray@{LightGray}}
+\index{LightGray@{LightGray}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{LightGray()}{LightGray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Light\+Gray (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a1aa0c4f31f48a906f2eefb72b7e6f42c}\label{class_raylib_1_1_color_a1aa0c4f31f48a906f2eefb72b7e6f42c}} 
+\index{Raylib::Color@{Raylib::Color}!Lime@{Lime}}
+\index{Lime@{Lime}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Lime()}{Lime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Lime (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a158ecc38bfb2515815d73775f6710a15}\label{class_raylib_1_1_color_a158ecc38bfb2515815d73775f6710a15}} 
+\index{Raylib::Color@{Raylib::Color}!Magenta@{Magenta}}
+\index{Magenta@{Magenta}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Magenta()}{Magenta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Magenta (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a84fdc90afbb606b8b6faa36d9e0113d9}\label{class_raylib_1_1_color_a84fdc90afbb606b8b6faa36d9e0113d9}} 
+\index{Raylib::Color@{Raylib::Color}!Maroon@{Maroon}}
+\index{Maroon@{Maroon}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Maroon()}{Maroon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Maroon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_ae2069f73250cb5271a4608ef778c4c17}\label{class_raylib_1_1_color_ae2069f73250cb5271a4608ef778c4c17}} 
+\index{Raylib::Color@{Raylib::Color}!operator=@{operator=}}
+\index{operator=@{operator=}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} \& Raylib\+::\+Color\+::operator= (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{class_raylib_1_1_color}{Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of \textquotesingle{}=\textquotesingle{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} Object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_raylib_1_1_color}{Color}}\& -\/ A reference to new \mbox{\hyperlink{class_raylib_1_1_color}{Color}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a9a7f953ee88fcf99db54aac6aeaca232}\label{class_raylib_1_1_color_a9a7f953ee88fcf99db54aac6aeaca232}} 
+\index{Raylib::Color@{Raylib::Color}!Orange@{Orange}}
+\index{Orange@{Orange}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Orange()}{Orange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Orange (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a73f9a25289ab6eb1bea3441c38eb8fd4}\label{class_raylib_1_1_color_a73f9a25289ab6eb1bea3441c38eb8fd4}} 
+\index{Raylib::Color@{Raylib::Color}!Pink@{Pink}}
+\index{Pink@{Pink}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Pink()}{Pink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Pink (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a85ede5fbd37aa15aaf685ef55c15fe5b}\label{class_raylib_1_1_color_a85ede5fbd37aa15aaf685ef55c15fe5b}} 
+\index{Raylib::Color@{Raylib::Color}!Purple@{Purple}}
+\index{Purple@{Purple}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Purple()}{Purple()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Purple (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_ab5db628062c9cb4f6c364ccc31c168c8}\label{class_raylib_1_1_color_ab5db628062c9cb4f6c364ccc31c168c8}} 
+\index{Raylib::Color@{Raylib::Color}!RayWhite@{RayWhite}}
+\index{RayWhite@{RayWhite}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{RayWhite()}{RayWhite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Ray\+White (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a718ac1db33f1259ddee39db3b8a0e913}\label{class_raylib_1_1_color_a718ac1db33f1259ddee39db3b8a0e913}} 
+\index{Raylib::Color@{Raylib::Color}!Red@{Red}}
+\index{Red@{Red}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Red()}{Red()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Red (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a9f3b225c0fb32f13c23998ca3336ddc4}\label{class_raylib_1_1_color_a9f3b225c0fb32f13c23998ca3336ddc4}} 
+\index{Raylib::Color@{Raylib::Color}!setPixelColor@{setPixelColor}}
+\index{setPixelColor@{setPixelColor}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{setPixelColor()}{setPixelColor()}}
+{\footnotesize\ttfamily void Raylib\+::\+Color\+::set\+Pixel\+Color (\begin{DoxyParamCaption}\item[{void $\ast$}]{dst\+Ptr,  }\item[{\mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}}}]{color,  }\item[{const size\+\_\+t \&}]{format }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set color formatted into destination pixel pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst\+Ptr} & A pointer \\
+\hline
+{\em color} & A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} \\
+\hline
+{\em format} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_raylib_1_1_color_aed40ade0c51665b92ba2cd6a88fa9101}\label{class_raylib_1_1_color_aed40ade0c51665b92ba2cd6a88fa9101}} 
+\index{Raylib::Color@{Raylib::Color}!SkyBlue@{SkyBlue}}
+\index{SkyBlue@{SkyBlue}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{SkyBlue()}{SkyBlue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Sky\+Blue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_ab2f5b4676b300a3815ee47f719c95450}\label{class_raylib_1_1_color_ab2f5b4676b300a3815ee47f719c95450}} 
+\index{Raylib::Color@{Raylib::Color}!Violet@{Violet}}
+\index{Violet@{Violet}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Violet()}{Violet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Violet (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}\label{class_raylib_1_1_color_afd62743f894da57e5db62084ad845541}} 
+\index{Raylib::Color@{Raylib::Color}!White@{White}}
+\index{White@{White}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{White()}{White()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+White (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raylib_1_1_color_a3dcb8e75c4dfcde0b640adeaee48c15f}\label{class_raylib_1_1_color_a3dcb8e75c4dfcde0b640adeaee48c15f}} 
+\index{Raylib::Color@{Raylib::Color}!Yellow@{Yellow}}
+\index{Yellow@{Yellow}!Raylib::Color@{Raylib::Color}}
+\doxysubsubsection{\texorpdfstring{Yellow()}{Yellow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raylib_1_1_color}{Raylib\+::\+Color}} Raylib\+::\+Color\+::\+Yellow (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the \mbox{\hyperlink{class_raylib_1_1_color}{Color}} that represents the name of the function. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_raylib_1_1_color}{Color}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Color/\mbox{\hyperlink{_color_8hpp}{Color.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Color/\mbox{\hyperlink{_color_8cpp}{Color.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Lib/\+XRaylib/\+Raylib/\+Color/\mbox{\hyperlink{_color_8inl}{Color.\+inl}}\end{DoxyCompactItemize}

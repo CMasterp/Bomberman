@@ -1,0 +1,357 @@
+.TH "Raylib::Camera3D" 3 "Mon Jun 21 2021" "Version 2.0" "Bomberman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Raylib::Camera3D
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Camera3D\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCamera3D\fP (const \fBVector3\fP &position=\fBVector3\fP(10, 10, 10), const \fBVector3\fP &target=\fBVector3\fP(0, 0, 0), const \fBVector3\fP &up=\fBVector3\fP(0, 1, 0), const float &fovy=45, const int &projection=::CAMERA_PERSPECTIVE)"
+.br
+.RI "Construct a new Camera 3D object\&. "
+.ti -1c
+.RI "\fB~Camera3D\fP (void)"
+.br
+.RI "Destroy the \fBCamera3D\fP object\&. "
+.ti -1c
+.RI "\fBCamera3D\fP (::\fBCamera3D\fP const &camera)"
+.br
+.RI "Construct a new Camera object (Copy Constructor) "
+.ti -1c
+.RI "::\fBCamera3D\fP \fBgetCStruct\fP (void) const"
+.br
+.RI "Get C Structure for \fBCamera3D\fP Class\&. "
+.ti -1c
+.RI "\fBCamera3D\fP & \fBoperator=\fP (const \fBCamera3D\fP &camera)"
+.br
+.RI "Overload of '=' operator\&. "
+.ti -1c
+.RI "void \fBbeginMode3D\fP (void) const"
+.br
+.RI "Initialize 3D mode with custom camera (3D) "
+.ti -1c
+.RI "void \fBendMode3D\fP (void) const"
+.br
+.RI "Ends 3D mode with custom camera\&. "
+.ti -1c
+.RI "void \fBsetCameraMode\fP (int const &mode) const"
+.br
+.RI "Set camera mode (multiple camera modes available) "
+.ti -1c
+.RI "void \fBsetPosition\fP (const \fBVector3\fP &position)"
+.br
+.RI "Set the Position object\&. "
+.ti -1c
+.RI "void \fBupdateCamera\fP (void)"
+.br
+.RI "Update camera position for selected mode\&. "
+.ti -1c
+.RI "void \fBsetCameraPanControl\fP (int const &keyPan) const"
+.br
+.RI "Set camera pan key to combine with mouse movement (free camera) "
+.ti -1c
+.RI "void \fBsetCameraAltControl\fP (int const &keyAlt) const"
+.br
+.RI "Set camera alt key to combine with mouse movement (free camera) "
+.ti -1c
+.RI "void \fBsetCameraSmoothZoomControl\fP (int const &keySmoothZoom) const"
+.br
+.RI "Set camera smooth zoom key to combine with mouse (free camera) "
+.ti -1c
+.RI "void \fBsetCameraMoveControls\fP (int const &frontKey, int const &backKey, int const &rightKey, int const &leftKey, int const &upKey, int const &downKey) const"
+.br
+.RI "Set camera move controls (1st person and 3rd person cameras) "
+.ti -1c
+.RI "Ray \fBgetMouseRay\fP (::\fBVector2\fP const &mousePosition) const"
+.br
+.RI "Returns a ray trace from mouse position\&. "
+.ti -1c
+.RI "\fBMatrix\fP \fBgetCameraMatrix\fP (void) const"
+.br
+.RI "Returns camera transform matrix (view matrix) "
+.ti -1c
+.RI "::\fBVector2\fP \fBgetWorldToScreen\fP (\fBVector3\fP const &position) const"
+.br
+.RI "Returns the screen space position for a 3d world space position\&. "
+.ti -1c
+.RI "::\fBVector2\fP \fBgetWorldToScreenEx\fP (\fBVector3\fP const &position, int const &width, int const &height) const"
+.br
+.RI "Returns size position for a 3d world space position\&. "
+.ti -1c
+.RI "void \fBdrawBillboard\fP (Texture2D const &texture, \fBVector3\fP const &center, float const &size, \fBRaylib::Color\fP const &tint) const"
+.br
+.RI "Draw a billboard texture\&. "
+.ti -1c
+.RI "void \fBdrawBillboardRec\fP (Texture2D const &texture, \fBRectangle\fP const &source, \fBVector3\fP const &center, float const &size, \fBRaylib::Color\fP const &tint) const"
+.br
+.RI "Draw a billboard texture defined by source\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Raylib::Camera3D::Camera3D (const \fBVector3\fP & position = \fC\fBVector3\fP(10, 10, 10)\fP, const \fBVector3\fP & target = \fC\fBVector3\fP(0, 0, 0)\fP, const \fBVector3\fP & up = \fC\fBVector3\fP(0, 1, 0)\fP, const float & fovy = \fC45\fP, const int & projection = \fC::CAMERA_PERSPECTIVE\fP)"
+
+.PP
+Construct a new Camera 3D object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP A \fBVector3\fP 
+.br
+\fItarget\fP A \fBVector3\fP 
+.br
+\fIup\fP A \fBVector3\fP 
+.br
+\fIfovy\fP A float 
+.br
+\fIprojection\fP A int 
+.RE
+.PP
+
+.SS "Raylib::Camera3D::~Camera3D (void)"
+
+.PP
+Destroy the \fBCamera3D\fP object\&. 
+.SS "Raylib::Camera3D::Camera3D (::\fBCamera3D\fP const & camera)"
+
+.PP
+Construct a new Camera object (Copy Constructor) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBCamera3D\fP\fP A \fBCamera3D\fP C Structure 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Raylib::Camera3D::beginMode3D (void) const\fC [inline]\fP"
+
+.PP
+Initialize 3D mode with custom camera (3D) 
+.SS "void Raylib::Camera3D::drawBillboard (Texture2D const & texture, \fBVector3\fP const & center, float const & size, \fBRaylib::Color\fP const & tint) const\fC [inline]\fP"
+
+.PP
+Draw a billboard texture\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamera\fP A \fBCamera3D\fP Class 
+.br
+\fItexture\fP A Texture2D Class 
+.br
+\fIcenter\fP A \fBVector3\fP Class 
+.br
+\fIsize\fP A float 
+.br
+\fItint\fP A \fBColor\fP Class 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::drawBillboardRec (Texture2D const & texture, \fBRaylib::Rectangle\fP const & source, \fBVector3\fP const & center, float const & size, \fBRaylib::Color\fP const & tint) const\fC [inline]\fP"
+
+.PP
+Draw a billboard texture defined by source\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamera\fP A \fBCamera3D\fP Class 
+.br
+\fItexture\fP A Texture2D Class 
+.br
+\fIsource\fP A \fBRectangle\fP Class 
+.br
+\fIcenter\fP A \fBVector3\fP Class 
+.br
+\fIsize\fP A float 
+.br
+\fItint\fP A \fBColor\fP Class 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::endMode3D (void) const\fC [inline]\fP"
+
+.PP
+Ends 3D mode with custom camera\&. 
+.SS "\fBMatrix\fP Raylib::Camera3D::getCameraMatrix (void) const\fC [inline]\fP"
+
+.PP
+Returns camera transform matrix (view matrix) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamera\fP \fBCamera3D\fP Class 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBMatrix\fP 
+.RE
+.PP
+
+.SS "\fBCamera3D\fP Raylib::Camera3D::getCStruct (void) const\fC [inline]\fP"
+
+.PP
+Get C Structure for \fBCamera3D\fP Class\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fBCamera3D\fP C Structure 
+.RE
+.PP
+
+.SS "Ray Raylib::Camera3D::getMouseRay (::\fBVector2\fP const & mousePosition) const\fC [inline]\fP"
+
+.PP
+Returns a ray trace from mouse position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImousePosition\fP \fBVector2\fP Class 
+.br
+\fIcamera\fP \fBCamera3D\fP Class 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Ray type (useful for raycast) 
+.RE
+.PP
+
+.SS "\fBVector2\fP Raylib::Camera3D::getWorldToScreen (\fBVector3\fP const & position) const\fC [inline]\fP"
+
+.PP
+Returns the screen space position for a 3d world space position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkeyAlt\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector2\fP Class 
+.RE
+.PP
+
+.SS "\fBVector2\fP Raylib::Camera3D::getWorldToScreenEx (\fBVector3\fP const & position, int const & width, int const & height) const\fC [inline]\fP"
+
+.PP
+Returns size position for a 3d world space position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkeyAlt\fP An int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBVector2\fP Class 
+.RE
+.PP
+
+.SS "\fBRaylib::Camera3D\fP & Raylib::Camera3D::operator= (const \fBCamera3D\fP & camera)\fC [inline]\fP"
+
+.PP
+Overload of '=' operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamera\fP A const reference to a \fBCamera3D\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A reference to \fBCamera3D\fP (\fBCamera3D\fP &) 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::setCameraAltControl (int const & keyAlt) const\fC [inline]\fP"
+
+.PP
+Set camera alt key to combine with mouse movement (free camera) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkeyAlt\fP An int 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::setCameraMode (int const & mode) const\fC [inline]\fP"
+
+.PP
+Set camera mode (multiple camera modes available) 
+.PP
+\fBParameters\fP
+.RS 4
+\fImode\fP An int for the mode 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::setCameraMoveControls (int const & frontKey, int const & backKey, int const & rightKey, int const & leftKey, int const & upKey, int const & downKey) const\fC [inline]\fP"
+
+.PP
+Set camera move controls (1st person and 3rd person cameras) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfrontKey\fP An int 
+.br
+\fIbackKey\fP An int 
+.br
+\fIrightKey\fP An int 
+.br
+\fIleftKey\fP An int 
+.br
+\fIupKey\fP An int 
+.br
+\fIdownKey\fP An int 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::setCameraPanControl (int const & keyPan) const\fC [inline]\fP"
+
+.PP
+Set camera pan key to combine with mouse movement (free camera) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkeyPan\fP An int 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::setCameraSmoothZoomControl (int const & keySmoothZoom) const\fC [inline]\fP"
+
+.PP
+Set camera smooth zoom key to combine with mouse (free camera) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkeySmoothZoom\fP An int 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::setPosition (const \fBVector3\fP & position)\fC [inline]\fP"
+
+.PP
+Set the Position object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP 
+.RE
+.PP
+
+.SS "void Raylib::Camera3D::updateCamera (void)\fC [inline]\fP"
+
+.PP
+Update camera position for selected mode\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bomberman from the source code\&.

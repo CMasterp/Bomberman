@@ -1,0 +1,783 @@
+\hypertarget{class_game_1_1_bomberman}{}\doxysection{Game\+::Bomberman Class Reference}
+\label{class_game_1_1_bomberman}\index{Game::Bomberman@{Game::Bomberman}}
+
+
+{\ttfamily \#include $<$Bomberman.\+hpp$>$}
+
+Inheritance diagram for Game\+::Bomberman\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_bomberman}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_bomberman_ae3d029099fa406c46fd3b6fc5bd69fa5}{Bomberman}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_1_1_bomberman}{Bomberman}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_bomberman_a069c746dd4114b66b0e04139a8cd02b4}{$\sim$\+Bomberman}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_game_1_1_bomberman}{Bomberman}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a6c3b453df541006c5f951f8efa113eb2}{restart}} (void) override
+\begin{DoxyCompactList}\small\item\em Call this function to restart the entire game. The game must reset himself. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a74e1544a25a51fbb985853bbb2e94f1a}{save\+Game}} (std\+::array$<$ std\+::size\+\_\+t, 9 $>$ settings, std\+::vector$<$ std\+::string $>$ player\+Controls) override
+\begin{DoxyCompactList}\small\item\em Call this function to save the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_ae0747b78c72bd81c41a1dd8336b04039}{load\+Game}} (const std\+::string \&backup\+File\+Path) override
+\begin{DoxyCompactList}\small\item\em Call this function to load a game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a3b0c395a48a8d89d71004bc2dc06d462}{set\+User\+Names}} (const std\+::vector$<$ std\+::string $>$ \&user\+Names) override
+\begin{DoxyCompactList}\small\item\em Set the User Names. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_aff59f2084ed6b5ef4c2c0011345ad613}{set\+Settings}} (const std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \&settings) override
+\begin{DoxyCompactList}\small\item\em Set the game settings. \end{DoxyCompactList}\item 
+std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \mbox{\hyperlink{class_game_1_1_bomberman_adc8cd35b3d03397d10021cfed01f4fd2}{get\+Settings}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the game settings. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \& \mbox{\hyperlink{class_game_1_1_bomberman_ae3589cf5b2da0a702ab83869b555460f}{get\+Scores}} (void) override
+\begin{DoxyCompactList}\small\item\em Getter for the score. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{class_game_1_1_bomberman_a433c9b4f03ff76c105bffeeff2c10394}{get\+Entities}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the Entities. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ $>$ \& \mbox{\hyperlink{class_game_1_1_bomberman_a9aade29f31f3ed8f05468d9a1c8db85b}{get\+Players\+Stats}} (void) override
+\begin{DoxyCompactList}\small\item\em Get the Players Stats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_aa3c83edb1b595bfe617508e9698cf6d9}{random\+Drop\+Item}} (const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&pos)
+\begin{DoxyCompactList}\small\item\em Operates randomly a drop of an item when a block is break. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a44dfd245d87864057ec8435dd9db0436}{erase\+Entities\+On\+Bomb}} (const std\+::pair$<$ int, int $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em Erase all entities on the scope of a bomb explosion. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_bomberman_a9618269fa15974647f6b1b410e07f146}{player\+Got\+Hit}} (const std\+::pair$<$ int, int $>$ \&pos, const float \&posX, const float \&posY) const
+\begin{DoxyCompactList}\small\item\em Check if a player is hit by a bomb. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a1cc9ef59c9cc65b57920905cf65027af}{set\+Char\+On\+Radius}} (const char \&c, const int \&rad, std\+::pair$<$ int, int $>$ pos, \mbox{\hyperlink{class_game_1_1_bomb}{Game\+::\+Bomb}} \&bomb)
+\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a802537bcc62c713d30e1d79725e08abf}{bomb\+Explosion}} (\mbox{\hyperlink{class_game_1_1_bomb}{Game\+::\+Bomb}} \&bomb, const size\+\_\+t \&index)
+\begin{DoxyCompactList}\small\item\em Manage the bomb explosion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a9a3075f53e61f703734d7045181fad9c}{update\+Game}} (void) override
+\begin{DoxyCompactList}\small\item\em update\+Game function should be called in a loop. It\textquotesingle{}s used to advance the game and update all logic. The game must manage time on it\textquotesingle{}s own. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_bomberman_ae650206b1f7369dd511374023fbb3872}{is\+Game\+Over}} (void) const override
+\begin{DoxyCompactList}\small\item\em Check if the game is over. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_game_1_1_bomberman_adb1f89c0c678defdb8a16badb85b433b}{get\+Game\+Name}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the name of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a311e95c24c6c5fcc6b1e2cae918bada8}{init\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em This function is to init all entities (\+\_\+entites) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a2b9151a0ff02a51a8cbe299d81129095}{init\+Players\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em This function is to init all player(s) stats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a08503a1b60d3cd2398902c30c9635db9}{update\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em This function is to update state of all entities (\+\_\+entites) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a0f34c073f08c917da71035130e2cf747}{update\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em This function is to update score(s) of player(s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a9c50f3f0f8ddaaaadedc3e3fdfae275b}{update\+Players\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em This function is to update player(s) stats. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_game_1_1_bomberman_af23fe9504994a619fb86d4834df9ba34}{get\+Map}} (const size\+\_\+t \&size) override
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_game_1_1_map}{Map}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_game_1_1_bomberman_af6d1c023601bbd13a550a6e8b2b57ed7}{get\+Map}} () override
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_game_1_1_map}{Map}}. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_game_1_1_bomberman_afe83351d33b2e8828a459bb94df74d64}{get\+User\+Names}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the User Names. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_aeb4725e2691a7b55c4da62898179cdd0}{set\+Map\+Type}} (const std\+::size\+\_\+t \&map\+Type) override
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_game_1_1_map}{Map}} Type. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_game_1_1_bomberman_a9d18ec02b4d2f072e8851743a47b693c}{get\+Player\+Controls}} (void) const override
+\begin{DoxyCompactList}\small\item\em Get the player controls. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a4b977d26ab1b4911867ff15b5edd71b1}{do\+Player\+Action}} (const size\+\_\+t player\+ID, const std\+::string action) override
+\begin{DoxyCompactList}\small\item\em Do A player Action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_aa0f6011bb0327bd15969ca61229effe8}{handle\+If\+Player\+Is\+Near\+An\+Item}} (\mbox{\hyperlink{class_game_1_1_player}{Player}} \&player)
+\begin{DoxyCompactList}\small\item\em Verify and update when a player is on an item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_abe619897f53bcd0b0e593af8208a4b1d}{do\+Drop\+Bomb}} (const size\+\_\+t \&player\+ID, std\+::pair$<$ int, int $>$ position)
+\begin{DoxyCompactList}\small\item\em drop bombs on command \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} \& \mbox{\hyperlink{class_game_1_1_bomberman_a8869b22a9d089ba078baa159655afc28}{find\+Player}} (const size\+\_\+t \&id)
+\begin{DoxyCompactList}\small\item\em find the player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_bomberman_a29300fecedc21d82ab91f27b4f59f1c8}{check\+Player\+Position}} (const std\+::string action, \mbox{\hyperlink{class_game_1_1_player}{Player}} \&player)
+\begin{DoxyCompactList}\small\item\em check the current position of player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_bomberman_a3d0574b56f722e6cc22e85defbbf797c}{check\+Player\+Position\+Pass}} (const std\+::string action, const int \&y, const int \&x)
+\begin{DoxyCompactList}\small\item\em check if the current player position passes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a4bf2a915da2213da8483074f2ee7eebc}{update\+Map}} (const std\+::pair$<$ int, int $>$ \&player\+Pos, const int \&y, const int \&x)
+\begin{DoxyCompactList}\small\item\em updates the map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_ac64219c9a90040104337874140cdc323}{set\+Players}} (const std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ \&players\+Data) override
+\begin{DoxyCompactList}\small\item\em Set the current Players data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_aa541393bd1c456137df3a32fc296579b}{set\+Player\+Should\+Display}} (size\+\_\+t position)
+\begin{DoxyCompactList}\small\item\em Set the display of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_bomberman_a117591c1f5fd76734ef1f597689d047d}{run\+AI}} (void) override
+\begin{DoxyCompactList}\small\item\em Run the AIs. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \mbox{\hyperlink{class_game_1_1_bomberman_a68be8c83961b596eed7154a95e22ad87}{get\+Entities\+Positions}} (void) const
+\begin{DoxyCompactList}\small\item\em Get positions of all the entities with a specific type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ T $\ast$ $>$ \mbox{\hyperlink{class_game_1_1_bomberman_a794292504435b8c74ea82d58704275ff}{get\+Entities\+Data}} (void) const
+\begin{DoxyCompactList}\small\item\em Get positions of all the entities with a specific type. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_game_1_1_bomberman_ac764e8d7bfd09b7d123963fa21c6dcc1}{place\+Entities\+On\+Map}} (const std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&entities\+Pos, const char \&c) const
+\begin{DoxyCompactList}\small\item\em Place entities in the map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_1_1_bomberman_ae03f1c554cd1ebef23d2dcdd27ee4ddb}{is\+Camera\+Shaking}} () override
+\begin{DoxyCompactList}\small\item\em Check if the camera should shake. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_bomberman_ae3d029099fa406c46fd3b6fc5bd69fa5}\label{class_game_1_1_bomberman_ae3d029099fa406c46fd3b6fc5bd69fa5}} 
+\index{Game::Bomberman@{Game::Bomberman}!Bomberman@{Bomberman}}
+\index{Bomberman@{Bomberman}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{Bomberman()}{Bomberman()}}
+{\footnotesize\ttfamily Game\+::\+Bomberman\+::\+Bomberman (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_1_1_bomberman}{Bomberman}} object. 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a069c746dd4114b66b0e04139a8cd02b4}\label{class_game_1_1_bomberman_a069c746dd4114b66b0e04139a8cd02b4}} 
+\index{Game::Bomberman@{Game::Bomberman}!````~Bomberman@{$\sim$Bomberman}}
+\index{````~Bomberman@{$\sim$Bomberman}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bomberman()}{~Bomberman()}}
+{\footnotesize\ttfamily Game\+::\+Bomberman\+::$\sim$\+Bomberman (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_game_1_1_bomberman}{Bomberman}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_bomberman_a802537bcc62c713d30e1d79725e08abf}\label{class_game_1_1_bomberman_a802537bcc62c713d30e1d79725e08abf}} 
+\index{Game::Bomberman@{Game::Bomberman}!bombExplosion@{bombExplosion}}
+\index{bombExplosion@{bombExplosion}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{bombExplosion()}{bombExplosion()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::bomb\+Explosion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_bomb}{Game\+::\+Bomb}} \&}]{bomb,  }\item[{const size\+\_\+t \&}]{index }\end{DoxyParamCaption})}
+
+
+
+Manage the bomb explosion. 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a29300fecedc21d82ab91f27b4f59f1c8}\label{class_game_1_1_bomberman_a29300fecedc21d82ab91f27b4f59f1c8}} 
+\index{Game::Bomberman@{Game::Bomberman}!checkPlayerPosition@{checkPlayerPosition}}
+\index{checkPlayerPosition@{checkPlayerPosition}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{checkPlayerPosition()}{checkPlayerPosition()}}
+{\footnotesize\ttfamily bool Game\+::\+Bomberman\+::check\+Player\+Position (\begin{DoxyParamCaption}\item[{const std\+::string}]{action,  }\item[{\mbox{\hyperlink{class_game_1_1_player}{Player}} \&}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check the current position of player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & \\
+\hline
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomberman_a3d0574b56f722e6cc22e85defbbf797c}\label{class_game_1_1_bomberman_a3d0574b56f722e6cc22e85defbbf797c}} 
+\index{Game::Bomberman@{Game::Bomberman}!checkPlayerPositionPass@{checkPlayerPositionPass}}
+\index{checkPlayerPositionPass@{checkPlayerPositionPass}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{checkPlayerPositionPass()}{checkPlayerPositionPass()}}
+{\footnotesize\ttfamily bool Game\+::\+Bomberman\+::check\+Player\+Position\+Pass (\begin{DoxyParamCaption}\item[{const std\+::string}]{action,  }\item[{const int \&}]{y,  }\item[{const int \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check if the current player position passes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & \\
+\hline
+{\em y} & \\
+\hline
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomberman_abe619897f53bcd0b0e593af8208a4b1d}\label{class_game_1_1_bomberman_abe619897f53bcd0b0e593af8208a4b1d}} 
+\index{Game::Bomberman@{Game::Bomberman}!doDropBomb@{doDropBomb}}
+\index{doDropBomb@{doDropBomb}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{doDropBomb()}{doDropBomb()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::do\+Drop\+Bomb (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{player\+ID,  }\item[{std\+::pair$<$ int, int $>$}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+drop bombs on command 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a4b977d26ab1b4911867ff15b5edd71b1}\label{class_game_1_1_bomberman_a4b977d26ab1b4911867ff15b5edd71b1}} 
+\index{Game::Bomberman@{Game::Bomberman}!doPlayerAction@{doPlayerAction}}
+\index{doPlayerAction@{doPlayerAction}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{doPlayerAction()}{doPlayerAction()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::do\+Player\+Action (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{player\+ID,  }\item[{const std\+::string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Do A player Action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+ID} & ID of the \mbox{\hyperlink{class_game_1_1_player}{Player}} (\mbox{\hyperlink{class_game_1_1_human}{Human}} or \mbox{\hyperlink{class_game_1_1_a_i}{AI}}) \\
+\hline
+{\em action} & Action in a string \mbox{[}\char`\"{}go\+East\char`\"{}, \char`\"{}go\+North\char`\"{}, \char`\"{}go\+South\char`\"{}, \char`\"{}go\+West\char`\"{}, \char`\"{}drop\+Bomb\char`\"{}\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_game_aa0d53c99cfc9d2d34e8a62d88f5846e8}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a44dfd245d87864057ec8435dd9db0436}\label{class_game_1_1_bomberman_a44dfd245d87864057ec8435dd9db0436}} 
+\index{Game::Bomberman@{Game::Bomberman}!eraseEntitiesOnBomb@{eraseEntitiesOnBomb}}
+\index{eraseEntitiesOnBomb@{eraseEntitiesOnBomb}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{eraseEntitiesOnBomb()}{eraseEntitiesOnBomb()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::erase\+Entities\+On\+Bomb (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ int, int $>$ \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Erase all entities on the scope of a bomb explosion. 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a8869b22a9d089ba078baa159655afc28}\label{class_game_1_1_bomberman_a8869b22a9d089ba078baa159655afc28}} 
+\index{Game::Bomberman@{Game::Bomberman}!findPlayer@{findPlayer}}
+\index{findPlayer@{findPlayer}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{findPlayer()}{findPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_player}{Game\+::\+Player}} \& Game\+::\+Bomberman\+::find\+Player (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+find the player 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a433c9b4f03ff76c105bffeeff2c10394}\label{class_game_1_1_bomberman_a433c9b4f03ff76c105bffeeff2c10394}} 
+\index{Game::Bomberman@{Game::Bomberman}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_entity}{IEntity}} $>$ $>$ \& Game\+::\+Bomberman\+::get\+Entities (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Entities. 
+
+\begin{DoxyReturn}{Returns}
+Return all the game\textquotesingle{}s entities to display in a const std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Thing$>$$>$\& 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_ac8bb3be057f6861636f6a189c7336608}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a794292504435b8c74ea82d58704275ff}\label{class_game_1_1_bomberman_a794292504435b8c74ea82d58704275ff}} 
+\index{Game::Bomberman@{Game::Bomberman}!getEntitiesData@{getEntitiesData}}
+\index{getEntitiesData@{getEntitiesData}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getEntitiesData()}{getEntitiesData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$ T $\ast$ $>$ Game\+::\+Bomberman\+::get\+Entities\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get positions of all the entities with a specific type. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Game\+::\+Point$>$ -\/ A vector containing the required entities positions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomberman_a68be8c83961b596eed7154a95e22ad87}\label{class_game_1_1_bomberman_a68be8c83961b596eed7154a95e22ad87}} 
+\index{Game::Bomberman@{Game::Bomberman}!getEntitiesPositions@{getEntitiesPositions}}
+\index{getEntitiesPositions@{getEntitiesPositions}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getEntitiesPositions()}{getEntitiesPositions()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ Game\+::\+Bomberman\+::get\+Entities\+Positions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get positions of all the entities with a specific type. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Game\+::\+Point$>$ -\/ A vector containing the required entities positions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomberman_adb1f89c0c678defdb8a16badb85b433b}\label{class_game_1_1_bomberman_adb1f89c0c678defdb8a16badb85b433b}} 
+\index{Game::Bomberman@{Game::Bomberman}!getGameName@{getGameName}}
+\index{getGameName@{getGameName}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getGameName()}{getGameName()}}
+{\footnotesize\ttfamily const std\+::string \& Game\+::\+Bomberman\+::get\+Game\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of the game. 
+
+\begin{DoxyReturn}{Returns}
+Name of the game 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_a56640a0f7b914d0d08bab29963b320ec}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_af6d1c023601bbd13a550a6e8b2b57ed7}\label{class_game_1_1_bomberman_af6d1c023601bbd13a550a6e8b2b57ed7}} 
+\index{Game::Bomberman@{Game::Bomberman}!getMap@{getMap}}
+\index{getMap@{getMap}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ \& Game\+::\+Bomberman\+::get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{class_game_1_1_map}{Map}}. 
+
+
+
+Implements \mbox{\hyperlink{class_i_game_a6a2ecc221fb5f92f732f328dae947e17}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_af23fe9504994a619fb86d4834df9ba34}\label{class_game_1_1_bomberman_af23fe9504994a619fb86d4834df9ba34}} 
+\index{Game::Bomberman@{Game::Bomberman}!getMap@{getMap}}
+\index{getMap@{getMap}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ \& Game\+::\+Bomberman\+::get\+Map (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{class_game_1_1_map}{Map}}. 
+
+
+
+Implements \mbox{\hyperlink{class_i_game_a6bec9a136275ae3abd6d492084421b6d}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a9d18ec02b4d2f072e8851743a47b693c}\label{class_game_1_1_bomberman_a9d18ec02b4d2f072e8851743a47b693c}} 
+\index{Game::Bomberman@{Game::Bomberman}!getPlayerControls@{getPlayerControls}}
+\index{getPlayerControls@{getPlayerControls}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getPlayerControls()}{getPlayerControls()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Game\+::\+Bomberman\+::get\+Player\+Controls (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the player controls. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the player controls as a string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_a94d5b4a6f5f8a1b4ebd06b0f9b5fb794}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a9aade29f31f3ed8f05468d9a1c8db85b}\label{class_game_1_1_bomberman_a9aade29f31f3ed8f05468d9a1c8db85b}} 
+\index{Game::Bomberman@{Game::Bomberman}!getPlayersStats@{getPlayersStats}}
+\index{getPlayersStats@{getPlayersStats}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getPlayersStats()}{getPlayersStats()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ $>$ \& Game\+::\+Bomberman\+::get\+Players\+Stats (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Players Stats. 
+
+\begin{DoxyReturn}{Returns}
+All the stats \mbox{[}Player\+Name -- (Name\+Of\+Stat, Value)\mbox{]} in a vector of vector 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_acee1ba61297246b82ad408a9e18cdb39}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_ae3589cf5b2da0a702ab83869b555460f}\label{class_game_1_1_bomberman_ae3589cf5b2da0a702ab83869b555460f}} 
+\index{Game::Bomberman@{Game::Bomberman}!getScores@{getScores}}
+\index{getScores@{getScores}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getScores()}{getScores()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \& Game\+::\+Bomberman\+::get\+Scores (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Getter for the score. 
+
+\begin{DoxyReturn}{Returns}
+A array of pair (\mbox{\hyperlink{class_game_1_1_player}{Player}}, \mbox{\hyperlink{class_game_1_1_score}{Score}}) of the current game 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_a44c87c259e5e5a733bd615a5dd395a52}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_adc8cd35b3d03397d10021cfed01f4fd2}\label{class_game_1_1_bomberman_adc8cd35b3d03397d10021cfed01f4fd2}} 
+\index{Game::Bomberman@{Game::Bomberman}!getSettings@{getSettings}}
+\index{getSettings@{getSettings}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getSettings()}{getSettings()}}
+{\footnotesize\ttfamily std\+::array$<$ std\+::size\+\_\+t, 9 $>$ Game\+::\+Bomberman\+::get\+Settings (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the game settings. 
+
+\begin{DoxyReturn}{Returns}
+An array of 9 size\+\_\+t 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_a9dae299d7e44243549096bdae11197d8}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_afe83351d33b2e8828a459bb94df74d64}\label{class_game_1_1_bomberman_afe83351d33b2e8828a459bb94df74d64}} 
+\index{Game::Bomberman@{Game::Bomberman}!getUserNames@{getUserNames}}
+\index{getUserNames@{getUserNames}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{getUserNames()}{getUserNames()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Game\+::\+Bomberman\+::get\+User\+Names (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the User Names. 
+
+\begin{DoxyReturn}{Returns}
+A vector of all the users names as a const std\+::vector$<$std\+::string$>$\& 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_a541d8a81360939df8626547854e6fcaa}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_aa0f6011bb0327bd15969ca61229effe8}\label{class_game_1_1_bomberman_aa0f6011bb0327bd15969ca61229effe8}} 
+\index{Game::Bomberman@{Game::Bomberman}!handleIfPlayerIsNearAnItem@{handleIfPlayerIsNearAnItem}}
+\index{handleIfPlayerIsNearAnItem@{handleIfPlayerIsNearAnItem}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{handleIfPlayerIsNearAnItem()}{handleIfPlayerIsNearAnItem()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::handle\+If\+Player\+Is\+Near\+An\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_player}{Player}} \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Verify and update when a player is on an item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomberman_a311e95c24c6c5fcc6b1e2cae918bada8}\label{class_game_1_1_bomberman_a311e95c24c6c5fcc6b1e2cae918bada8}} 
+\index{Game::Bomberman@{Game::Bomberman}!initEntities@{initEntities}}
+\index{initEntities@{initEntities}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{initEntities()}{initEntities()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::init\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is to init all entities (\+\_\+entites) 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a2b9151a0ff02a51a8cbe299d81129095}\label{class_game_1_1_bomberman_a2b9151a0ff02a51a8cbe299d81129095}} 
+\index{Game::Bomberman@{Game::Bomberman}!initPlayersStats@{initPlayersStats}}
+\index{initPlayersStats@{initPlayersStats}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{initPlayersStats()}{initPlayersStats()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::init\+Players\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is to init all player(s) stats. 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_ae03f1c554cd1ebef23d2dcdd27ee4ddb}\label{class_game_1_1_bomberman_ae03f1c554cd1ebef23d2dcdd27ee4ddb}} 
+\index{Game::Bomberman@{Game::Bomberman}!isCameraShaking@{isCameraShaking}}
+\index{isCameraShaking@{isCameraShaking}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{isCameraShaking()}{isCameraShaking()}}
+{\footnotesize\ttfamily bool Game\+::\+Bomberman\+::is\+Camera\+Shaking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the camera should shake. 
+
+\begin{DoxyReturn}{Returns}
+true if should 
+
+false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_ae22940c148455971b1d725047c3d31f3}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_ae650206b1f7369dd511374023fbb3872}\label{class_game_1_1_bomberman_ae650206b1f7369dd511374023fbb3872}} 
+\index{Game::Bomberman@{Game::Bomberman}!isGameOver@{isGameOver}}
+\index{isGameOver@{isGameOver}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{isGameOver()}{isGameOver()}}
+{\footnotesize\ttfamily bool Game\+::\+Bomberman\+::is\+Game\+Over (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the game is over. 
+
+\begin{DoxyReturn}{Returns}
+bool which indicate if the game is over 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_game_a9ee8daeeca3248f781e1a0ddcc264ef6}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_ae0747b78c72bd81c41a1dd8336b04039}\label{class_game_1_1_bomberman_ae0747b78c72bd81c41a1dd8336b04039}} 
+\index{Game::Bomberman@{Game::Bomberman}!loadGame@{loadGame}}
+\index{loadGame@{loadGame}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{loadGame()}{loadGame()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::load\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{backup\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call this function to load a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em backup\+File\+Path} & Backup File Path \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_game_a34c5db84317c11ad514fcf57f9a67a32}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_ac764e8d7bfd09b7d123963fa21c6dcc1}\label{class_game_1_1_bomberman_ac764e8d7bfd09b7d123963fa21c6dcc1}} 
+\index{Game::Bomberman@{Game::Bomberman}!placeEntitiesOnMap@{placeEntitiesOnMap}}
+\index{placeEntitiesOnMap@{placeEntitiesOnMap}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{placeEntitiesOnMap()}{placeEntitiesOnMap()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Game\+::\+Bomberman\+::place\+Entities\+On\+Map (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&}]{entities\+Pos,  }\item[{const char \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Place entities in the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities\+Pos} & A vector of the required entities positions \\
+\hline
+{\em c} & The character to place at entities slots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ -\/ The new map containing the entities representing by c 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomberman_a9618269fa15974647f6b1b410e07f146}\label{class_game_1_1_bomberman_a9618269fa15974647f6b1b410e07f146}} 
+\index{Game::Bomberman@{Game::Bomberman}!playerGotHit@{playerGotHit}}
+\index{playerGotHit@{playerGotHit}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{playerGotHit()}{playerGotHit()}}
+{\footnotesize\ttfamily bool Game\+::\+Bomberman\+::player\+Got\+Hit (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ int, int $>$ \&}]{pos,  }\item[{const float \&}]{posX,  }\item[{const float \&}]{posY }\end{DoxyParamCaption}) const}
+
+
+
+Check if a player is hit by a bomb. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & position of the bomb \\
+\hline
+{\em posX} & x position of the player \\
+\hline
+{\em posY} & y position of the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is hit 
+
+false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_bomberman_aa3c83edb1b595bfe617508e9698cf6d9}\label{class_game_1_1_bomberman_aa3c83edb1b595bfe617508e9698cf6d9}} 
+\index{Game::Bomberman@{Game::Bomberman}!randomDropItem@{randomDropItem}}
+\index{randomDropItem@{randomDropItem}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{randomDropItem()}{randomDropItem()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::random\+Drop\+Item (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raylib_1_1_vector3}{Raylib\+::\+Vector3}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Operates randomly a drop of an item when a block is break. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & position where to display the item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomberman_a6c3b453df541006c5f951f8efa113eb2}\label{class_game_1_1_bomberman_a6c3b453df541006c5f951f8efa113eb2}} 
+\index{Game::Bomberman@{Game::Bomberman}!restart@{restart}}
+\index{restart@{restart}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::restart (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call this function to restart the entire game. The game must reset himself. 
+
+
+
+Implements \mbox{\hyperlink{class_i_game_ab28060e6da41d8e549304a7b613b21f7}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a117591c1f5fd76734ef1f597689d047d}\label{class_game_1_1_bomberman_a117591c1f5fd76734ef1f597689d047d}} 
+\index{Game::Bomberman@{Game::Bomberman}!runAI@{runAI}}
+\index{runAI@{runAI}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{runAI()}{runAI()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::run\+AI (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Run the AIs. 
+
+
+
+Implements \mbox{\hyperlink{class_i_game_a5cc0658c9fb840b263378512d9301dbe}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a74e1544a25a51fbb985853bbb2e94f1a}\label{class_game_1_1_bomberman_a74e1544a25a51fbb985853bbb2e94f1a}} 
+\index{Game::Bomberman@{Game::Bomberman}!saveGame@{saveGame}}
+\index{saveGame@{saveGame}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{saveGame()}{saveGame()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::save\+Game (\begin{DoxyParamCaption}\item[{std\+::array$<$ std\+::size\+\_\+t, 9 $>$}]{settings,  }\item[{std\+::vector$<$ std\+::string $>$}]{player\+Controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call this function to save the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & Backup Container containing the settings \\
+\hline
+{\em player\+Controls} & Backup Container containing the player controls \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_game_a082935cf063b3c543459343d3c2069a5}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a1cc9ef59c9cc65b57920905cf65027af}\label{class_game_1_1_bomberman_a1cc9ef59c9cc65b57920905cf65027af}} 
+\index{Game::Bomberman@{Game::Bomberman}!setCharOnRadius@{setCharOnRadius}}
+\index{setCharOnRadius@{setCharOnRadius}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{setCharOnRadius()}{setCharOnRadius()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::set\+Char\+On\+Radius (\begin{DoxyParamCaption}\item[{const char \&}]{c,  }\item[{const int \&}]{rad,  }\item[{std\+::pair$<$ int, int $>$}]{pos,  }\item[{\mbox{\hyperlink{class_game_1_1_bomb}{Game\+::\+Bomb}} \&}]{bomb }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & character to set \\
+\hline
+{\em rad} & reach of fire \\
+\hline
+{\em pos} & position of the bomb \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomberman_aeb4725e2691a7b55c4da62898179cdd0}\label{class_game_1_1_bomberman_aeb4725e2691a7b55c4da62898179cdd0}} 
+\index{Game::Bomberman@{Game::Bomberman}!setMapType@{setMapType}}
+\index{setMapType@{setMapType}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{setMapType()}{setMapType()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::set\+Map\+Type (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t \&}]{map\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the \mbox{\hyperlink{class_game_1_1_map}{Map}} Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Type} & A size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_game_a7fc5862a33d3e0220c46d2c7775962e1}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_ac64219c9a90040104337874140cdc323}\label{class_game_1_1_bomberman_ac64219c9a90040104337874140cdc323}} 
+\index{Game::Bomberman@{Game::Bomberman}!setPlayers@{setPlayers}}
+\index{setPlayers@{setPlayers}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{setPlayers()}{setPlayers()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::set\+Players (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_char_dictionary}{Char\+Dictionary}} $>$ \&}]{players\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the current Players data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Data} & Dictionary of the players\textquotesingle{} data \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_game_a2cd16a7333134e2e7d4f6a3b71b2c239}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_aa541393bd1c456137df3a32fc296579b}\label{class_game_1_1_bomberman_aa541393bd1c456137df3a32fc296579b}} 
+\index{Game::Bomberman@{Game::Bomberman}!setPlayerShouldDisplay@{setPlayerShouldDisplay}}
+\index{setPlayerShouldDisplay@{setPlayerShouldDisplay}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{setPlayerShouldDisplay()}{setPlayerShouldDisplay()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::set\+Player\+Should\+Display (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the display of the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomberman_aff59f2084ed6b5ef4c2c0011345ad613}\label{class_game_1_1_bomberman_aff59f2084ed6b5ef4c2c0011345ad613}} 
+\index{Game::Bomberman@{Game::Bomberman}!setSettings@{setSettings}}
+\index{setSettings@{setSettings}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{setSettings()}{setSettings()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::set\+Settings (\begin{DoxyParamCaption}\item[{const std\+::array$<$ std\+::size\+\_\+t, 9 $>$ \&}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the game settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & An array of 9 size\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_game_a697091d869f621d00b7d615a806ff5fc}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a3b0c395a48a8d89d71004bc2dc06d462}\label{class_game_1_1_bomberman_a3b0c395a48a8d89d71004bc2dc06d462}} 
+\index{Game::Bomberman@{Game::Bomberman}!setUserNames@{setUserNames}}
+\index{setUserNames@{setUserNames}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{setUserNames()}{setUserNames()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::set\+User\+Names (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{user\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the User Names. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Names} & A vector of all the users names as a const std\+::vector$<$std\+::string$>$\& \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_game_af1e186e856a529ac2b5484a00acf5450}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a08503a1b60d3cd2398902c30c9635db9}\label{class_game_1_1_bomberman_a08503a1b60d3cd2398902c30c9635db9}} 
+\index{Game::Bomberman@{Game::Bomberman}!updateEntities@{updateEntities}}
+\index{updateEntities@{updateEntities}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{updateEntities()}{updateEntities()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::update\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is to update state of all entities (\+\_\+entites) 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a9a3075f53e61f703734d7045181fad9c}\label{class_game_1_1_bomberman_a9a3075f53e61f703734d7045181fad9c}} 
+\index{Game::Bomberman@{Game::Bomberman}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{updateGame()}{updateGame()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::update\+Game (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update\+Game function should be called in a loop. It\textquotesingle{}s used to advance the game and update all logic. The game must manage time on it\textquotesingle{}s own. 
+
+
+
+Implements \mbox{\hyperlink{class_i_game_a1eab4e6befb35b00d92500bc92327388}{IGame}}.
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a4bf2a915da2213da8483074f2ee7eebc}\label{class_game_1_1_bomberman_a4bf2a915da2213da8483074f2ee7eebc}} 
+\index{Game::Bomberman@{Game::Bomberman}!updateMap@{updateMap}}
+\index{updateMap@{updateMap}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{updateMap()}{updateMap()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::update\+Map (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ int, int $>$ \&}]{player\+Pos,  }\item[{const int \&}]{y,  }\item[{const int \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+updates the map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Pos} & \\
+\hline
+{\em y} & \\
+\hline
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_bomberman_a9c50f3f0f8ddaaaadedc3e3fdfae275b}\label{class_game_1_1_bomberman_a9c50f3f0f8ddaaaadedc3e3fdfae275b}} 
+\index{Game::Bomberman@{Game::Bomberman}!updatePlayersStats@{updatePlayersStats}}
+\index{updatePlayersStats@{updatePlayersStats}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{updatePlayersStats()}{updatePlayersStats()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::update\+Players\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is to update player(s) stats. 
+
+\mbox{\Hypertarget{class_game_1_1_bomberman_a0f34c073f08c917da71035130e2cf747}\label{class_game_1_1_bomberman_a0f34c073f08c917da71035130e2cf747}} 
+\index{Game::Bomberman@{Game::Bomberman}!updateScores@{updateScores}}
+\index{updateScores@{updateScores}!Game::Bomberman@{Game::Bomberman}}
+\doxysubsubsection{\texorpdfstring{updateScores()}{updateScores()}}
+{\footnotesize\ttfamily void Game\+::\+Bomberman\+::update\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is to update score(s) of player(s) 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Bomberman/\mbox{\hyperlink{_bomberman_8hpp}{Bomberman.\+hpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Bomberman/\mbox{\hyperlink{_bomberman_8cpp}{Bomberman.\+cpp}}\item 
+C\+:/\+Users/jonat/\+Documents/\+Git\+Hub/\+B-\/\+YEP-\/400-\/\+LYN-\/4-\/1-\/indiestudio-\/lucas.\+guichard/\+Game/\+Bomberman/\mbox{\hyperlink{_bomberman_8inl}{Bomberman.\+inl}}\end{DoxyCompactItemize}
